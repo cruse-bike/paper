@@ -1,18 +1,19 @@
 ---
-format: gfm
+format:
+  gfm: default
+  pdf: default
+title: "CRUSE to Safe Cycling in Ireland: An Open Source Methodology to Support Active Travel"
 # in future: pdf!
 editor: 
   markdown: 
     wrap: sentence
 ---
 
-# 10th Transport Research Arena, TRA 2024, Dublin, Ireland
-
-**CRUSE to Safe Cycling in Ireland: An Open Source Methodology to Support Active Travel**
+## 10th Transport Research Arena, TRA 2024, Dublin, Ireland
 
 *Dr. Robin Lovelace (a), Dr. Joey Talbot (a), Dan Brennan (b), Dr. Suzanne Meade (b), Elaine Brick (c), and Peter Wright (d)*
 
-a University of Leeds, Institute for Transport Studies, Leeds, Ls2 9Jt, United Kingdom, Leeds LS2 9J, UK.
+a University of Leeds, Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom, Leeds LS2 9J, UK.
 
 b Transport Infrastructure Ireland, Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland.
 
