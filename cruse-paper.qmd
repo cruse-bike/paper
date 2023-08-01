@@ -1,15 +1,20 @@
 ---
-format:
-  gfm: default
-  pdf: default
 title: "CRUSE to Safe Cycling in Ireland: An Open Source Methodology to Support Active Travel"
-# in future: pdf!
+format: 
+  html:
+    output-file: index.html
+  pdf:
+    output-file: cruse-paper.pdf 
+  gfm:
+    output-file: README.md
+number-sections: true
 editor: 
+  # render-on-save: true
   markdown: 
     wrap: sentence
 ---
 
-## 10th Transport Research Arena, TRA 2024, Dublin, Ireland
+## 10th Transport Research Arena, TRA 2024, Dublin, Ireland {-}
 
 *Dr. Robin Lovelace (a), Dr. Joey Talbot (a), Dan Brennan (b), Dr. Suzanne Meade (b), Elaine Brick (c), and Peter Wright (d)*
 
@@ -21,7 +26,7 @@ c AECOM, Unit 6, Galway Technology Park, Parkmore, Galway, Ireland.
 
 d AECOM, Winslade House, Winslade Park, Manor Drive, Clyst St Mary, EXETER, EX5 1FY, UK.
 
-## Abstract
+## Abstract {-}
 
 Under the EU Road infrastructure safety management (RISM) directive, the National Road Safety Strategy (RSS), and the Climate Action Plan Transport Infrastructure Ireland (TII) has a remit for road safety and decarbonizing a predominantly road-based network in Ireland.
 To address data needs for both safety and project evaluation on the National Road Network (NRN), the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool was developed.
