@@ -3,9 +3,20 @@ title: "CRUSE to Safe Cycling in Ireland"
 subtitle: An Open Source Methodology to Support Active Travel
 author:
   - name: Dr. Robin Lovelace
+    email: r.lovelace@leeds.ac.uk
+    corresponding: true
     affiliations:
+      - name: University of Leeds
         address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
   - name: Dr. Joey Talbot
+    affiliations:
+      - name: University of Leeds
+        address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
+  - name: Eugeni Vidal Tortosa
+    affiliations:
+      - name: University of Leeds
+        address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
+  - name: Hussein Mahfouz
     affiliations:
       - name: University of Leeds
         address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
@@ -64,51 +75,31 @@ format:
       formatting: preprint
       model: 3p
       cite-style: super
-# title: "CRUSE to Safe Cycling in Ireland: An Open Source Methodology to Support Active Travel"
-# format: 
-#   format:
-#   elsevier-pdf:
-#     keep-tex: true
-#     journal:
-#       name: Journal Name
-#       formatting: preprint
-#       model: 3p
-#       cite-style: super
-  # html:
-  #   output-file: index.html
-  # pdf:
-  #   output-file: cruse-paper.pdf 
-  # gfm:
-  #   output-file: README.md
-# affiliations:
-#   - id: cmu
-#     name: Carnegie Mellon University
-#     city: Pittsburgh
-#     state: PA
-#   - id: chicago
-#     name: University of Chicago
-#     city: Chicago
-#     state: IL
-# number-sections: true
-# editor: 
-#   # render-on-save: true
-#   markdown: 
-#     wrap: sentence
-# # Bibliography:
-# bibliography: references.bib
-# # APA style:
 csl: apa.csl
 ---
 
 ## 10th Transport Research Arena, TRA 2024, Dublin, Ireland {.unnumbered}
 
-
 {{< pagebreak >}}
-
-
-**Keywords:** .
 
 # Introduction
 
 [@lovelace2017]
 
+• Title page/main information (title, full names and institutional addresses for all
+authors, indication of the corresponding author)
+• Abstract
+• Introduction
+• Results
+• Discussion (can be combined in ‘Results and Discussion’ section)
+• Conclusions
+• Methods/Experimental (can also be placed after Introduction)
+• List of abbreviations
+• Declarations*
+o Availability of data and material
+o Funding
+o Acknowledgements
+o Competing interests
+o Authors' contributions
+o Authors' information (optional)
+o *If any of the sections are not relev
