@@ -94,18 +94,13 @@ format:
 
 # Introduction
 
-[@lovelace2017]
-
-• Title page/main information (title, full names and institutional addresses for all
-authors, indication of the corresponding author)
-• Abstract
-• Introduction
+Transport is a major contributor to climate change, premature death due to road traffic collisions and air pollution, yet has the potential to be a major contributor to decarbonization and improved public health.
+Transport is responsible for 23% of global emissions, 70% of which is from road transport, nearly half of which is from passenger cars [@jaramillo2022].
+The transport system encourages, enables and in some cases enforces unsustainable lifestyles, including over-consumption of goods due to excessive mobile storage space and dependency on services that are only accessible by car due to land use plans that have built up around roads [@gray2001; @shergold2012; @motte-baumvol2010].
 
 # Methods
 
-
 # Results
-
 
 # Discussion
 
@@ -116,9 +111,13 @@ authors, indication of the corresponding author)
 # Declarations
 
 ## Availability of data and material {.unnumbered}
+
 ## Funding {.unnumbered}
+
 ## Acknowledgements {.unnumbered}
+
 ## Competing interests {.unnumbered}
+
 ## Authors' contributions {.unnumbered}
 
 # References {.unnumbered}
