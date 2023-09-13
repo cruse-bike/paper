@@ -2,11 +2,7 @@ project:
   type: website
 
 website:
-  title: "CRUSE: Cycle Route Uptake and Scenario Estimation"
-  navbar:
-    left:
-      - href: paper.qmd
-        text: "Cruse to safe cycling in Ireland: paper"
+  title: "CRUSE"
 
 
 format:

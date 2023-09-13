@@ -1,8 +1,9 @@
 ---
-title: "opengeohub23"
+bibliography: bibliography.bib
+csl: apa.csl
 ---
 
-{{< include README.qmd >}}
+{{< include paper.qmd >}}
 
 This is a Quarto website.
 

@@ -145,5 +145,3 @@ Bit on Jittering [@lovelace2022]
 ## Competing interests {.unnumbered}
 
 ## Authors' contributions {.unnumbered}
-
-# References {.unnumbered}
