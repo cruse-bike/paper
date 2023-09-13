@@ -116,7 +116,9 @@ In Ireland...
 
 # Methods
 
-Commute and school travel
+Commute and school travel.
+
+The methods used to generate the evidence presented in the CRUSE tool for Ireland build on previous work, particularly the Propensity to Cycle Tool, which was originally developed for the UK's Department for Transport and which is publicly available at www.pct.bike [@lovelace2017].
 
 Other trip purposes
 
