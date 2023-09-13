@@ -4,3 +4,5 @@ cruse-paper_files/libs/
 
 /.quarto/
 _site/
+
+/.luarc.json
