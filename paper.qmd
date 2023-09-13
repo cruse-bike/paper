@@ -130,6 +130,9 @@ The PCT approach has had major policy impacts, as outlined in Research Excellenc
 The first version of the PCT was based solely on current and future potential uptake of cycling for single stage travel to work at desire line, zone, route, and route network levels [@lovelace2016].
 It was launched in April 2017 as the government-endorsed tool for strategic cycle network planning, as part of the Cycling and Walking Investment Strategy [@cycling2017].
 Extensions of the PCT approach have included estimation of benefits at the individual level [@woodcock2018], addition of travel to school network [@goodman2019], and improvement modelling of impacts on health, environmental and distributional outcomes [@woodcock2021].
+In Portugal, a cycling uptake tool to suport decision making was developed based on PCT methods, for the Lisbon metro region (see [biclaR](https://biclar.tmlmobilidade.pt), and again, socioenvirnment impacts were added as a relevant information to support decisions, using the WHO HEAT for Cycling tool[^3] [@felix2023]. biclaR added on the pevious methods by setting a intermodality scenario of combinining bicycle with the available transit modes (using GTFS), for a maximum time travel and distance on bicycle.
+
+[^3]:  See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
 
 Bit on Jittering [@lovelace2022]
 
