@@ -3,6 +3,8 @@ title: CRUSE to Safe Cycling in Ireland
 format: gfm
 ---
 
+The main purpose of this site is to provide broadly-defined documentation in support of the web application, research project, and planning support system hosted at [cruse.bike](https://cruse.bike/).
+
 <!-- # Introduction
 
 (Lovelace et al., 2017)
