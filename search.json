@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "CRUSE to Safe Cycling in Ireland",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
     "objectID": "paper.html#availability-of-data-and-material",
     "href": "paper.html#availability-of-data-and-material",
     "title": "CRUSE to Safe Cycling in Ireland",
@@ -40,5 +33,12 @@
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "Authors’ contributions",
     "text": "Authors’ contributions"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CRUSE to Safe Cycling in Ireland",
+    "section": "",
+    "text": "The main purpose of this site is to provide broadly-defined documentation in support of the web application, research project, and planning support system hosted at cruse.bike.\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   }
 ]

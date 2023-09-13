@@ -1,1 +1,1 @@
-Sitemap: https://cruse-bike.github.io/cruse-paper/sitemap.xml
+Sitemap: https://github.com/cruse-bike/paper/sitemap.xml
