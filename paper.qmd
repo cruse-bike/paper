@@ -116,6 +116,9 @@ In Ireland...
 
 # Methods
 
+\[Should this bit go in a subsection in the Introduction rather than in the methods?
+(RL)\]
+
 The methods used to generate the evidence presented in the CRUSE tool for Ireland build on previous work, particularly the Propensity to Cycle Tool (PCT), which was originally developed for the UK's Department for Transport and which is publicly available at www.pct.bike [@lovelace2017].
 The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies submitted by the University of Leeds and the University of Westminster, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^1] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^2]
 .
