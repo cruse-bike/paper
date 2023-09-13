@@ -3,6 +3,9 @@ title: "CRUSE to Safe Cycling in Ireland"
 subtitle: An Open Source Methodology to Support Active Travel
 bibliography: bibliography.bib
 csl: apa.csl
+editor:
+  markdown:
+    wrap: sentence
 
 # # Uncomment for draft versions:
 # format: 
@@ -135,6 +138,12 @@ In Portugal, a cycling uptake tool to support decision making was developed base
 [^3]: See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
 
 Bit on Jittering [@lovelace2022]
+
+Despite these advances, the PCT approach outlined in previous research paper had limitations:
+
+-   Limited coverage of modes beyond travel to work and school
+
+-   ...
 
 # Results
 
