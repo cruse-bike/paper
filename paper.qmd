@@ -1,121 +1,149 @@
 ---
-title: Short Paper
-subtitle: A Short Subtitle
-author:
-  - name: Alice Anonymous
-    email: alice@example.com
-    affiliations: 
-        - id: some-tech
-          name: Some Institute of Technology
-          department: Department Name
-          address: Street Address
-          city: City
-          state: State
-          postal-code: Postal Code
-    attributes:
-        corresponding: true
-    note: This is the first author footnote.
-  - name: Bob Security
-    email: bob@example.com
-    affiliations:
-        - id: another-u
-          name: Another University
-          department: Department Name
-          address: Street Address
-          city: City
-          state: State
-          postal-code: Postal Code
-    note: |
-      Another author footnote, this is a very long footnote and it should be a really long footnote. But this footnote is not yet sufficiently long enough to make two lines of footnote text.
-  - name: Cat Memes
-    email: cat@example.com
-    affiliations:
-        - ref: another-u
-    note: Yet another author footnote.
-  - name: Derek Zoolander
-    email: derek@example.com
-    affilations:
-        - ref: some-tech
-abstract: |
-  This is the abstract. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum augue turpis, dictum non malesuada a, volutpat eget velit. Nam placerat turpis purus, eu tristique ex tincidunt et. Mauris sed augue eget turpis ultrices tincidunt. Sed et mi in leo porta egestas. Aliquam non laoreet velit. Nunc quis ex vitae eros aliquet auctor nec ac libero. Duis laoreet sapien eu mi luctus, in bibendum leo molestie. Sed hendrerit diam diam, ac dapibus nisl volutpat vitae. Aliquam bibendum varius libero, eu efficitur justo rutrum at. Sed at tempus elit.
-keywords: 
-  - keyword1
-  - keyword2
-date: last-modified
+title: "CRUSE to Safe Cycling in Ireland"
+subtitle: An Open Source Methodology to Support Active Travel
 bibliography: bibliography.bib
-format:
-  elsevier-pdf:
-    keep-tex: true
-    journal:
-      name: Journal Name
-      formatting: preprint
-      model: 3p
-      cite-style: super
+csl: apa.csl
+
+# # Uncomment for draft versions:
+# format: 
+#   docx: default
+#   html:
+#     output-file: index.html
+#   pdf:
+#     output-file: cruse-paper.pdf 
+#   gfm:
+#     output-file: README.md
+# number-sections: true
+
+# # Uncomment the following line to produce the cover page
+# author:
+#   - name: Dr. Robin Lovelace
+#     email: r.lovelace@leeds.ac.uk
+#     corresponding: true
+#     affiliations:
+#       - name: University of Leeds
+#         address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
+#   - name: Dr. Joey Talbot
+#     affiliations:
+#       - name: University of Leeds
+#         address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
+#   - name: Eugeni Vidal Tortosa
+#     affiliations:
+#       - name: University of Leeds
+#         address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
+#   - name: Hussein Mahfouz
+#     affiliations:
+#       - name: University of Leeds
+#         address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
+#   - name: Dan Brennan
+#     affiliations:
+#       - name: Transport Infrastructure Ireland
+#         address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
+#   - name: Dr. Suzanne Meade
+#     affiliations:
+#       - name: Transport Infrastructure Ireland
+#         address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
+#   - name: Elaine Brick
+#     affiliations:
+#       - name: AECOM
+#         address: Unit 6, Galway Technology Park, Parkmore, Galway, Ireland
+#   - name: Peter Wright
+#     affiliations:
+#       - name: AECOM
+#         address: Winslade House, Winslade Park, Manor Drive, Clyst St Mary, EXETER, EX5 1FY, UK
+# abstract: |
+#   Under the EU Road infrastructure safety management (RISM) directive, the National Road Safety Strategy (RSS), and the Climate Action Plan Transport Infrastructure Ireland (TII) has a remit for road safety and decarbonizing a predominantly road-based network in Ireland.
+
+#   To address data needs for both safety and project evaluation on the National Road Network (NRN), the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool was developed.
+#   While cycling in Ireland represents only 3% of total modal share, with higher intensities in urban areas, the levels of cycling collisions are disproportionately high at 20% of all serious injuries and 7% of all fatalities.
+#   If Ireland is to meet its climate and safety targets, data to establish baseline cycling levels and future cycling levels is needed.
+
+#   Due to an absence of reliable data, particularly rural cycling levels, TII commissioned the Institute for Transport Studies (ITS) at the University of Leeds and AECOM to develop a new tool for this purpose.
+#   ITS Leeds led the development of the PCT for England and Wales, which has "revolutionized the practice of strategic cycle planning nationally".
+#   The tool is an open-source approach using recognized open-source methodology to enable planners, engineers, and other stakeholders to make evidence-based decisions for the NRN.
+#   CRUSE is available at <https://cruse.bike/> and builds on the Propensity to Cycle Tool (PCT) for England and Wales.
+#   CRUSE goes beyond the PCT in several important ways, higher resolution data, more trip types, including estimates for education, inter-urban, and recreational trips.
+#   In addition to understanding cycling intensity, for asset planning and management purposes, the tool provides essential road safety information to enable reporting of disaggregate collision rates.
+  
+#   CRUSE is structured in a similar way to the traditional four-stage transport model, but its use of Open Street Map (OSM) data, used by [Cyclestreets.net](https://www.cyclestreets.net/) for routing, enables network quality to be assessed without costly surveys to record new infrastructure.
+#   OSM tags generate "cycle friendliness" estimates of all links on the network, based on existing recorded infrastructure.
+#   A range of networks is provided, highlighting routes for directness (Fastest) and "cycle friendliness" (Quietest).
+#   It uses origin and destination data from the 2016 Census in combination with modeled demand data to estimate cycling levels and potential at the area, route, and network levels for each county in Ireland and offers estimates of the baseline level of cycling and several future scenario-based levels of cycling.
+  
+#   As countries, like Ireland, invest in cycling, the number of killed and seriously injured cyclists must reduce too.
+#   The CRUSE Tool provides estimates of cycling potential and routing for each county in Ireland, and works in both urban and rural settings, to enable monitoring of cycling safety.
+#   With growth in the E-bike market, the tool will help inform inter-urban and rural networks to support the transfer of trips to sustainable modes for longer journeys.
+#   The CRUSE Tool methodology and findings are directly relevant to addressing the challenges and opportunities faced by other NRAs.
+#   The datasets resulting from the project are open access and can be used by both non-experts and professionals.
+# keywords: 
+#   - Cycling
+#   - Open-source
+#   - Road Safety
+#   - Active Travel
+# date: last-modified
+# format:
+#   elsevier-pdf:
+#     keep-tex: true
+#     journal:
+#       name: Journal Name
+#       formatting: preprint
+#       model: 3p
+#       cite-style: super
 ---
 
-Please make sure that your manuscript follows the guidelines in the 
-Guide for Authors of the relevant journal. It is not necessary to 
-typeset your manuscript in exactly the same way as an article, 
-unless you are submitting to a camera-ready copy (CRC) journal.
+{{< pagebreak >}}
 
-For detailed instructions regarding the elsevier article class, see   <https://www.elsevier.com/authors/policies-and-guidelines/latex-instructions>
+# Introduction
 
-# Bibliography styles
+Transport is a major contributor to climate change, premature death due to road traffic collisions and air pollution, yet has the potential to be a major contributor to decarbonization and improved public health.
+Transport is responsible for 23% of global emissions, 70% of which is from road transport, nearly half of which is from passenger cars [@jaramillo2022].
+The transport system encourages, enables and in some cases enforces unsustainable lifestyles, including over-consumption of goods due to excessive mobile storage space and dependency on services that are only accessible by car due to land use plans that have built up around roads [@gray2001; @shergold2012; @motte-baumvol2010].
 
-Here are two sample references:  @Feynman1963118 @Dirac1953888.
+Recognizing the impacts of poorly designed and performing transport systems on their citizens, governments in many countries have set targets and taken actions and set targets.
+In the context of climate, road safety and physicial inactivity crises, policies to improve transport systems can be classified according to the 'Avoid-Shift-Improve' (ASI) framework [@jaramillo2022].
+The framework highlights the importance of demand reduction (*avoid*ing unnecessary trips), in addition to mode *shift* and *improvement* of existing energy converters, in that order.
 
-By default, natbib will be used with the `authoryear` style, set in `classoption` variable in YAML. 
-You can sets extra options with `natbiboptions` variable in YAML header. Example 
+Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation.
+Although cycling uptake appears on the surface to only relate to the 'shift' part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips \[citation needed, any ideas Hussein?\]
+.
+The rapid uptake of highly efficient e-bikes can also be seen as an improvement on most electric vehicles, which are too heavy and expensive to be a sustainable alternative and could in fact delay the transition away from car dependency \[citation needed\].
 
-```
-natbiboptions: longnamesfirst,angle,semicolon
-```
+At the European Union level ...
 
-There are various more specific bibliography styles available at
-<https://support.stmdocs.in/wiki/index.php?title=Model-wise_bibliographic_style_files>. 
-To use one of these, add it in the header using, for example, `biblio-style: model1-num-names`.
+In Ireland...
 
-## Using CSL 
+\[Gary, Suzanne, others input here please.\]
 
-If `cite-method` is set to `citeproc` in `elsevier_article()`, then pandoc is used for citations instead of `natbib`. In this case, the `csl` option is used to format the references. By default, this template will provide an appropriate style, but alternative `csl` files are available from <https://www.zotero.org/styles?q=elsevier>. These can be downloaded
-and stored locally, or the url can be used as in the example header.
+# Methods
 
-# Equations
+Commute and school travel.
 
-Here is an equation:
-$$ 
-  f_{X}(x) = \left(\frac{\alpha}{\beta}\right)
-  \left(\frac{x}{\beta}\right)^{\alpha-1}
-  e^{-\left(\frac{x}{\beta}\right)^{\alpha}}; 
-  \alpha,\beta,x > 0 .
-$$
+The methods used to generate the evidence presented in the CRUSE tool for Ireland build on previous work, particularly the Propensity to Cycle Tool, which was originally developed for the UK's Department for Transport and which is publicly available at www.pct.bike [@lovelace2017].
 
-Inline equations work as well: $\sum_{i = 2}^\infty\{\alpha_i^\beta\}$
+Other trip purposes
 
-# Figures and tables
+\[Joey please add your bit here.\]
 
-@fig-meaningless is generated using an R chunk.
+Bit on Jittering [@lovelace2022]
 
-```{r}
-#| label: fig-meaningless
-#| fig-cap: A meaningless scatterplot
-#| fig-width: 5
-#| fig-height: 5
-#| fig-align: center
-#| out-width: 50%
-#| echo: false
-plot(runif(25), runif(25))
-```
+# Results
 
-# Tables coming from R
+# Discussion
 
-Tables can also be generated using R chunks, as shown in @tbl-simple example.
+# Conclusions
 
-```{r}
-#| label: tbl-simple
-#| tbl-cap: Caption centered above table
-#| echo: true
-knitr::kable(head(mtcars)[,1:4])
-```
+# List of abbreviations
 
-# References {-}
+# Declarations
+
+## Availability of data and material {.unnumbered}
+
+## Funding {.unnumbered}
+
+## Acknowledgements {.unnumbered}
+
+## Competing interests {.unnumbered}
+
+## Authors' contributions {.unnumbered}
+
+# References {.unnumbered}
