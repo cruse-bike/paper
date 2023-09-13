@@ -28,17 +28,38 @@
     "text": "Competing interests"
   },
   {
-    "objectID": "paper.html#authors-contributions",
-    "href": "paper.html#authors-contributions",
+    "objectID": "index.html#availability-of-data-and-material",
+    "href": "index.html#availability-of-data-and-material",
     "title": "CRUSE to Safe Cycling in Ireland",
-    "section": "Authors’ contributions",
-    "text": "Authors’ contributions"
+    "section": "Availability of data and material",
+    "text": "Availability of data and material"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index.html#funding",
+    "href": "index.html#funding",
     "title": "CRUSE to Safe Cycling in Ireland",
-    "section": "",
-    "text": "The main purpose of this site is to provide broadly-defined documentation in support of the web application, research project, and planning support system hosted at cruse.bike.\n\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "section": "Funding",
+    "text": "Funding"
+  },
+  {
+    "objectID": "index.html#acknowledgements",
+    "href": "index.html#acknowledgements",
+    "title": "CRUSE to Safe Cycling in Ireland",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements"
+  },
+  {
+    "objectID": "index.html#competing-interests",
+    "href": "index.html#competing-interests",
+    "title": "CRUSE to Safe Cycling in Ireland",
+    "section": "Competing interests",
+    "text": "Competing interests"
+  },
+  {
+    "objectID": "index.html#authors-contributions",
+    "href": "index.html#authors-contributions",
+    "title": "CRUSE to Safe Cycling in Ireland",
+    "section": "Authors’ contributions",
+    "text": "Authors’ contributions\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   }
 ]
