@@ -4,16 +4,16 @@ subtitle: An Open Source Methodology to Support Active Travel
 bibliography: bibliography.bib
 csl: apa.csl
 
-# Uncomment for draft versions:
-format: 
-  docx: default
-  html:
-    output-file: index.html
-  pdf:
-    output-file: cruse-paper.pdf 
-  gfm:
-    output-file: README.md
-number-sections: true
+# # Uncomment for draft versions:
+# format: 
+#   docx: default
+#   html:
+#     output-file: index.html
+#   pdf:
+#     output-file: cruse-paper.pdf 
+#   gfm:
+#     output-file: README.md
+# number-sections: true
 
 # # Uncomment the following line to produce the cover page
 # author:
