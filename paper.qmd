@@ -23,7 +23,7 @@ number-sections: true
 #       model: 3p
 #       cite-style: super
 
-# Uncomment the following line to produce the cover page
+# # Uncomment the following line to produce the cover page
 author:
   - name: Dr. Robin Lovelace
     email: r.lovelace@leeds.ac.uk
@@ -92,7 +92,7 @@ keywords:
   - Open-source
   - Road Safety
   - Active Travel
-date: last-modified
+# date: last-modified
 ---
 
 {{< pagebreak >}}
