@@ -183,10 +183,25 @@ Local
 
 ## Availability of data and material {.unnumbered}
 
+Data was obtained from the Central Statistics Office (CSO) and Transport Infrastructure Ireland (TII) under license and cannot be shared publicly.
+The code used to generate the results presented in this paper is available at https://github.com/cruse-bike.
+
 ## Funding {.unnumbered}
+
+The work was funded by Transport Infrastructure Ireland (TII).
 
 ## Acknowledgements {.unnumbered}
 
+Thanks to Paul MacDonald and Donal Hodgins (Kildare County Council),  for testing early versions of the tool and for their input into the project.
+Thanks to Ciaran Maguire, Catherine Swift, and others at AECOM for their input into the project.
+
+
 ## Competing interests {.unnumbered}
 
+The authors declare that they have no competing interests.
+
 ## Authors' contributions {.unnumbered}
+
+RL led the development of the CRUSE tool, with input from JT, EV, HM, EB, PW, GOT, DB, and SM.
+SM instigated the project and coordinated its policy impact.
+PW, EB and GOT provided project management and transport engineering expertise.
