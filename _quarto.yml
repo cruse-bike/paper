@@ -3,6 +3,12 @@ project:
 
 website:
   title: "CRUSE"
+  navbar:
+    left:
+      - href: paper.qmd
+        text: "Cruse to safe cycling in Ireland: full paper"
+      - href: https://cruse.bike
+        text: "CRUSE web application"
 
 
 format:
