@@ -4,28 +4,35 @@
     "href": "paper.html#availability-of-data-and-material",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "Availability of data and material",
-    "text": "Availability of data and material"
+    "text": "Availability of data and material\nData was obtained from the Central Statistics Office (CSO) and Transport Infrastructure Ireland (TII) under license and cannot be shared publicly. The code used to generate the results presented in this paper is available at https://github.com/cruse-bike."
   },
   {
     "objectID": "paper.html#funding",
     "href": "paper.html#funding",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "Funding",
-    "text": "Funding"
+    "text": "Funding\nThe work was funded by Transport Infrastructure Ireland (TII)."
   },
   {
     "objectID": "paper.html#acknowledgements",
     "href": "paper.html#acknowledgements",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "Acknowledgements",
-    "text": "Acknowledgements"
+    "text": "Acknowledgements\nThanks to Paul MacDonald and Donal Hodgins (Kildare County Council), for testing early versions of the tool and for their input into the project. Thanks to Ciaran Maguire, Catherine Swift, and others at AECOM for their input into the project."
   },
   {
     "objectID": "paper.html#competing-interests",
     "href": "paper.html#competing-interests",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "Competing interests",
-    "text": "Competing interests"
+    "text": "Competing interests\nThe authors declare that they have no competing interests."
+  },
+  {
+    "objectID": "paper.html#authors-contributions",
+    "href": "paper.html#authors-contributions",
+    "title": "CRUSE to Safe Cycling in Ireland",
+    "section": "Authors’ contributions",
+    "text": "Authors’ contributions\nRL led the development of the CRUSE tool, with input from JT, EV, HM, EB, PW, GOT, DB, and SM. SM instigated the project and coordinated its policy impact. PW, EB and GOT provided project management and transport engineering expertise."
   },
   {
     "objectID": "paper.html#footnotes",
@@ -39,35 +46,35 @@
     "href": "index.html#availability-of-data-and-material",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "Availability of data and material",
-    "text": "Availability of data and material"
+    "text": "Availability of data and material\nData was obtained from the Central Statistics Office (CSO) and Transport Infrastructure Ireland (TII) under license and cannot be shared publicly. The code used to generate the results presented in this paper is available at https://github.com/cruse-bike."
   },
   {
     "objectID": "index.html#funding",
     "href": "index.html#funding",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "Funding",
-    "text": "Funding"
+    "text": "Funding\nThe work was funded by Transport Infrastructure Ireland (TII)."
   },
   {
     "objectID": "index.html#acknowledgements",
     "href": "index.html#acknowledgements",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "Acknowledgements",
-    "text": "Acknowledgements"
+    "text": "Acknowledgements\nThanks to Paul MacDonald and Donal Hodgins (Kildare County Council), for testing early versions of the tool and for their input into the project. Thanks to Ciaran Maguire, Catherine Swift, and others at AECOM for their input into the project."
   },
   {
     "objectID": "index.html#competing-interests",
     "href": "index.html#competing-interests",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "Competing interests",
-    "text": "Competing interests"
+    "text": "Competing interests\nThe authors declare that they have no competing interests."
   },
   {
     "objectID": "index.html#authors-contributions",
     "href": "index.html#authors-contributions",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "Authors’ contributions",
-    "text": "Authors’ contributions\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Authors’ contributions\nRL led the development of the CRUSE tool, with input from JT, EV, HM, EB, PW, GOT, DB, and SM. SM instigated the project and coordinated its policy impact. PW, EB and GOT provided project management and transport engineering expertise.\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "index.html#footnotes",
