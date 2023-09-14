@@ -152,13 +152,18 @@ The 'biclaR' project included estimation of impacts, using the World Health Orga
 
 [^3]: See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
 
-Bit on Jittering [@lovelace2022]
 
 Despite these advances, the PCT approach outlined in previous research paper had limitations:
 
--   Limited coverage of modes beyond travel to work and school
+- Limited coverage of trip purposes beyond travel to work and school
+- Low resolution of data, with routes starting and ending in administrative zone centroids
+- A web interface that was not user-friendly or intuitive
 
--   ...
+The CRUSE project addressed these limitations as outlined in this paper.
+
+
+Bit on Jittering [@lovelace2022]
+
 
 # Results
 
