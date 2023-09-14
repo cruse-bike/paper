@@ -13,6 +13,16 @@ number-sections: true
 #   html: default
 #   docx: default
 
+# # Uncomment for formatted version
+# format:
+#   elsevier-pdf:
+#     keep-tex: true
+#     journal:
+#       name: Journal Name
+#       formatting: preprint
+#       model: 3p
+#       cite-style: super
+
 # Uncomment the following line to produce the cover page
 author:
   - name: Dr. Robin Lovelace
@@ -33,14 +43,6 @@ author:
     affiliations:
       - name: University of Leeds
         address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
-  - name: Dan Brennan
-    affiliations:
-      - name: Transport Infrastructure Ireland
-        address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
-  - name: Dr. Suzanne Meade
-    affiliations:
-      - name: Transport Infrastructure Ireland
-        address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
   - name: Elaine Brick
     affiliations:
       - name: AECOM
@@ -49,6 +51,18 @@ author:
     affiliations:
       - name: AECOM
         address: Winslade House, Winslade Park, Manor Drive, Clyst St Mary, EXETER, EX5 1FY, UK
+  - name: "Gary O'Tool"
+    affiliations:
+      - name: AECOM
+        address: Winslade House, Winslade Park, Manor Drive, Clyst St Mary, EXETER, EX5 1FY, UK
+  - name: Dan Brennan
+    affiliations:
+      - name: Transport Infrastructure Ireland
+        address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
+  - name: Dr. Suzanne Meade
+    affiliations:
+      - name: Transport Infrastructure Ireland
+        address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
 abstract: |
   Under the EU Road infrastructure safety management (RISM) directive, the National Road Safety Strategy (RSS), and the Climate Action Plan Transport Infrastructure Ireland (TII) has a remit for road safety and decarbonizing a predominantly road-based network in Ireland.
 
@@ -79,15 +93,6 @@ keywords:
   - Road Safety
   - Active Travel
 date: last-modified
-
-format:
-  elsevier-pdf:
-    keep-tex: true
-    journal:
-      name: Journal Name
-      formatting: preprint
-      model: 3p
-      cite-style: super
 ---
 
 {{< pagebreak >}}
@@ -111,7 +116,17 @@ At the European Union level ...
 
 In Ireland...
 
+Mobility hub.
+
+Business cases need evidence.
+
+Como UK.
+
 \[Gary, Suzanne, others input here please.\]
+
+In this context, TII commissioned the CRUSE project which is...
+
+The rest of paper is structured as follows...
 
 # Methods
 
@@ -142,6 +157,12 @@ Despite these advances, the PCT approach outlined in previous research paper had
 -   ...
 
 # Results
+
+National planning
+
+Regional
+
+Local
 
 # Discussion
 
