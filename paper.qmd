@@ -92,7 +92,7 @@ keywords:
   - Open-source
   - Road Safety
   - Active Travel
-# date: last-modified
+date: last-modified
 ---
 
 {{< pagebreak >}}
@@ -134,17 +134,21 @@ The rest of paper is structured as follows...
 (RL)\]
 
 The methods used to generate the evidence presented in the CRUSE tool for Ireland build on previous work, particularly the Propensity to Cycle Tool (PCT), which was originally developed for the UK's Department for Transport and which is publicly available at www.pct.bike [@lovelace2017].
-The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies submitted by the University of Leeds and the University of Westminster, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^1] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^2]
-.
+The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies submitted by the University of Leeds and the University of Westminster, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^1] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^2].
 
 [^1]: See REF Impact Case Study "Cycle network policy, planning and investment transformed by the Propensity to Cycle Tool" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f) submitted by the University of Leeds.
 
 [^2]: See the REF Impact Case Study "Creating Step Changes in Cycling Policy and Infrastructure Planning across the UK" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B) submitted by the University of Westminster.
 
-The first version of the PCT was based solely on current and future potential uptake of cycling for single stage travel to work at desire line, zone, route, and route network levels [@lovelace2016].
+The first version of the PCT was based on current and future potential uptake of cycling for single stage *travel to work* at desire line, zone, route, and route network levels [@lovelace2016].
 It was launched in April 2017 as the government-endorsed tool for strategic cycle network planning, as part of the Cycling and Walking Investment Strategy [@cycling2017].
-Extensions of the PCT approach have included estimation of benefits at the individual level [@woodcock2018], addition of travel to school network [@goodman2019], and improvement modelling of impacts on health, environmental and distributional outcomes [@woodcock2021].
-In Portugal, a cycling uptake tool to support decision making was developed based on PCT methods, for the Lisbon metro region (see [biclaR](https://biclar.tmlmobilidade.pt), and again, social and environment impacts were added as a relevant information to support decisions, using the WHO HEAT for Cycling tool[^3] [@felix2023]. biclaR added on the previous methods by setting an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
+Extensions of the PCT approach have included estimation of benefits at the individual level [@woodcock2018], addition of travel to school network [@goodman2019], and improved modelling of impacts on health, environmental and distributional outcomes [@woodcock2021].
+Initially developed just for England, the PCT was extended to cover all of Wales (for commuter data only) in 2018.
+
+The PCT approach has been applied in other countries, including Ireland (the topic of this paper), Scotland, and Portugal.
+In Portugal, a strategic cycle network planning tool was developed based on PCT methods, for the Lisbon metro region.
+The resulting open and publicly available available evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
+The 'biclaR' project included estimation of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool[^3]. biclaR extended the approach with an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
 
 [^3]: See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
 
