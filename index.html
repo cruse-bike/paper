@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="keywords" content="Cycling, Open-source, Road Safety, Active Travel">
 
 <title>CRUSE</title>
 <style>
@@ -124,10 +125,26 @@ div.csl-indent {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">last-modified</p>
+    </div>
+  </div>
   
     
   </div>
   
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Abstract</div>
+    <p>Under the EU Road infrastructure safety management (RISM) directive, the National Road Safety Strategy (RSS), and the Climate Action Plan Transport Infrastructure Ireland (TII) has a remit for road safety and decarbonizing a predominantly road-based network in Ireland.</p>
+    <p>To address data needs for both safety and project evaluation on the National Road Network (NRN), the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool was developed. While cycling in Ireland represents only 3% of total modal share, with higher intensities in urban areas, the levels of cycling collisions are disproportionately high at 20% of all serious injuries and 7% of all fatalities. If Ireland is to meet its climate and safety targets, data to establish baseline cycling levels and future cycling levels is needed.</p>
+    <p>Due to an absence of reliable data, particularly rural cycling levels, TII commissioned the Institute for Transport Studies (ITS) at the University of Leeds and AECOM to develop a new tool for this purpose. ITS Leeds led the development of the PCT for England and Wales, which has “revolutionized the practice of strategic cycle planning nationally”. The tool is an open-source approach using recognized open-source methodology to enable planners, engineers, and other stakeholders to make evidence-based decisions for the NRN. CRUSE is available at <a href="https://cruse.bike/" class="uri">https://cruse.bike/</a> and builds on the Propensity to Cycle Tool (PCT) for England and Wales. CRUSE goes beyond the PCT in several important ways, higher resolution data, more trip types, including estimates for education, inter-urban, and recreational trips. In addition to understanding cycling intensity, for asset planning and management purposes, the tool provides essential road safety information to enable reporting of disaggregate collision rates.</p>
+    <p>CRUSE is structured in a similar way to the traditional four-stage transport model, but its use of Open Street Map (OSM) data, used by <a href="https://www.cyclestreets.net/">Cyclestreets.net</a> for routing, enables network quality to be assessed without costly surveys to record new infrastructure. OSM tags generate “cycle friendliness” estimates of all links on the network, based on existing recorded infrastructure. A range of networks is provided, highlighting routes for directness (Fastest) and “cycle friendliness” (Quietest). It uses origin and destination data from the 2016 Census in combination with modeled demand data to estimate cycling levels and potential at the area, route, and network levels for each county in Ireland and offers estimates of the baseline level of cycling and several future scenario-based levels of cycling.</p>
+    <p>As countries, like Ireland, invest in cycling, the number of killed and seriously injured cyclists must reduce too. The CRUSE Tool provides estimates of cycling potential and routing for each county in Ireland, and works in both urban and rural settings, to enable monitoring of cycling safety. With growth in the E-bike market, the tool will help inform inter-urban and rural networks to support the transfer of trips to sustainable modes for longer journeys. The CRUSE Tool methodology and findings are directly relevant to addressing the challenges and opportunities faced by other NRAs. The datasets resulting from the project are open access and can be used by both non-experts and professionals.</p>
+  </div>
+</div>
 
 </header>
 
@@ -136,10 +153,15 @@ div.csl-indent {
 <h1>Introduction</h1>
 <p>Transport is a major contributor to climate change, premature death due to road traffic collisions and air pollution, yet has the potential to be a major contributor to decarbonization and improved public health. Transport is responsible for 23% of global emissions, 70% of which is from road transport, nearly half of which is from passenger cars <span class="citation" data-cites="jaramillo2022">(<a href="#ref-jaramillo2022" role="doc-biblioref">Jaramillo et al., 2022</a>)</span>. The transport system encourages, enables and in some cases enforces unsustainable lifestyles, including over-consumption of goods due to excessive mobile storage space and dependency on services that are only accessible by car due to land use plans that have built up around roads <span class="citation" data-cites="gray2001 shergold2012 motte-baumvol2010">(<a href="#ref-gray2001" role="doc-biblioref">Gray et al., 2001</a>; <a href="#ref-motte-baumvol2010" role="doc-biblioref">Motte-baumvol et al., 2010</a>; <a href="#ref-shergold2012" role="doc-biblioref">Shergold et al., 2012</a>)</span>.</p>
 <p>Recognizing the impacts of poorly designed and performing transport systems on their citizens, governments in many countries have set targets and taken actions and set targets. In the context of climate, road safety and physicial inactivity crises, policies to improve transport systems can be classified according to the ‘Avoid-Shift-Improve’ (ASI) framework <span class="citation" data-cites="jaramillo2022">(<a href="#ref-jaramillo2022" role="doc-biblioref">Jaramillo et al., 2022</a>)</span>. The framework highlights the importance of demand reduction (<em>avoid</em>ing unnecessary trips), in addition to mode <em>shift</em> and <em>improvement</em> of existing energy converters, in that order.</p>
-<p>Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation. Although cycling uptake appears on the surface to only relate to the ‘shift’ part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips [citation needed, any ideas Hussein?] . The rapid uptake of highly efficient e-bikes can also be seen as an improvement on most electric vehicles, which are too heavy and expensive to be a sustainable alternative and could in fact delay the transition away from car dependency [citation needed].</p>
+<p>Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation <span class="citation" data-cites="brand2020">(<a href="#ref-brand2020" role="doc-biblioref">Brand et al., 2020</a>)</span>. Although cycling uptake appears on the surface to only relate to the ‘shift’ part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips [citation needed, any ideas Hussein?] . The rapid uptake of highly efficient e-bikes can also be seen as an improvement on most electric vehicles, which are too heavy and expensive to be a sustainable alternative and could in fact delay the transition away from car dependency [citation needed].</p>
 <p>At the European Union level …</p>
 <p>In Ireland…</p>
+<p>Mobility hub.</p>
+<p>Business cases need evidence.</p>
+<p>Como UK.</p>
 <p>[Gary, Suzanne, others input here please.]</p>
+<p>In this context, TII commissioned the CRUSE project which is…</p>
+<p>The rest of paper is structured as follows…</p>
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
@@ -155,6 +177,9 @@ div.csl-indent {
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
+<p>National planning</p>
+<p>Regional</p>
+<p>Local</p>
 </section>
 <section id="discussion" class="level1">
 <h1>Discussion</h1>
@@ -191,6 +216,9 @@ div.csl-indent {
 
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-brand2020" class="csl-entry" role="listitem">
+Brand, C., Dons, E., Anaya-Boig, E., Avila-Palencia, I., Clark, A., Nazelle, A. de, Gascon, M., Gaupp-Berghausen, M., Gerike, R., &amp; Gotschi, T. (2020). The climate change mitigation effects of active travel. <em>Preprint: Researchsquare.com</em>.
+</div>
 <div id="ref-cycling2017" class="csl-entry" role="listitem">
 <em>Cycling and walking investment strategy</em>. (2017). <a href="https://www.gov.uk/government/publications/cycling-and-walking-investment-strategy">https://www.gov.uk/government/publications/cycling-and-walking-investment-strategy</a>
 </div>
@@ -198,7 +226,7 @@ div.csl-indent {
 Félix, R., Lovelace, R., &amp; Moura, F. (2022). <em><span class="nocase">biclaR - Ferramenta de apoio ao planeamento da rede ciclável na área metropolitana de Lisboa</span></em>. <span>CERIS - Instituto Superior Técnico and Transportes Metropolitanos de Lisboa</span>. <a href="https://biclar.tmlmobilidade.pt">https://biclar.tmlmobilidade.pt</a>
 </div>
 <div id="ref-goodman2019" class="csl-entry" role="listitem">
-Goodman, A., Rojas, I. F., Woodcock, J., Aldred, R., Berkoff, N., Morgan, M., Abbas, A., &amp; Lovelace, R. (2019). Scenarios of cycling to school in england, and associated health and carbon impacts: Application of the <span>‘</span>propensity to cycle tool<span>’</span>. <em>Journal of Transport &amp; Health</em>, <em>12</em>, 263–278. <a href="https://doi.org/10.1016/j.jth.2019.01.008">https://doi.org/10.1016/j.jth.2019.01.008</a>
+Goodman, A., Rojas, I. F., Woodcock, J., Aldred, R., Berkoff, N., Morgan, M., Abbas, A., &amp; Lovelace, R. (2019). Scenarios of cycling to school in england, and associated health and carbon impacts: Application of the <span>‘</span>propensity to cycle tool<span>’</span>. <em>Journal of Transport and Health</em>, <em>12</em>, 263–278. <a href="https://doi.org/10.1016/j.jth.2019.01.008">https://doi.org/10.1016/j.jth.2019.01.008</a>
 </div>
 <div id="ref-gray2001" class="csl-entry" role="listitem">
 Gray, D., Farrington, J., Shaw, J., Martin, S., &amp; Roberts, D. (2001). Car dependence in rural scotland: Transport policy, devolution and the impact of the fuel duty escalator. <em>Journal of Rural Studies</em>, <em>17</em>(1), 113125. <a href="https://doi.org/10.1016/S0743-0167(00)00035-8">https://doi.org/10.1016/S0743-0167(00)00035-8</a>
@@ -225,7 +253,7 @@ Shergold, I., Parkhurst, G., &amp; Musselwhite, C. (2012). Rural car dependence:
 Woodcock, J., Abbas, A., Ullrich, A., Tainio, M., Lovelace, R., Sá, T. H., Westgate, K., &amp; Goodman, A. (2018). Development of the Impacts of Cycling Tool (ICT): A modelling study and web tool for evaluating health and environmental impacts of cycling uptake. <em>PLOS Medicine</em>, <em>15</em>(7), e1002622. <a href="https://doi.org/10.1371/journal.pmed.1002622">https://doi.org/10.1371/journal.pmed.1002622</a>
 </div>
 <div id="ref-woodcock2021" class="csl-entry" role="listitem">
-Woodcock, J., Aldred, R., Lovelace, R., Strain, T., &amp; Goodman, A. (2021). Health, environmental and distributional impacts of cycling uptake: The model underlying the Propensity to Cycle tool for England and Wales. <em>Journal of Transport &amp; Health</em>, <em>22</em>, 101066. <a href="https://doi.org/10.1016/j.jth.2021.101066">https://doi.org/10.1016/j.jth.2021.101066</a>
+Woodcock, J., Aldred, R., Lovelace, R., Strain, T., &amp; Goodman, A. (2021). Health, environmental and distributional impacts of cycling uptake: The model underlying the Propensity to Cycle tool for England and Wales. <em>Journal of Transport and Health</em>, <em>22</em>, 101066. <a href="https://doi.org/10.1016/j.jth.2021.101066">https://doi.org/10.1016/j.jth.2021.101066</a>
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
