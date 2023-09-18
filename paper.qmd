@@ -108,31 +108,36 @@ In the context of climate, road safety and physicial inactivity crises, policies
 The framework highlights the importance of demand reduction (*avoid*ing unnecessary trips), in addition to mode *shift* and *improvement* of existing energy converters, in that order.
 
 Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation [@brand2020].
-Although cycling uptake appears on the surface to only relate to the 'shift' part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips \[citation needed, any ideas Hussein?\]
-.
+Although cycling uptake appears on the surface to only relate to the 'shift' part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips [@nello-deakin2020].
 The rapid uptake of highly efficient e-bikes can also be seen as an improvement on most electric vehicles, which are too heavy and expensive to be a sustainable alternative and could in fact delay the transition away from car dependency \[citation needed\].
 
-At the European level, the European Union has set a target of reducing greenhouse gas emissions by 55% by 2030, compared to 1990 levels, and to achieve 'net-zero' by 2050.^[
-https://climateactiontracker.org/countries/eu/targets/
-]
+At the European level, the European Union has set a target of reducing greenhouse gas emissions by 55% by 2030, compared to 1990 levels, and to achieve 'net-zero' by 2050.[^1]
 Regarding road traffic casualties, another deadly consequence of inefficient transport systems, the Road Infrastructure Safety Management (RISM) directive (2008/96/EC) requires member states to implement a road safety management system (RSMS) for all public roads.
-Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out".^[
-https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32008L0096
-]
-Given that 'safety' in this context is usefully quantified as the number of people killed and seriously injured (KSI) per distance travelled, the directive requires estimation of distance travelled by mode, down to the road link level.
-For cycling, on which there is a paucity of data, this is a major challenge.
+Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out".
+[^2] Given that 'safety' in this context is usefully quantified as the number of people killed and seriously injured (KSI) per distance travelled, the directive requires estimation of distance travelled by mode, down to the road link level
+. For cycling, on which there is a paucity of data, this is a major challenge
+.
 
-In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030.^[
-https://www.drugsandalcohol.ie/35347/
-]
+[^1]: https://climateactiontracker.org/countries/eu/targets/
+
+[^2]: https://eur-lex.europa.eu/legal-content/EN/TXT/?u
+    ri=celex%3A32008L0096
+
+In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030.[^3]
 Doing so while simultaneously enabling rapid uptake of active modes will require key active travel routes to be identified and improved.
+
+[^3]: https://www.drugsandalcohol.ie/35347/
 
 <!-- \[Gary, Suzanne, others input here please.\] -->
 
 It was in this context that TII commissioned the Cycle Route Uptake and Scenario Estimation (CRUSE) project.
 Based on the Propensity to Cycle Tool (PCT) for England and Wales [@lovelace2017], the CRUSE tool was developed to provide evidence on current cycling levels and future cycling potential nationwide across Ireland.
 
-The rest of paper is structured as follows. In @sec-methods, we outline the methods used to generate the evidence presented in the CRUSE tool for Ireland. In @sec-results, we present the results of the CRUSE tool, including estimates of current cycling levels and future cycling potential at the national, regional and local levels. In @sec-discussion, we discuss the implications of the results for policy and practice. In @sec-conclusions, we conclude the paper.
+The rest of paper is structured as follows.
+In @sec-methods, we outline the methods used to generate the evidence presented in the CRUSE tool for Ireland.
+In @sec-results, we present the results of the CRUSE tool, including estimates of current cycling levels and future cycling potential at the national, regional and local levels.
+In @sec-discussion, we discuss the implications of the results for policy and practice.
+In @sec-conclusions, we conclude the paper.
 
 # Methods {#sec-methods}
 
@@ -140,11 +145,12 @@ The rest of paper is structured as follows. In @sec-methods, we outline the meth
 (RL)\]
 
 The methods used to generate the evidence presented in the CRUSE tool for Ireland build on previous work, particularly the Propensity to Cycle Tool (PCT), which was originally developed for the UK's Department for Transport and which is publicly available at www.pct.bike [@lovelace2017].
-The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies submitted by the University of Leeds and the University of Westminster, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^1] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^2].
+The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies submitted by the University of Leeds and the University of Westminster, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^4] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^5]
+.
 
-[^1]: See REF Impact Case Study "Cycle network policy, planning and investment transformed by the Propensity to Cycle Tool" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f) submitted by the University of Leeds.
+[^4]: See REF Impact Case Study "Cycle network policy, planning and investment transformed by the Propensity to Cycle Tool" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f) submitted by the University of Leeds.
 
-[^2]: See the REF Impact Case Study "Creating Step Changes in Cycling Policy and Infrastructure Planning across the UK" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B) submitted by the University of Westminster.
+[^5]: See the REF Impact Case Study "Creating Step Changes in Cycling Policy and Infrastructure Planning across the UK" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B) submitted by the University of Westminster.
 
 The first version of the PCT was based on current and future potential uptake of cycling for single stage *travel to work* at desire line, zone, route, and route network levels [@lovelace2016].
 It was launched in April 2017 as the government-endorsed tool for strategic cycle network planning, as part of the Cycling and Walking Investment Strategy [@cycling2017].
@@ -154,22 +160,20 @@ Initially developed just for England, the PCT was extended to cover all of Wales
 The PCT approach has been applied in other countries, including Ireland (the topic of this paper), Scotland, and Portugal.
 In Portugal, a strategic cycle network planning tool was developed based on PCT methods, for the Lisbon metro region.
 The resulting open and publicly available available evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
-The 'biclaR' project included estimation of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool[^3]. biclaR extended the approach with an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
+The 'biclaR' project included estimation of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool[^6].
+biclaR extended the approach with an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
 
-[^3]: See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
-
+[^6]: See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
 
 Despite these advances, the PCT approach outlined in previous research paper had limitations:
 
-- Limited coverage of trip purposes beyond travel to work and school
-- Low resolution of data, with routes starting and ending in administrative zone centroids
-- A web interface that was not user-friendly or intuitive
+-   Limited coverage of trip purposes beyond travel to work and school
+-   Low resolution of data, with routes starting and ending in administrative zone centroids
+-   A web interface that was not user-friendly or intuitive
 
 The CRUSE project addressed these limitations as outlined in this paper.
 
-
 Bit on Jittering [@lovelace2022]
-
 
 # Results {#sec-results}
 
@@ -198,9 +202,8 @@ The work was funded by Transport Infrastructure Ireland (TII).
 
 ## Acknowledgements {.unnumbered}
 
-Thanks to Paul MacDonald and Donal Hodgins (Kildare County Council),  for testing early versions of the tool and for their input into the project.
+Thanks to Paul MacDonald and Donal Hodgins (Kildare County Council), for testing early versions of the tool and for their input into the project.
 Thanks to Ciaran Maguire, Catherine Swift, and others at AECOM for their input into the project.
-
 
 ## Competing interests {.unnumbered}
 
