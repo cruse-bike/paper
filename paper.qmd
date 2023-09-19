@@ -112,18 +112,17 @@ The framework highlights the importance of demand reduction (*avoid*ing unnecess
 
 Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation [@brand2020] and sustainable mobility [@burns2013].
 Although cycling uptake appears on the surface to only relate to the 'shift' part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips [@nello-deakin2020].
-The rapid uptake of highly efficient e-bikes can also be seen as an improvement on most electric vehicles, which are too heavy and expensive to be a sustainable alternative and could in fact delay the transition away from car dependency \[citation needed\].
+The rapid uptake of highly efficient e-bikes can also be seen as an improvement on most electric vehicles, which are too heavy and expensive to be a sustainable alternative and could in fact delay the transition away from car dependency and inadvertently enable "high travel lock-in" [@shifting].
 
-At the European level, the European Union has set a target of reducing greenhouse gas emissions by 55% by 2030, compared to 1990 levels, and to achieve 'net-zero' by 2050.[^1]
-Regarding road traffic casualties, another deadly consequence of inefficient transport systems, the Road Infrastructure Safety Management (RISM) directive (2008/96/EC) requires member states to implement a road safety management system (RSMS) for all public roads.
-Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out".^[
-https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32008L0096
-]
+At the European level, the European Union has set a target of reducing greenhouse gas emissions by 55% by 2030, compared to 1990 levels, and to achieve 'net-zero' by 2050.\[\^1\] Regarding road traffic casualties, another deadly consequence of inefficient transport systems, the Road Infrastructure Safety Management (RISM) directive (2008/96/EC) requires member states to implement a road safety management system (RSMS) for all public roads.
+Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out".[^1]
 Given that 'safety' in this context is usefully quantified as the number of people killed and seriously injured (KSI) per distance travelled, the directive requires estimation of distance travelled by mode, down to the road link level.
 For cycling, on which there is a paucity of data, this is a major challenge.
 
-In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030.[^3]
-Doing so while simultaneously enabling rapid uptake of active modes will require key active travel routes to be identified and improved.
+[^1]:  https://eur-lex.europa.eu/legal-content/EN/TXT/?u
+    ri=celex%3A32008L0096
+
+In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030.\[\^3\] Doing so while simultaneously enabling rapid uptake of active modes will require key active travel routes to be identified and improved.
 
 <!-- \[Gary, Suzanne, others input here please.\] -->
 
@@ -142,12 +141,12 @@ In @sec-conclusions, we conclude the paper.
 (RL)\]
 
 The methods used to generate the evidence presented in the CRUSE tool for Ireland build on previous work, particularly the Propensity to Cycle Tool (PCT), which was originally developed for the UK's Department for Transport and which is publicly available at www.pct.bike [@lovelace2017].
-The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies submitted by the University of Leeds and the University of Westminster, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^4] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^5]
+The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies submitted by the University of Leeds and the University of Westminster, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^2] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^3]
 .
 
-[^4]: See REF Impact Case Study "Cycle network policy, planning and investment transformed by the Propensity to Cycle Tool" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f) submitted by the University of Leeds.
+[^2]: See REF Impact Case Study "Cycle network policy, planning and investment transformed by the Propensity to Cycle Tool" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f) submitted by the University of Leeds.
 
-[^5]: See the REF Impact Case Study "Creating Step Changes in Cycling Policy and Infrastructure Planning across the UK" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B) submitted by the University of Westminster.
+[^3]: See the REF Impact Case Study "Creating Step Changes in Cycling Policy and Infrastructure Planning across the UK" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B) submitted by the University of Westminster.
 
 The first version of the PCT was based on current and future potential uptake of cycling for single stage *travel to work* at desire line, zone, route, and route network levels [@lovelace2016].
 It was launched in April 2017 as the government-endorsed tool for strategic cycle network planning, as part of the Cycling and Walking Investment Strategy [@cycling2017].
@@ -157,10 +156,10 @@ Initially developed just for England, the PCT was extended to cover all of Wales
 The PCT approach has been applied in other countries, including Ireland (the topic of this paper), Scotland, and Portugal.
 In Portugal, a strategic cycle network planning tool was developed based on PCT methods, for the Lisbon metro region.
 The resulting open and publicly available available evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
-The 'biclaR' project included estimation of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool[^6].
+The 'biclaR' project included estimation of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool[^4].
 biclaR extended the approach with an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
 
-[^6]: See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
+[^4]: See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
 
 Despite these advances, the PCT approach outlined in previous research paper had limitations:
 
