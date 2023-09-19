@@ -111,26 +111,19 @@ In the context of climate, road safety and physicial inactivity crises, policies
 The framework highlights the importance of demand reduction (*avoid*ing unnecessary trips), in addition to mode *shift* and *improvement* of existing energy converters, in that order.
 
 Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation [@brand2020] and sustainable mobility [@burns2013].
-Although cycling uptake appears on the surface to only relate to the 'shift' part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips \[citation needed, any ideas Hussein?\]
-.
+Although cycling uptake appears on the surface to only relate to the 'shift' part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips [@nello-deakin2020].
 The rapid uptake of highly efficient e-bikes can also be seen as an improvement on most electric vehicles, which are too heavy and expensive to be a sustainable alternative and could in fact delay the transition away from car dependency \[citation needed\].
 
 At the European level, the European Union has set a target of reducing greenhouse gas emissions by 55% by 2030, compared to 1990 levels, and to achieve 'net-zero' by 2050.[^1]
 Regarding road traffic casualties, another deadly consequence of inefficient transport systems, the Road Infrastructure Safety Management (RISM) directive (2008/96/EC) requires member states to implement a road safety management system (RSMS) for all public roads.
-Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out".
-[^2] Given that 'safety' in this context is usefully quantified as the number of people killed and seriously injured (KSI) per distance travelled, the directive requires estimation of distance travelled by mode, down to the road link level
-. For cycling, on which there is a paucity of data, this is a major challenge
-.
-
-[^1]:  https://climateactiontracker.org/countries/eu/targets/
-
-[^2]:  https://eur-lex.europa.eu/legal-content/EN/TXT/?u
-    ri=celex%3A32008L0096
+Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out".^[
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32008L0096
+]
+Given that 'safety' in this context is usefully quantified as the number of people killed and seriously injured (KSI) per distance travelled, the directive requires estimation of distance travelled by mode, down to the road link level.
+For cycling, on which there is a paucity of data, this is a major challenge.
 
 In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030.[^3]
 Doing so while simultaneously enabling rapid uptake of active modes will require key active travel routes to be identified and improved.
-
-[^3]:  https://www.drugsandalcohol.ie/35347/
 
 <!-- \[Gary, Suzanne, others input here please.\] -->
 
