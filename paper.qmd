@@ -99,15 +99,18 @@ date: last-modified
 
 # Introduction
 
-Transport is a major contributor to climate change, premature death due to road traffic collisions and air pollution, yet has the potential to be a major contributor to decarbonization and improved public health.
-Transport is responsible for 23% of global emissions, 70% of which is from road transport, nearly half of which is from passenger cars [@jaramillo2022].
+Transport kills.
+Transport systems are a major contributor to climate change, a leading cause of premature death and injury due to road traffic collisions, and a substantial cause of air pollution inhaled by citizens in many urban areas.
+Transport policies therefore have great potential to decarbonize economies, improve public health, and save lives.
+
+Transport is responsible for 23% of global emissions, 70% of which is from road transport, nearly half of which (around 10% of global emissions) is from passenger cars [@jaramillo2022].
 The transport system encourages, enables and in some cases enforces unsustainable lifestyles, including over-consumption of goods due to excessive mobile storage space and dependency on services that are only accessible by car due to land use plans that have built up around roads [@gray2001; @shergold2012; @motte-baumvol2010].
 
-Recognizing the impacts of poorly designed and performing transport systems on their citizens, governments in many countries have set targets and taken actions and set targets.
+Recognizing the growing evidence of such impacts of poorly designed and performing transport systems, governments in many countries have set targets and taken actions.
 In the context of climate, road safety and physicial inactivity crises, policies to improve transport systems can be classified according to the 'Avoid-Shift-Improve' (ASI) framework [@jaramillo2022].
 The framework highlights the importance of demand reduction (*avoid*ing unnecessary trips), in addition to mode *shift* and *improvement* of existing energy converters, in that order.
 
-Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation [@brand2020].
+Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation [@brand2020] and sustainable mobility .
 Although cycling uptake appears on the surface to only relate to the 'shift' part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips \[citation needed, any ideas Hussein?\]
 .
 The rapid uptake of highly efficient e-bikes can also be seen as an improvement on most electric vehicles, which are too heavy and expensive to be a sustainable alternative and could in fact delay the transition away from car dependency \[citation needed\].
