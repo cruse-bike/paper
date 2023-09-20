@@ -4,7 +4,7 @@
     "href": "paper.html#sec-disaggregation",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "2.1 Disaggregation of origin-destination data",
-    "text": "2.1 Disaggregation of origin-destination data\nA feature of active travel interventions is that they require dense networks of routes to be effective [TODO: cite parkin]. This means that high levels of geographic resolution are needed in the data used to estimate cycling potential. However, datasets on travel patterns are often only available at the level of administrative zones.\nBit on Jittering (Lovelace et al., 2022)"
+    "text": "2.1 Disaggregation of origin-destination data\nA feature of active travel interventions is that they require dense networks of routes to be effective [TODO: cite parkin]. This means that high levels of geographic resolution are needed in the data used to estimate cycling potential. However, datasets on travel patterns are often only available at the level of administrative zones. The Central Statistics Office (CSO) in Ireland provides Place of Work, School or College Census of Anonymised Records (POWSCAR) data on the number of people travelling to work and school at the Electoral Division (ED) level, for example.\nBit on Jittering (Lovelace et al., 2022)"
   },
   {
     "objectID": "paper.html#sec-trip-purposes",
@@ -67,7 +67,7 @@
     "href": "index.html#sec-disaggregation",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "2.1 Disaggregation of origin-destination data",
-    "text": "2.1 Disaggregation of origin-destination data\nA feature of active travel interventions is that they require dense networks of routes to be effective [TODO: cite parkin]. This means that high levels of geographic resolution are needed in the data used to estimate cycling potential. However, datasets on travel patterns are often only available at the level of administrative zones.\nBit on Jittering (Lovelace et al., 2022)"
+    "text": "2.1 Disaggregation of origin-destination data\nA feature of active travel interventions is that they require dense networks of routes to be effective [TODO: cite parkin]. This means that high levels of geographic resolution are needed in the data used to estimate cycling potential. However, datasets on travel patterns are often only available at the level of administrative zones. The Central Statistics Office (CSO) in Ireland provides Place of Work, School or College Census of Anonymised Records (POWSCAR) data on the number of people travelling to work and school at the Electoral Division (ED) level, for example.\nBit on Jittering (Lovelace et al., 2022)"
   },
   {
     "objectID": "index.html#sec-trip-purposes",
