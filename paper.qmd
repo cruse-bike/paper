@@ -139,8 +139,9 @@ In @sec-conclusions, we conclude the paper.
 
 # Methods {#sec-methods}
 
-The methods used to generate the evidence presented in the CRUSE tool for Ireland build on previous work, particularly the Propensity to Cycle Tool (PCT), which was originally developed for the UK's Department for Transport and which is publicly available at www.pct.bike [@lovelace2017].
-The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies submitted by the University of Leeds and the University of Westminster, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^2] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^3]
+The methods used to generate the evidence presented in the CRUSE tool for Ireland build on the Propensity to Cycle Tool (PCT), which was originally funded by the UK's Department for Transport and developed by a multi-university team.
+An important feature of the PCT is that it is open source and publicly available (at [www.pct.bike](https://www.pct.bike/)), allowing its use by all stakeholders in the transport planning process [@lovelace2017].
+The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^2] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^3]
 .
 
 [^2]: See REF Impact Case Study "Cycle network policy, planning and investment transformed by the Propensity to Cycle Tool" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f) submitted by the University of Leeds.
@@ -153,22 +154,29 @@ Extensions of the PCT approach have included estimation of benefits at the indiv
 Initially developed just for England, the PCT was extended to cover all of Wales (for commuter data only) in 2018.
 
 The PCT approach has been applied in other countries, including Ireland (the topic of this paper), Scotland, and Portugal.
-In Portugal, a strategic cycle network planning tool was developed based on PCT methods, for the Lisbon metro region.
-The resulting open and publicly available available evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
-The 'biclaR' project included estimation of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool[^4].
-biclaR extended the approach with an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
+In Portugal the 'biclaR' project, based on methods underlying the PCT, has been developed and deployed for the Lisbon metro region.
+The resulting evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
+biclaR includes estimates of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool[^4] and an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
 
 [^4]: See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
 
-Despite these advances, the PCT approach outlined in previous research paper had limitations:
+The CRUSE tool seeks to overcome the following methodological limitations of the original PCT:
 
--   Limited coverage of trip purposes beyond travel to work and school
 -   Low resolution of data, with routes starting and ending in administrative zone centroids
+-   Limited coverage of trip purposes beyond travel to work and school
 -   A web interface that was not user-friendly or intuitive
 
-The CRUSE project addressed these limitations as outlined in this paper.
+Methods were developed to overcome each of these, as outlined in the following subsections.
+
+## Disaggregation of origin-destination data
 
 Bit on Jittering [@lovelace2022]
+
+## Additional trip purposes
+
+bla bla
+
+## User interface
 
 # Results {#sec-results}
 
