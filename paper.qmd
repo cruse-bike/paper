@@ -13,15 +13,15 @@ number-sections: true
 #   html: default
 #   docx: default
 
-# Uncomment for formatted version
-format:
-  elsevier-pdf:
-    keep-tex: true
-    journal:
-      name: Journal Name
-      formatting: preprint
-      model: 3p
-      cite-style: super
+# # Uncomment for formatted version
+# format:
+#   elsevier-pdf:
+#     keep-tex: true
+#     journal:
+#       name: Journal Name
+#       formatting: preprint
+#       model: 3p
+#       cite-style: super
 
 # # Uncomment the following line to produce the cover page
 author:
