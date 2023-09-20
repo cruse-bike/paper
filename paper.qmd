@@ -137,7 +137,7 @@ In @sec-results, we present the results of the CRUSE tool, including estimates o
 In @sec-discussion, we discuss the implications of the results for policy and practice.
 In @sec-conclusions, we conclude the paper.
 
-# Methods {#sec-methods}
+# Methods and data {#sec-methods}
 
 The methods used to generate the evidence presented in the CRUSE tool for Ireland build on the Propensity to Cycle Tool (PCT), which was originally funded by the UK's Department for Transport and developed by a multi-university team.
 An important feature of the PCT is that it is open source and publicly available (at [www.pct.bike](https://www.pct.bike/)), allowing its use by all stakeholders in the transport planning process [@lovelace2017].
@@ -166,17 +166,21 @@ The CRUSE tool seeks to overcome the following methodological limitations of the
 -   Limited coverage of trip purposes beyond travel to work and school
 -   A web interface that was not user-friendly or intuitive
 
-Methods were developed to overcome each of these, as outlined in the following subsections.
+Methods were developed to overcome each of these, as outlined in @sec-trip-purposes to @sec-ui.
 
-## Disaggregation of origin-destination data
+## Disaggregation of origin-destination data {#sec-disaggregation}
+
+A feature of active travel interventions is that they require dense networks of routes to be effective [TODO: cite parkin].
+This means that high levels of geographic resolution are needed in the data used to estimate cycling potential.
+However, datasets on travel patterns are often only available at the level of administrative zones.
 
 Bit on Jittering [@lovelace2022]
 
-## Additional trip purposes
+## Additional trip purposes {#sec-trip-purposes}
 
 bla bla
 
-## User interface
+## User interface {#sec-ui}
 
 # Results {#sec-results}
 

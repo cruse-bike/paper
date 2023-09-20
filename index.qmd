@@ -1,6 +1,7 @@
 ---
 bibliography: bibliography.bib
 csl: apa.csl
+number-sections: true
 ---
 
 {{< include paper.qmd >}}
