@@ -1,21 +1,21 @@
 [
   {
-    "objectID": "paper.html#disaggregation-of-origin-destination-data",
-    "href": "paper.html#disaggregation-of-origin-destination-data",
+    "objectID": "paper.html#sec-disaggregation",
+    "href": "paper.html#sec-disaggregation",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "2.1 Disaggregation of origin-destination data",
-    "text": "2.1 Disaggregation of origin-destination data\nBit on Jittering (Lovelace et al., 2022)"
+    "text": "2.1 Disaggregation of origin-destination data\nA feature of active travel interventions is that they require dense networks of routes to be effective [TODO: cite parkin]. This means that high levels of geographic resolution are needed in the data used to estimate cycling potential. However, datasets on travel patterns are often only available at the level of administrative zones.\nBit on Jittering (Lovelace et al., 2022)"
   },
   {
-    "objectID": "paper.html#additional-trip-purposes",
-    "href": "paper.html#additional-trip-purposes",
+    "objectID": "paper.html#sec-trip-purposes",
+    "href": "paper.html#sec-trip-purposes",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "2.2 Additional trip purposes",
     "text": "2.2 Additional trip purposes\nbla bla"
   },
   {
-    "objectID": "paper.html#user-interface",
-    "href": "paper.html#user-interface",
+    "objectID": "paper.html#sec-ui",
+    "href": "paper.html#sec-ui",
     "title": "CRUSE to Safe Cycling in Ireland",
     "section": "2.3 User interface",
     "text": "2.3 User interface"
@@ -63,25 +63,25 @@
     "text": "Footnotes\n\n\nhttps://eur-lex.europa.eu/legal-content/EN/TXT/?u ri=celex%3A32008L0096↩︎\nSee REF Impact Case Study “Cycle network policy, planning and investment transformed by the Propensity to Cycle Tool” at results2021.ref.ac.uk submitted by the University of Leeds.↩︎\nSee the REF Impact Case Study “Creating Step Changes in Cycling Policy and Infrastructure Planning across the UK” at results2021.ref.ac.uk submitted by the University of Westminster.↩︎\nSee the Health economic assessment tool for walking and cycling at www.heatwalkingcycling.org.↩︎"
   },
   {
-    "objectID": "index.html#disaggregation-of-origin-destination-data",
-    "href": "index.html#disaggregation-of-origin-destination-data",
+    "objectID": "index.html#sec-disaggregation",
+    "href": "index.html#sec-disaggregation",
     "title": "CRUSE to Safe Cycling in Ireland",
-    "section": "Disaggregation of origin-destination data",
-    "text": "Disaggregation of origin-destination data\nBit on Jittering (Lovelace et al., 2022)"
+    "section": "2.1 Disaggregation of origin-destination data",
+    "text": "2.1 Disaggregation of origin-destination data\nA feature of active travel interventions is that they require dense networks of routes to be effective [TODO: cite parkin]. This means that high levels of geographic resolution are needed in the data used to estimate cycling potential. However, datasets on travel patterns are often only available at the level of administrative zones.\nBit on Jittering (Lovelace et al., 2022)"
   },
   {
-    "objectID": "index.html#additional-trip-purposes",
-    "href": "index.html#additional-trip-purposes",
+    "objectID": "index.html#sec-trip-purposes",
+    "href": "index.html#sec-trip-purposes",
     "title": "CRUSE to Safe Cycling in Ireland",
-    "section": "Additional trip purposes",
-    "text": "Additional trip purposes\nbla bla"
+    "section": "2.2 Additional trip purposes",
+    "text": "2.2 Additional trip purposes\nbla bla"
   },
   {
-    "objectID": "index.html#user-interface",
-    "href": "index.html#user-interface",
+    "objectID": "index.html#sec-ui",
+    "href": "index.html#sec-ui",
     "title": "CRUSE to Safe Cycling in Ireland",
-    "section": "User interface",
-    "text": "User interface"
+    "section": "2.3 User interface",
+    "text": "2.3 User interface"
   },
   {
     "objectID": "index.html#availability-of-data-and-material",
