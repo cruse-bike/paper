@@ -211,8 +211,9 @@ div.csl-indent {
 <!-- Todo: add section on input datasets -->
 <section id="sec-disaggregation" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="sec-disaggregation"><span class="header-section-number">2.1</span> Disaggregation of origin-destination data</h2>
-<p>A feature of active travel interventions is that they require dense networks of routes to be effective [TODO: cite parkin]. This means that high levels of geographic resolution are needed in the data used to estimate cycling potential. However, datasets on travel patterns are often only available at the level of administrative zones. The Central Statistics Office (CSO) in Ireland provides Place of Work, School or College Census of Anonymised Records (POWSCAR) data on the number of people travelling to work and school at the Electoral Division (ED) level, for example.</p>
-<p>Bit on Jittering <span class="citation" data-cites="lovelace2022">(<a href="#ref-lovelace2022" role="doc-biblioref">Lovelace et al., 2022</a>)</span></p>
+<p>A feature of active travel interventions is that they require dense networks of routes to be effective [TODO: cite parkin]. This means that high levels of geographic resolution are needed in the data used to estimate cycling potential. However, datasets on travel patterns are often only available at the level of administrative zones. The Central Statistics Office (CSO) in Ireland provides Place of Work, School or College Census of Anonymised Records (<a href="https://www.cso.ie/en/census/census2016reports/powscar/">POWSCAR</a>) data on the number of people travelling to work and school at the Electoral Division (ED) level, for example.</p>
+<p>The method used to convert OD data to route networks used in the PCT was to calculate a single route between the population weighted centroids associated with each OD pair. This method works fine when the OD data represents movement between small areas, but was not appropriate for generating route networks from the POWSCAR data because zone centroids are so far apart that the resulting route networks would be sparse and unrealistic. To tackle this issue we developed a new method for OD data disaggregation called ‘jittering’ <span class="citation" data-cites="lovelace2022">(<a href="#ref-lovelace2022" role="doc-biblioref">Lovelace et al., 2022</a>)</span>. The method works by first disaggregating the OD data based on a ‘disaggregation threshold’ and then assigning each disaggregated ‘sub-OD’ pair to ‘subpoints’ within each zone. As shown in <strong>?@fig-dublin</strong>, the resulting route networks are dense, even in rural areas.</p>
+<p><img src="images/paste-1.png" class="img-fluid"></p>
 </section>
 <section id="sec-trip-purposes" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="sec-trip-purposes"><span class="header-section-number">2.2</span> Additional trip purposes</h2>
@@ -243,6 +244,7 @@ div.csl-indent {
 <p>KSI: Killed and Seriously Injured</p>
 <p>NRA: National Road Authority</p>
 <p>NRN: National Road Network</p>
+<p>OD: Origin-Destination, typically referring to origin-destination data which contains information on the number of people travelling between each pair of zones</p>
 <p>OSM: Open Street Map</p>
 <p>PCT: Propensity to Cycle Tool</p>
 <p>POWSCAR: Place of Work, School or College Census of Anonymised Records</p>
