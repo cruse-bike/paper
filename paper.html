@@ -310,7 +310,36 @@ div.csl-indent {
 </section>
 <section id="sec-trip-purposes" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="sec-trip-purposes"><span class="header-section-number">2.2</span> Additional trip purposes</h2>
-<p>bla bla</p>
+<p>A limitation of the original PCT was that it only included travel to work data. This was partially addressed by the inclusion of travel to school based on data from the Department for Education in England <span class="citation" data-cites="goodman2019">(<a href="#ref-goodman2019" role="doc-biblioref">Goodman et al., 2019</a>)</span>. An advantage of the POWSCAR OD data over OD datasets derived from census surveys in many countries is that it includes travel to school data. We commissioned a version of POWSCAR that included a breakdown of the total flows between OD pairs by purpose and mode, enabling a more realistic estimation of the ‘Baseline’ cycling network.</p>
+<p>However, travel to school and work only constitute a small proportion of all trips. To overcome this issue, we developed a spatial interaction modelling methodology to estimate the number of trips between each OD pair for additional trip purposes.</p>
+<p>The classification of trip purposes used in the CRUSE tool was guided mainly by the trip purpose classification found within the National Household Travel Survey (NHTS), but with the addition of categories based on the comprehensive POWSCAR data, and the need to include recreational trips and multi-stage trips (not yet implemented). An overview of the trip purposes used in CRUSE is presented in <a href="#fig-trip-purposes">Figure&nbsp;2</a>.</p>
+<div id="fig-trip-purposes" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/paste-4.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: Trip purposes used in the CRUSE tool.</figcaption>
+</figure>
+</div>
+<!-- 
+The POWSCAR-based categories are:
+
+- work (commute)
+- primary education
+- secondary education
+- tertiary education
+
+The NHTS-based categories are:
+
+- social
+- shopping
+- personal/other
+
+And the recreational trips were classified as follows:
+
+- Domestic with cycle trips starting at home
+- Domestic trips involving travel by other mode to the start of the cycle trip
+- Cycle tourism, where start and end trips are different
+- Sport cycling 
+-->
 </section>
 <section id="sec-ui" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="sec-ui"><span class="header-section-number">2.3</span> User interface</h2>
