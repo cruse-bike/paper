@@ -172,7 +172,7 @@ Methods were developed to overcome each of these, as outlined in @sec-trip-purpo
 
 ## Disaggregation of origin-destination data {#sec-disaggregation}
 
-A feature of active travel interventions is that they require dense networks of routes to be effective \[TODO: cite parkin\].
+A feature of active travel interventions is that they require dense networks of routes to be effective [@parkin2018].
 This means that high levels of geographic resolution are needed in the data used to estimate cycling potential.
 However, datasets on travel patterns are often only available at the level of administrative zones.
 The Central Statistics Office (CSO) in Ireland provides Place of Work, School or College Census of Anonymised Records ([POWSCAR](https://www.cso.ie/en/census/census2016reports/powscar/)) data on the number of people travelling to work and school at the Electoral Division (ED) level, for example.
