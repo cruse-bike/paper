@@ -284,78 +284,108 @@ professionals.
     Active Travel
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, sharp corners, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, boxrule=0pt, frame hidden]}{\end{tcolorbox}}\fi
+    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, interior hidden, breakable, frame hidden, sharp corners, enhanced]}{\end{tcolorbox}}\fi
 
 \newpage{}
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-Transport is a major contributor to climate change, premature death due
-to road traffic collisions and air pollution, yet has the potential to
-be a major contributor to decarbonization and improved public health.
-Transport is responsible for 23\% of global emissions, 70\% of which is
-from road transport, nearly half of which is from passenger cars
-\citep{jaramillo2022}. The transport system encourages, enables and in
-some cases enforces unsustainable lifestyles, including over-consumption
-of goods due to excessive mobile storage space and dependency on
-services that are only accessible by car due to land use plans that have
-built up around roads \citep{gray2001, shergold2012, motte-baumvol2010}.
+Mobility kills. High energy transport systems are a major contributor to
+climate change, a leading cause of premature death and injury due to
+road traffic collisions, and a cause of disease due to airborne
+pollutants. Conversely, evidence-based and effective transport
+\emph{policies} have great potential to decarbonize economies, improve
+public health, and save lives.
 
-Recognizing the impacts of poorly designed and performing transport
-systems on their citizens, governments in many countries have set
-targets and taken actions and set targets. In the context of climate,
-road safety and physicial inactivity crises, policies to improve
-transport systems can be classified according to the
-`Avoid-Shift-Improve' (ASI) framework \citep{jaramillo2022}. The
-framework highlights the importance of demand reduction (\emph{avoid}ing
-unnecessary trips), in addition to mode \emph{shift} and
-\emph{improvement} of existing energy converters, in that order.
+Transport is responsible for 23\% of global emissions, 70\% of which is
+from road transport, nearly half of which (around 10\% of global
+emissions) is from passenger cars \citep{jaramillo2022}. The transport
+system encourages, enables and in some cases enforces unsustainable
+lifestyles, including over-consumption of goods due to excessive mobile
+storage space and dependency on services that are only accessible by car
+due to land use plans that have built up around roads
+\citep{gray2001, shergold2012, motte-baumvol2010}.
+
+Recognizing the growing evidence of such impacts of poorly designed and
+performing transport systems, governments in many countries have set
+targets and taken actions. In the context of climate, road safety and
+physicial inactivity crises, policies to improve transport systems can
+be classified according to the `Avoid-Shift-Improve' (ASI) framework
+\citep{jaramillo2022}. The framework highlights the importance of demand
+reduction (\emph{avoid}ing unnecessary trips), in addition to mode
+\emph{shift} and \emph{improvement} of existing energy converters, in
+that order.
 
 Uptake of cycling, the main topic of this paper, should be seen in this
-broader context of transport decarbonisation \citep{brand2020}. Although
-cycling uptake appears on the surface to only relate to the `shift' part
-of the ASI framework, closer consideration of the knock-on impacts of
-cycling uptake shows that it can also help avoid unnecessary trips
-{[}citation needed, any ideas Hussein?{]} . The rapid uptake of highly
-efficient e-bikes can also be seen as an improvement on most electric
-vehicles, which are too heavy and expensive to be a sustainable
-alternative and could in fact delay the transition away from car
-dependency {[}citation needed{]}.
+broader context of transport decarbonisation \citep{brand2020} and
+sustainable mobility \citep{burns2013}. Although cycling uptake appears
+on the surface to only relate to the `shift' part of the ASI framework,
+closer consideration of the knock-on impacts of cycling uptake shows
+that it can also help avoid unnecessary trips \citep{nello-deakin2020}.
+The rapid uptake of highly efficient e-bikes can also be seen as an
+improvement on most electric vehicles, which are too heavy and expensive
+to be a sustainable alternative and could in fact delay the transition
+away from car dependency and inadvertently enable ``high travel
+lock-in'' \citep{anable2019}. At the European level, the European Union
+has a target of reducing greenhouse gas emissions by 55\% by 2030,
+compared to 1990 levels, and to achieve `net-zero' by 2050.{[}\^{}1{]}
 
-At the European Union level \ldots{}
+Regarding road traffic casualties, another deadly consequence of
+inefficient transport systems, the Road Infrastructure Safety Management
+(RISM) directive (2008/96/EC) requires member states to implement a road
+safety management system (RSMS) for all public roads. Specifically,
+``Member States shall ensure that the ranking of high accident
+concentration sections and the network safety ranking are carried
+out''.\footnote{https://eur-lex.europa.eu/legal-content/EN/TXT/?u
+  ri=celex\%3A32008L0096} Given that `safety' in this context is
+usefully quantified as the number of people killed and seriously injured
+(KSI) per distance travelled, the directive requires estimation of
+distance travelled by mode, down to the road link level. For active
+modes, about which there is a paucity of data compared with motorized
+modes, this is a major challenge. Better data to inform road safety
+policies and interventions is a motivation for the CRUSE tool outlined
+in this paper, and modeling active travel more broadly.
 
-In Ireland\ldots{}
+In Ireland, the Road Safety Authority (RSA) has set the target of
+halving the number of road traffic deaths and serious injuries by
+2030.{[}\^{}3{]} Doing so while simultaneously enabling rapid uptake of
+active modes will require key active travel routes to be identified and
+improved.
 
-Mobility hub.
+It was in this context that Transport Infrastructure Ireland (TII)
+commissioned the Cycle Route Uptake and Scenario Estimation (CRUSE)
+project. Based on the Propensity to Cycle Tool (PCT) for England and
+Wales \citep{lovelace2017}, the CRUSE tool was developed to provide
+evidence on current cycling levels and future cycling potential
+nationwide across Ireland.
 
-Business cases need evidence.
+The rest of paper is structured as follows. In
+Section~\ref{sec-methods}, we outline the methods used to generate the
+evidence presented in the CRUSE tool for Ireland. In
+Section~\ref{sec-results}, we present the results of the CRUSE tool,
+including estimates of current cycling levels and future cycling
+potential at the national, regional and local levels. In
+Section~\ref{sec-discussion}, we discuss the implications of the results
+for policy and practice. In Section~\ref{sec-conclusions}, we conclude
+the paper.
 
-Como UK.
-
-{[}Gary, Suzanne, others input here please.{]}
-
-In this context, TII commissioned the CRUSE project which is\ldots{}
-
-The rest of paper is structured as follows\ldots{}
-
-\hypertarget{methods}{%
-\section{Methods}\label{methods}}
-
-{[}Should this bit go in a subsection in the Introduction rather than in
-the methods? (RL){]}
+\hypertarget{sec-methods}{%
+\section{Methods and data}\label{sec-methods}}
 
 The methods used to generate the evidence presented in the CRUSE tool
-for Ireland build on previous work, particularly the Propensity to Cycle
-Tool (PCT), which was originally developed for the UK's Department for
-Transport and which is publicly available at www.pct.bike
-\citep{lovelace2017}. The PCT approach has had major policy impacts, as
-outlined in Research Excellence Framework (REF) impact case studies
-submitted by the University of Leeds and the University of Westminster,
-which demonstrate that the tool ``revolutionised strategic cycle
-planning in England and Wales''\footnote{See REF Impact Case Study
-  ``Cycle network policy, planning and investment transformed by the
-  Propensity to Cycle Tool'' at
+for Ireland build on the Propensity to Cycle Tool (PCT), which was
+originally funded by the UK's Department for Transport and developed by
+a multi-university team. An important feature of the PCT is that it is
+open source and publicly available (at
+\href{https://www.pct.bike/}{www.pct.bike}), allowing its use by all
+stakeholders in the transport planning process \citep{lovelace2017}. The
+PCT approach has had major policy impacts, as outlined in Research
+Excellence Framework (REF) impact case studies, which demonstrate that
+the tool ``revolutionised strategic cycle planning in England and
+Wales''\footnote{See REF Impact Case Study ``Cycle network policy,
+  planning and investment transformed by the Propensity to Cycle Tool''
+  at
   \href{https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f}{results2021.ref.ac.uk}
   submitted by the University of Leeds.} by overcoming the barriers to
 cycling investment imposed by lack of evidence on cycling
@@ -364,42 +394,105 @@ potential\footnote{See the REF Impact Case Study ``Creating Step Changes
   \href{https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B}{results2021.ref.ac.uk}
   submitted by the University of Westminster.} .
 
-The first version of the PCT was based solely on current and future
-potential uptake of cycling for single stage travel to work at desire
-line, zone, route, and route network levels \citep{lovelace2016}. It was
+The first version of the PCT was based on current and future potential
+uptake of cycling for single stage \emph{travel to work} at desire line,
+zone, route, and route network levels \citep{lovelace2016}. It was
 launched in April 2017 as the government-endorsed tool for strategic
 cycle network planning, as part of the Cycling and Walking Investment
 Strategy \citep{cycling2017}. Extensions of the PCT approach have
 included estimation of benefits at the individual level
 \citep{woodcock2018}, addition of travel to school network
-\citep{goodman2019}, and improvement modelling of impacts on health,
-environmental and distributional outcomes \citep{woodcock2021}. In
-Portugal, a cycling uptake tool to support decision making was developed
-based on PCT methods, for the Lisbon metro region (see
-\href{https://biclar.tmlmobilidade.pt}{biclaR}, and again, social and
-environment impacts were added as a relevant information to support
-decisions, using the WHO HEAT for Cycling tool\footnote{See the Health
-  economic assessment tool for walking and cycling at
+\citep{goodman2019}, and improved modelling of impacts on health,
+environmental and distributional outcomes \citep{woodcock2021}.
+Initially developed just for England, the PCT was extended to cover all
+of Wales (for commuter data only) in 2018.
+
+The PCT approach has been applied in other countries, including Ireland
+(the topic of this paper), Scotland, and Portugal. In Portugal the
+`biclaR' project, based on methods underlying the PCT, has been
+developed and deployed for the Lisbon metro region. The resulting
+evidence is available in an interactive web application hosted at
+\href{https://biclar.tmlmobilidade.pt}{biclar.tmlmobilidade.pt}
+\citep{felix2023}. biclaR includes estimates of impacts, using the World
+Health Organisation (WHO) `HEAT for Cycling' tool\footnote{See the
+  Health economic assessment tool for walking and cycling at
   \href{https://www.heatwalkingcycling.org/\#homepage}{www.heatwalkingcycling.org}.}
-\citep{felix2023}. biclaR added on the previous methods by setting an
-`intermodality' scenario that combines cycling with currently available
-public transit options based on General Transit Feed Specification
-(GTFS) data.
+and an `intermodality' scenario that combines cycling with currently
+available public transit options based on General Transit Feed
+Specification (GTFS) data.
 
-Bit on Jittering \citep{lovelace2022}
-
-Despite these advances, the PCT approach outlined in previous research
-paper had limitations:
+The CRUSE tool seeks to overcome the following methodological
+limitations of the original PCT:
 
 \begin{itemize}
+\tightlist
 \item
-  Limited coverage of modes beyond travel to work and school
+  Low resolution of data, with routes starting and ending in
+  administrative zone centroids
 \item
-  \ldots{}
+  Limited coverage of trip purposes beyond travel to work and school
+\item
+  A web interface that was not user-friendly or intuitive
 \end{itemize}
 
-\hypertarget{results}{%
-\section{Results}\label{results}}
+Methods were developed to overcome each of these, as outlined in
+Section~\ref{sec-trip-purposes} to Section~\ref{sec-ui}.
+
+\hypertarget{sec-disaggregation}{%
+\subsection{Disaggregation of origin-destination
+data}\label{sec-disaggregation}}
+
+A feature of active travel interventions is that they require dense
+networks of routes to be effective \citep{parkin2018}. This means that
+high levels of geographic resolution are needed in the data used to
+estimate cycling potential. However, datasets on travel patterns are
+often only available at the level of administrative zones. The Central
+Statistics Office (CSO) in Ireland provides Place of Work, School or
+College Census of Anonymised Records
+(\href{https://www.cso.ie/en/census/census2016reports/powscar/}{POWSCAR})
+data on the number of people travelling to work and school at the
+Electoral Division (ED) level, for example.
+
+The method used to convert OD data to route networks used in the PCT was
+to calculate a single route between the population weighted centroids
+associated with each OD pair. This method works fine when the OD data
+represents movement between small areas, but was not appropriate for
+generating route networks from the POWSCAR data because zone centroids
+are so far apart that the resulting route networks would be sparse and
+unrealistic. To tackle this issue we developed a new method for OD data
+disaggregation called `jittering' \citep{lovelace2022}. The method works
+by first disaggregating the OD data based on a `disaggregation
+threshold' and then assigning each disaggregated `sub-OD' pair to
+`subpoints' within each zone. As shown in Figure~\ref{fig-dublin}, the
+resulting route networks are dense, even in rural areas.
+
+\begin{figure}
+
+{\centering 
+
+\includegraphics{images/paste-1.png}
+
+\includegraphics{images/paste-3.png}
+
+}
+
+\caption{\label{fig-dublin}Illustration of the density of route networks
+generated by the CRUSE tool for Dublin City and surroundings (top) and
+rural County Mayo on the West coast of Ireland. Source: CRUSE tool,
+available at \url{https://cruse.bike/}.}
+
+\end{figure}
+
+\hypertarget{sec-trip-purposes}{%
+\subsection{Additional trip purposes}\label{sec-trip-purposes}}
+
+bla bla
+
+\hypertarget{sec-ui}{%
+\subsection{User interface}\label{sec-ui}}
+
+\hypertarget{sec-results}{%
+\section{Results}\label{sec-results}}
 
 National planning
 
@@ -407,14 +500,40 @@ Regional
 
 Local
 
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
+\hypertarget{sec-discussion}{%
+\section{Discussion}\label{sec-discussion}}
 
-\hypertarget{conclusions}{%
-\section{Conclusions}\label{conclusions}}
+\hypertarget{sec-conclusions}{%
+\section{Conclusions}\label{sec-conclusions}}
 
 \hypertarget{list-of-abbreviations}{%
 \section{List of abbreviations}\label{list-of-abbreviations}}
+
+CSO: Central Statistics Office
+
+CRUSE: Cycle Route Uptake and Scenario Estimation
+
+ED: Electoral Division
+
+GTFS: General Transit Feed Specification
+
+KSI: Killed and Seriously Injured
+
+NRA: National Road Authority
+
+NRN: National Road Network
+
+OD: Origin-Destination, typically referring to origin-destination data
+which contains information on the number of people travelling between
+each pair of zones
+
+OSM: Open Street Map
+
+PCT: Propensity to Cycle Tool
+
+POWSCAR: Place of Work, School or College Census of Anonymised Records
+
+TII: Transport Infrastructure Ireland
 
 \hypertarget{declarations}{%
 \section{Declarations}\label{declarations}}
@@ -424,21 +543,40 @@ Local
 material}\label{availability-of-data-and-material}}
 \addcontentsline{toc}{subsection}{Availability of data and material}
 
+Data was obtained from the Central Statistics Office (CSO) and Transport
+Infrastructure Ireland (TII) under license and cannot be shared
+publicly. The code used to generate the results presented in this paper
+is available at https://github.com/cruse-bike.
+
 \hypertarget{funding}{%
 \subsection*{Funding}\label{funding}}
 \addcontentsline{toc}{subsection}{Funding}
+
+The work was funded by Transport Infrastructure Ireland (TII).
 
 \hypertarget{acknowledgements}{%
 \subsection*{Acknowledgements}\label{acknowledgements}}
 \addcontentsline{toc}{subsection}{Acknowledgements}
 
+Thanks to Paul MacDonald and Donal Hodgins (Kildare County Council), for
+testing early versions of the tool and for their input into the project.
+Thanks to Ciaran Maguire, Catherine Swift, and others at AECOM for their
+input into the project.
+
 \hypertarget{competing-interests}{%
 \subsection*{Competing interests}\label{competing-interests}}
 \addcontentsline{toc}{subsection}{Competing interests}
 
+The authors declare that they have no competing interests.
+
 \hypertarget{authors-contributions}{%
 \subsection*{Authors' contributions}\label{authors-contributions}}
 \addcontentsline{toc}{subsection}{Authors' contributions}
+
+RL led the development of the CRUSE tool, with input from JT, EV, HM,
+EB, PW, GOT, DB, and SM. SM instigated the project and coordinated its
+policy impact. PW, EB and GOT provided project management and transport
+engineering expertise.
 
 
   \bibliography{bibliography.bib}
