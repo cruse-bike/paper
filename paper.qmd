@@ -25,13 +25,13 @@ number-sections: true
 
 # # Uncomment the following line to produce the cover page
 author:
-  - name: Dr. Robin Lovelace
+  - name: Robin Lovelace
     email: r.lovelace@leeds.ac.uk
     corresponding: true
     affiliations:
       - name: University of Leeds
         address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
-  - name: Dr. Joey Talbot
+  - name: Joey Talbot
     affiliations:
       - name: University of Leeds
         address: Institute for Transport Studies, Leeds, LS2 9JT, United Kingdom
@@ -54,12 +54,12 @@ author:
   - name: "Gary O'Tool"
     affiliations:
       - name: AECOM
-        address: Winslade House, Winslade Park, Manor Drive, Clyst St Mary, EXETER, EX5 1FY, UK
+        address: Unit 6, Galway Technology Park, Parkmore, Galway, Ireland
   - name: Dan Brennan
     affiliations:
       - name: Transport Infrastructure Ireland
         address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
-  - name: Dr. Suzanne Meade
+  - name: Suzanne Meade
     affiliations:
       - name: Transport Infrastructure Ireland
         address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
