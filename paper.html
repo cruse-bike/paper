@@ -135,7 +135,12 @@ div.csl-indent {
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
-  <li><a href="#sec-methods" id="toc-sec-methods" class="nav-link" data-scroll-target="#sec-methods"><span class="header-section-number">2</span> Methods</a></li>
+  <li><a href="#sec-methods" id="toc-sec-methods" class="nav-link" data-scroll-target="#sec-methods"><span class="header-section-number">2</span> Methods</a>
+  <ul class="collapse">
+  <li><a href="#disaggregation-of-origin-destination-data" id="toc-disaggregation-of-origin-destination-data" class="nav-link" data-scroll-target="#disaggregation-of-origin-destination-data"><span class="header-section-number">2.1</span> Disaggregation of origin-destination data</a></li>
+  <li><a href="#additional-trip-purposes" id="toc-additional-trip-purposes" class="nav-link" data-scroll-target="#additional-trip-purposes"><span class="header-section-number">2.2</span> Additional trip purposes</a></li>
+  <li><a href="#user-interface" id="toc-user-interface" class="nav-link" data-scroll-target="#user-interface"><span class="header-section-number">2.3</span> User interface</a></li>
+  </ul></li>
   <li><a href="#sec-results" id="toc-sec-results" class="nav-link" data-scroll-target="#sec-results"><span class="header-section-number">3</span> Results</a></li>
   <li><a href="#sec-discussion" id="toc-sec-discussion" class="nav-link" data-scroll-target="#sec-discussion"><span class="header-section-number">4</span> Discussion</a></li>
   <li><a href="#sec-conclusions" id="toc-sec-conclusions" class="nav-link" data-scroll-target="#sec-conclusions"><span class="header-section-number">5</span> Conclusions</a></li>
@@ -280,17 +285,27 @@ div.csl-indent {
 </section>
 <section id="sec-methods" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Methods</h1>
-<p>The methods used to generate the evidence presented in the CRUSE tool for Ireland build on previous work, particularly the Propensity to Cycle Tool (PCT), which was originally developed for the UK’s Department for Transport and which is publicly available at www.pct.bike <span class="citation" data-cites="lovelace2017">(<a href="#ref-lovelace2017" role="doc-biblioref">Lovelace et al., 2017</a>)</span>. The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies submitted by the University of Leeds and the University of Westminster, which demonstrate that the tool “revolutionised strategic cycle planning in England and Wales”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> .</p>
+<p>The methods used to generate the evidence presented in the CRUSE tool for Ireland build on the Propensity to Cycle Tool (PCT), which was originally funded by the UK’s Department for Transport and developed by a multi-university team. An important feature of the PCT is that it is open source and publicly available (at <a href="https://www.pct.bike/">www.pct.bike</a>), allowing its use by all stakeholders in the transport planning process <span class="citation" data-cites="lovelace2017">(<a href="#ref-lovelace2017" role="doc-biblioref">Lovelace et al., 2017</a>)</span>. The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies, which demonstrate that the tool “revolutionised strategic cycle planning in England and Wales”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> .</p>
 <p>The first version of the PCT was based on current and future potential uptake of cycling for single stage <em>travel to work</em> at desire line, zone, route, and route network levels <span class="citation" data-cites="lovelace2016">(<a href="#ref-lovelace2016" role="doc-biblioref">Lovelace, 2016</a>)</span>. It was launched in April 2017 as the government-endorsed tool for strategic cycle network planning, as part of the Cycling and Walking Investment Strategy <span class="citation" data-cites="cycling2017">(<a href="#ref-cycling2017" role="doc-biblioref"><em>Cycling and Walking Investment Strategy</em>, 2017</a>)</span>. Extensions of the PCT approach have included estimation of benefits at the individual level <span class="citation" data-cites="woodcock2018">(<a href="#ref-woodcock2018" role="doc-biblioref">Woodcock et al., 2018</a>)</span>, addition of travel to school network <span class="citation" data-cites="goodman2019">(<a href="#ref-goodman2019" role="doc-biblioref">Goodman et al., 2019</a>)</span>, and improved modelling of impacts on health, environmental and distributional outcomes <span class="citation" data-cites="woodcock2021">(<a href="#ref-woodcock2021" role="doc-biblioref">Woodcock et al., 2021</a>)</span>. Initially developed just for England, the PCT was extended to cover all of Wales (for commuter data only) in 2018.</p>
-<p>The PCT approach has been applied in other countries, including Ireland (the topic of this paper), Scotland, and Portugal. In Portugal, a strategic cycle network planning tool was developed based on PCT methods, for the Lisbon metro region. The resulting open and publicly available available evidence is available in an interactive web application hosted at <a href="https://biclar.tmlmobilidade.pt">biclar.tmlmobilidade.pt</a> <span class="citation" data-cites="felix2023">(<a href="#ref-felix2023" role="doc-biblioref">Félix et al., 2022</a>)</span>. The ‘biclaR’ project included estimation of impacts, using the World Health Organisation (WHO) ‘HEAT for Cycling’ tool<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. biclaR extended the approach with an ‘intermodality’ scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.</p>
-<p>Despite these advances, the PCT approach outlined in previous research paper had limitations:</p>
+<p>The PCT approach has been applied in other countries, including Ireland (the topic of this paper), Scotland, and Portugal. In Portugal the ‘biclaR’ project, based on methods underlying the PCT, has been developed and deployed for the Lisbon metro region. The resulting evidence is available in an interactive web application hosted at <a href="https://biclar.tmlmobilidade.pt">biclar.tmlmobilidade.pt</a> <span class="citation" data-cites="felix2023">(<a href="#ref-felix2023" role="doc-biblioref">Félix et al., 2022</a>)</span>. biclaR includes estimates of impacts, using the World Health Organisation (WHO) ‘HEAT for Cycling’ tool<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and an ‘intermodality’ scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.</p>
+<p>The CRUSE tool seeks to overcome the following methodological limitations of the original PCT:</p>
 <ul>
-<li>Limited coverage of trip purposes beyond travel to work and school</li>
 <li>Low resolution of data, with routes starting and ending in administrative zone centroids</li>
+<li>Limited coverage of trip purposes beyond travel to work and school</li>
 <li>A web interface that was not user-friendly or intuitive</li>
 </ul>
-<p>The CRUSE project addressed these limitations as outlined in this paper.</p>
+<p>Methods were developed to overcome each of these, as outlined in the following subsections.</p>
+<section id="disaggregation-of-origin-destination-data" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="disaggregation-of-origin-destination-data"><span class="header-section-number">2.1</span> Disaggregation of origin-destination data</h2>
 <p>Bit on Jittering <span class="citation" data-cites="lovelace2022">(<a href="#ref-lovelace2022" role="doc-biblioref">Lovelace et al., 2022</a>)</span></p>
+</section>
+<section id="additional-trip-purposes" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="additional-trip-purposes"><span class="header-section-number">2.2</span> Additional trip purposes</h2>
+<p>bla bla</p>
+</section>
+<section id="user-interface" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="user-interface"><span class="header-section-number">2.3</span> User interface</h2>
+</section>
 </section>
 <section id="sec-results" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Results</h1>
