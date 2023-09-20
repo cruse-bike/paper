@@ -99,9 +99,9 @@ date: last-modified
 
 # Introduction
 
-Transport kills.
-Transport systems are a major contributor to climate change, a leading cause of premature death and injury due to road traffic collisions, and a substantial cause of air pollution inhaled by citizens in many urban areas.
-Transport policies therefore have great potential to decarbonize economies, improve public health, and save lives.
+Mobility kills.
+High energy transport systems are a major contributor to climate change, a leading cause of premature death and injury due to road traffic collisions, and a cause of disease due to airborne pollutants.
+Conversely, evidence-based and effective transport *policies* have great potential to decarbonize economies, improve public health, and save lives.
 
 Transport is responsible for 23% of global emissions, 70% of which is from road transport, nearly half of which (around 10% of global emissions) is from passenger cars [@jaramillo2022].
 The transport system encourages, enables and in some cases enforces unsustainable lifestyles, including over-consumption of goods due to excessive mobile storage space and dependency on services that are only accessible by car due to land use plans that have built up around roads [@gray2001; @shergold2012; @motte-baumvol2010].
@@ -113,11 +113,13 @@ The framework highlights the importance of demand reduction (*avoid*ing unnecess
 Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation [@brand2020] and sustainable mobility [@burns2013].
 Although cycling uptake appears on the surface to only relate to the 'shift' part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips [@nello-deakin2020].
 The rapid uptake of highly efficient e-bikes can also be seen as an improvement on most electric vehicles, which are too heavy and expensive to be a sustainable alternative and could in fact delay the transition away from car dependency and inadvertently enable "high travel lock-in" [@anable2019].
+At the European level, the European Union has a target of reducing greenhouse gas emissions by 55% by 2030, compared to 1990 levels, and to achieve 'net-zero' by 2050.\[\^1\]
 
-At the European level, the European Union has set a target of reducing greenhouse gas emissions by 55% by 2030, compared to 1990 levels, and to achieve 'net-zero' by 2050.\[\^1\] Regarding road traffic casualties, another deadly consequence of inefficient transport systems, the Road Infrastructure Safety Management (RISM) directive (2008/96/EC) requires member states to implement a road safety management system (RSMS) for all public roads.
+Regarding road traffic casualties, another deadly consequence of inefficient transport systems, the Road Infrastructure Safety Management (RISM) directive (2008/96/EC) requires member states to implement a road safety management system (RSMS) for all public roads.
 Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out".[^1]
 Given that 'safety' in this context is usefully quantified as the number of people killed and seriously injured (KSI) per distance travelled, the directive requires estimation of distance travelled by mode, down to the road link level.
-For cycling, on which there is a paucity of data, this is a major challenge.
+For active modes, about which there is a paucity of data compared with motorized modes, this is a major challenge.
+Better data to inform road safety policies and interventions is a motivation for the CRUSE tool outlined in this paper, and modeling active travel more broadly.
 
 [^1]: https://eur-lex.europa.eu/legal-content/EN/TXT/?u
     ri=celex%3A32008L0096
@@ -126,7 +128,7 @@ In Ireland, the Road Safety Authority (RSA) has set the target of halving the nu
 
 <!-- \[Gary, Suzanne, others input here please.\] -->
 
-It was in this context that TII commissioned the Cycle Route Uptake and Scenario Estimation (CRUSE) project.
+It was in this context that Transport Infrastructure Ireland (TII) commissioned the Cycle Route Uptake and Scenario Estimation (CRUSE) project.
 Based on the Propensity to Cycle Tool (PCT) for England and Wales [@lovelace2017], the CRUSE tool was developed to provide evidence on current cycling levels and future cycling potential nationwide across Ireland.
 
 The rest of paper is structured as follows.
@@ -136,9 +138,6 @@ In @sec-discussion, we discuss the implications of the results for policy and pr
 In @sec-conclusions, we conclude the paper.
 
 # Methods {#sec-methods}
-
-\[Should this bit go in a subsection in the Introduction rather than in the methods?
-(RL)\]
 
 The methods used to generate the evidence presented in the CRUSE tool for Ireland build on previous work, particularly the Propensity to Cycle Tool (PCT), which was originally developed for the UK's Department for Transport and which is publicly available at www.pct.bike [@lovelace2017].
 The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies submitted by the University of Leeds and the University of Westminster, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^2] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^3]
