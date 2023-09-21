@@ -8,10 +8,10 @@ editor:
     wrap: sentence
 number-sections: true
 
-# # Uncomment for draft versions:
-# format: 
-#   html: default
-#   docx: default
+# Uncomment for draft versions:
+format: 
+  html: default
+  docx: default
 
 # # Uncomment for formatted version
 # format:
@@ -126,7 +126,90 @@ Better data to inform road safety policies and interventions is a motivation for
 
 In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030.\[\^3\] Doing so while simultaneously enabling rapid uptake of active modes will require key active travel routes to be identified and improved.
 
-<!-- \[Gary, Suzanne, others input here please.\] -->
+A proactive approach to the development of cycling policy and
+infrastructure is taking place in Ireland.
+The main framework
+underpinning these efforts is the Climate Action Plan[^2] and The National
+Development Plan[^3]
+. Strategic alignment is also outlined by the
+Phoenix Park Transport and Mobility Options Study, \"83% of respondents
+supported enhanced walking and cycling facilities\"
+. The recently
+published Greater Dublin Area Transport Strategy builds on this,
+suggesting that \"nearly a quarter of adults cycle at least once a week
+in the Dublin Metropolitan area\" and that \"cycling in the Dublin area
+takes up to 60,000 cars off the road today\"
+. (Q for RL: This could be
+extrapolated out across other counties in method section if needed?!)
+.
+Clear evidence of the importance of cycling is provided by the National
+Strategic Objective (NSO) from the National Development Plan as \"under
+the NSO, sustainable mobility, the Government has committed to investing
+€8.6bn in public transport between 2018 and 2027
+. This investment will
+deliver a wide range of improved infrastructure across both public
+transport and active travel, including
+
+[^2]: <https://www.gov.ie/en/publication/7bd8c-climate-action-plan-2023/>
+
+[^3]: <https://www.gov.ie/en/publication/774e2-national-development-plan-2021-2030/>
+
+BusConnects (including
+improved cycling infrastructure)\".
+This highlights that cycling
+infrastructure improvements are to take place concurrently with the
+BusConnects project, an entire redesign of the bus network in Dublin and
+Cork.
+To support this modal shift, TII commissioned AECOM to develop
+the CRUSE tool to use as an instrument to understand different cycling
+scenarios to de-risk investment in mobility and active travel
+infrastructure and promote the benefits of a modal shift towards
+cycling.
+A key consideration for TII was to ensure both urban and rural
+Ireland were targeted for cycling infrastructure in the future.
+To this
+end, TII extensively reviewed activity on Irish Roads and how the road
+network was being used by commuters, cyclists, heavy goods vehicles and
+other road users across the Irish road network.
+These efforts to analyse
+the wider picture of the Irish road network and to identify the
+greatest benefits from investment in cycling infrastructure within the
+national, regional and local frameworks all provided further
+justification to build, design and maintain the CRUSE tool.
+
+The
+ability to validate cycling trips, prioritise locations for development
+of cycling infrastructure and estimate demand of various cycling
+scenarios in Ireland was prioritized by TII given the commitment to
+invest in cycling infrastructure by the Irish government.
+Furthermore,
+TII and Local Authorities would use data generated from the CRUSE tool
+to monitor cycling friendliness, comfort and safety in Ireland to ensure
+strategic alignment with national, regional and local policies.
+
+When
+developing the CRUSE tool, TII, the Institute of Transport Studies
+(ITS) Leeds and AECOM to develop the CRUSE Tool to focus on Ireland
+specifically(https://cruse.bike/).
+ITS Leeds were part of the team that
+developed the PCT for England and Wales, with the aim of providing \"an
+evidence base to inform cycling investment\".
+This experience ensured
+that ITS Leeds had extensive experience in developing cutting edge
+cycling tools.
+The project recognized the importance of an online tool,
+using a recognised open-source methodology that will be discussed in
+more detail in this paper.
+The decision to ensure the tool is opensource
+that is publicly available ensures transport planners and members of
+the public can utilize the tool for scenario planning to meet their
+requirements.
+Other use cases in the Irish context includes monitoring
+the need for existing cycling infrastructure upgrades, undertaking
+appraisal, as well as safety and exposure information in line with the
+European Cycling Federation, Dutch Cycling Embassy recommendations and
+the European RISM Directive, for reporting collision rates of vulnerable
+road users by 2024.
 
 It was in this context that Transport Infrastructure Ireland (TII) commissioned the Cycle Route Uptake and Scenario Estimation (CRUSE) project.
 Based on the Propensity to Cycle Tool (PCT) for England and Wales [@lovelace2017], the CRUSE tool was developed to provide evidence on current cycling levels and future cycling potential nationwide across Ireland.
@@ -141,12 +224,12 @@ In @sec-conclusions, we conclude the paper.
 
 The methods used to generate the evidence presented in the CRUSE tool for Ireland build on the Propensity to Cycle Tool (PCT), which was originally funded by the UK's Department for Transport and developed by a multi-university team.
 An important feature of the PCT is that it is open source and publicly available (at [www.pct.bike](https://www.pct.bike/)), allowing its use by all stakeholders in the transport planning process [@lovelace2017].
-The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^2] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^3]
+The PCT approach has had major policy impacts, as outlined in Research Excellence Framework (REF) impact case studies, which demonstrate that the tool "revolutionised strategic cycle planning in England and Wales"[^4] by overcoming the barriers to cycling investment imposed by lack of evidence on cycling potential[^5]
 .
 
-[^2]: See REF Impact Case Study "Cycle network policy, planning and investment transformed by the Propensity to Cycle Tool" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f) submitted by the University of Leeds.
+[^4]: See REF Impact Case Study "Cycle network policy, planning and investment transformed by the Propensity to Cycle Tool" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f) submitted by the University of Leeds.
 
-[^3]: See the REF Impact Case Study "Creating Step Changes in Cycling Policy and Infrastructure Planning across the UK" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B) submitted by the University of Westminster.
+[^5]: See the REF Impact Case Study "Creating Step Changes in Cycling Policy and Infrastructure Planning across the UK" at [results2021.ref.ac.uk](https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B) submitted by the University of Westminster.
 
 The first version of the PCT was based on current and future potential uptake of cycling for single stage *travel to work* at desire line, zone, route, and route network levels [@lovelace2016].
 It was launched in April 2017 as the government-endorsed tool for strategic cycle network planning, as part of the Cycling and Walking Investment Strategy [@cycling2017].
@@ -156,9 +239,9 @@ Initially developed just for England, the PCT was extended to cover all of Wales
 The PCT approach has been applied in other countries, including Ireland (the topic of this paper), Scotland, and Portugal.
 In Portugal the 'biclaR' project, based on methods underlying the PCT, has been developed and deployed for the Lisbon metro region.
 The resulting evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
-biclaR includes estimates of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool[^4] and an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
+biclaR includes estimates of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool[^6] and an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
 
-[^4]: See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
+[^6]: See the Health economic assessment tool for walking and cycling at [www.heatwalkingcycling.org](https://www.heatwalkingcycling.org/#homepage).
 
 The CRUSE tool seeks to overcome the following methodological limitations of the original PCT:
 
