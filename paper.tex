@@ -284,7 +284,7 @@ professionals.
     Active Travel
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, boxrule=0pt, interior hidden, sharp corners, borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable]}{\end{tcolorbox}}\fi
+    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, breakable, frame hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, interior hidden, sharp corners]}{\end{tcolorbox}}\fi
 
 \newpage{}
 
@@ -455,7 +455,7 @@ cycling investment imposed by lack of evidence on cycling
 potential\footnote{See the REF Impact Case Study ``Creating Step Changes
   in Cycling Policy and Infrastructure Planning across the UK'' at
   \href{https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B}{results2021.ref.ac.uk}
-  submitted by the University of Westminster.}.
+  submitted by the University of Westminster.} .
 
 The first version of the PCT was based on current and future potential
 uptake of cycling for single stage \emph{travel to work} at desire line,
@@ -545,15 +545,13 @@ network.
 However, travel to school and work only constitute a small proportion of
 all trips. To overcome this issue, we developed a spatial interaction
 modelling methodology to estimate the number of trips between each OD
-pair for additional trip purposes.
-
-The classification of trip purposes used in the CRUSE tool was guided
-mainly by the trip purpose classification found within the National
-Household Travel Survey (NHTS), but with the addition of categories
-based on the comprehensive POWSCAR data, and the need to include
-recreational trips and multi-stage trips (not yet implemented). An
-overview of the trip purposes used in CRUSE is presented in
-Figure~\ref{fig-trip-purposes}.
+pair for additional trip purposes. The classification of trip purposes
+used in the CRUSE tool was guided mainly by the trip purpose
+classification found within the National Household Travel Survey (NHTS),
+but with the addition of categories based on the comprehensive POWSCAR
+data, and the need to include recreational trips and multi-stage trips
+(not yet implemented). An overview of the trip purposes used in CRUSE is
+presented in Figure~\ref{fig-trip-purposes}.
 
 \begin{figure}
 
@@ -569,6 +567,45 @@ Figure~\ref{fig-trip-purposes}.
 
 \hypertarget{sec-ui}{%
 \subsection{User interface}\label{sec-ui}}
+
+The CRUSE web application is statically hosted, meaning that it can be
+accessed without the need for a server running software such as the R
+package `shiny' or Python packages such as `streamlit' or `flask' in the
+background \citep{wickham2021}. Typical intended user stories are
+illustrated in Figure~\ref{fig-user-stories}, which shows that the tool
+is designed to be used by both professional and non-professional users.
+For the main target audience, professional transport planners working at
+the county level, the tool provides a range of outputs, including
+estimates of cycling potential at the county and network level. The
+provision of balanced (the default), quietest and fastest route networks
+enables planners to consider the trade-offs between directness and
+`cycle friendliness' when planning new infrastructure. The tool also
+provides data downloads, enabling estimates of cycling potential on the
+network to be visualised and analysed with other tools such as QGIS,
+Python or R.
+
+For non-professional users, the tool provides a simple interface to
+explore the cycling potential of the network. By providing a single
+landing page that is suitable for both professional and non-professional
+users, the tool aims to facilitate communication between these groups.
+
+\begin{figure}
+
+{\centering 
+
+\begin{figure}[H]
+
+{\centering \includegraphics{paper_files/figure-latex/mermaid-figure-1.png}
+
+}
+
+\end{figure}
+
+}
+
+\caption{\label{fig-user-stories}User stories for the CRUSE tool}
+
+\end{figure}
 
 \hypertarget{sec-results}{%
 \section{Results}\label{sec-results}}

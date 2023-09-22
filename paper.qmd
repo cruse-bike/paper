@@ -257,6 +257,34 @@ And the recreational trips were classified as follows:
 ## User interface {#sec-ui}
 
 The CRUSE web application is statically hosted, meaning that it can be accessed without the need for a server running software such as the R package 'shiny' or Python packages such as 'streamlit' or 'flask' in the background [@wickham2021].
+Typical intended user stories are illustrated in @fig-user-stories, which shows that the tool is designed to be used by both professional and non-professional users.
+For the main target audience, professional transport planners working at the county level, the tool provides a range of outputs, including estimates of cycling potential at the county and network level.
+The provision of balanced (the default), quietest and fastest route networks enables planners to consider the trade-offs between directness and 'cycle friendliness' when planning new infrastructure.
+The tool also provides data downloads, enabling estimates of cycling potential on the network to be visualised and analysed with other tools such as QGIS, Python or R.
+
+For non-professional users, the tool provides a simple interface to explore the cycling potential of the network.
+By providing a single landing page that is suitable for both professional and non-professional users, the tool aims to facilitate communication between these groups.
+
+```{mermaid}
+%%| fig-width: 100%
+%%| fig-cap: User stories for the CRUSE tool
+%%| label: fig-user-stories
+graph LR
+    A(Professional user) --> B[CRUSE landing page]
+    B --> C[CRUSE national map]
+    C --> D[CRUSE county map]
+    D --> F[Full county map]
+    D --> CS[County statistics]
+    D --> Q[Quiet and fast route networks]
+    D --> DD[Data downloads]
+    DD --> EX{External tools}
+    X(Non-professional user) --> Y[CRUSE landing page]
+    Y --> Z[CRUSE national map]
+    Z --> R[CRUSE county level results]
+    Z --> E(Exploration)
+    R --> E
+    E --> COMS{Communication}
+```
 
 # Results {#sec-results}
 
