@@ -4,8 +4,12 @@ csl: apa.csl
 number-sections: true
 ---
 
+This website provides long form documentation on the CRUSE web tool for Ireland, publicly available at <https://cruse.bike>.
+It was produced with Quarto, which was also used to support the academic paper shown below.
+See <https://quarto.org/docs/websites> for further information.
+
+See [github.com/cruse-bike/paper](https://github.com/cruse-bike/paper) for the source code of this website.
+
 {{< include paper.qmd >}}
 
-This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
