@@ -79,6 +79,9 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -183,6 +186,8 @@ div.csl-indent {
 
 </header>
 
+<p>This website provides long form documentation on the CRUSE web tool for Ireland, publicly available at <a href="https://cruse.bike" class="uri">https://cruse.bike</a>. It was produced with Quarto, which was also used to support the academic paper shown below. See <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a> for further information.</p>
+<p>See <a href="https://github.com/cruse-bike/paper">github.com/cruse-bike/paper</a> for the source code of this website.</p>
 <div style="page-break-after: always;"></div>
 <section id="introduction" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
@@ -192,10 +197,17 @@ div.csl-indent {
 <p>Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation <span class="citation" data-cites="brand2020">(<a href="#ref-brand2020" role="doc-biblioref">Brand et al., 2020</a>)</span> and sustainable mobility <span class="citation" data-cites="burns2013">(<a href="#ref-burns2013" role="doc-biblioref">Burns, 2013</a>)</span>. Although cycling uptake appears on the surface to only relate to the ‘shift’ part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips <span class="citation" data-cites="nello-deakin2020">(<a href="#ref-nello-deakin2020" role="doc-biblioref">Nello-Deakin, 2020</a>)</span>. The rapid uptake of highly efficient e-bikes can also be seen as an improvement on most electric vehicles, which are too heavy and expensive to be a sustainable alternative and could in fact delay the transition away from car dependency and inadvertently enable “high travel lock-in” <span class="citation" data-cites="anable2019">(<a href="#ref-anable2019" role="doc-biblioref">Anable &amp; Goodwin, 2019</a>)</span>. At the European level, the European Union has a target of reducing greenhouse gas emissions by 55% by 2030, compared to 1990 levels, and to achieve ‘net-zero’ by 2050.[^1]</p>
 <p>Regarding road traffic casualties, another deadly consequence of inefficient transport systems, the Road Infrastructure Safety Management (RISM) directive (2008/96/EC) requires member states to implement a road safety management system (RSMS) for all public roads. Specifically, “Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out”.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Given that ‘safety’ in this context is usefully quantified as the number of people killed and seriously injured (KSI) per distance travelled, the directive requires estimation of distance travelled by mode, down to the road link level. For active modes, about which there is a paucity of data compared with motorized modes, this is a major challenge. Better data to inform road safety policies and interventions is a motivation for the CRUSE tool outlined in this paper, and modeling active travel more broadly.</p>
 <p>In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030.[^3] Doing so while simultaneously enabling rapid uptake of active modes will require key active travel routes to be identified and improved.</p>
-<p>A proactive approach to the development of cycling policy and infrastructure is taking place in Ireland. The main framework underpinning these efforts is the Climate Action Plan<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and The National Development Plan<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> . Strategic alignment is also outlined by the Phoenix Park Transport and Mobility Options Study, which highlights public support for active travel interventions: "83% of respondents supported enhanced walking and cycling facilities" .</p>
-<p>At the regional level, the recently published Greater Dublin Area Transport Strategy<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> reinforces these findings: "nearly a quarter of adults cycle at least once a week in the Dublin Metropolitan Area" with cycling in the Dublin area taking up to 60,000 cars off the road today. Extrapolating this on a per population basis across Ireland, with around 40% of the population living in Dublin, this suggests that around 150,000 cars could be removed nationwide just by achieving Dublin levels of cycling in all counties (notwithstanding existing cycling trips and differences in trip distances).</p>
+<p>A proactive approach to the development of cycling policy and infrastructure is taking place in Ireland. The main framework underpinning these efforts is the Climate Action Plan<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and The National Development Plan<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> . Strategic alignment is also outlined by the Phoenix Park Transport and Mobility Options Study, which highlights public support for active travel interventions: “83% of respondents supported enhanced walking and cycling facilities” .</p>
+<p>At the regional level, the recently published Greater Dublin Area Transport Strategy<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> reinforces these findings: “nearly a quarter of adults cycle at least once a week in the Dublin Metropolitan Area” with cycling in the Dublin area taking up to 60,000 cars off the road today. Extrapolating this on a per population basis across Ireland, with around 40% of the population living in Dublin, this suggests that around 150,000 cars could be removed nationwide just by achieving Dublin levels of cycling in all counties (notwithstanding existing cycling trips and differences in trip distances).</p>
 <p>Further evidence of the importance of cycling in Ireland <em>already</em> is provided by the National Strategic Objective (NSO) from the National Development Plan, with €8.6 billion allocated to sustainable transport infrastructure including public transport and active travel interventions. Cycle infrastructure will be developed in synchrony with the BusConnects project, an entire redesign of the bus network in Dublin and Cork.</p>
-<p>It was in this context that Transport Infrastructure Ireland (TII) commissioned the Cycle Route Uptake and Scenario Estimation (CRUSE) project. Based on the Propensity to Cycle Tool (PCT) for England and Wales, the CRUSE tool was developed to provide evidence on current cycling levels and future cycling potential nationwide across Ireland. A key consideration for TII is to ensure both urban and rural Ireland were targeted for cycling infrastructure. To this end, TII extensively reviewed activity on Irish Roads and how the road network was being used by commuters, cyclists, heavy goods vehicles and other road users across the Irish transport network. The aim was for the tool to provide strong, national, systematic but locally-specific evidence to monitor cycling friendliness and safety in Ireland, to ensure strategic alignment with national, regional and local policies. The open source and publicly available nature of the tool ensures more inclusive and evidence-based conversations around cycle network planning between all stakeholders in the transport planning process. Other use cases in the Irish context includes monitoring the need for existing cycling infrastructure upgrades, undertaking appraisal, as well as safety and exposure information in line with the European Cycling Federation, Dutch Cycling Embassy recommendations and the European RISM Directive, for reporting collision rates of vulnerable road users by 2024. These factors mean that the tool can be seen as an open access ‘leverage point’ in the planning system <span class="citation" data-cites="lovelace2020">(<a href="#ref-lovelace2020" role="doc-biblioref">Lovelace et al., 2020</a>)</span>.</p>
+<p>It was in this context that Transport Infrastructure Ireland (TII) commissioned the Cycle Route Uptake and Scenario Estimation (CRUSE) project. Based on the Propensity to Cycle Tool (PCT) for England and Wales, the CRUSE tool was developed to provide evidence on current cycling levels and future cycling potential nationwide across Ireland. A key consideration for TII is to ensure both urban and rural Ireland were targeted for cycling infrastructure, as shown in <a href="#fig-dublin">Figure&nbsp;1</a>. To this end, TII extensively reviewed activity on Irish Roads and how the road network was being used by commuters, cyclists, heavy goods vehicles and other road users across the Irish transport network. The aim was for the tool to provide strong, national, systematic but locally-specific evidence to monitor cycling friendliness and safety in Ireland, to ensure strategic alignment with national, regional and local policies. The open source and publicly available nature of the tool ensures more inclusive and evidence-based conversations around cycle network planning between all stakeholders in the transport planning process. Other use cases in the Irish context includes monitoring the need for existing cycling infrastructure upgrades, undertaking appraisal, as well as safety and exposure information in line with the European Cycling Federation, Dutch Cycling Embassy recommendations and the European RISM Directive, for reporting collision rates of vulnerable road users by 2024. These factors mean that the tool can be seen as an open access ‘leverage point’ in the planning system <span class="citation" data-cites="lovelace2020">(<a href="#ref-lovelace2020" role="doc-biblioref">Lovelace et al., 2020</a>)</span>.</p>
+<div id="fig-dublin" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/paste-1.png" class="img-fluid figure-img"></p>
+<p><img src="images/paste-3.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Illustration of the density of route networks generated by the CRUSE tool for Dublin City and surroundings (top) and rural County Mayo on the West coast of Ireland. Source: CRUSE tool, available at <a href="https://cruse.bike/" class="uri">https://cruse.bike/</a>.</figcaption>
+</figure>
+</div>
 <p>The rest of paper is structured as follows. In <a href="#sec-methods">Section&nbsp;2</a>, we outline the methods used to generate the evidence presented in the CRUSE tool for Ireland. In <a href="#sec-results">Section&nbsp;3</a>, we present the results of the CRUSE tool, including estimates of current cycling levels and future cycling potential at the national, regional and local levels. In <a href="#sec-discussion">Section&nbsp;4</a>, we discuss the implications of the results for policy and practice. In <a href="#sec-conclusions">Section&nbsp;5</a>, we conclude the paper.</p>
 </section>
 <section id="sec-methods" class="level1" data-number="2">
@@ -215,19 +227,11 @@ div.csl-indent {
 <h2 data-number="2.1" class="anchored" data-anchor-id="sec-disaggregation"><span class="header-section-number">2.1</span> Disaggregation of origin-destination data</h2>
 <p>A feature of active travel interventions is that they require dense networks of routes to be effective <span class="citation" data-cites="parkin2018">(<a href="#ref-parkin2018" role="doc-biblioref">Parkin, 2018</a>)</span>. This means that high levels of geographic resolution are needed in the data used to estimate cycling potential. However, datasets on travel patterns are often only available at the level of administrative zones. The Central Statistics Office (CSO) in Ireland provides Place of Work, School or College Census of Anonymised Records (<a href="https://www.cso.ie/en/census/census2016reports/powscar/">POWSCAR</a>) data on the number of people travelling to work and school at the Electoral Division (ED) level, for example.</p>
 <p>The method used to convert OD data to route networks used in the PCT was to calculate a single route between the population weighted centroids associated with each OD pair. This method works fine when the OD data represents movement between small areas, but was not appropriate for generating route networks from the POWSCAR data because zone centroids are so far apart that the resulting route networks would be sparse and unrealistic. To tackle this issue we developed a new method for OD data disaggregation called ‘jittering’ <span class="citation" data-cites="lovelace2022">(<a href="#ref-lovelace2022" role="doc-biblioref">Lovelace et al., 2022</a>)</span>. The method works by first disaggregating the OD data based on a ‘disaggregation threshold’ and then assigning each disaggregated ‘sub-OD’ pair to ‘subpoints’ within each zone. As shown in <a href="#fig-dublin">Figure&nbsp;1</a>, the resulting route networks are dense, even in rural areas.</p>
-<div id="fig-dublin" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="images/paste-1.png" class="img-fluid figure-img"></p>
-<p><img src="images/paste-3.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: Illustration of the density of route networks generated by the CRUSE tool for Dublin City and surroundings (top) and rural County Mayo on the West coast of Ireland. Source: CRUSE tool, available at <a href="https://cruse.bike/" class="uri">https://cruse.bike/</a>.</figcaption>
-</figure>
-</div>
 </section>
 <section id="sec-trip-purposes" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="sec-trip-purposes"><span class="header-section-number">2.2</span> Additional trip purposes</h2>
 <p>A limitation of the original PCT was that it only included travel to work data. This was partially addressed by the inclusion of travel to school based on data from the Department for Education in England <span class="citation" data-cites="goodman2019">(<a href="#ref-goodman2019" role="doc-biblioref">Goodman et al., 2019</a>)</span>. An advantage of the POWSCAR OD data over OD datasets derived from census surveys in many countries is that it includes travel to school data. We commissioned a version of POWSCAR that included a breakdown of the total flows between OD pairs by purpose and mode, enabling a more realistic estimation of the ‘Baseline’ cycling network.</p>
-<p>However, travel to school and work only constitute a small proportion of all trips. To overcome this issue, we developed a spatial interaction modelling methodology to estimate the number of trips between each OD pair for additional trip purposes.</p>
-<p>The classification of trip purposes used in the CRUSE tool was guided mainly by the trip purpose classification found within the National Household Travel Survey (NHTS), but with the addition of categories based on the comprehensive POWSCAR data, and the need to include recreational trips and multi-stage trips (not yet implemented). An overview of the trip purposes used in CRUSE is presented in <a href="#fig-trip-purposes">Figure&nbsp;2</a>.</p>
+<p>However, travel to school and work only constitute a small proportion of all trips. To overcome this issue, we developed a spatial interaction modelling methodology to estimate the number of trips between each OD pair for additional trip purposes. The classification of trip purposes used in the CRUSE tool was guided mainly by the trip purpose classification found within the National Household Travel Survey (NHTS), but with the addition of categories based on the comprehensive POWSCAR data, and the need to include recreational trips and multi-stage trips (not yet implemented). An overview of the trip purposes used in CRUSE is presented in <a href="#fig-trip-purposes">Figure&nbsp;2</a>.</p>
 <div id="fig-trip-purposes" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="images/paste-4.png" class="img-fluid figure-img"></p>
@@ -258,6 +262,35 @@ And the recreational trips were classified as follows:
 </section>
 <section id="sec-ui" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="sec-ui"><span class="header-section-number">2.3</span> User interface</h2>
+<p>The CRUSE web application is statically hosted, meaning that it can be accessed without the need for a server running software such as the R package ‘shiny’ or Python packages such as ‘streamlit’ or ‘flask’ in the background <span class="citation" data-cites="wickham2021">(<a href="#ref-wickham2021" role="doc-biblioref">Wickham, 2021</a>)</span>. Typical intended user stories are illustrated in <a href="#fig-user-stories">Figure&nbsp;3</a>, which shows that the tool is designed to be used by both professional and non-professional users. For the main target audience, professional transport planners working at the county level, the tool provides a range of outputs, including estimates of cycling potential at the county and network level. The provision of balanced (the default), quietest and fastest route networks enables planners to consider the trade-offs between directness and ‘cycle friendliness’ when planning new infrastructure. The tool also provides data downloads, enabling estimates of cycling potential on the network to be visualised and analysed with other tools such as QGIS, Python or R.</p>
+<p>For non-professional users, the tool provides a simple interface to explore the cycling potential of the network. By providing a single landing page that is suitable for both professional and non-professional users, the tool aims to facilitate communication between these groups.</p>
+<div class="cell" data-fig-width="100%">
+<div class="cell-output-display">
+<div id="fig-user-stories" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-user-stories">graph LR
+    A(Professional user) --&gt; B[CRUSE landing page]
+    B --&gt; C[CRUSE national map]
+    C --&gt; D[CRUSE county map]
+    D --&gt; F[Full county map]
+    D --&gt; CS[County statistics]
+    D --&gt; Q[Quiet and fast route networks]
+    D --&gt; DD[Data downloads]
+    DD --&gt; EX{External tools}
+    X(Non-professional user) --&gt; Y[CRUSE landing page]
+    Y --&gt; Z[CRUSE national map]
+    Z --&gt; R[CRUSE county level results]
+    Z --&gt; E(Exploration)
+    R --&gt; E
+    E --&gt; COMS{Communication}
+</pre>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;3: User stories for the CRUSE tool</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="sec-results" class="level1" data-number="3">
@@ -308,8 +341,6 @@ And the recreational trips were classified as follows:
 <section id="authors-contributions" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="authors-contributions">Authors’ contributions</h2>
 <p>RL led the development of the CRUSE tool, with input from JT, EV, HM, EB, PW, GOT, DB, and SM. SM instigated the project and coordinated its policy impact. PW, EB and GOT provided project management and transport engineering expertise.</p>
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
 
 
 
@@ -365,6 +396,9 @@ Parkin, J. (2018). <em>Designing for cycle traffic: International principles and
 </div>
 <div id="ref-shergold2012" class="csl-entry" role="listitem">
 Shergold, I., Parkhurst, G., &amp; Musselwhite, C. (2012). Rural car dependence: An emerging barrier to community activity for older people. <em>Transportation Planning and Technology</em>, <em>35</em>(1), 6985.
+</div>
+<div id="ref-wickham2021" class="csl-entry" role="listitem">
+Wickham, H. (2021). <em>Mastering shiny: Build interactive apps, reports, and dashboards powered by r</em>. O’Reilly Media.
 </div>
 <div id="ref-woodcock2018" class="csl-entry" role="listitem">
 Woodcock, J., Abbas, A., Ullrich, A., Tainio, M., Lovelace, R., Sá, T. H., Westgate, K., &amp; Goodman, A. (2018). Development of the Impacts of Cycling Tool (ICT): A modelling study and web tool for evaluating health and environmental impacts of cycling uptake. <em>PLOS Medicine</em>, <em>15</em>(7), e1002622. <a href="https://doi.org/10.1371/journal.pmed.1002622">https://doi.org/10.1371/journal.pmed.1002622</a>
