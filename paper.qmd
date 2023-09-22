@@ -8,20 +8,20 @@ editor:
     wrap: sentence
 number-sections: true
 
-# Uncomment for draft versions:
-format: 
-  html: default
-  docx: default
+# # Uncomment for draft versions:
+# format: 
+#   html: default
+#   docx: default
 
-# # Uncomment for formatted version
-# format:
-#   elsevier-pdf:
-#     keep-tex: true
-#     journal:
-#       name: Journal Name
-#       formatting: preprint
-#       model: 3p
-#       cite-style: super
+# Uncomment for formatted version
+format:
+  elsevier-pdf:
+    keep-tex: true
+    journal:
+      name: Journal Name
+      formatting: preprint
+      model: 3p
+      cite-style: super
 
 # # Uncomment the following line to produce the cover page
 author:
@@ -126,20 +126,16 @@ Better data to inform road safety policies and interventions is a motivation for
 
 In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030.\[\^3\] Doing so while simultaneously enabling rapid uptake of active modes will require key active travel routes to be identified and improved.
 
-A proactive approach to the development of cycling policy and
-infrastructure is taking place in Ireland.
-The main framework
-underpinning these efforts is the Climate Action Plan[^2] and The National
-Development Plan[^3]
-. Strategic alignment is also outlined by the
-Phoenix Park Transport and Mobility Options Study, which highlights public support for active travel interventions: \"83% of respondents supported enhanced walking and cycling facilities\"
+A proactive approach to the development of cycling policy and infrastructure is taking place in Ireland.
+The main framework underpinning these efforts is the Climate Action Plan[^2] and The National Development Plan[^3]
+. Strategic alignment is also outlined by the Phoenix Park Transport and Mobility Options Study, which highlights public support for active travel interventions: "83% of respondents supported enhanced walking and cycling facilities"
 .
 
 [^2]: <https://www.gov.ie/en/publication/7bd8c-climate-action-plan-2023/>
 
 [^3]: <https://www.gov.ie/en/publication/774e2-national-development-plan-2021-2030/>
 
-At the regional level, the recently published Greater Dublin Area Transport Strategy[^4] reinforces these findings: \"nearly a quarter of adults cycle at least once a week in the Dublin Metropolitan Area\" with cycling in the Dublin area taking up to 60,000 cars off the road today.
+At the regional level, the recently published Greater Dublin Area Transport Strategy[^4] reinforces these findings: "nearly a quarter of adults cycle at least once a week in the Dublin Metropolitan Area" with cycling in the Dublin area taking up to 60,000 cars off the road today.
 Extrapolating this on a per population basis across Ireland, with around 40% of the population living in Dublin, this suggests that around 150,000 cars could be removed nationwide just by achieving Dublin levels of cycling in all counties (notwithstanding existing cycling trips and differences in trip distances).
 
 [^4]: <https://www.nationaltransport.ie/planning-and-investment/strategic-planning/greater-dublin-area-transport-strategy/>
@@ -149,12 +145,21 @@ Cycle infrastructure will be developed in synchrony with the BusConnects project
 
 It was in this context that Transport Infrastructure Ireland (TII) commissioned the Cycle Route Uptake and Scenario Estimation (CRUSE) project.
 Based on the Propensity to Cycle Tool (PCT) for England and Wales, the CRUSE tool was developed to provide evidence on current cycling levels and future cycling potential nationwide across Ireland.
-A key consideration for TII is to ensure both urban and rural Ireland were targeted for cycling infrastructure.
+A key consideration for TII is to ensure both urban and rural Ireland were targeted for cycling infrastructure, as shown in @fig-dublin.
 To this end, TII extensively reviewed activity on Irish Roads and how the road network was being used by commuters, cyclists, heavy goods vehicles and other road users across the Irish transport network.
 The aim was for the tool to provide strong, national, systematic but locally-specific evidence to monitor cycling friendliness and safety in Ireland, to ensure strategic alignment with national, regional and local policies.
 The open source and publicly available nature of the tool ensures more inclusive and evidence-based conversations around cycle network planning between all stakeholders in the transport planning process.
 Other use cases in the Irish context includes monitoring the need for existing cycling infrastructure upgrades, undertaking appraisal, as well as safety and exposure information in line with the European Cycling Federation, Dutch Cycling Embassy recommendations and the European RISM Directive, for reporting collision rates of vulnerable road users by 2024.
 These factors mean that the tool can be seen as an open access 'leverage point' in the planning system [@lovelace2020].
+
+::: {#fig-dublin}
+![](images/paste-1.png)
+
+![](images/paste-3.png)
+
+Illustration of the density of route networks generated by the CRUSE tool for Dublin City and surroundings (top) and rural County Mayo on the West coast of Ireland.
+Source: CRUSE tool, available at <https://cruse.bike/>.
+:::
 
 The rest of paper is structured as follows.
 In @sec-methods, we outline the methods used to generate the evidence presented in the CRUSE tool for Ireland.
@@ -208,15 +213,6 @@ To tackle this issue we developed a new method for OD data disaggregation called
 The method works by first disaggregating the OD data based on a 'disaggregation threshold' and then assigning each disaggregated 'sub-OD' pair to 'subpoints' within each zone.
 As shown in @fig-dublin, the resulting route networks are dense, even in rural areas.
 
-::: {#fig-dublin}
-![](images/paste-1.png)
-
-![](images/paste-3.png)
-
-Illustration of the density of route networks generated by the CRUSE tool for Dublin City and surroundings (top) and rural County Mayo on the West coast of Ireland.
-Source: CRUSE tool, available at <https://cruse.bike/>.
-:::
-
 ## Additional trip purposes {#sec-trip-purposes}
 
 A limitation of the original PCT was that it only included travel to work data.
@@ -226,7 +222,6 @@ We commissioned a version of POWSCAR that included a breakdown of the total flow
 
 However, travel to school and work only constitute a small proportion of all trips.
 To overcome this issue, we developed a spatial interaction modelling methodology to estimate the number of trips between each OD pair for additional trip purposes.
-
 The classification of trip purposes used in the CRUSE tool was guided mainly by the trip purpose classification found within the National Household Travel Survey (NHTS), but with the addition of categories based on the comprehensive POWSCAR data, and the need to include recreational trips and multi-stage trips (not yet implemented).
 An overview of the trip purposes used in CRUSE is presented in @fig-trip-purposes.
 
@@ -260,6 +255,8 @@ And the recreational trips were classified as follows:
 -->
 ```
 ## User interface {#sec-ui}
+
+The CRUSE web application is statically hosted, meaning that it can be accessed without the need for a server running software such as the R package 'shiny' or Python packages such as 'streamlit' or 'flask' in the background [@wickham2021].
 
 # Results {#sec-results}
 
