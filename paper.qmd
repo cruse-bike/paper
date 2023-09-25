@@ -303,6 +303,7 @@ Through the interactive web application, users can explore the data to generate 
 
 Instead of trying to show such use cases, of which there are many hundreds, we present a selection of results to illustrate the main features of the CRUSE tool.
 
+```{=html}
 <!-- ## National results {#sec-national-results}
 
 The CRUSE tool provides estimates of cycling potential at the national level, as shown in @fig-national-results.
@@ -313,7 +314,7 @@ National planning
 Regional
 
 Local -->
-
+```
 <!-- ## Local results -->
 
 To illustrate the results in urban areas, we took the top 4 cities in Ireland by population: Dublin City, Cork, Limerick and Galway (with city populations of 0.6, 0.2, 0.1 and 0.1 million respectively).
@@ -400,12 +401,10 @@ browseURL("./images/rnet_types.png")
 ```
 
 ::: {#fig-city-results}
-
 ![](images/rnet_types.png)
 
 Fastest, balanced and quietest cycle networks within 3km circular areas containing the four largest cities in Ireland.
 The networks are coloured by cycle friendliness and with widths varying in proportion to the potential level of cycling under the 'Go Dutch' scenario.
-
 :::
 
 Aside from the widely varying sizes and route networks of each city, with Dublin having by far the densest network, it is clear from the visualisation of cycling friendliness that there is a lot of room for improvement in all cities.
@@ -413,24 +412,25 @@ Dublin has had received most investment in cycling infrastructure and this is ap
 Dublin also has the highest mode share of cycling of the four cities, adding to the evidence base showing that investment in cycling infrastructure is effective in increasing cycling uptake.
 
 Although Dublin City has made progress, there are still many parts of the Fastest route network, and even some parts of the Balanced and Quietest route networks, that are not cycle friendly and which have high cycling potential.
-According to a recent report, 71% of residents in the Dublin Metropolitan Area support "more cycle tracks along roads, physically separated
-from traffic and pedestrians".^[
-https://www.nationaltransport.ie/wp-content/uploads/2022/05/220504-WACI22_DublinMetropolitanArea_v35_DIGITAL_v2.pdf
-]
+According to a recent report, 71% of residents in the Dublin Metropolitan Area support "more cycle tracks along roads, physically separated from traffic and pedestrians".[^8]
 The results for the Dublin area could help prioritise investment in cycling infrastructure in the city.
 
-The results for the other 
+[^8]:  https://www.nationaltransport.ie/wp-content/uploads/2022/05/220504-WACI22_DublinMetropolitanArea_v35_DIGITAL_v2.pdf
+
+The results for the other
 
 # Discussion {#sec-discussion}
 
 The CRUSE tool provides evidence on current and potential future cycling levels across Ireland down to the street level, with potential assigned to 'fastest', 'balanced' and 'quietest' route networks.
 This provision of multiple scenarios of behaviour changes *and* multiple scenarios of investment, for example in cycling infrastructure next to major roads vs quiet residential streets, is a key feature of the CRUSE tool.
 
-As highlighted in a paper on cycling infrastructure preferences based on a case study of Dublin, both directness and quietness are important :
+As highlighted in a paper on cycling infrastructure preferences based on a case study of Dublin, both directness and quietness are important [@caulfield2012]:
 
-> Direct routes with short journey times were found to be the most important positive variable for existing cyclists and non-cyclists in determining route choice. This is followed by infrastructure type, the number of junctions along the route, traffic speed and cyclist volumes. In terms if infrastructure, regardless of the level of cycling confidence, routes which have ‘no facilities’ or ‘bus/cycle lanes’ are the least favoured cycle route types.
+> Direct routes with short journey times were found to be the most important positive variable for existing cyclists and non-cyclists in determining route choice.
+> This is followed by infrastructure type, the number of junctions along the route, traffic speed and cyclist volumes.
+> In terms if infrastructure, regardless of the level of cycling confidence, routes which have 'no facilities' or 'bus/cycle lanes' are the least favoured cycle route types.
 
-The CRUSE tool can help both in terms of describing the current situation, and also prioritise investment in those routes lacking infrastructure highlighted by  as being least favoured by cyclists.
+The CRUSE tool can help both in terms of describing the current situation, and also prioritise investment in those routes lacking infrastructure highlighted by @caulfield2012 as being least favoured by cyclists.
 
 # Conclusions {#sec-conclusions}
 
