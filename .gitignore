@@ -6,3 +6,4 @@ cruse-paper_files/libs/
 _site/
 
 /.luarc.json
+_freeze/

@@ -11,8 +11,8 @@ number-sections: true
 # Uncomment for draft versions:
 format: 
   html: default
-  # docx: default
-  # pdf: default
+#   # docx: default
+#   # pdf: default
 
 # # Uncomment for formatted version
 # format:
@@ -97,6 +97,12 @@ date: last-modified
 ---
 
 {{< pagebreak >}}
+
+```{r}
+#| include: false
+library(tidyverse)
+library(tmap)
+```
 
 # Introduction
 
@@ -309,9 +315,37 @@ To illustrate the results in urban areas, we took the top 4 cities in Ireland by
 The results for these cities are presented in @fig-city-results.
 
 ```{r}
-# Results for one city
-
+#| eval: false
+#| echo: false
+# Results for one city are shown below
+city_name = "Dublin"
+city_buffer = zonebuilder::zb_zone(city_name)
+city_buffer_5km = city_buffer |>
+  filter(circle_id <= 2)
+# qtm(city_buffer_5km)
+city_buffer_union = sf::st_union(city_buffer_5km)
+rnet_fastest = sf::read_sf("./../testout/dublin/rnet_combined_fastest.gpkg")
+rnet_fastest_city = sf::st_intersection(rnet_fastest, city_buffer_union)#
+# nrow(rnet_fastest_city)
+# table(rnet_fastest_city$`Bicycle (Go Dutch)`)
+rnet_fastest_city_top = rnet_fastest_city |>
+  filter(`Bicycle (Go Dutch)` != "1-10") |>
+  filter(`Bicycle (Go Dutch)` != "0") |>
+  mutate(across(`Bicycle (Baseline)`:`Quietness`, as.numeric)) |>
+  slice_max(`Bicycle (Go Dutch)`, n = 10000)
+m = tm_shape(rnet_fastest_city_top) +
+  tm_lines(col = "Quietness", palette = "RdYlGn", lwd = 5)
+tmap_save(m, "./images/rnet_fastest_city_top.png", width = 10, height = 10)
 ```
+
+::: {#fig-city-results}
+
+![](images/rnet_fastest_city_top.png)
+
+Top 10,000 routes in Dublin by 'cycle friendliness' (quietness) based on the 'fastest' route network.
+
+:::
+
 
 # Discussion {#sec-discussion}
 
