@@ -417,7 +417,7 @@ The results for the Dublin area could help prioritise investment in cycling infr
 
 [^8]:  https://www.nationaltransport.ie/wp-content/uploads/2022/05/220504-WACI22_DublinMetropolitanArea_v35_DIGITAL_v2.pdf
 
-The results for the other
+<!-- The results for the other -->
 
 # Discussion {#sec-discussion}
 
@@ -430,7 +430,7 @@ As highlighted in a paper on cycling infrastructure preferences based on a case 
 > This is followed by infrastructure type, the number of junctions along the route, traffic speed and cyclist volumes.
 > In terms if infrastructure, regardless of the level of cycling confidence, routes which have 'no facilities' or 'bus/cycle lanes' are the least favoured cycle route types.
 
-The CRUSE tool can help both in terms of describing the current situation, and also prioritise investment in those routes lacking infrastructure highlighted by @caulfield2012 as being least favoured by cyclists.
+The CRUSE tool can help both in terms of describing the current situation, and also prioritise investment in those direct routes with high cycling potential that lack adequate cycling infrastructure, highlighted by @caulfield2012.
 
 # Conclusions {#sec-conclusions}
 
