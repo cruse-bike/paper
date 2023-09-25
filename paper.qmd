@@ -264,11 +264,11 @@ The provision of balanced (the default), quietest and fastest route networks ena
 The tool also provides data downloads, enabling estimates of cycling potential on the network to be visualised and analysed with other tools such as QGIS, Python or R.
 
 For non-professional users, the tool provides a simple interface to explore the cycling potential of the network.
-By providing a single landing page that is suitable for both professional and non-professional users, the tool aims to facilitate communication between these groups.
+By providing a single landing page that is suitable for both professional and non-professional users (such as an advocate or parent interested in safe routes to school), the tool aims to facilitate communication between these groups.
 
 ```{mermaid}
 %%| fig-width: 100%
-%%| fig-cap: User stories for the CRUSE tool
+%%| fig-cap: Hypothetical user stories for the CRUSE tool illustrating that it can be used in different ways by different user groups.
 %%| label: fig-user-stories
 graph LR
     A(Professional user) --> B[CRUSE landing page]
@@ -289,11 +289,29 @@ graph LR
 
 # Results {#sec-results}
 
+The main result of the CRUSE project is a new and open access web application and dataset on current and potential future cycling levels in Ireland, with evidence provided at county and route segment levels.
+Like the PCT on which CRUSE builds, a key feature of the results is that they are systematic and available for all counties, and most routes on which cycling is permitted, in Ireland.
+
+## National results {#sec-national-results}
+
+The CRUSE tool provides estimates of cycling potential at the national level, as shown in @fig-national-results.
+
+
 National planning
 
 Regional
 
 Local
+
+## Local results
+
+To illustrate the results in urban areas, we took the top 4 cities in Ireland by population: Dublin, Cork, Limerick and Galway.
+The results for these cities are presented in @fig-city-results.
+
+```{r}
+# Results for one city
+
+```
 
 # Discussion {#sec-discussion}
 
