@@ -17,9 +17,6 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Install rmakrdown
-        run: sudo Rscript -e 'install.packages("rmarkdown")'
-
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
