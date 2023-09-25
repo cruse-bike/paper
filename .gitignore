@@ -7,3 +7,4 @@ _site/
 
 /.luarc.json
 _freeze/
+.Rproj.user

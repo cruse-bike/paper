@@ -101,6 +101,7 @@ date: last-modified
 ```{r}
 #| include: false
 library(tidyverse)
+remotes::install_dev("tmap")
 library(tmap)
 ```
 
@@ -295,10 +296,14 @@ graph LR
 
 # Results {#sec-results}
 
-The main result of the CRUSE project is a new and open access web application and dataset on current and potential future cycling levels in Ireland, with evidence provided at county and route segment levels.
+The main result of the CRUSE project is an open access web application and datasets on current and potential future cycling levels in Ireland, with evidence provided at county and route segment levels.
 Like the PCT on which CRUSE builds, a key feature of the results is that they are systematic and available for all counties, and most routes on which cycling is permitted, in Ireland.
+The full set of results are therefore too extensive to present in their entirety in this paper.
+Through the interactive web application, users can explore the data to generate the results that are most relevant to their needs, whether that is finding the cycling potential on a particular road or finding 'weak links' in the cycle network associated with a particular school, work place or other destination.
 
-## National results {#sec-national-results}
+Instead of trying to show such use cases, of which there are many hundreds, we present a selection of results to illustrate the main features of the CRUSE tool.
+
+<!-- ## National results {#sec-national-results}
 
 The CRUSE tool provides estimates of cycling potential at the national level, as shown in @fig-national-results.
 
@@ -307,24 +312,25 @@ National planning
 
 Regional
 
-Local
+Local -->
 
-## Local results
+<!-- ## Local results -->
 
-To illustrate the results in urban areas, we took the top 4 cities in Ireland by population: Dublin, Cork, Limerick and Galway.
-The results for these cities are presented in @fig-city-results.
+To illustrate the results in urban areas, we took the top 4 cities in Ireland by population: Dublin City, Cork, Limerick and Galway (with city populations of 0.6, 0.2, 0.1 and 0.1 million respectively).
+The results for central areas demarcated with circular areas with a radius of 3km for these cities are presented in @fig-city-results.
 
 ```{r}
 #| eval: false
 #| echo: false
 # Results for one city are shown below
-city_name = "Dublin"
+cities = c("dublin", "cork", "limerick", "galway")
+city_name = "dublin"
 city_buffer = zonebuilder::zb_zone(city_name)
 city_buffer_5km = city_buffer |>
   filter(circle_id <= 2)
 # qtm(city_buffer_5km)
 city_buffer_union = sf::st_union(city_buffer_5km)
-rnet_fastest = sf::read_sf("./../testout/dublin/rnet_combined_fastest.gpkg")
+rnet_fastest = sf::read_sf(glue::glue("./../testout/{city_name}/rnet_combined_fastest.gpkg"))
 rnet_fastest_city = sf::st_intersection(rnet_fastest, city_buffer_union)#
 # nrow(rnet_fastest_city)
 # table(rnet_fastest_city$`Bicycle (Go Dutch)`)
@@ -336,18 +342,95 @@ rnet_fastest_city_top = rnet_fastest_city |>
 m = tm_shape(rnet_fastest_city_top) +
   tm_lines(col = "Quietness", palette = "RdYlGn", lwd = 5)
 tmap_save(m, "./images/rnet_fastest_city_top.png", width = 10, height = 10)
+# Generalisation to balanced and quiestest route types:
+route_types = c("fastest", "balanced", "quietest")
+dublin_rnets = purrr::map(route_types, function(route_type) {
+  rnet = sf::read_sf(glue::glue("./../testout/{city_name}/rnet_combined_{route_type}.gpkg"))
+  rnet_city = sf::st_intersection(rnet, city_buffer_union)
+  rnet_city_top = rnet_city |>
+    filter(`Bicycle (Go Dutch)` != "1-10") |>
+    filter(`Bicycle (Go Dutch)` != "0") |>
+    mutate(across(`Bicycle (Baseline)`:`Quietness`, as.numeric)) |>
+    slice_max(`Bicycle (Go Dutch)`, n = 1000) |>
+    mutate(`Route type` = route_type) |>
+    rename(geometry = geom)
+  rnet_city_top
+})
+dublin_rnets = do.call(rbind, dublin_rnets)
+dublin_rnets$`Route type` = factor(dublin_rnets$`Route type`, levels = route_types)
+m_types_dublin = tm_shape(dublin_rnets) +
+  tm_lines(col = "col", lwd = "Bicycle (Go Dutch)", scale = 9) +
+  tm_legend_hide() +
+  tm_facets(by = "Route type", nrow = 1)
+
+cities_rnet_types = purrr::map(cities, function(city_name) {
+  city_buffer = zonebuilder::zb_zone(city_name)
+  city_buffer_5km = city_buffer |>
+    filter(circle_id <= 2)
+  city_buffer_union = sf::st_union(city_buffer_5km)
+  route_types = c("fastest", "balanced", "quietest")
+  rnet_types = purrr::map(route_types, function(route_type) {
+    rnet = sf::read_sf(glue::glue("./../testout/{city_name}/rnet_combined_{route_type}.gpkg"))
+    rnet_city = sf::st_intersection(rnet, city_buffer_union)
+    rnet_city_top = rnet_city |>
+      filter(`Bicycle (Go Dutch)` != "1-10") |>
+      filter(`Bicycle (Go Dutch)` != "0") |>
+      mutate(across(`Bicycle (Baseline)`:`Quietness`, as.numeric)) |>
+      # slice_max(`Bicycle (Go Dutch)`, n = 1000) |>
+      # Title Case city name:
+      mutate(`Route type` = str_to_title(route_type), `City` = str_to_title(city_name))
+    rnet_city_top
+  })
+  rnet_types = do.call(rbind, rnet_types)
+  rnet_types$`Route type` = factor(rnet_types$`Route type`, levels = str_to_title(route_types))
+  rnet_types$`City` = factor(rnet_types$`City`, levels = str_to_title(cities))
+  rnet_types
+})
+cities_rnet_types = do.call(rbind, cities_rnet_types)
+summary(cities_rnet_types$`Bicycle (Go Dutch)`)
+# Set max to 1000:
+cities_rnet_types$`Bicycle (Go Dutch)` = pmin(cities_rnet_types$`Bicycle (Go Dutch)`, 1000)
+m_types = tm_shape(cities_rnet_types) +
+  tm_lines(col = "col", lwd = "Bicycle (Go Dutch)", scale = 20) +
+  tm_legend_hide() +
+  tm_facets_grid(rows = "City", columns = "Route type")
+m_types
+tmap_save(m_types, "./images/rnet_types.png", width = 12, height = 10)
+browseURL("./images/rnet_types.png")
 ```
 
 ::: {#fig-city-results}
 
-![](images/rnet_fastest_city_top.png)
+![](images/rnet_types.png)
 
-Top 10,000 routes in Dublin by 'cycle friendliness' (quietness) based on the 'fastest' route network.
+Fastest, balanced and quietest cycle networks within 3km circular areas containing the four largest cities in Ireland.
+The networks are coloured by cycle friendliness and with widths varying in proportion to the potential level of cycling under the 'Go Dutch' scenario.
 
 :::
 
+Aside from the widely varying sizes and route networks of each city, with Dublin having by far the densest network, it is clear from the visualisation of cycling friendliness that there is a lot of room for improvement in all cities.
+Dublin has had received most investment in cycling infrastructure and this is apparent from the high proportion of the route network that is green, even in the 'Fastest' route network representing routes that prioritise speed and directness over comfort and safety.
+Dublin also has the highest mode share of cycling of the four cities, adding to the evidence base showing that investment in cycling infrastructure is effective in increasing cycling uptake.
+
+Although Dublin City has made progress, there are still many parts of the Fastest route network, and even some parts of the Balanced and Quietest route networks, that are not cycle friendly and which have high cycling potential.
+According to a recent report, 71% of residents in the Dublin Metropolitan Area support "more cycle tracks along roads, physically separated
+from traffic and pedestrians".^[
+https://www.nationaltransport.ie/wp-content/uploads/2022/05/220504-WACI22_DublinMetropolitanArea_v35_DIGITAL_v2.pdf
+]
+The results for the Dublin area could help prioritise investment in cycling infrastructure in the city.
+
+The results for the other 
 
 # Discussion {#sec-discussion}
+
+The CRUSE tool provides evidence on current and potential future cycling levels across Ireland down to the street level, with potential assigned to 'fastest', 'balanced' and 'quietest' route networks.
+This provision of multiple scenarios of behaviour changes *and* multiple scenarios of investment, for example in cycling infrastructure next to major roads vs quiet residential streets, is a key feature of the CRUSE tool.
+
+As highlighted in a paper on cycling infrastructure preferences based on a case study of Dublin, both directness and quietness are important :
+
+> Direct routes with short journey times were found to be the most important positive variable for existing cyclists and non-cyclists in determining route choice. This is followed by infrastructure type, the number of junctions along the route, traffic speed and cyclist volumes. In terms if infrastructure, regardless of the level of cycling confidence, routes which have ‘no facilities’ or ‘bus/cycle lanes’ are the least favoured cycle route types.
+
+The CRUSE tool can help both in terms of describing the current situation, and also prioritise investment in those routes lacking infrastructure highlighted by  as being least favoured by cyclists.
 
 # Conclusions {#sec-conclusions}
 
