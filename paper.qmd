@@ -11,7 +11,7 @@ number-sections: true
 # Uncomment for draft versions:
 format: 
   html: default
-#   # docx: default
+  docx: default
 #   # pdf: default
 
 # # Uncomment for formatted version
