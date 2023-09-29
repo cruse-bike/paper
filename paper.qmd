@@ -83,11 +83,10 @@ abstract: |
   Many networks are provided, highlighting routes for directness (Fastest) and "cycle friendliness" (Quietest).
   It uses origin and destination data from the 2016 Census in combination with modeled demand data to estimate current and potential future cycling levels at area, route, and network levels for each county in Ireland.
   
-  As countries, like Ireland, invest in cycling, the number of killed and seriously injured cyclists must reduce too.
-  The CRUSE Tool provides estimates of cycling potential and routing for each county in Ireland, and works in both urban and rural settings, to enable monitoring of cycling safety.
+  For investment in cycling to deliver on the huge potential benefits cycling must become safer.
   With growth in the E-bike market, the tool will help inform inter-urban and rural networks to support the transfer of trips to sustainable modes for longer journeys.
-  The CRUSE Tool methodology and findings are directly relevant to addressing the challenges and opportunities faced by other NRAs.
-  The datasets resulting from the project are open access and can be used by both non-experts and professionals.
+  The findings and resulting tool are directly relevant to addressing the challenges and opportunities faced by National Road Authorities (NRAs) across Ireland.
+  The provision of open access evidence, that can be used non-experts and professionals, is relevant to countries with sustainable transport policies worldwide.
 keywords: 
   - Cycling
   - Open-source
