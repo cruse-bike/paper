@@ -80,8 +80,8 @@ abstract: |
   
   CRUSE is structured in a similar way to the traditional four-stage transport model, but its use of Open Street Map (OSM) data, used by [Cyclestreets.net](https://www.cyclestreets.net/) for routing, enables network quality to be assessed without costly surveys to record new infrastructure.
   OSM tags generate "cycle friendliness" estimates of all links on the network, based on existing recorded infrastructure.
-  A range of networks is provided, highlighting routes for directness (Fastest) and "cycle friendliness" (Quietest).
-  It uses origin and destination data from the 2016 Census in combination with modeled demand data to estimate cycling levels and potential at the area, route, and network levels for each county in Ireland and offers estimates of the baseline level of cycling and several future scenario-based levels of cycling.
+  Many networks are provided, highlighting routes for directness (Fastest) and "cycle friendliness" (Quietest).
+  It uses origin and destination data from the 2016 Census in combination with modeled demand data to estimate current and potential future cycling levels at area, route, and network levels for each county in Ireland.
   
   As countries, like Ireland, invest in cycling, the number of killed and seriously injured cyclists must reduce too.
   The CRUSE Tool provides estimates of cycling potential and routing for each county in Ireland, and works in both urban and rural settings, to enable monitoring of cycling safety.
