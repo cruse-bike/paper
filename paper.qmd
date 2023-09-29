@@ -75,8 +75,8 @@ abstract: |
   ITS Leeds led the development of the PCT for England and Wales, which has "revolutionized the practice of strategic cycle planning nationally".
   The tool is an open-source approach using recognized open-source methodology to enable planners, engineers, and other stakeholders to make evidence-based decisions for the NRN.
   CRUSE is available at <https://cruse.bike/> and builds on the Propensity to Cycle Tool (PCT) for England and Wales.
-  CRUSE goes beyond the PCT in several important ways, higher resolution data, more trip types, including estimates for education, inter-urban, and recreational trips.
-  In addition to understanding cycling intensity, for asset planning and management purposes, the tool provides essential road safety information to enable reporting of disaggregate collision rates.
+  CRUSE goes beyond the PCT in several important ways, modeling denser networks at higher levels of geographic resolution and additional purposes, including simulated recreational, social, shopping and personal trips, in addition trips to work and primary, secondary and tertiary education locations.
+  The tool provides key 'denominator' information to enable reporting of collision rates per billion km cycled.
   
   CRUSE is structured in a similar way to the traditional four-stage transport model, but its use of Open Street Map (OSM) data, used by [Cyclestreets.net](https://www.cyclestreets.net/) for routing, enables network quality to be assessed without costly surveys to record new infrastructure.
   OSM tags generate "cycle friendliness" estimates of all links on the network, based on existing recorded infrastructure.
