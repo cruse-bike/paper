@@ -137,7 +137,7 @@ Better data to inform road safety policies and interventions is a motivation for
 In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030.[^3] Doing so while simultaneously enabling rapid uptake of active modes will require key active travel routes to be identified and improved.
 
 A proactive approach to the development of cycling policy and infrastructure is taking place in Ireland.
-The main framework underpinning these efforts is the Climate Action Plan[^2] and The National Development Plan[^3].
+The main frameworks underpinning these efforts are the Climate Action Plan[^2] and The National Development Plan[^3].
 Strategic alignment is also outlined by the Phoenix Park Transport and Mobility Options Study, which highlights public support for active travel interventions: while only 3% of trips in Ireland are made by cycling according to the latest Census data from 2016,^[
 https://assets.gov.ie/42950/f789b2fcfb144441822f58236986eeea.pdf
 ] "83% of respondents supported enhanced walking and cycling facilities".
