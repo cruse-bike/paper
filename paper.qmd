@@ -151,6 +151,15 @@ https://assets.gov.ie/42950/f789b2fcfb144441822f58236986eeea.pdf
 
 At the regional level, the recently published Greater Dublin Area Transport Strategy[^4] reinforces these findings: "nearly a quarter of adults cycle at least once a week in the Dublin Metropolitan Area" with cycling in the Dublin area taking up to 60,000 cars off the road today.
 Extrapolating this on a per population basis across Ireland, with around 40% of the population living in Dublin, this suggests that around 150,000 cars could be removed nationwide just by achieving Dublin levels of cycling in all counties (notwithstanding existing cycling trips and differences in trip distances).
+7 in 10 trips in Ireland are by car^[
+https://www.nationaltransport.ie/wp-content/uploads/2019/01/National_Household_Travel_Survey_2017_Report_-_December_2018.pdf
+].
+Cycling has the potential to replace a large proportion of these trips: "A high priority must also be given to cyclists, because trips by
+this mode have the potential to replace trips by private car, most
+specifically for short to medium distance trips, but increasingly
+for longer trips as e-bikes extend the range of this mode"^[
+https://www.nationaltransport.ie/planning-and-investment/strategic-planning/greater-dublin-area-transport-strategy/
+].
 
 [^4]: <https://www.nationaltransport.ie/planning-and-investment/strategic-planning/greater-dublin-area-transport-strategy/>
 
