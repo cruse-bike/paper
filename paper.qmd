@@ -111,8 +111,9 @@ Mobility kills.
 High energy transport systems are a major contributor to climate change, a leading cause of premature death and injury due to road traffic collisions, and a cause of disease due to airborne pollutants.
 Conversely, evidence-based and effective transport *policies* have great potential to decarbonize economies, improve public health, and save lives.
 
-Transport is responsible for 23% of global emissions, 70% of which is from road transport, nearly half of which (around 10% of global emissions) is from passenger cars [@jaramillo2022].
-The transport system encourages, enables and in some cases enforces unsustainable lifestyles, including over-consumption of goods due to excessive mobile storage space and dependency on services that are only accessible by car due to land use plans that have built up around roads [@gray2001; @shergold2012; @motte-baumvol2010].
+Transport is responsible for 23% of global greenhouse gas emissions, 70% of which are from road transport, nearly half of which (around 10% of global emissions) is from passenger cars [@jaramillo2022].
+The transport system encourages, enables and in some cases enforces unsustainable lifestyles.
+Services that are only accessible by car lock-in car dependency [@gray2001; @shergold2012; @motte-baumvol2010].
 
 Recognizing the growing evidence of such impacts of poorly designed and performing transport systems, governments in many countries have set targets and taken actions.
 In the context of climate, road safety and physicial inactivity crises, policies to improve transport systems can be classified according to the 'Avoid-Shift-Improve' (ASI) framework [@jaramillo2022].
