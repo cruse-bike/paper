@@ -168,11 +168,13 @@ Cycle infrastructure will be developed in synchrony with the BusConnects project
 
 It was in this context that Transport Infrastructure Ireland (TII) commissioned the Cycle Route Uptake and Scenario Estimation (CRUSE) project.
 Based on the Propensity to Cycle Tool (PCT) for England and Wales, the CRUSE Tool was developed to provide evidence on current cycling levels and future cycling potential nationwide across Ireland.
+
 A key consideration for TII is to ensure both urban and rural Ireland were targeted for cycling infrastructure, as shown in @fig-dublin.
 To this end, TII extensively reviewed activity on Irish Roads and how the road network was being used by commuters, cyclists, heavy goods vehicles and other road users across the Irish transport network.
 The aim was for the tool to provide strong, national, systematic but locally-specific evidence to monitor cycling friendliness and safety in Ireland, to ensure strategic alignment with national, regional and local policies.
 The open source and publicly available nature of the tool ensures more inclusive and evidence-based conversations around cycle network planning between all stakeholders in the transport planning process.
-Other use cases in the Irish context includes monitoring the need for existing cycling infrastructure upgrades, undertaking appraisal, as well as safety and exposure information in line with the European Cycling Federation, Dutch Cycling Embassy recommendations and the European RISM Directive, for reporting collision rates of vulnerable road users by 2024.
+Other use cases in the Irish context includes monitoring the need for existing cycling infrastructure upgrades, undertaking appraisal for business case development, as well as safety and exposure information.
+The latter is in line with the European Cycling Federation, Dutch Cycling Embassy recommendations and the European RISM Directive, for reporting collision rates of vulnerable road users by 2024.
 These factors mean that the tool can be seen as an open access 'leverage point' in the planning system [@lovelace2020].
 
 ::: {#fig-dublin}
