@@ -245,7 +245,7 @@ This was partially addressed by the inclusion of travel to school based on data 
 An advantage of the POWSCAR OD data over OD datasets derived from census surveys in many countries is that it includes travel to school data.
 We commissioned a version of POWSCAR that included a breakdown of the total flows between OD pairs by purpose and mode, enabling a more realistic estimation of the 'Baseline' cycling network.
 
-However, travel to school and work only constitute a small proportion of all trips.
+However, travel to school and work only constitute around only 30% of all trips in Ireland.
 To overcome this issue, we developed a spatial interaction modelling methodology to estimate the number of trips between each OD pair for additional trip purposes.
 The classification of trip purposes used in the CRUSE Tool was guided mainly by the trip purpose classification found within the National Household Travel Survey (NHTS), but with the addition of categories based on the comprehensive POWSCAR data, and the need to include recreational trips and multi-stage trips (not yet implemented).
 An overview of the trip purposes used in CRUSE is presented in @fig-trip-purposes.
@@ -316,7 +316,7 @@ graph LR
 The main result of the CRUSE project is an open access web application and datasets on current and potential future cycling levels in Ireland, with evidence provided at county and route segment levels.
 Like the PCT on which CRUSE builds, a key feature of the results is that they are systematic and available for all counties, and most routes on which cycling is permitted, in Ireland.
 The full set of results are therefore too extensive to present in their entirety in this paper.
-Through the interactive web application, users can explore the data to generate the results that are most relevant to their needs, whether that is finding the cycling potential on a particular road or finding 'weak links' in the cycle network associated with a particular school, work place or other destination.
+Through the interactive web application, users can explore the data to generate the results that are most relevant to their needs, whether that is finding the cycling potential on a particular road or finding 'weak links' or barriers in the cycle network associated with a particular school, work place or other destination.
 
 Instead of trying to show such use cases, of which there are many hundreds, we present a selection of results to illustrate the main features of the CRUSE Tool.
 
@@ -448,6 +448,13 @@ As highlighted in a paper on cycling infrastructure preferences based on a case 
 > In terms if infrastructure, regardless of the level of cycling confidence, routes which have 'no facilities' or 'bus/cycle lanes' are the least favoured cycle route types.
 
 The CRUSE Tool can help both in terms of describing the current situation, and also prioritise investment in those direct routes with high cycling potential that lack adequate cycling infrastructure, highlighted by @caulfield2012.
+It will also support reporting for the RISM Directive on road casualties as part of the road safety management system.
+
+While the CRUSE Tool is not the first national and publicly available tool for cycling planning, it has some unique features that make it relevant for other countries, and other national road authorities tasked with making their transport systems safe.
+
+TODO: outline these features.
+
+The CRUSE Tool is designed to be used by a wide range of stakeholders, including transport planners, engineers, and other professionals, as well as non-professionals.
 
 # Conclusions {#sec-conclusions}
 
