@@ -68,8 +68,8 @@ abstract: |
   Under the EU Road infrastructure safety management (RISM) directive, the National Road Safety Strategy (RSS), and the Climate Action Plan Transport Infrastructure Ireland (TII) has a remit for road safety and decarbonizing a predominantly road-based network in Ireland.
 
   To address data needs for both safety, business case development and project evaluation on the National Road Network (NRN), the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool was developed.
-  While cycling in Ireland represents only 3% of total modal share, with higher intensities in urban areas, the levels of cycling collisions are disproportionately high at 20% of all serious injuries and 7% of all fatalities.
-  If Ireland is to meet its climate and safety targets, data to establish baseline cycling levels and future cycling levels is needed.
+  Cycling in Ireland represents only 3% of total modal share as of the latest Census (2016), but accounts for 20% of serious injuries and 7% of all fatalities.
+  High resolution datasets on baseline and potential cycling levels are needed to meet Ireland's climate and safety targets.
 
   Due to an absence of reliable data, particularly rural cycling levels, TII commissioned the Institute for Transport Studies (ITS) at the University of Leeds and AECOM to develop a new tool for this purpose.
   ITS Leeds led the development of the PCT for England and Wales, which has "revolutionized the practice of strategic cycle planning nationally".
