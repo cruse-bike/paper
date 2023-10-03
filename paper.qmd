@@ -369,7 +369,7 @@ There is no shift from other modes of transport to cycling.
 Under the Go Dutch scenario cycling reaches levels equivalent to those found in the Netherlands, taking account of the effects of route hilliness (measured as mean gradient) and route distance.
 This scenario uses the same model that was used PCT, allowing trips to shift from any other mode to cycling [@lovelace2017].
 
-## Ebike
+### Ebike
 
 Also based on the PCT scenario with the same name, the Eike scenario in CRUSE takes Go Dutch cycling uptake, and adds onto this the impact of increased ebike usage, which allows for longer cycle trips.
 However, travel to primary and secondary schools still uses Go Dutch uptake, since no ebike scenario has been developed for school journeys, and children may be less likely to own ebikes than adults.
