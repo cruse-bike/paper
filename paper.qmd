@@ -1,6 +1,6 @@
 ---
 title: "CRUSE to Safe Cycling in Ireland"
-subtitle: An Open Source Methodology to Support Active Travel
+subtitle: An Open Source Tool to Support Active Travel
 bibliography: bibliography.bib
 csl: apa.csl
 editor:
@@ -8,21 +8,19 @@ editor:
     wrap: sentence
 number-sections: true
 
-# Uncomment for draft versions:
+# # Uncomment for draft versions:
 format: 
   html: default
   docx: default
-#   # pdf: default
-
-# # Uncomment for formatted version
-# format:
-#   elsevier-pdf:
-#     keep-tex: true
-#     journal:
-#       name: Journal Name
-#       formatting: preprint
-#       model: 3p
-#       cite-style: super
+# Uncomment for formatted version
+  elsevier-pdf:
+    keep-tex: true
+    journal:
+      name: Journal Name
+      formatting: preprint
+      model: 3p
+      cite-style: super
+# #   # pdf: default
 
 # # Uncomment the following line to produce the cover page
 author:
@@ -67,26 +65,23 @@ author:
 abstract: |
   Under the EU Road infrastructure safety management (RISM) directive, the National Road Safety Strategy (RSS), and the Climate Action Plan Transport Infrastructure Ireland (TII) has a remit for road safety and decarbonizing a predominantly road-based network in Ireland.
 
-  To address data needs for both safety, business case development and project evaluation on the National Road Network (NRN), the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool was developed.
+  The Cycle Route Uptake and Scenario Estimation (CRUSE) Tool was commissioned by TII and developed by the Leeds Institute for Transport Studies (ITS) and AECOM To address data needs for safety, business case development and project evaluation on the National Road Network (NRN).
   Cycling in Ireland represents only 3% of total modal share as of the latest Census (2016), but accounts for 20% of serious injuries and 7% of all fatalities.
   High resolution datasets on baseline and potential cycling levels are needed to meet Ireland's climate and safety targets.
 
-  Due to an absence of reliable data, particularly rural cycling levels, TII commissioned the Institute for Transport Studies (ITS) at the University of Leeds and AECOM to develop a new tool for this purpose.
-  ITS Leeds led the development of the PCT for England and Wales, which has "revolutionized the practice of strategic cycle planning nationally".
-  The tool is an open-source approach using recognized open-source methodology to enable planners, engineers, and other stakeholders to make evidence-based decisions for the NRN.
-  CRUSE is available at <https://cruse.bike/> and builds on the Propensity to Cycle Tool (PCT) for England and Wales.
-  CRUSE goes beyond the PCT in several important ways, modeling denser networks at higher levels of geographic resolution and additional purposes, including simulated recreational, social, shopping and personal trips, in addition trips to work and primary, secondary and tertiary education locations.
+  The CRUSE project builds on the methods underlying the Propensity to Cycle Tool for England and Wales (PCT), which had a major impact on strategic cycle network planning in the UK.
+  Like the PCT, CRUSE is based on open source software and reproducible data science. The resulting web application is available at <https://cruse.bike/>, enabling planners, engineers, and other stakeholders to make more evidence-based decisions for the NRN.
+  CRUSE goes beyond the PCT in several important ways, modeling denser networks at higher levels of geographic resolution and additional purposes, including simulated recreational, social, shopping and personal trips, in addition to trips to work and primary, secondary and tertiary education locations.
   The tool provides key 'denominator' information to enable reporting of collision rates per billion km cycled.
   
-  CRUSE is structured in a similar way to the traditional four-stage transport model, but its use of Open Street Map (OSM) data, used by [Cyclestreets.net](https://www.cyclestreets.net/) for routing, enables network quality to be assessed without costly surveys to record new infrastructure.
-  OSM tags generate "cycle friendliness" estimates of all links on the network, based on existing recorded infrastructure.
-  Many networks are provided, highlighting routes for directness (Fastest) and "cycle friendliness" (Quietest).
-  It uses origin and destination data from the 2016 Census in combination with modeled demand data to estimate current and potential future cycling levels at area, route, and network levels for each county in Ireland.
+  Another key feature of CRUSE is its use of Open Street Map (OSM) data, which is continuously updated, and used by [Cyclestreets.net](https://www.cyclestreets.net/) for route calculation and "cycle friendliness" estimates of all links on the network.
+  CRUSE provides three network types: the 'Fastest' network highlights routes for directness; 'Quietest' prioritises cycle friendliness, and 'Balanced' represents a balance between speed and comfort.
+  Trips are generated based on origin and destination data from the 2016 Census in combination with modeled demand data to estimate current and potential future cycling levels at area, route, and network levels for each county in Ireland.
   
   For investment in cycling to deliver on the huge potential benefits, cycling must become safer.
-  With growth in the E-bike market, the tool will help inform inter-urban and rural networks to support the transfer of trips to sustainable modes for longer journeys.
-  The findings and resulting tool are directly relevant to addressing the challenges and opportunities faced by National Road Authorities (NRAs) across Ireland.
-  The provision of open access evidence, that can be used non-experts and professionals, is relevant to countries with sustainable transport policies worldwide.
+  With growth in the E-bike market, CRUSE will help inform inter-urban and rural networks to support the transfer of trips to sustainable modes for longer journeys.
+  Provision of open access data in a publicly available web tool will address the challenges faced by National Road Authorities (NRAs) across Ireland in meeting their sustainability commitments.
+  The experience of developing a deploying CRUSE are relevant to countries with sustainable transport policies worldwide.
 keywords: 
   - Cycling
   - Open-source
