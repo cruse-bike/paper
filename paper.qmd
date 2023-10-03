@@ -302,6 +302,18 @@ The 'Quietest' route type minimises busy sections of road, allowing high 'divers
 The 'Balanced' route type is a compromise between the two, minimising journey time while avoiding the busiest roads.
 Allowing users to switch between these three route types enables them to consider the trade-offs between directness and 'cycle friendliness' when planning new infrastructure, as shown in @fig-route-types.
 
+These map are available on the 'Route types' page for each county (see [cruse.bike/limerick/route-types](https://cruse.bike/limerick/route-types)).
+In addition to showing the estimated routes under each scenario, the page also presents summary statistics on the network:
+
+- On the fastest network, 25% of the distance cycled occurs in non-hostile segments and 6% in cycle-friendly segments.
+
+- Under the baseline scenario, 55% of the distance cycled on the quietest network occurs in non-hostile segments and 13% in cycle-friendly segments.
+
+These statistics can be revealing: in Limerick it suggests that around half of all cycling activity occurs on network segments that are hostile (with a high inferred level of traffic stress), even when efforts are taken to avoid busy segments.
+For the Fastest network, which may be more realistic for utility cycling, the proportion of cycling on hostile segments is even higher at 75%.
+
+TODO: Add description of route types in Limerick based on local knowledge and @fig-route-types.
+
 <!-- Add figure with a single row and subcaptions for Fastest and Quietest route types: -->
 
 ::: {#fig-route-types layout-nrow="2"}
