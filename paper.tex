@@ -278,7 +278,7 @@ worldwide.
     Active Travel
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, interior hidden, sharp corners, boxrule=0pt, enhanced, frame hidden, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, breakable, interior hidden, enhanced, sharp corners, frame hidden]}{\end{tcolorbox}}\fi
 
 \newpage{}
 
@@ -620,32 +620,36 @@ infrastructure, as shown in Figure~\ref{fig-route-types}.
 
 \begin{figure}
 
+\begin{minipage}[t]{\linewidth}
+
 {\centering 
 
-\begin{figure}
+\raisebox{-\height}{
 
-{\centering \includegraphics{images/paste-5.png}
-
-}
-
-\caption{`Fastest' route network for Limerick}
-
-\end{figure}
-
-\begin{figure}
-
-{\centering \includegraphics{images/paste-6.png}
+\includegraphics{images/paste-5.png}
 
 }
 
-\caption{`Quietest' route network for Limerick}
+}
 
-\end{figure}
+\end{minipage}%
+\newline
+\begin{minipage}[t]{\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics{images/paste-6.png}
 
 }
 
-\caption{\label{fig-route-types}Illustration of the `Fastest' and
-`Quietest' route networks for central and East Limmerick.}
+}
+
+\end{minipage}%
+
+\caption{\label{fig-route-types}Illustration of the Fastest and Quietest
+route networks for central and East Limmerick.}
 
 \end{figure}
 
