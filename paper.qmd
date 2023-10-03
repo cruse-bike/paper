@@ -302,9 +302,17 @@ The 'Quietest' route type minimises busy sections of road, allowing high 'divers
 The 'Balanced' route type is a compromise between the two, minimising journey time while avoiding the busiest roads.
 Allowing users to switch between these three route types enables them to consider the trade-offs between directness and 'cycle friendliness' when planning new infrastructure, as shown in @fig-route-types.
 
-![](images/paste-5.png)
+<!-- Add figure with a single row and subcaptions for Fastest and Quietest route types: -->
 
-![](images/paste-6.png)
+::: {#fig-route-types}
+
+!['Fastest' route network for Limerick](images/paste-5.png)
+
+!['Quietest' route network for Limerick](images/paste-6.png)
+
+Illustration of the 'Fastest' and 'Quietest' route networks for central and East Limmerick.
+
+:::
 
 ## Scenarios of cycling potential {#sec-scenarios}
 
