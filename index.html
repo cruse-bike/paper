@@ -139,9 +139,9 @@ div.csl-indent {
   <li><a href="#near-market" id="toc-near-market" class="nav-link" data-scroll-target="#near-market"><span class="header-section-number">2.4.2</span> Near Market</a></li>
   <li><a href="#climate-action-plan" id="toc-climate-action-plan" class="nav-link" data-scroll-target="#climate-action-plan"><span class="header-section-number">2.4.3</span> Climate Action Plan</a></li>
   <li><a href="#go-dutch" id="toc-go-dutch" class="nav-link" data-scroll-target="#go-dutch"><span class="header-section-number">2.4.4</span> Go Dutch</a></li>
+  <li><a href="#ebike" id="toc-ebike" class="nav-link" data-scroll-target="#ebike"><span class="header-section-number">2.4.5</span> Ebike</a></li>
   </ul></li>
-  <li><a href="#ebike" id="toc-ebike" class="nav-link" data-scroll-target="#ebike"><span class="header-section-number">2.5</span> Ebike</a></li>
-  <li><a href="#sec-ui" id="toc-sec-ui" class="nav-link" data-scroll-target="#sec-ui"><span class="header-section-number">2.6</span> User interface</a></li>
+  <li><a href="#sec-ui" id="toc-sec-ui" class="nav-link" data-scroll-target="#sec-ui"><span class="header-section-number">2.5</span> User interface</a></li>
   </ul></li>
   <li><a href="#sec-results" id="toc-sec-results" class="nav-link" data-scroll-target="#sec-results"><span class="header-section-number">3</span> Results</a></li>
   <li><a href="#sec-discussion" id="toc-sec-discussion" class="nav-link" data-scroll-target="#sec-discussion"><span class="header-section-number">4</span> Discussion</a></li>
@@ -233,7 +233,7 @@ div.csl-indent {
 <li>Limited coverage of trip purposes beyond travel to work and school</li>
 <li>A web interface that was not user-friendly or intuitive</li>
 </ul>
-<p>Methods were developed to overcome each of these, as outlined in <a href="#sec-trip-purposes">Section&nbsp;2.2</a> to <a href="#sec-ui">Section&nbsp;2.6</a>.</p>
+<p>Methods were developed to overcome each of these, as outlined in <a href="#sec-trip-purposes">Section&nbsp;2.2</a> to <a href="#sec-ui">Section&nbsp;2.5</a>.</p>
 <!-- Todo: add section on input datasets -->
 <section id="sec-disaggregation" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="sec-disaggregation"><span class="header-section-number">2.1</span> Disaggregation of origin-destination data</h2>
@@ -337,13 +337,13 @@ And the recreational trips were classified as follows:
 <h3 data-number="2.4.4" class="anchored" data-anchor-id="go-dutch"><span class="header-section-number">2.4.4</span> Go Dutch</h3>
 <p>Under the Go Dutch scenario cycling reaches levels equivalent to those found in the Netherlands, taking account of the effects of route hilliness (measured as mean gradient) and route distance. This scenario uses the same model that was used PCT, allowing trips to shift from any other mode to cycling <span class="citation" data-cites="lovelace2017">(<a href="#ref-lovelace2017" role="doc-biblioref">Lovelace et al., 2017</a>)</span>.</p>
 </section>
-</section>
-<section id="ebike" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="ebike"><span class="header-section-number">2.5</span> Ebike</h2>
+<section id="ebike" class="level3" data-number="2.4.5">
+<h3 data-number="2.4.5" class="anchored" data-anchor-id="ebike"><span class="header-section-number">2.4.5</span> Ebike</h3>
 <p>Also based on the PCT scenario with the same name, the Eike scenario in CRUSE takes Go Dutch cycling uptake, and adds onto this the impact of increased ebike usage, which allows for longer cycle trips. However, travel to primary and secondary schools still uses Go Dutch uptake, since no ebike scenario has been developed for school journeys, and children may be less likely to own ebikes than adults.</p>
 </section>
-<section id="sec-ui" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="sec-ui"><span class="header-section-number">2.6</span> User interface</h2>
+</section>
+<section id="sec-ui" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="sec-ui"><span class="header-section-number">2.5</span> User interface</h2>
 <p>The CRUSE web application is statically hosted, meaning that it can be accessed without the need for a server running software such as the R package ‘shiny’ or Python packages such as ‘streamlit’ or ‘flask’ in the background <span class="citation" data-cites="wickham2021">(<a href="#ref-wickham2021" role="doc-biblioref">Wickham, 2021</a>)</span>. Typical intended user stories are illustrated in <a href="#fig-user-stories">Figure&nbsp;5</a>, which shows that the tool is designed to be used by both professional and non-professional users. For the main target audience, professional transport planners working at the county level, the tool provides a range of outputs, including estimates of cycling potential at the county and network level. The provision of balanced (the default), quietest and fastest route networks enables planners to consider the trade-offs between directness and ‘cycle friendliness’ when planning new infrastructure. The tool also provides data downloads, enabling estimates of cycling potential on the network to be visualised and analysed with other tools such as QGIS, Python or R.</p>
 <p>For non-professional users, the tool provides a simple interface to explore the cycling potential of the network. By providing a single landing page that is suitable for both professional and non-professional users (such as an advocate or parent interested in safe routes to school), the tool aims to facilitate communication between these groups.</p>
 <div class="cell" data-fig-width="100%">
@@ -415,6 +415,11 @@ Local -->
 </section>
 <section id="sec-conclusions" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Conclusions</h1>
+<p>The CRUSE Tool is an open access web application for strategic cycle network planning and prioritisation of road safety interventions across Ireland. Building on previous work, it provides a nationally consistent evidence base, providing valuable insights to planners and other stakeholders in the transport planning process, at national and local levels. Because the results are available at the route segment level, the tool can be used to identify ‘weak links’ in the cycle network, and to prioritise investment in cycling infrastructure. Furthermore, the provision of the evidence in a free and publicly available website, hosted at <a href="https://cruse.bike">cruse.bike</a>, means that it can be used by anyone, encouraging wider participation and more evidence-based debate about transport planning.</p>
+<p>A key feature of the project methodologically is its calculation of current and future potential not only for travel to work and travel to school, but also for other trip purposes, including recreational trips. This required the development of spatial interaction models and estimation of the relative attractiveness of different destinations for different trip purposes, an area of active research where new developments could be incorporated into the tool in future <span class="citation" data-cites="hasova2022">(<a href="#ref-hasova2022" role="doc-biblioref">Hasova et al., 2022</a>)</span>.</p>
+<p>The CRUSE Tool and the underlying research and methods are not without limitations, suggesting future areas of research, data collection needs, and policy application. The route network level results have not been validated to the extent we had planned at the outset of the project. We compared route network level results with ‘ground truth’ data from cycle counter datasets across Dublin to test different network types and to ensure that additional trip types added to work and educational trips increased the quality of fit under the baseline scenario. However, the size of the counter network was insufficient to provide an opportunity for robust evaluation of model performance, suggesting a combined program of new count data collection and analysis should be a priority for future work, with findings feeding directly into work to improve the outputs of the the CRUSE Tool.</p>
+<p>More broadly, the tool’s outputs are limited to just one more of active travel (cycling), ignoring walking and wheeling, including wheelchair use and a range of wheeled devices such as scooters, bike trailers and e-cargo bikes that can be used to escort children to school. Sustainable transport policies should plan for walking, wheeling and cycling, and there are many co-benefits of broadly defined active travel interventions that benefit all active modes, such as measures to reduce heavy motor traffic speeds and volumes in areas and along corridors with high active travel potential. This raises the question of whether other active modes should be incorporated into the results using the OD-based approach outlined in this paper, or whether different modelling approaches are needed to properly capture the shorter distance trips typically made by walking <span class="citation" data-cites="cooper2018">(<a href="#ref-cooper2018" role="doc-biblioref">Cooper, 2018</a>)</span>. Furthermore, the estimates of cycling presented in the CRUSE Tool omit multi-modal trips including public transport, and omit trip chaining, due to the need to capture a large portion of cycling potential within the resource constraints of the project.</p>
+<p>The CRUSE Tool is already used in practice to support more ambitious and data-driven planning for safe cycling routes in multiple counties across Ireland. We hope that the underlying approach, and the publicly available evidence provided in the CRUSE Tool itself, provide a basis for future reproducible research, open source software development into strategic cycle network planning tools in Ireland and other countries. Active travel represents a win-win-win for physical activity, environment, and local economic opportunities. In combination with broader sustainable mobility measures and policies to reduce motor traffic speeds and volumes, tools such as CRUSE can support the fast and fair decarbonisation of transport systems worldwide.</p>
 </section>
 <section id="list-of-abbreviations" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> List of abbreviations</h1>
@@ -472,6 +477,9 @@ Burns, L. D. (2013). Sustainable mobility: A vision of our transport future. <em
 <div id="ref-caulfield2012" class="csl-entry" role="listitem">
 Caulfield, B., Brick, E., &amp; McCarthy, O. T. (2012). Determining bicycle infrastructure preferences <span></span> A case study of Dublin. <em>Transportation Research Part D: Transport and Environment</em>, <em>17</em>(5), 413–417. <a href="https://doi.org/10.1016/j.trd.2012.04.001">https://doi.org/10.1016/j.trd.2012.04.001</a>
 </div>
+<div id="ref-cooper2018" class="csl-entry" role="listitem">
+Cooper, C. H. V. (2018). Predictive spatial network analysis for high-resolution transport modeling, applied to cyclist flows, mode choice, and targeting investment. <em>International Journal of Sustainable Transportation</em>, <em>0</em>(0), 1–11. <a href="https://doi.org/10.1080/15568318.2018.1432730">https://doi.org/10.1080/15568318.2018.1432730</a>
+</div>
 <div id="ref-cycling2017" class="csl-entry" role="listitem">
 <em>Cycling and walking investment strategy</em>. (2017). <a href="https://www.gov.uk/government/publications/cycling-and-walking-investment-strategy">https://www.gov.uk/government/publications/cycling-and-walking-investment-strategy</a>
 </div>
@@ -483,6 +491,9 @@ Goodman, A., Rojas, I. F., Woodcock, J., Aldred, R., Berkoff, N., Morgan, M., Ab
 </div>
 <div id="ref-gray2001" class="csl-entry" role="listitem">
 Gray, D., Farrington, J., Shaw, J., Martin, S., &amp; Roberts, D. (2001). Car dependence in rural scotland: Transport policy, devolution and the impact of the fuel duty escalator. <em>Journal of Rural Studies</em>, <em>17</em>(1), 113125. <a href="https://doi.org/10.1016/S0743-0167(00)00035-8">https://doi.org/10.1016/S0743-0167(00)00035-8</a>
+</div>
+<div id="ref-hasova2022" class="csl-entry" role="listitem">
+Hasova, L., Tranos, E., &amp; Wolf, L. J. (2022). <em>Form and function in spatial interaction: A new approach to spatial structure</em>. <a href="https://lenkahas.com/files/preprint.pdf">https://lenkahas.com/files/preprint.pdf</a>
 </div>
 <div id="ref-jaramillo2022" class="csl-entry" role="listitem">
 Jaramillo, P., Kahn Ribeiro, S., Newman, P., Dhar, S., Diemuodeke, O. E., Kajino, T., Lee, D. S., Nugroho, S. B., Ou, X., Hammer Strømman, A., &amp; Whitehead, J. (2022). <em>Transport</em> (P. R. Shukla, J. Skea, R. Slade, A. A. Khourdajie, R. van Diemen, D. McCollum, M. Pathak, S. Some, P. Vyas, R. Fradera, M. Belkacemi, A. Hasija, G. Lisboa, S. Luz, &amp; J. Malley, Eds.). Cambridge University Press. <a href="https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Chapter10.pdf">https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Chapter10.pdf</a>
