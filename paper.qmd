@@ -292,8 +292,8 @@ The CycleStreets routing engine is based on OpenStreetMap (OSM) data, which is c
 
 CycleStreets' services can be used by anyone for free, but we commissioned a bespoke routing service for CRUSE for the following reasons, to enable:
 
--   Calculation of hundreds-of-thousands of routes, which is against the terms of service of the free API.
--   Making changes to the routing profiles, including allowing routing on trunk roads, which are not permitted in the default routing profiles.
+-   Calculation of hundreds-of-thousands of routes, which is beyond the terms of service of the free API.
+-   Making changes to the routing profiles, including allowing routing on trunk roads, which are sometimes avoided in the default routing profiles.
 -   Control over the version of OSM data being used for the routing, allowing regular updates to the route networks as OSM data is updated.
 
 We calculated three network types for each disaggregated ('jittered') OD pair: 'Fastest', 'Balanced' and 'Quietest'.
