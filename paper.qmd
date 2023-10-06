@@ -543,11 +543,11 @@ As highlighted in a paper on cycling infrastructure preferences based on a case 
 The CRUSE Tool can help both in terms of describing the current situation, and also prioritise investment in those direct routes with high cycling potential that lack adequate cycling infrastructure, highlighted by @caulfield2012.
 It will also support reporting for the RISM Directive on road casualties as part of the road safety management system.
 
-While the CRUSE Tool is not the first national and publicly available tool for cycling planning, it has some unique features that make it relevant for other countries, and other national road authorities tasked with making their transport systems safe.
+While the CRUSE Tool is not the first national and publicly available tool for cycling planning, it has some key features that make it relevant for other countries, and other national road authorities tasked with making their transport systems safe:
 
-TODO: outline these features.
-
-The CRUSE Tool is designed to be used by a wide range of stakeholders, including transport planners, engineers, and other professionals, as well as non-professionals.
+-   The results are *open access* meaning that any stakeholder in the planning system can access the evidence. This will help to democratise the transport planning process and make wider conversations about transport planning more evidence-based and less polarised [@lovelace2020], something that is particularly relevant given the potentially polarising nature of pro-cycling interventions [@wild2017].
+-   The results are fully reproducible (code to be released pending sign-off by TII's IT team), preventing 'cloud lock in' to a potentially monopolistic consultancy, and encouraging input from the wider open source community [@lovelace2021; @dhir2017].
+-   By covering a wide range of trip purposes --- not just travel to work [@lovelace2017; @heinen2010] and travel school [@goodman2019] as covered in previously published research on open access national cycle netework planning tools --- the results capture a higher proportion of cycling potential including key rural trips which are often under-represented in models of active travel.
 
 # Conclusions {#sec-conclusions}
 
