@@ -559,6 +559,21 @@ Furthermore, the provision of the evidence in a free and publicly available webs
 A key feature of the project methodologically is its calculation of current and future potential not only for travel to work and travel to school, but also for other trip purposes, including recreational trips.
 This required the development of spatial interaction models and estimation of the relative attractiveness of different destinations for different trip purposes, an area of active research where new developments could be incorporated into the tool in future [@hasova2022].
 
+The CRUSE Tool and the underlying research and methods are not without limitations, suggesting future areas of research, data collection needs, and policy application.
+The route network level results have not been validated to the extent we had planned at the outset of the project.
+We compared route network level results with 'ground truth' data from cycle counter datasets across Dublin to test different network types and to ensure that additional trip types added to work and educational trips increased the quality of fit under the baseline scenario.
+However, the size of the counter network was insufficient to provide an opportunity for robust evaluation of model performance, suggesting a combined program of new count data collection and analysis should be a priority for future work, with findings feeding directly into work to improve the outputs of the the CRUSE Tool.
+
+More broadly, the tool's outputs are limited to just one more of active travel (cycling), ignoring walking and wheeling, including wheelchair use and a range of wheeled devices such as scooters, bike trailers and e-cargo bikes that can be used to escort children to school.
+Sustainable transport policies should plan for walking, wheeling and cycling, and there are many co-benefits of broadly defined active travel interventions that benefit all active modes, such as measures to reduce heavy motor traffic speeds and volumes in areas and along corridors with high active travel potential.
+This raises the question of whether other active modes should be incorporated into the results using the OD-based approach outlined in this paper, or whether different modelling approaches are needed to properly capture the shorter distance trips typically made by walking [@cooper2018].
+Furthermore, the estimates of cycling presented in the CRUSE Tool omit multi-modal trips including public transport, and omit trip chaining, due to the need to capture a large portion of cycling potential within the resource constraints of the project.
+
+The CRUSE Tool is already used in practice to support more ambitious and data-driven planning for safe cycling routes in multiple counties across Ireland.
+We hope that the underlying approach, and the publicly available evidence provided in the CRUSE Tool itself, provide a basis for future reproducible research, open source software development into strategic cycle network planning tools in Ireland and other countries.
+Active travel represents a win-win-win for physical activity, environment, and local economic opportunities.
+In combination with broader sustainable mobility measures and policies to reduce motor traffic speeds and volumes, tools such as CRUSE can support the fast and fair decarbonisation of transport systems worldwide.
+
 # List of abbreviations
 
 CSO: Central Statistics Office
