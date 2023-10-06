@@ -116,7 +116,7 @@ Recognizing the growing evidence of such impacts of poorly designed and performi
 In the context of climate, road safety and physicial inactivity crises, policies to improve transport systems can be classified according to the 'Avoid-Shift-Improve' (ASI) framework [@jaramillo2022].
 The ASI framework highlights the importance of demand reduction (*avoid*ing unnecessary trips), in addition to mode *shift* to sustainable modes and *improvement* of existing energy converters, in that order.
 
-Uptake of cycling, the main topic of this paper, should be seen in this broader context of transport decarbonisation [@brand2020] and sustainable mobility [@burns2013].
+Uptake of cycling should be seen in this broader context of transport decarbonisation [@brand2020] and sustainable mobility [@burns2013].
 Although cycling uptake appears on the surface to only relate to the 'shift' part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips [@nello-deakin2020].
 Furthermore, highly efficient e-bikes --- which are seeing rapid uptake in Ireland and other countries --- outperform electric cars, which are too heavy and expensive.
 Over-reliance on electric cars could slow the transition away from car dependency and inadvertently enable "high travel lock-in" [@anable2019].
