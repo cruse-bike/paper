@@ -300,26 +300,40 @@ The 'Quietest' route type minimises busy sections of road, allowing high 'divers
 The 'Balanced' route type is a compromise between the two, minimising journey time while avoiding the busiest roads.
 Allowing users to switch between these three route types enables them to consider the trade-offs between directness and 'cycle friendliness' when planning new infrastructure, as shown in @fig-route-types.
 
-These map are available on the 'Route types' page for each county (see [cruse.bike/limerick/route-types](https://cruse.bike/limerick/route-types)).
+These map are available on the 'Route types' page for each county (see [cruse.bike/kildare/route-types](https://cruse.bike/kildare/route-types)).
 In addition to showing the estimated routes under each scenario, the page also presents summary statistics on the network:
 
--   On the fastest network, 25% of the distance cycled occurs in non-hostile segments and 6% in cycle-friendly segments.
+-   On the fastest network, 25% of the distance cycled occurs in non-hostile segments and 7% in cycle-friendly segments.
 
--   Under the baseline scenario, 55% of the distance cycled on the quietest network occurs in non-hostile segments and 13% in cycle-friendly segments.
+-   Under the baseline scenario, 52% of the distance cycled on the quietest network occurs in non-hostile segments and 15% in cycle-friendly segments.
 
-These statistics can be revealing: in Limerick it suggests that around half of all cycling activity occurs on network segments that are hostile (with a high inferred level of traffic stress), even when efforts are taken to avoid busy segments.
+These statistics can be revealing: in Kildare it suggests that around half of all cycling activity occurs on network segments that are hostile (with a high inferred level of traffic stress), even when efforts are taken to avoid busy segments.
 For the Fastest network, which may be more realistic for utility cycling, the proportion of cycling on hostile segments is even higher at 75%.
 
-TODO: Add description of route types in Limerick based on local knowledge and @fig-route-types.
+TODO: Add description of route types in Naas based on local knowledge and @fig-route-types.
 
 <!-- Add figure with a single row and subcaptions for Fastest and Quietest route types: -->
 
+<!-- ::: {#fig-route-types layout-nrow="2"} -->
+
+<!-- ![](images/paste-5.png) -->
+
+<!-- ![](images/paste-6.png) -->
+
+<!-- Illustration of the Fastest and Quietest route networks for central and East Limmerick. -->
+
+<!-- ::: -->
+
 ::: {#fig-route-types layout-nrow="2"}
-![](images/paste-5.png)
+![](images/naas_quietest_godutch.png){width="250"}
 
-![](images/paste-6.png)
+![](images/naas_fastest_godutch.png){width="250"}
 
-Illustration of the Fastest and Quietest route networks for central and East Limmerick.
+![](images/newbridge_quietest_godutch.png){width="250"}
+
+![](images/newbridge_fastest_godutch.png){width="250"}
+
+Illustration of the Quietest (left) and Fastest (right) route networks for Naas (top) and Newbridge (bottom).
 :::
 
 ## Scenarios of cycling potential {#sec-scenarios}
@@ -329,10 +343,12 @@ Each of these scenarios is described below, as illustrated in Figure @fig-scenar
 <!-- TODO: add table. -->
 
 ::: {#fig-scenarios}
-![](images/paste-7.png)
+<!-- ![](images/paste-7.png) -->
 
-Distance-mode share graph for Limerick used to communicate the different scenarios.
-Source: county level view for Limerick in the open access CRUSE Tool at <https://cruse.bike/limerick>.
+![](images/scenarios_kildare.png)
+
+Distance-mode share graph for Kildare used to communicate the different scenarios.
+Source: county level view for Kildare in the open access CRUSE Tool at <https://cruse.bike/kildare>.
 :::
 
 ### Baseline
