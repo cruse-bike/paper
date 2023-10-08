@@ -310,7 +310,7 @@ In addition to showing the estimated routes under each scenario, the page also p
 These statistics can be revealing: in Kildare it suggests that around half of all cycling activity occurs on network segments that are hostile (with a high inferred level of traffic stress), even when efforts are taken to avoid busy segments.
 For the Fastest network, which may be more realistic for utility cycling, the proportion of cycling on hostile segments is even higher at 75%.
 
-TODO: Add description of route types in Naas based on local knowledge and @fig-route-types.
+<!-- TODO: Add description of route types in Naas based on local knowledge and @fig-route-types. -->
 
 <!-- Add figure with a single row and subcaptions for Fastest and Quietest route types: -->
 
