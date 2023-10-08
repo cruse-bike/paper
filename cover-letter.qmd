@@ -1,0 +1,30 @@
+---
+format: pdf
+title: "Cover letter"
+bibliography: references.bib
+---
+
+```{=html}
+<!-- Cover letter file, answering the following questions:
+
+    1–2 sentences about the importance of the manuscript.
+    1–2 sentences about the experience the author group has on the topic (for example, previous publications).
+    1–2 sentences about the (expected) clinical impact of the manuscript. -->
+```
+Dear Editor,
+
+We are submitting our manuscript entitled "CRUSE to Safe Cycling in Ireland: An Open Source Tool to Support Active Travel" for consideration for publication in the European Transport Research Review.
+
+This manuscript describes the development of an open source tool to support active travel in Ireland.
+The paper describes the design, features and potential uses of the CRUSE Tool.
+We believe that the paper is important because it marks a substantial step forward in the development of open source tools to support active travel.
+The work presented goes substantially beyond previously published research such as the Propensity to Cycle Tool for England and Wales.
+
+The Tool itself is important, providing the first comprehensive evidence base on cycling across Ireland.
+The evidence is actionable, provided for free to all stakeholders in the transport planning process, with information on cycling potential and cycle friendliness down to the segment level nationwide.
+We believe that our experiences developing the tool will be of use to others tasked with investing in cost effective cycle infrastructure.
+Furthermore, and unusually for this kind of tool, a major policy driver was road safety: a key output of the tool is estimates of baseline levels of cycling, which can be used to generate estimates of road safety levels in units of killed or seriously injured casualties per billion km (KSI/bkm).
+
+As a group we have wide experience in this space...
+
+We expect the manuscript will have the following impacts:
