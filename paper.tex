@@ -9,6 +9,7 @@
   3p]{elsarticle}
 
 \usepackage{amsmath,amssymb}
+\usepackage{setspace}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -131,7 +132,7 @@
 \makeatother
 \makeatletter
 \makeatother
-\journal{Journal Name}
+\journal{European Transport Research Review}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -142,7 +143,7 @@
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={CRUSE to Safe Cycling in Ireland},
-  pdfauthor={Robin Lovelace; Joey Talbot; Eugeni Vidal Tortosa; Hussein Mahfouz; Elaine Brick; Peter Wright; Gary O'Tool; Dan Brennan; Suzanne Meade},
+  pdfauthor={Robin Lovelace; Joey Talbot; Eugeni Vidal-Tortosa; Hussein Mahfouz; Elaine Brick; Peter Wright; Gary O'Tool; Dan Brennan; Suzanne Meade},
   pdfkeywords={Cycling, Open-source, Road Safety, Active Travel},
   colorlinks=true,
   linkcolor={blue},
@@ -165,7 +166,7 @@ Support Active Travel} }
 %
 }
 
-\author[1]{Eugeni Vidal Tortosa%
+\author[1]{Eugeni Vidal-Tortosa%
 %
 }
 
@@ -200,7 +201,7 @@ United Kingdom},postcodesep={}}
 \affiliation[2]{organization={AECOM},addressline={Unit 6, Galway
 Technology Park, Parkmore, Galway, Ireland},postcodesep={}}
 \affiliation[3]{organization={AECOM},addressline={Winslade House,
-Winslade Park, Manor Drive, Clyst St Mary, EXETER, EX5 1FY,
+Winslade Park, Manor Drive, Clyst St Mary, Exeter, EX5 1FY,
 UK},postcodesep={}}
 \affiliation[4]{organization={Transport Infrastructure
 Ireland},addressline={Parkgate Business Centre, Parkgate Street, Dublin
@@ -218,55 +219,45 @@ Ireland},addressline={Parkgate Business Centre, Parkgate Street, Dublin
 
         
 \begin{abstract}
-Under the EU Road infrastructure safety management (RISM) directive, the
-National Road Safety Strategy (RSS), and the Climate Action Plan
-Transport Infrastructure Ireland (TII) has a remit for road safety and
-decarbonizing a predominantly road-based network in Ireland.
+Legislation mandates improved road safety and decarbonisation of
+predominantly road-based transport network in Ireland and other
+countries. The Cycle Route Uptake and Scenario Estimation (CRUSE) Tool
+was commissioned to support cycle network planning, safety
+interventions, business case development and project evaluation. Cycling
+in Ireland represents only 3\% of total modal share as of the latest
+Census (2016), but accounts for 20\% of serious injuries and 7\% of all
+fatalities. High resolution datasets on baseline and potential cycling
+levels are needed to meet Ireland's climate and safety targets.
 
-The Cycle Route Uptake and Scenario Estimation (CRUSE) Tool was
-commissioned by TII and developed by the Leeds Institute for Transport
-Studies (ITS) and AECOM To address data needs for safety, business case
-development and project evaluation on the National Road Network (NRN).
-Cycling in Ireland represents only 3\% of total modal share as of the
-latest Census (2016), but accounts for 20\% of serious injuries and 7\%
-of all fatalities. High resolution datasets on baseline and potential
-cycling levels are needed to meet Ireland's climate and safety targets.
+The CRUSE Tool is based on open source software and reproducible data
+science. The resulting web application is available at
+\url{https://cruse.bike/}, enabling planners, engineers, and other
+stakeholders to make more evidence-based decisions. CRUSE goes beyond
+previous work in several important ways. It models networks at high
+levels of geographic resolution, simulates a wide range of trips
+including recreational, social, shopping and personal trips, in addition
+to trips to work and primary, secondary and tertiary education
+locations. The tool provides key `denominator' information to enable
+reporting of collision rates per billion km cycled.
 
-The CRUSE project builds on the methods underlying the Propensity to
-Cycle Tool for England and Wales (PCT), which had a major impact on
-strategic cycle network planning in the UK. Like the PCT, CRUSE is based
-on open source software and reproducible data science. The resulting web
-application is available at \url{https://cruse.bike/}, enabling
-planners, engineers, and other stakeholders to make more evidence-based
-decisions for the NRN. CRUSE goes beyond the PCT in several important
-ways, modeling denser networks at higher levels of geographic resolution
-and additional purposes, including simulated recreational, social,
-shopping and personal trips, in addition to trips to work and primary,
-secondary and tertiary education locations. The tool provides key
-`denominator' information to enable reporting of collision rates per
-billion km cycled.
-
-Another key feature of CRUSE is its use of Open Street Map (OSM) data,
-which is continuously updated, and used by
-\href{https://www.cyclestreets.net/}{Cyclestreets.net} for route
-calculation and ``cycle friendliness'' estimates of all links on the
-network. CRUSE provides three network types: the `Fastest' network
-highlights routes for directness; `Quietest' prioritises cycle
-friendliness, and `Balanced' represents a balance between speed and
-comfort. Trips are generated based on origin and destination data from
-the 2016 Census in combination with modeled demand data to estimate
-current and potential future cycling levels at area, route, and network
-levels for each county in Ireland.
+Another key feature of CRUSE is its use of frequently-updated
+OpenStreetMap data for route calculation and ``cycle friendliness''
+estimates of all links on the network. CRUSE provides three network
+types: the `Fastest' network highlights routes for directness;
+`Quietest' prioritises cycle friendliness, and `Balanced' represents a
+balance between speed and comfort. Trips are generated based on origin
+and destination data from the 2016 Census in combination with modeled
+demand data to estimate current and potential future cycling levels at
+area, route, and network levels for each county in Ireland.
 
 For investment in cycling to deliver on the huge potential benefits,
 cycling must become safer. With growth in the E-bike market, CRUSE will
 help inform inter-urban and rural networks to support the transfer of
 trips to sustainable modes for longer journeys. Provision of open access
 data in a publicly available web tool will address the challenges faced
-by National Road Authorities (NRAs) across Ireland in meeting their
-sustainability commitments. The experience of developing a deploying
-CRUSE are relevant to countries with sustainable transport policies
-worldwide.
+by counties across Ireland in meeting their sustainability commitments.
+The experience of developing a deploying CRUSE are relevant to countries
+with sustainable transport policies worldwide.
 \end{abstract}
 
 
@@ -278,8 +269,9 @@ worldwide.
     Active Travel
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, frame hidden, sharp corners, interior hidden, breakable]}{\end{tcolorbox}}\fi
+    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, breakable, frame hidden]}{\end{tcolorbox}}\fi
 
+\setstretch{2}
 \newpage{}
 
 \hypertarget{introduction}{%
@@ -292,11 +284,11 @@ Conversely, evidence-based and effective transport \emph{policies} have
 great potential to decarbonize economies, improve public health, and
 save lives.
 
-Transport is responsible for 23\% of global greenhouse gas emissions,
-70\% of which are from road transport. Nearly nearly half of these
-emissions (around 10\% of global emissions) are from passenger cars
-\citep{jaramillo2022}. The transport system encourages, enables and in
-some cases enforces unsustainable lifestyles. Services that are only
+Transport is responsible for 23\% of global greenhouse gas (GHG)
+emissions, 70\% of which are from road transport. Nearly nearly half of
+these emissions (around 10\% of global emissions) are from passenger
+cars \citep{jaramillo2022}. The transport system encourages, enables and
+in some cases enforces unsustainable lifestyles. Services that are only
 accessible by car lock-in car dependency
 \citep{gray2001, shergold2012, motte-baumvol2010}.
 
@@ -310,69 +302,66 @@ demand reduction (\emph{avoid}ing unnecessary trips), in addition to
 mode \emph{shift} to sustainable modes and \emph{improvement} of
 existing energy converters, in that order.
 
-Uptake of cycling, the main topic of this paper, should be seen in this
-broader context of transport decarbonisation \citep{brand2020} and
-sustainable mobility \citep{burns2013}. Although cycling uptake appears
-on the surface to only relate to the `shift' part of the ASI framework,
-closer consideration of the knock-on impacts of cycling uptake shows
-that it can also help avoid unnecessary trips \citep{nello-deakin2020}.
+Uptake of cycling should be seen in this broader context of transport
+decarbonisation \citep{brand2020} and sustainable mobility
+\citep{burns2013}. Although cycling uptake appears on the surface to
+only relate to the `shift' part of the ASI framework, closer
+consideration of the knock-on impacts of cycling uptake shows that it
+can also help avoid unnecessary trips \citep{nello-deakin2020}.
 Furthermore, highly efficient e-bikes --- which are seeing rapid uptake
 in Ireland and other countries --- outperform electric cars, which are
 too heavy and expensive. Over-reliance on electric cars could slow the
 transition away from car dependency and inadvertently enable ``high
 travel lock-in'' \citep{anable2019}. At the European level, the European
-Union has a target of reducing greenhouse gas emissions by 55\% by 2030,
-compared to 1990 levels, and to achieve `net-zero' by 2050.\footnote{https://eur-lex.europa.eu/legal-content/EN/TXT/?u
-  ri=celex\%3A32008L0096}
+Union has a target of reducing GHG emissions by 55\% by 2030, compared
+to 1990 levels, and to achieve `net-zero' by 2050 \citep{rosenow2022}.
 
 Regarding road traffic casualties, another deadly consequence of
 inefficient transport systems, the Road Infrastructure Safety Management
 (RISM) directive (2008/96/EC) requires member states to implement a road
 safety management system (RSMS) for all public roads. Specifically,
 ``Member States shall ensure that the ranking of high accident
-concentration sections and the network safety ranking are carried
-out''.\footnote{https://eur-lex.europa.eu/legal-content/EN/TXT/?u
-  ri=celex\%3A32008L0096} Given that `safety' in this context is
-usefully quantified as the number of people killed and seriously injured
-(KSI) per distance travelled, the directive requires estimation of
-distance travelled by mode, down to the road link level. For active
-modes, about which there is a paucity of data compared with motorized
-modes, this is a major challenge. Better data to inform road safety
-policies and interventions is a motivation for the CRUSE Tool outlined
-in this paper, and modeling active travel more broadly.
+concentration sections and the network safety ranking are carried out''
+\citep{directiv2008}. Given that `safety' in this context is usefully
+quantified as the number of people killed and seriously injured (KSI)
+per distance travelled, the directive requires estimation of distance
+travelled by mode, down to the road link level. For active modes, about
+which there is a paucity of data compared with motorized modes, this is
+a major challenge. Better data to inform road safety policies and
+interventions is a motivation for the CRUSE Tool outlined in this paper,
+and modeling active travel more broadly.
 
 In Ireland, the Road Safety Authority (RSA) has set the target of
-halving the number of road traffic deaths and serious injuries by
-2030.\footnote{\url{https://www.gov.ie/en/publication/774e2-national-development-plan-2021-2030/}}
-Doing so while simultaneously enabling rapid uptake of active modes will
-require key active travel routes to be identified and improved.
+halving the number of road traffic deaths and serious injuries by 2030
+\citep{national2021}. Doing so while simultaneously enabling rapid
+uptake of active modes will require key active travel routes to be
+identified and improved.
 
 A proactive approach to the development of cycling policy and
 infrastructure is taking place in Ireland. The main frameworks
-underpinning these efforts are the Climate Action Plan\footnote{\url{https://www.gov.ie/en/publication/7bd8c-climate-action-plan-2023/}},
-the National Development Plan\footnote{\url{https://www.gov.ie/en/publication/774e2-national-development-plan-2021-2030/}},
-and the National Roads 2040 strategy \footnote{https://www.tii.ie/tii-library/strategic-planning/national-roads-2040/TII-NR2040-Final-Report-EN-April-2023.pdf}.
-These policy frameworks are backed-up by public support for active
-travel interventions: while only 3\% of trips in Ireland are made by
-cycling according to the latest Census data from 2016,\footnote{https://assets.gov.ie/42950/f789b2fcfb144441822f58236986eeea.pdf}
-``83\% of respondents supported enhanced walking and cycling facilitie
-s''.
+underpinning these efforts are the Climate Action Plan
+\citep{climate2022a}, the National Development Plan, and the National
+Roads 2040 strategy \citep{national2023}. These policy frameworks are
+backed-up by public support for active travel interventions: while only
+3\% of trips in Ireland are made by cycling according to the latest
+Census data from 2016 ``83\% of respondents supported enhanced walking
+and cycling facilities'' \citep{sustaina2019}.
 
 At the regional level, the recently published Greater Dublin Area
-Transport Strategy\footnote{\url{https://www.nationaltransport.ie/planning-and-investment/strategic-planning/greater-dublin-area-transport-strategy/}}
-reinforces these findings: ``nearly a quarter of adults cycle at least
-once a week in the Dublin Metropolitan Area'' with cycling in the Dublin
-area taking up to 60,000 cars off the road today. Extrapolating this on
-a per population basis across Ireland, with around 40\% of the
-population living in Dublin, this suggests that around 150,000 cars
-could be removed nationwide just by achieving Dublin levels of cycling
-in all counties (notwithstanding existing cycling trips and differences
-in trip distances). 7 in 10 trips in Ireland are by car\footnote{https://www.nationaltransport.ie/wp-content/uploads/2019/01/National\_Household\_Travel\_Survey\_2017\_Report\_-\_December\_2018.pdf}
-. Cycling has the potential to replace a large proportion of these
-trips: ``A high priority must also be given to cyclists, because trips
-by this mode have the potential to replace trips by private car, most
-specifically for short to medium distance trips, but increasingly for
-longer trips as e-bikes extend the range of this mode'' \footnote{https://www.nationaltransport.ie/planning-and-investment/strategic-planning/greater-dublin-area-transport-strategy/}.
+Transport Strategy \citep{greater} reinforces these findings: ``nearly a
+quarter of adults cycle at least once a week in the Dublin Metropolitan
+Area'' with cycling in the Dublin area taking up to 60,000 cars off the
+road today. Extrapolating this on a per population basis across Ireland,
+with around 40\% of the population living in Dublin, this suggests that
+around 150,000 cars could be removed nationwide just by achieving Dublin
+levels of cycling in all counties (notwithstanding existing cycling
+trips and differences in trip distances). 7 in 10 trips in Ireland are
+by car \citep{national} . Cycling has the potential to replace a large
+proportion of these trips: ``A high priority must also be given to
+cyclists, because trips by this mode have the potential to replace trips
+by private car, most specifically for short to medium distance trips,
+but increasingly for longer trips as e-bikes extend the range of this
+mode'' \citep{greater}.
 
 Further evidence of the importance of cycling in Ireland \emph{already}
 is provided by the National Strategic Objective (NSO) from the National
@@ -428,14 +417,10 @@ available at \url{https://cruse.bike/}.}
 
 \end{figure}
 
-The main aim of the paper is to present the CRUSE Tool and describe the
-methods and datasets on which the estimates of current and future
-potential cycling levels are based. We will also highlight key results,
-discuss the implications for policy and practice, and outline how
-similar tools could be developed in other countries. It is structured as
-follows. In Section~\ref{sec-methods}, we outline the methods used to
-generate the evidence presented in the CRUSE Tool for Ireland. In
-Section~\ref{sec-results}, we present the results of the CRUSE Tool,
+This paper aims to describe the design, features and potential use of
+the CRUSE Tool. In Section~\ref{sec-methods}, we outline the methods
+used to generate the evidence presented in the CRUSE Tool for Ireland.
+In Section~\ref{sec-results}, we present the results of the CRUSE Tool,
 including estimates of current cycling levels and future cycling
 potential at the national, regional and local levels. In
 Section~\ref{sec-discussion}, we discuss the implications of the results
@@ -455,16 +440,8 @@ stakeholders in the transport planning process \citep{lovelace2017}. The
 PCT approach has had major policy impacts, as outlined in Research
 Excellence Framework (REF) impact case studies, which demonstrate that
 the tool ``revolutionised strategic cycle planning in England and
-Wales''\footnote{See REF Impact Case Study ``Cycle network policy,
-  planning and investment transformed by the Propensity to Cycle Tool''
-  at
-  \href{https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f}{results2021.ref.ac.uk}
-  submitted by the University of Leeds.} by overcoming the barriers to
-cycling investment imposed by lack of evidence on cycling
-potential\footnote{See the REF Impact Case Study ``Creating Step Changes
-  in Cycling Policy and Infrastructure Planning across the UK'' at
-  \href{https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B}{results2021.ref.ac.uk}
-  submitted by the University of Westminster.} .
+Wales'' by overcoming the barriers to cycling investment imposed by lack
+of evidence on cycling potential\citep{lovelace2023}.
 
 The first version of the PCT was based on current and future potential
 uptake of cycling for single stage \emph{travel to work} at desire line,
@@ -486,12 +463,9 @@ developed and deployed for the Lisbon metro region. The resulting
 evidence is available in an interactive web application hosted at
 \href{https://biclar.tmlmobilidade.pt}{biclar.tmlmobilidade.pt}
 \citep{felix2023}. biclaR includes estimates of impacts, using the World
-Health Organisation (WHO) `HEAT for Cycling' tool\footnote{See the
-  Health economic assessment tool for walking and cycling at
-  \href{https://www.heatwalkingcycling.org/\#homepage}{www.heatwalkingcycling.org}.}
-and an `intermodality' scenario that combines cycling with currently
-available public transit options based on General Transit Feed
-Specification (GTFS) data.
+Health Organisation (WHO) `HEAT for Cycling' tool and an `intermodality'
+scenario that combines cycling with currently available public transit
+options based on General Transit Feed Specification (GTFS) data.
 
 The CRUSE Tool seeks to overcome the following methodological
 limitations of the original PCT:
@@ -597,7 +571,8 @@ reasons, to enable:
   terms of service of the free API.
 \item
   Making changes to the routing profiles, including allowing routing on
-  trunk roads, which are sometimes omitted in the default routing profiles.
+  trunk roads, which are sometimes avoided in the default routing
+  profiles.
 \item
   Control over the version of OSM data being used for the routing,
   allowing regular updates to the route networks as OSM data is updated.
@@ -619,39 +594,50 @@ between directness and `cycle friendliness' when planning new
 infrastructure, as shown in Figure~\ref{fig-route-types}.
 
 These map are available on the `Route types' page for each county (see
-\href{https://cruse.bike/limerick/route-types}{cruse.bike/limerick/route-types}).
+\href{https://cruse.bike/kildare/route-types}{cruse.bike/kildare/route-types}).
 In addition to showing the estimated routes under each scenario, the
 page also presents summary statistics on the network:
 
 \begin{itemize}
 \item
   On the fastest network, 25\% of the distance cycled occurs in
-  non-hostile segments and 6\% in cycle-friendly segments.
+  non-hostile segments and 7\% in cycle-friendly segments.
 \item
-  Under the baseline scenario, 55\% of the distance cycled on the
-  quietest network occurs in non-hostile segments and 13\% in
+  Under the baseline scenario, 52\% of the distance cycled on the
+  quietest network occurs in non-hostile segments and 15\% in
   cycle-friendly segments.
 \end{itemize}
 
-These statistics can be revealing: in Limerick it suggests that around
+These statistics can be revealing: in Kildare it suggests that around
 half of all cycling activity occurs on network segments that are hostile
 (with a high inferred level of traffic stress), even when efforts are
 taken to avoid busy segments. For the Fastest network, which may be more
 realistic for utility cycling, the proportion of cycling on hostile
 segments is even higher at 75\%.
 
-TODO: Add description of route types in Limerick based on local
-knowledge and Figure~\ref{fig-route-types}.
-
 \begin{figure}
 
-\begin{minipage}[t]{\linewidth}
+\begin{minipage}[t]{0.50\linewidth}
 
 {\centering 
 
 \raisebox{-\height}{
 
-\includegraphics{images/paste-5.png}
+\includegraphics[width=2.60417in,height=\textheight]{images/naas_quietest_godutch.png}
+
+}
+
+}
+
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics[width=2.60417in,height=\textheight]{images/naas_fastest_godutch.png}
 
 }
 
@@ -659,13 +645,27 @@ knowledge and Figure~\ref{fig-route-types}.
 
 \end{minipage}%
 \newline
-\begin{minipage}[t]{\linewidth}
+\begin{minipage}[t]{0.50\linewidth}
 
 {\centering 
 
 \raisebox{-\height}{
 
-\includegraphics{images/paste-6.png}
+\includegraphics[width=2.60417in,height=\textheight]{images/newbridge_quietest_godutch.png}
+
+}
+
+}
+
+\end{minipage}%
+%
+\begin{minipage}[t]{0.50\linewidth}
+
+{\centering 
+
+\raisebox{-\height}{
+
+\includegraphics[width=2.60417in,height=\textheight]{images/newbridge_fastest_godutch.png}
 
 }
 
@@ -673,8 +673,8 @@ knowledge and Figure~\ref{fig-route-types}.
 
 \end{minipage}%
 
-\caption{\label{fig-route-types}Illustration of the Fastest and Quietest
-route networks for central and East Limmerick.}
+\caption{\label{fig-route-types}Illustration of the Quietest (left) and
+Fastest (right) route networks for Naas (top) and Newbridge (bottom).}
 
 \end{figure}
 
@@ -691,14 +691,14 @@ Figure~\ref{fig-scenarios}.
 
 {\centering 
 
-\includegraphics{images/paste-7.png}
+\includegraphics{images/scenarios_kildare.png}
 
 }
 
-\caption{\label{fig-scenarios}Distance-mode share graph for Limerick
-used to communicate the different scenarios. Source: county level view
-for Limerick in the open access CRUSE Tool at
-\url{https://cruse.bike/limerick}.}
+\caption{\label{fig-scenarios}Distance-mode share graph for Kildare used
+to communicate the different scenarios. Source: county level view for
+Kildare in the open access CRUSE Tool at
+\url{https://cruse.bike/kildare}.}
 
 \end{figure}
 
@@ -740,14 +740,14 @@ The Climate Action Plan scenario is loosely based on the Irish
 Government's
 \href{https://www.gov.ie/en/publication/6223e-climate-action-plan-2021/}{Climate
 Action Plan 2021}, which contains policies for action to achieve a 51\%
-reduction in overall greenhouse gas emissions by 2030, on a path towards
-net-zero by 2050. For transport, this includes 500,000 extra walking,
-cycling and public transport trips per day by 2030. In terms of car
-travel, the target is to ``Increas{[}e{]} the proportion of kilometres
-driven by passenger electric cars to between 40 and 45\% by 2030, in
-addition to a reduction of 10\% in kilometres driven by the remaining
-internal combustion engine cars.'' This equates to a 5.5 to 6\%
-reduction in total car km driven.
+reduction in overall GHG emissions by 2030, on a path towards net-zero
+by 2050. For transport, this includes 500,000 extra walking, cycling and
+public transport trips per day by 2030. In terms of car travel, the
+target is to ``Increas{[}e{]} the proportion of kilometres driven by
+passenger electric cars to between 40 and 45\% by 2030, in addition to a
+reduction of 10\% in kilometres driven by the remaining internal
+combustion engine cars.'' This equates to a 5.5 to 6\% reduction in
+total car km driven.
 
 To model this decrease in car driver km, cycling uptake increases in
 line with the Go Dutch scenario. However, we only model shift from
@@ -764,7 +764,7 @@ uses the same model that was used PCT, allowing trips to shift from any
 other mode to cycling \citep{lovelace2017}.
 
 \hypertarget{ebike}{%
-\subsection{Ebike}\label{ebike}}
+\subsubsection{Ebike}\label{ebike}}
 
 Also based on the PCT scenario with the same name, the Eike scenario in
 CRUSE takes Go Dutch cycling uptake, and adds onto this the impact of
@@ -912,18 +912,102 @@ the RISM Directive on road casualties as part of the road safety
 management system.
 
 While the CRUSE Tool is not the first national and publicly available
-tool for cycling planning, it has some unique features that make it
+tool for cycling planning, it has some key features that make it
 relevant for other countries, and other national road authorities tasked
-with making their transport systems safe.
+with making their transport systems safe:
 
-TODO: outline these features.
-
-The CRUSE Tool is designed to be used by a wide range of stakeholders,
-including transport planners, engineers, and other professionals, as
-well as non-professionals.
+\begin{itemize}
+\tightlist
+\item
+  The results are \emph{open access} meaning that any stakeholder in the
+  planning system can access the evidence. This will help to democratise
+  the transport planning process and make wider conversations about
+  transport planning more evidence-based and less polarised
+  \citep{lovelace2020}, something that is particularly relevant given
+  the potentially polarising nature of pro-cycling interventions
+  \citep{wild2017}.
+\item
+  The results are fully reproducible (code to be released pending
+  sign-off by TII's IT team), preventing `cloud lock in' to a
+  potentially monopolistic consultancy, and encouraging input from the
+  wider open source community \citep{lovelace2021, dhir2017}.
+\item
+  By covering a wide range of trip purposes --- not just travel to work
+  \citep{lovelace2017, heinen2010} and travel school \citep{goodman2019}
+  as covered in previously published research on open access national
+  cycle netework planning tools --- the results capture a higher
+  proportion of cycling potential including key rural trips which are
+  often under-represented in models of active travel.
+\end{itemize}
 
 \hypertarget{sec-conclusions}{%
 \section{Conclusions}\label{sec-conclusions}}
+
+The CRUSE Tool is an open access web application for strategic cycle
+network planning and prioritisation of road safety interventions across
+Ireland. Building on previous work, it provides a nationally consistent
+evidence base, providing valuable insights to planners and other
+stakeholders in the transport planning process, at national and local
+levels. Because the results are available at the route segment level,
+the tool can be used to identify `weak links' in the cycle network, and
+to prioritise investment in cycling infrastructure. Furthermore, the
+provision of the evidence in a free and publicly available website,
+hosted at \href{https://cruse.bike}{cruse.bike}, means that it can be
+used by anyone, encouraging wider participation and more evidence-based
+debate about transport planning.
+
+A key feature of the project methodologically is its calculation of
+current and future potential not only for travel to work and travel to
+school, but also for other trip purposes, including recreational trips.
+This required the development of spatial interaction models and
+estimation of the relative attractiveness of different destinations for
+different trip purposes, an area of active research where new
+developments could be incorporated into the tool in future
+\citep{hasova2022}.
+
+The CRUSE Tool and the underlying research and methods are not without
+limitations, suggesting future areas of research, data collection needs,
+and policy application. The route network level results have not been
+validated to the extent we had planned at the outset of the project. We
+compared route network level results with `ground truth' data from cycle
+counter datasets across Dublin to test different network types and to
+ensure that additional trip types added to work and educational trips
+increased the quality of fit under the baseline scenario. However, the
+size of the counter network was insufficient to provide an opportunity
+for robust evaluation of model performance, suggesting a combined
+program of new count data collection and analysis should be a priority
+for future work, with findings feeding directly into work to improve the
+outputs of the the CRUSE Tool.
+
+More broadly, the tool's outputs are limited to just one more of active
+travel (cycling), ignoring walking and wheeling, including wheelchair
+use and a range of wheeled devices such as scooters, bike trailers and
+e-cargo bikes that can be used to escort children to school. Sustainable
+transport policies should plan for walking, wheeling and cycling, and
+there are many co-benefits of broadly defined active travel
+interventions that benefit all active modes, such as measures to reduce
+heavy motor traffic speeds and volumes in areas and along corridors with
+high active travel potential. This raises the question of whether other
+active modes should be incorporated into the results using the OD-based
+approach outlined in this paper, or whether different modelling
+approaches are needed to properly capture the shorter distance trips
+typically made by walking \citep{cooper2018}. Furthermore, the estimates
+of cycling presented in the CRUSE Tool omit multi-modal trips including
+public transport, and omit trip chaining, due to the need to capture a
+large portion of cycling potential within the resource constraints of
+the project.
+
+The CRUSE Tool is already used in practice to support more ambitious and
+data-driven planning for safe cycling routes in multiple counties across
+Ireland. We hope that the underlying approach, and the publicly
+available evidence provided in the CRUSE Tool itself, provide a basis
+for future reproducible research, open source software development into
+strategic cycle network planning tools in Ireland and other countries.
+Active travel represents a win-win-win for physical activity,
+environment, and local economic opportunities. In combination with
+broader sustainable mobility measures and policies to reduce motor
+traffic speeds and volumes, tools such as CRUSE can support the fast and
+fair decarbonisation of transport systems worldwide.
 
 \hypertarget{list-of-abbreviations}{%
 \section{List of abbreviations}\label{list-of-abbreviations}}
@@ -933,6 +1017,8 @@ CSO: Central Statistics Office
 CRUSE: Cycle Route Uptake and Scenario Estimation
 
 ED: Electoral Division
+
+GHG: Greehouse Gas
 
 GTFS: General Transit Feed Specification
 
@@ -980,7 +1066,8 @@ The work was funded by Transport Infrastructure Ireland (TII).
 Thanks to Paul MacDonald and Donal Hodgins (Kildare County Council), for
 testing early versions of the tool and for their input into the project.
 Thanks to Ciaran Maguire, Catherine Swift, and others at AECOM for their
-input into the project.
+input into the project. Thanks to Martin Lucas-Smith and Simon Nutall
+from CycleStreets for their input into the project.
 
 \hypertarget{competing-interests}{%
 \subsection*{Competing interests}\label{competing-interests}}
