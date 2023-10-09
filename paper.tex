@@ -269,7 +269,7 @@ with sustainable transport policies worldwide.
     Active Travel
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, interior hidden, breakable, boxrule=0pt, enhanced, sharp corners, frame hidden]}{\end{tcolorbox}}\fi
+    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, breakable, frame hidden]}{\end{tcolorbox}}\fi
 
 \setstretch{2}
 \newpage{}
@@ -314,56 +314,54 @@ too heavy and expensive. Over-reliance on electric cars could slow the
 transition away from car dependency and inadvertently enable ``high
 travel lock-in'' \citep{anable2019}. At the European level, the European
 Union has a target of reducing GHG emissions by 55\% by 2030, compared
-to 1990 levels, and to achieve `net-zero' by 2050 \citep{directiv2008}.
+to 1990 levels, and to achieve `net-zero' by 2050 \citep{rosenow2022}.
 
 Regarding road traffic casualties, another deadly consequence of
 inefficient transport systems, the Road Infrastructure Safety Management
 (RISM) directive (2008/96/EC) requires member states to implement a road
 safety management system (RSMS) for all public roads. Specifically,
 ``Member States shall ensure that the ranking of high accident
-concentration sections and the network safety ranking are carried
-out''.\footnote{https://eur-lex.europa.eu/legal-content/EN/TXT/?u
-  ri=celex\%3A32008L0096} Given that `safety' in this context is
-usefully quantified as the number of people killed and seriously injured
-(KSI) per distance travelled, the directive requires estimation of
-distance travelled by mode, down to the road link level. For active
-modes, about which there is a paucity of data compared with motorized
-modes, this is a major challenge. Better data to inform road safety
-policies and interventions is a motivation for the CRUSE Tool outlined
-in this paper, and modeling active travel more broadly.
+concentration sections and the network safety ranking are carried out''
+\citep{directiv2008}. Given that `safety' in this context is usefully
+quantified as the number of people killed and seriously injured (KSI)
+per distance travelled, the directive requires estimation of distance
+travelled by mode, down to the road link level. For active modes, about
+which there is a paucity of data compared with motorized modes, this is
+a major challenge. Better data to inform road safety policies and
+interventions is a motivation for the CRUSE Tool outlined in this paper,
+and modeling active travel more broadly.
 
 In Ireland, the Road Safety Authority (RSA) has set the target of
-halving the number of road traffic deaths and serious injuries by
-2030.\footnote{\url{https://www.gov.ie/en/publication/774e2-national-development-plan-2021-2030/}}
-Doing so while simultaneously enabling rapid uptake of active modes will
-require key active travel routes to be identified and improved.
+halving the number of road traffic deaths and serious injuries by 2030
+\citep{national2021}. Doing so while simultaneously enabling rapid
+uptake of active modes will require key active travel routes to be
+identified and improved.
 
 A proactive approach to the development of cycling policy and
 infrastructure is taking place in Ireland. The main frameworks
-underpinning these efforts are the Climate Action Plan\footnote{\url{https://www.gov.ie/en/publication/7bd8c-climate-action-plan-2023/}},
-the National Development Plan\footnote{\url{https://www.gov.ie/en/publication/774e2-national-development-plan-2021-2030/}},
-and the National Roads 2040 strategy \footnote{https://www.tii.ie/tii-library/strategic-planning/national-roads-2040/TII-NR2040-Final-Report-EN-April-2023.pdf}.
-These policy frameworks are backed-up by public support for active
-travel interventions: while only 3\% of trips in Ireland are made by
-cycling according to the latest Census data from 2016,\footnote{https://assets.gov.ie/42950/f789b2fcfb144441822f58236986eeea.pdf}
-``83\% of respondents supported enhanced walking and cycling facilitie
-s''.
+underpinning these efforts are the Climate Action Plan
+\citep{climate2022a}, the National Development Plan, and the National
+Roads 2040 strategy \citep{national2023}. These policy frameworks are
+backed-up by public support for active travel interventions: while only
+3\% of trips in Ireland are made by cycling according to the latest
+Census data from 2016 ``83\% of respondents supported enhanced walking
+and cycling facilities'' \citep{sustaina2019}.
 
 At the regional level, the recently published Greater Dublin Area
-Transport Strategy\footnote{\url{https://www.nationaltransport.ie/planning-and-investment/strategic-planning/greater-dublin-area-transport-strategy/}}
-reinforces these findings: ``nearly a quarter of adults cycle at least
-once a week in the Dublin Metropolitan Area'' with cycling in the Dublin
-area taking up to 60,000 cars off the road today. Extrapolating this on
-a per population basis across Ireland, with around 40\% of the
-population living in Dublin, this suggests that around 150,000 cars
-could be removed nationwide just by achieving Dublin levels of cycling
-in all counties (notwithstanding existing cycling trips and differences
-in trip distances). 7 in 10 trips in Ireland are by car\footnote{https://www.nationaltransport.ie/wp-content/uploads/2019/01/National\_Household\_Travel\_Survey\_2017\_Report\_-\_December\_2018.pdf}
-. Cycling has the potential to replace a large proportion of these
-trips: ``A high priority must also be given to cyclists, because trips
-by this mode have the potential to replace trips by private car, most
-specifically for short to medium distance trips, but increasingly for
-longer trips as e-bikes extend the range of this mode'' \footnote{https://www.nationaltransport.ie/planning-and-investment/strategic-planning/greater-dublin-area-transport-strategy/}.
+Transport Strategy \citep{greater} reinforces these findings: ``nearly a
+quarter of adults cycle at least once a week in the Dublin Metropolitan
+Area'' with cycling in the Dublin area taking up to 60,000 cars off the
+road today. Extrapolating this on a per population basis across Ireland,
+with around 40\% of the population living in Dublin, this suggests that
+around 150,000 cars could be removed nationwide just by achieving Dublin
+levels of cycling in all counties (notwithstanding existing cycling
+trips and differences in trip distances). 7 in 10 trips in Ireland are
+by car \citep{national} . Cycling has the potential to replace a large
+proportion of these trips: ``A high priority must also be given to
+cyclists, because trips by this mode have the potential to replace trips
+by private car, most specifically for short to medium distance trips,
+but increasingly for longer trips as e-bikes extend the range of this
+mode'' \citep{greater}.
 
 Further evidence of the importance of cycling in Ireland \emph{already}
 is provided by the National Strategic Objective (NSO) from the National
@@ -442,16 +440,8 @@ stakeholders in the transport planning process \citep{lovelace2017}. The
 PCT approach has had major policy impacts, as outlined in Research
 Excellence Framework (REF) impact case studies, which demonstrate that
 the tool ``revolutionised strategic cycle planning in England and
-Wales''\footnote{See REF Impact Case Study ``Cycle network policy,
-  planning and investment transformed by the Propensity to Cycle Tool''
-  at
-  \href{https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f}{results2021.ref.ac.uk}
-  submitted by the University of Leeds.} by overcoming the barriers to
-cycling investment imposed by lack of evidence on cycling
-potential\footnote{See the REF Impact Case Study ``Creating Step Changes
-  in Cycling Policy and Infrastructure Planning across the UK'' at
-  \href{https://results2021.ref.ac.uk/impact/4BBF3436-FD10-4C75-9791-F5E98AB4411B}{results2021.ref.ac.uk}
-  submitted by the University of Westminster.} .
+Wales'' by overcoming the barriers to cycling investment imposed by lack
+of evidence on cycling potential\citep{lovelace2023}.
 
 The first version of the PCT was based on current and future potential
 uptake of cycling for single stage \emph{travel to work} at desire line,
@@ -473,12 +463,9 @@ developed and deployed for the Lisbon metro region. The resulting
 evidence is available in an interactive web application hosted at
 \href{https://biclar.tmlmobilidade.pt}{biclar.tmlmobilidade.pt}
 \citep{felix2023}. biclaR includes estimates of impacts, using the World
-Health Organisation (WHO) `HEAT for Cycling' tool\footnote{See the
-  Health economic assessment tool for walking and cycling at
-  \href{https://www.heatwalkingcycling.org/\#homepage}{www.heatwalkingcycling.org}.}
-and an `intermodality' scenario that combines cycling with currently
-available public transit options based on General Transit Feed
-Specification (GTFS) data.
+Health Organisation (WHO) `HEAT for Cycling' tool and an `intermodality'
+scenario that combines cycling with currently available public transit
+options based on General Transit Feed Specification (GTFS) data.
 
 The CRUSE Tool seeks to overcome the following methodological
 limitations of the original PCT:
