@@ -14,6 +14,7 @@ bibliography: references.bib
 Dear Editor,
 
 We are submitting our manuscript entitled "CRUSE to Safe Cycling in Ireland: An Open Source Tool to Support Active Travel" for consideration for publication in the European Transport Research Review.
+It has a word count of 4,721, excluding references.
 
 This manuscript describes the development of an open source tool to support active travel in Ireland.
 The paper describes the design, features and potential uses of the CRUSE Tool.
@@ -25,6 +26,28 @@ The evidence is actionable, provided for free to all stakeholders in the transpo
 We believe that our experiences developing the tool will be of use to others tasked with investing in cost effective cycle infrastructure.
 Furthermore, and unusually for this kind of tool, a major policy driver was road safety: a key output of the tool is estimates of baseline levels of cycling, which can be used to generate estimates of road safety levels in units of killed or seriously injured casualties per billion km (KSI/bkm).
 
-As a group we have wide experience in this space...
+As a group we have wide experience in this space, as highlighted by the below selection of our previous publications:
+
+-   A paper on cycling safety based on route network analysis [@meade2018]
+
+-   Methods enabling inequalities to be accounted for in cycle network analysis and design [@mahfouz]
+
+-   Methods enabling accurate modeling and effective visualization of origin-destination data and route networks [@morgan2020; @lovelace2022]
+
+-   Analysis of infrastructure preferences for cycling in Ireland [@caulfield2012]
+
+-   Papers describing previous approaches to developing strategic cycle network planning tools [@lovelace2017]
 
 We expect the manuscript will have the following impacts:
+
+-   Highlight the open availability of the CRUSE tool to stakeholders in Ireland, increasing its use, leading to more evidence-based and likely more effective network level designs, accounting for trade-offs between investment in 'fast' vs 'quiet' networks
+
+-   Increase awareness of open evidence to support effective and data-driven investment in and planning for cycling internationally
+
+-   Provide information and inspiration to researchers and other stakeholders to imagine, explore, and in some cases invest time in developing new strategic cycle network planning tools
+
+All the best,
+
+Robin Lovelace on behalf of all authors, Joey Talbot, Eugeni Vidal-Tortosa, and Hussein Mahfouz (University of Leeds), Elaine Brick, Peter Wright, Gary O'Tool (AECOM), Dan Brennan and Suzanne Meade (Transport Infrastructure Ireland)
+
+# References
