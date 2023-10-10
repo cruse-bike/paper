@@ -106,10 +106,10 @@ system("pdftk _site/paper.pdf cat 1 output _site/title_page.pdf")
 <!-- Mobility kills. -->
 
 High energy transport systems are a major contributor to climate change, a leading cause of premature death and injury due to road traffic collisions, and a cause of disease due to airborne and noise pollutants.
-Conversely, evidence-based and effective transport *policies* have great potential to decarbonize economies, improve public health, and save lives.
+Conversely, evidence-based and effective transport *policies* have great potential to decarbonise economies, improve public health, and save lives.
 
 Transport is responsible for 23% of global greenhouse gas (GHG) emissions, 70% of which are from road transport.
-Nearly nearly half of these emissions (around 10% of global emissions) are from passenger cars [@jaramillo2022].
+Nearly half of these emissions (around 10% of global emissions) are from passenger cars [@jaramillo2022].
 The transport system encourages, enables and in some cases enforces unsustainable lifestyles.
 Services that are only accessible by car lock-in car dependency [@gray2001; @shergold2012; @motte-baumvol2010].
 
@@ -126,7 +126,7 @@ At the European level, the European Union has a target of reducing GHG emissions
 Regarding road traffic casualties, another deadly consequence of inefficient transport systems, the Road Infrastructure Safety Management (RISM) directive (2008/96/EC) requires member states to implement a road safety management system (RSMS) for all public roads.
 Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out" [@directiv2008].
 Given that 'safety' in this context is usefully quantified as the number of people killed and seriously injured (KSI) per distance travelled, the directive requires estimation of distance travelled by mode, down to the road link level.
-For active modes, about which there is a paucity of data compared with motorized modes, this is a major challenge.
+For active modes, about which there is a paucity of data compared with motorised modes, this is a major challenge.
 Better data to inform road safety policies and interventions is a motivation for the CRUSE Tool outlined in this paper, and modeling active travel more broadly.
 
 In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030 [@national2021].
@@ -204,7 +204,7 @@ This means that high levels of geographic resolution are needed in the data used
 However, datasets on travel patterns are often only available at the level of administrative zones.
 The Central Statistics Office (CSO) in Ireland provides Place of Work, School or College Census of Anonymised Records ([POWSCAR](https://www.cso.ie/en/census/census2016reports/powscar/)) data on the number of people travelling to work and school at the Electoral Division (ED) level, for example.
 
-The method used to convert OD data to route networks used in the PCT was to calculate a single route between the population weighted centroids associated with each OD pair.
+In the PCT, the method used to convert OD data to route networks was to calculate a single route between the population weighted centroids of the zones associated with each OD pair.
 This method works fine when the OD data represents movement between small areas, but was not appropriate for generating route networks from the POWSCAR data because zone centroids are so far apart that the resulting route networks would be sparse and unrealistic.
 To tackle this issue we developed a new method for OD data disaggregation called 'jittering' [@lovelace2022].
 The method works by first disaggregating the OD data based on a 'disaggregation threshold' and then assigning each disaggregated 'sub-OD' pair to 'subpoints' within each zone.
@@ -352,7 +352,7 @@ This scenario uses the same model that was used PCT, allowing trips to shift fro
 
 ### Ebike
 
-Also based on the PCT scenario with the same name, the Eike scenario in CRUSE takes Go Dutch cycling uptake, and adds onto this the impact of increased ebike usage, which allows for longer cycle trips.
+Also based on the PCT scenario with the same name, the Ebike scenario in CRUSE takes Go Dutch cycling uptake, and adds onto this the impact of increased ebike usage, which allows for longer cycle trips.
 However, travel to primary and secondary schools still uses Go Dutch uptake, since no ebike scenario has been developed for school journeys, and children may be less likely to own ebikes than adults.
 
 ## User interface {#sec-ui}
@@ -411,7 +411,7 @@ Local -->
 <!-- ## Local results -->
 
 To illustrate the results in urban areas, we took the top 4 cities in Ireland by population: Dublin City, Cork, Limerick and Galway (with city populations of 0.6, 0.2, 0.1 and 0.1 million respectively).
-The results for central areas demarcated with circular areas with a radius of 3km for these cities are presented in @fig-city-results.
+In @fig-city-results we present the cycle route networks within a 3km radius circle centred on each of these cities.
 
 ```{r}
 #| eval: false
@@ -513,7 +513,7 @@ The results for the Dublin area could help prioritise investment in cycling infr
 # Discussion {#sec-discussion}
 
 The CRUSE Tool provides evidence on current and potential future cycling levels across Ireland down to the street level, with potential assigned to 'fastest', 'balanced' and 'quietest' route networks.
-This provision of multiple scenarios of behaviour changes *and* multiple scenarios of investment, for example in cycling infrastructure next to major roads vs quiet residential streets, is a key feature of the CRUSE Tool.
+This provision of multiple scenarios of behaviour change *and* multiple scenarios of investment, for example in cycling infrastructure next to major roads vs quiet residential streets, is a key feature of the CRUSE Tool.
 
 As highlighted in a paper on cycling infrastructure preferences based on a case study of Dublin, both directness and quietness are important [@caulfield2012]:
 
@@ -545,7 +545,7 @@ The route network level results have not been validated to the extent we had pla
 We compared route network level results with 'ground truth' data from cycle counter datasets across Dublin to test different network types and to ensure that additional trip types added to work and educational trips increased the quality of fit under the baseline scenario.
 However, the size of the counter network was insufficient to provide an opportunity for robust evaluation of model performance, suggesting a combined program of new count data collection and analysis should be a priority for future work, with findings feeding directly into work to improve the outputs of the the CRUSE Tool.
 
-More broadly, the tool's outputs are limited to just one more of active travel (cycling), ignoring walking and wheeling, including wheelchair use and a range of wheeled devices such as scooters, bike trailers and e-cargo bikes that can be used to escort children to school.
+More broadly, the tool's outputs are limited to just one mode of active travel (cycling), ignoring walking and wheeling, including wheelchair use and a range of wheeled devices such as scooters, bike trailers and e-cargo bikes that can be used to escort children to school.
 Sustainable transport policies should plan for walking, wheeling and cycling, and there are many co-benefits of broadly defined active travel interventions that benefit all active modes, such as measures to reduce heavy motor traffic speeds and volumes in areas and along corridors with high active travel potential.
 This raises the question of whether other active modes should be incorporated into the results using the OD-based approach outlined in this paper, or whether different modelling approaches are needed to properly capture the shorter distance trips typically made by walking [@cooper2018].
 Furthermore, the estimates of cycling presented in the CRUSE Tool omit multi-modal trips including public transport, and omit trip chaining, due to the need to capture a large portion of cycling potential within the resource constraints of the project.
