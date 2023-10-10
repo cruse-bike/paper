@@ -130,7 +130,6 @@ Better data to inform road safety policies and interventions is a motivation for
 
 In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030 [@national2021].
 Doing so while simultaneously enabling rapid uptake of active modes will require key active travel routes to be identified and improved.
-
 A proactive approach to the development of cycling policy and infrastructure is taking place in Ireland.
 The main frameworks underpinning these efforts are the Climate Action Plan [@climate2022a], the National Development Plan, and the National Roads 2040 strategy [@national2023].
 <!-- Strategic alignment is also outlined by the Phoenix Park Transport and Mobility Options Study, which highlights public support for active travel interventions: while only 3% of trips in Ireland are made by cycling according to the latest Census data from 2016,^[ --> These policy frameworks are backed-up by public support for active travel interventions: while only 3% of trips in Ireland are made by cycling according to the latest Census data from 2016 "83% of respondents supported enhanced walking and cycling facilities" [@sustaina2019].
@@ -514,7 +513,7 @@ The results for the Dublin area could help prioritise investment in cycling infr
 
 The aim of the paper was to describe the design, features and potential use of the CRUSE Tool.
 As outlined in the previous section, the CRUSE Tool provides evidence on current and potential future cycling levels across Ireland down to the street level, with potential assigned to 'fastest', 'balanced' and 'quietest' route networks.
-This provision of multiple scenarios of behaviour change *and* multiple scenarios of investment, for example in cycling infrastructure next to major roads vs quiet residential streets, is a key feature of the CRUSE Tool.
+This provision of multiple scenarios of behavior change *and* multiple scenarios of investment, for example in cycling infrastructure next to major roads vs quiet residential streets, is a key feature of the CRUSE Tool.
 
 As highlighted in a paper on cycling infrastructure preferences based on a case study of Dublin, both directness and quietness are important [@caulfield2012]:
 
@@ -525,17 +524,19 @@ As highlighted in a paper on cycling infrastructure preferences based on a case 
 The CRUSE Tool can help both in terms of describing the current situation, and also prioritise investment in those direct routes with high cycling potential that lack adequate cycling infrastructure [@caulfield2012].
 It will also support reporting for the RISM Directive on road casualties as part of the road safety management system.
 
-While the CRUSE Tool is not the first national and publicly available tool for cycling planning, it has some key features that make it relevant for other countries, and other national road authorities tasked with making their transport systems safe:
+While the CRUSE Tool is not the first national and publicly available tool for cycling planning, it has some key features that make it relevant for other countries, regions and road authorities tasked with making their transport systems safe and sustainable:
 
 -   The results are *open access* meaning that any stakeholder in the planning system can access the evidence. This will help to democratize the transport planning process and make wider conversations about transport planning more evidence-based and less polarized [@lovelace2020], something that is particularly relevant given the potentially polarizing nature of pro-cycling interventions [@wild2017].
 -   The results are fully reproducible (code to be released pending sign-off by TII's IT team), preventing 'cloud lock in' to a potentially monopolistic consultancy, and encouraging input from the wider open source community [@lovelace2021; @dhir2017].
 -   By covering a wide range of trip purposes --- not just travel to work [@lovelace2017; @heinen2010] and travel school [@goodman2019] as covered in previously published research on open access national cycle network planning tools --- the results capture a higher proportion of cycling potential including key rural trips which are often under-represented in models of active travel.
 
+As the benefits of strategic planning for cycling become more apparent [@scappini2022] we expect the demand for tools such as CRUSE to grow.
+
 # Conclusions {#sec-conclusions}
 
 The CRUSE Tool is an open access web application for strategic cycle network planning and prioritization of road safety interventions across Ireland.
 Building on previous work, it provides a nationally consistent evidence base, providing valuable insights to planners and other stakeholders in the transport planning process, at national and local levels.
-Because the results are available at the route segment level, the tool can be used to identify 'weak links' in the cycle network, and to prioritize investment in cycling infrastructure.
+Because the results are available at the route segment level, the tool can be used to identify 'weak links' in the cycle network [@vybornova2022], and to prioritize investment in cycling infrastructure to maximize health, equality, and other benefits [@mahfouz; @woodcock2021].
 Furthermore, the provision of the evidence in a free and publicly available website, hosted at [cruse.bike](https://cruse.bike), means that it can be used by anyone, encouraging wider participation and more evidence-based debate about transport planning.
 
 A key feature of the project methodologically is its calculation of current and future potential not only for travel to work and travel to school, but also for other trip purposes, including recreational trips.
