@@ -76,7 +76,7 @@ abstract: |
   Trips are generated based on origin and destination data from the 2016 Census in combination with modeled demand data to estimate current and potential future cycling levels at area, route, and network levels for each county in Ireland.
   
   For investment in cycling to deliver on the huge potential benefits, cycling must become safer.
-  With growth in the E-bike market, CRUSE will help inform inter-urban and rural networks to support the transfer of trips to sustainable modes for longer journeys.
+  With growth in the ebike market, CRUSE will help inform inter-urban and rural networks to support the transfer of trips to sustainable modes for longer journeys.
   Provision of open access data in a publicly available web tool will address the challenges faced by counties across Ireland in meeting their sustainability commitments.
   The experience of developing a deploying CRUSE are relevant to countries with sustainable transport policies worldwide.
 keywords: 
@@ -115,13 +115,14 @@ Recognizing the growing evidence of such impacts of poorly designed and performi
 In the context of climate, road safety and physicial inactivity crises, policies to improve transport systems can be classified according to the 'Avoid-Shift-Improve' (ASI) framework [@jaramillo2022].
 The ASI framework highlights the importance of demand reduction (*avoid*ing unnecessary trips), in addition to mode *shift* to sustainable modes and *improvement* of existing energy converters, in that order.
 
-Uptake of cycling should be seen in this broader context of transport decarbonisation [@brand2020] and sustainable mobility [@burns2013].
+Building cycle networks represents a relatively 'quick win' within the context of decarbonization [@brand2020] and sustainable mobility [@burns2013].
 Although cycling uptake appears on the surface to only relate to the 'shift' part of the ASI framework, closer consideration of the knock-on impacts of cycling uptake shows that it can also help avoid unnecessary trips [@nello-deakin2020].
-Furthermore, highly efficient e-bikes --- which are seeing rapid uptake in Ireland and other countries --- outperform electric cars, which are too heavy and expensive.
+Furthermore, highly efficient ebikes --- which are seeing rapid uptake in Ireland and other countries --- outperform electric cars, which are too heavy and expensive.
 Over-reliance on electric cars could slow the transition away from car dependency and inadvertently enable "high travel lock-in" [@anable2019].
 At the European level, the European Union has a target of reducing GHG emissions by 55% by 2030, compared to 1990 levels, and to achieve 'net-zero' by 2050 [@rosenow2022].
+Climate change mitigation is a major motivation for cycle network plans [@scappini2022].
 
-Another deadly consequence of inefficient transport systems is tackled in the Road Infrastructure Safety Management (RISM) directive (2008/96/EC), which requires member states to implement a road safety management system (RSMS) for all public roads.
+Another motivation for cycle network planning is the Road Infrastructure Safety Management (RISM) directive (2008/96/EC), which requires member states to implement a road safety management system (RSMS) for all public roads.
 Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out" [@directiv2008].
 Given that 'safety' in this context is usefully quantified as the number of people killed and seriously injured (KSI) per distance traveled, the directive requires estimation of distance traveled by mode, down to the road link level.
 For active modes, about which there is a paucity of data compared with motorized modes, this is a major challenge.
@@ -137,7 +138,7 @@ The main frameworks underpinning these efforts are the Climate Action Plan [@cli
 At the regional level, the recently published Greater Dublin Area Transport Strategy [@greater] reinforces these findings: "nearly a quarter of adults cycle at least once a week in the Dublin Metropolitan Area" with cycling in the Dublin area taking up to 60,000 cars off the road today.
 Extrapolating this on a per population basis across Ireland, with around 40% of the population living in Dublin, suggests that around 150,000 cars could be removed nationwide just by achieving Dublin levels of cycling in all counties (notwithstanding existing cycling trips and differences in trip distances).
 7 in 10 trips in Ireland are by car [@national] .
-Cycling has the potential to replace a large proportion of these trips: "A high priority must also be given to cyclists, because trips by this mode have the potential to replace trips by private car, most specifically for short to medium distance trips, but increasingly for longer trips as e-bikes extend the range of this mode" [@greater].
+Cycling has the potential to replace a large proportion of these trips: "A high priority must also be given to cyclists, because trips by this mode have the potential to replace trips by private car, most specifically for short to medium distance trips, but increasingly for longer trips as ebikes extend the range of this mode" [@greater].
 
 Further evidence of the importance of cycling in Ireland *already* is provided by the National Strategic Objective (NSO) from the National Development Plan, with €8.6 billion allocated to sustainable transport infrastructure including public transport and active travel interventions.
 Cycle infrastructure will be developed in synchrony with the BusConnects project, an entire redesign of the bus network in Dublin and Cork.
@@ -495,7 +496,8 @@ browseURL("./images/rnet_types.png")
 ![](images/rnet_types.png)
 
 Fastest, balanced and quietest cycle networks within 3km circular areas containing the four largest cities in Ireland.
-The networks are coloured by cycle friendliness, with greener segments representing more cycle friendly segments. Widths vary in proportion to the potential level of cycling under the 'Go Dutch' scenario.
+The networks are coloured by cycle friendliness, with greener segments representing more cycle friendly segments.
+Widths vary in proportion to the potential level of cycling under the 'Go Dutch' scenario.
 :::
 
 Aside from the widely varying sizes and route networks of each city, with Dublin having by far the densest network, it is clear from the visualisation of cycling friendliness that there are many gaps in the networks.
