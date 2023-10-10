@@ -588,7 +588,9 @@ TII: Transport Infrastructure Ireland
 ## Availability of data and material {.unnumbered}
 
 Data was obtained from the Central Statistics Office (CSO) and Transport Infrastructure Ireland (TII) under license and cannot be shared publicly.
-The code used to generate the results presented in this paper is available at https://github.com/cruse-bike.
+The code used to generate the results presented in this paper is available 
+<!-- at https://github.com/cruse-bike. -->
+[To be added after paper is accepted.]
 
 ## Funding {.unnumbered}
 
@@ -606,6 +608,8 @@ The authors declare that they have no competing interests.
 
 ## Authors' contributions {.unnumbered}
 
-RL led the development of the CRUSE Tool, with input from JT, EV, HM, EB, PW, GOT, DB, and SM.
+[To be added after paper is accepted.]
+
+<!-- RL led the development of the CRUSE Tool, with input from JT, EV, HM, EB, PW, GOT, DB, and SM.
 SM instigated the project and coordinated its policy impact.
-PW, EB and GOT provided project management and transport engineering expertise.
+PW, EB and GOT provided project management and transport engineering expertise. -->
