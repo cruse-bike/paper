@@ -10,7 +10,7 @@ number-sections: true
 
 # # Uncomment for draft versions:
 format: 
-  html: default
+  # html: default
   # docx: default
 # Uncomment for formatted version
   elsevier-pdf:
