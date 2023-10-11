@@ -10,17 +10,17 @@ number-sections: true
 
 # # Uncomment for draft versions:
 format: 
-  # html: default
+  html: default
   # docx: default
-# Uncomment for formatted version
-  elsevier-pdf:
-    linestretch: 2
-    keep-tex: true
-    journal:
-      name: European Transport Research Review
-      formatting: preprint
-      model: 3p
-      cite-style: super
+# # Uncomment for formatted version
+#   elsevier-pdf:
+#     linestretch: 2
+#     keep-tex: true
+#     journal:
+#       name: European Transport Research Review
+#       formatting: preprint
+#       model: 3p
+#       cite-style: super
 # # #   # pdf: default
 
 # # # Uncomment the following line to produce the cover page
@@ -66,7 +66,7 @@ format:
 abstract: |
   Legislation mandates improved road safety and decarbonisation of predominantly road-based transport network in Ireland and other countries. Increasing cycling transport, making it safer and more attractive, is essential to this end. Cycling in Ireland represents only 3% of total modal share as of the latest Census (2016), but accounts for 20% of serious injuries and 7% of all fatalities. A planning tool based on high resolution datasets on baseline and potential cycling levels could greatly assist in achieving this goal.
 
-  This paper describes the design, features and potential use of the Cycle Route Acceptance and Scenario Estimation (CRUSE) Tool for Ireland was commissioned to support cycle network planning, safety interventions, business cases and project evaluation. The resulting web application is available at <https://cruse.bike/>, enabling planners, engineers, and other stakeholders to make more evidence-based decisions.
+  This paper describes the design, features and potential use of the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland was commissioned to support cycle network planning, safety interventions, business cases and project evaluation. The resulting web application is available at <https://cruse.bike/>, enabling planners, engineers, and other stakeholders to make more evidence-based decisions.
   CRUSE goes beyond previous work in several important ways.
   It models networks at high levels of geographic resolution, simulates a wide range of trips including recreational, social, shopping and personal trips, in addition to trips to work and primary, secondary and tertiary education locations.
   The tool provides key 'denominator' information to enable reporting of collision rates per billion km cycled.
@@ -97,6 +97,8 @@ remotes::install_dev("tmap")
 library(tmap)
 # Save title page (1st page of paper.pdf):
 system("pdftk _site/paper.pdf cat 1 output _site/title_page.pdf")
+# Combine cv.pdf with visions.pdf:
+system("pdftk _site/cv.pdf _site/visions.pdf cat output _site/cv_and_visions.pdf")
 ```
 
 # Introduction

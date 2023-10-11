@@ -13,7 +13,7 @@ bibliography: references.bib
 ```
 Dear Editor,
 
-We are submitting our manuscript entitled "CRUSE to Safe Cycling in Ireland: An Open Source Tool to Support Active Travel" for consideration for publication in the European Transport Research Review.
+We are submitting our manuscript entitled "CRUSE to Safe Cycling in Ireland: An Open Source Tool to Support Active Travel" for consideration for publication in the European Transport Research Review, as part of a **Full Paper Submission for TRA 2024 (note: I this option was not available the dropdown menu in the Thematic Series question, please ensure it is in the correct category)**.
 It has a word count of 4,721, excluding references.
 
 This manuscript describes the development of an open source tool to support active travel in Ireland.
