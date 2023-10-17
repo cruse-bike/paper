@@ -7,8 +7,11 @@ editor:
   markdown:
     wrap: sentence
 number-sections: true
-
-# # Uncomment for draft versions:
+latex-clean: false
+pdf-engine: pdflatex
+knitr:
+  opts_chunk:
+    fig.path: images/
 format: 
   # html: default
   # docx: default
@@ -366,7 +369,11 @@ The tool also provides data downloads, enabling estimates of cycling potential o
 For non-professional users, the tool provides a simple interface to explore the cycling potential of the network.
 By providing a single landing page that is suitable for both professional and non-professional users (such as an advocate or parent interested in safe routes to school), the tool aims to facilitate communication between these groups.
 
-```{mermaid}
+```{r}
+#| eval: false
+#| echo: false
+# ```{mermaid}
+%%| eval: false
 %%| fig-width: 100%
 %%| fig-cap: Hypothetical user stories for the CRUSE Tool illustrating that it can be used in different ways by different user groups.
 %%| label: fig-user-stories
@@ -386,6 +393,14 @@ graph LR
     R --> E
     E --> COMS{Communication}
 ```
+
+::: {#fig-user-stories}
+
+![](images/mermaid-figure-1.png)
+
+Hypothetical user stories for the CRUSE Tool illustrating that it can be used in different ways by different user groups.
+
+:::
 
 # Results {#sec-results}
 
