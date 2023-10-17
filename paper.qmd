@@ -99,7 +99,10 @@ library(tidyverse)
 remotes::install_dev("tmap")
 library(tmap)
 # Save title page (1st page of paper.pdf):
-system("pdftk _site/paper.pdf cat 1 output _site/title_page.pdf")
+system("pdftk paper.pdf cat 1 output _site/title_page.pdf")
+# Combine title page and cover-letter.pdf:
+system("pdftk _site/cover-letter.pdf _site/title_page.pdf cat output _site/cover_letter_full.pdf")
+browseURL("_site/cover_letter_full.pdf")
 # Combine cv.pdf with visions.pdf:
 system("pdftk _site/cv.pdf _site/visions.pdf cat output _site/cv_and_visions.pdf")
 ```
