@@ -13,10 +13,11 @@ bibliography: references.bib
 ```
 Dear Editor,
 
-We are submitting our manuscript entitled "CRUSE to Safe Cycling in Ireland: An Open Source Tool to Support Active Travel" for consideration for publication in the European Transport Research Review, as part of a **Full Paper Submission for TRA 2024 (note: I this option was not available the dropdown menu in the Thematic Series question, please ensure it is in the correct category)**.
+We are submitting our manuscript entitled "CRUSE to Safe Cycling in Ireland: An Open Source Tool to Support Active Travel" for consideration for publication in the European Transport Research Review, as part of a **Full Paper Submission for TRA 2024 (note: this option was not available the dropdown menu in the Thematic Series question, please ensure it is in the correct category)**.
 It has a word count of 4,721, excluding references.
 
-This manuscript describes the development of an open source tool to support active travel in Ireland.
+Please see the full list of authors and the abstract in the title page below.
+The manuscript describes the development of an open source tool to support active travel in Ireland.
 The paper describes the design, features and potential uses of the CRUSE Tool.
 We believe that the paper is important because it marks a substantial step forward in the development of open source tools to support active travel.
 The work presented goes substantially beyond previously published research such as the Propensity to Cycle Tool for England and Wales.
@@ -48,6 +49,52 @@ We expect the manuscript will have the following impacts:
 
 All the best,
 
-Robin Lovelace on behalf of all authors, Joey Talbot, Eugeni Vidal-Tortosa, and Hussein Mahfouz (University of Leeds), Elaine Brick, Peter Wright, Gary O'Tool (AECOM), Dan Brennan and Suzanne Meade (Transport Infrastructure Ireland)
+Robin Lovelace on behalf of all authors:
+
+Robin Lovelace (University of Leeds, r.lovelace@leeds.ac.uk)
+
+Joey Talbot (University of Leeds, J.D.Talbot@leeds.ac.uk)
+
+Eugeni Vidal-Tortosa (University of Leeds, E.VidalTortosa@leeds.ac.uk)
+
+Hussein Mahfouz (University of Leeds, tshma@leeds.ac.uk)
+
+Suzanne Meade (Transport Infrastructure Ireland, Suzanne.Meade@tii.ie)
+
+Dan Brennan (Transport Infrastructure Ireland, Dan.Brennan@tii.ie)
+
+Peter Wright (AECOM, peter.wright1@aecom.com)
+
+Gary O'Toole (AECOM, Gary.OToole@aecom.com)
+
+Elaine Brick (AECOM, elaine.brick@aecom.com)
+
+
+# Declarations
+
+## Availability of data and material {.unnumbered}
+
+Data was obtained from the Central Statistics Office (CSO) and Transport Infrastructure Ireland (TII) under license and cannot be shared publicly.
+The code used to generate the results presented in this paper is available <!-- at https://github.com/cruse-bike. --> \[To be added after paper is accepted.\]
+
+## Funding {.unnumbered}
+
+The work was funded by Transport Infrastructure Ireland (TII).
+
+## Acknowledgements {.unnumbered}
+
+Thanks to Paul MacDonald and Donal Hodgins (Kildare County Council), for testing early versions of the tool and for their input into the project.
+Thanks to Ciaran Maguire, Catherine Swift, and others at AECOM for their input into the project.
+Thanks to Martin Lucas-Smith and Simon Nutall from CycleStreets for their input into the project.
+
+## Competing interests {.unnumbered}
+
+The authors declare that they have no competing interests.
+
+## Authors' contributions {.unnumbered}
+
+RL led the development of the CRUSE Tool, with input from JT, EV, HM, EB, PW, GOT, DB, and SM.
+SM instigated the project and coordinated its policy impact.
+PW, EB and GOT provided project management and transport engineering expertise.
 
 # References
