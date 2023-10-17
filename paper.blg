@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper.aux
+The style file: elsarticle-num.bst
+Database file #1: bibliography.bib
+Warning--can't use both author and editor fields in jaramillo2022
+Warning--empty chapter and pages in jaramillo2022
+Warning--empty pages in jaramillo2022
+Warning--empty chapter and pages in anable2019
+Warning--empty pages in anable2019
+Warning--empty author in directiv2008
+Warning--empty journal in directiv2008
+Warning--empty author in sustaina2019
+Warning--empty institution in sustaina2019
+Warning--empty year in greater
+Warning--empty author in national
+Warning--empty institution in national
+Warning--empty year in national
+Warning--empty institution in lovelace2023
+Warning--empty author in cycling2017
+Warning--empty institution in cycling2017
+Warning--empty author in walking2021
+Warning--empty journal in walking2021
+Warning--empty journal in hasova2022
+You've used 39 entries,
+            2952 wiz_defined-function locations,
+            929 strings with 15147 characters,
+and the built_in function-call counts, 12137 in all, are:
+= -- 1179
+> -- 363
+< -- 0
++ -- 147
+- -- 108
+* -- 1042
+:= -- 1666
+add.period$ -- 56
+call.type$ -- 39
+change.case$ -- 55
+chr.to.int$ -- 0
+cite$ -- 58
+duplicate$ -- 380
+empty$ -- 1394
+format.name$ -- 130
+if$ -- 3132
+int.to.chr$ -- 0
+int.to.str$ -- 39
+missing$ -- 34
+newline$ -- 177
+num.names$ -- 30
+pop$ -- 274
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 648
+stack$ -- 0
+substring$ -- 587
+swap$ -- 103
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 19
+while$ -- 54
+width$ -- 41
+write$ -- 381
+(There were 19 warnings)

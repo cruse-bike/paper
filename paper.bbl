@@ -1,0 +1,177 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{jaramillo2022}
+P.~Jaramillo, S.~Kahn~Ribeiro, P.~Newman, S.~Dhar, O.~Diemuodeke, T.~Kajino, D.~Lee, S.~Nugroho, X.~Ou, A.~{Hammer Strømman}, J.~Whitehead, \href{https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Chapter10.pdf}{Transport}, Cambridge University Press, Cambridge, UK and New York, NY, USA, 2022, citation Key: IPCC{\_}2022{\_}WGIII{\_}Ch{\_}10 DOI: 10.1017/9781009157926.012 Section: 10 Type: Book section.
+\newline\urlprefix\url{https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Chapter10.pdf}
+
+\bibitem{gray2001}
+D.~Gray, J.~Farrington, J.~Shaw, S.~Martin, D.~Roberts, \href{http://linkinghub.elsevier.com/retrieve/pii/S0743016700000358}{Car dependence in rural scotland: transport policy, devolution and the impact of the fuel duty escalator}, Journal of Rural Studies 17~(1) (2001) 113{\textendash}125.
+\newblock \href {https://doi.org/10.1016/S0743-0167(00)00035-8} {\path{doi:10.1016/S0743-0167(00)00035-8}}.
+\newline\urlprefix\url{http://linkinghub.elsevier.com/retrieve/pii/S0743016700000358}
+
+\bibitem{shergold2012}
+I.~Shergold, G.~Parkhurst, C.~Musselwhite, Rural car dependence: an emerging barrier to community activity for older people, Transportation Planning and Technology 35~(1) (2012) 69{\textendash}85.
+
+\bibitem{motte-baumvol2010}
+B.~Motte-baumvol, M.~Massot, A.~M. A. A.~M. Byrd, \href{http://usj.sagepub.com/cgi/doi/10.1177/0042098009349773 http://usj.sagepub.com/content/47/3/604.short}{Escaping car dependence in the outer suburbs of paris}, Urban Studies 47~(3) (2010) 604{\textendash}619.
+\newblock \href {https://doi.org/10.1177/0042098009349773} {\path{doi:10.1177/0042098009349773}}.
+\newline\urlprefix\url{http://usj.sagepub.com/cgi/doi/10.1177/0042098009349773 http://usj.sagepub.com/content/47/3/604.short}
+
+\bibitem{brand2020}
+C.~Brand, E.~Dons, E.~Anaya-Boig, I.~Avila-Palencia, A.~Clark, A.~de~Nazelle, M.~Gascon, M.~Gaupp-Berghausen, R.~Gerike, T.~Gotschi, The climate change mitigation effects of active travel, Preprint: researchsquare.com (2020).
+
+\bibitem{burns2013}
+L.~D. Burns, \href{http://dx.doi.org/10.1038/497181a 10.1038/497181a}{Sustainable mobility: A vision of our transport future}, Nature 497~(7448) (2013) 181{\textendash}182.
+\newline\urlprefix\url{http://dx.doi.org/10.1038/497181a 10.1038/497181a}
+
+\bibitem{nello-deakin2020}
+S.~Nello-Deakin, \href{http://dx.doi.org/10.1016/j.jtrangeo.2020.102704}{Environmental determinants of cycling: Not seeing the forest for the trees?}, Journal of Transport Geography 85 (2020) 102704.
+\newblock \href {https://doi.org/10.1016/j.jtrangeo.2020.102704} {\path{doi:10.1016/j.jtrangeo.2020.102704}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.jtrangeo.2020.102704}
+
+\bibitem{anable2019}
+J.~Anable, P.~Goodwin, \href{https://www.creds.ac.uk/publications/shifting-the-focus-4-transport-mobility/}{Transport and mobility}, CREDS, 2019.
+\newline\urlprefix\url{https://www.creds.ac.uk/publications/shifting-the-focus-4-transport-mobility/}
+
+\bibitem{rosenow2022}
+J.~Rosenow, \href{http://dx.doi.org/10.1371/journal.pclm.0000058}{Europe on the way to net zero: What challenges and opportunities?}, PLOS Climate 1~(7) (2022) e0000058.
+\newblock \href {https://doi.org/10.1371/journal.pclm.0000058} {\path{doi:10.1371/journal.pclm.0000058}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1371/journal.pclm.0000058}
+
+\bibitem{scappini2022}
+B.~Scappini, V.~Zucca, I.~Meloni, F.~Piras, \href{https://doi.org/10.1186/s12544-022-00533-6}{The regional cycle network of sardinia: upgrading the accessibility of rural areas through a comprehensive island-wide cycle network}, European Transport Research Review 14~(1) (2022) 10, 4 citations (Crossref) [2023-10-10].
+\newblock \href {https://doi.org/10.1186/s12544-022-00533-6} {\path{doi:10.1186/s12544-022-00533-6}}.
+\newline\urlprefix\url{https://doi.org/10.1186/s12544-022-00533-6}
+
+\bibitem{directiv2008}
+\href{http://data.europa.eu/eli/dir/2008/96/oj/eng}{Directive 2008/96/ec of the european parliament and of the council of 19 november 2008 on road infrastructure safety management} (11 2008).
+\newline\urlprefix\url{http://data.europa.eu/eli/dir/2008/96/oj/eng}
+
+\bibitem{national2021}
+\href{https://www.gov.ie/en/publication/774e2-national-development-plan-2021-2030/}{National development plan 2021-2030} (10 2021).
+\newline\urlprefix\url{https://www.gov.ie/en/publication/774e2-national-development-plan-2021-2030/}
+
+\bibitem{climate2022a}
+\href{https://www.gov.ie/en/publication/7bd8c-climate-action-plan-2023/}{Climate action plan 2023} (12 2022).
+\newline\urlprefix\url{https://www.gov.ie/en/publication/7bd8c-climate-action-plan-2023/}
+
+\bibitem{national2023}
+\href{https://www.tii.ie/tii-library/strategic-planning/national-roads-2040/TII-NR2040-Final-Report-EN-April-2023.pdf}{National roads 2040} (2023).
+\newline\urlprefix\url{https://www.tii.ie/tii-library/strategic-planning/national-roads-2040/TII-NR2040-Final-Report-EN-April-2023.pdf}
+
+\bibitem{sustaina2019}
+\href{https://assets.gov.ie/42950/f789b2fcfb144441822f58236986eeea.pdf}{Sustainable mobility policy review}, Tech. rep. (11 2019).
+\newline\urlprefix\url{https://assets.gov.ie/42950/f789b2fcfb144441822f58236986eeea.pdf}
+
+\bibitem{greater}
+\href{https://www.nationaltransport.ie/planning-and-investment/strategic-planning/greater-dublin-area-transport-strategy/}{Greater dublin area transport strategy}.
+\newline\urlprefix\url{https://www.nationaltransport.ie/planning-and-investment/strategic-planning/greater-dublin-area-transport-strategy/}
+
+\bibitem{national}
+\href{https://www.nationaltransport.ie/wp-content/uploads/2019/01/National_Household_Travel_Survey_2017_Report_-_December_2018.pdf}{National travel survey 2017}, Tech. rep.
+\newline\urlprefix\url{https://www.nationaltransport.ie/wp-content/uploads/2019/01/National_Household_Travel_Survey_2017_Report_-_December_2018.pdf}
+
+\bibitem{lovelace2020}
+R.~Lovelace, J.~Parkin, T.~Cohen, \href{http://www.sciencedirect.com/science/article/pii/S0967070X19302781}{Open access transport models: A leverage point in sustainable transport planning}, Transport Policy 97 (2020) 47--54, tex.ids: lovelace{\_}open{\_}2020a Citation Key: lovelace{\_}open{\_}2020.
+\newblock \href {https://doi.org/10.1016/j.tranpol.2020.06.015} {\path{doi:10.1016/j.tranpol.2020.06.015}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0967070X19302781}
+
+\bibitem{lovelace2017}
+R.~Lovelace, A.~Goodman, R.~Aldred, N.~Berkoff, A.~Abbas, J.~Woodcock, \href{https://doi.org/10.5198/jtlu.2016.862}{The propensity to cycle tool: An open source online system for sustainable transport planning}, Journal of Transport and Land Use 10~(1) (01 2017).
+\newblock \href {https://doi.org/10.5198/jtlu.2016.862} {\path{doi:10.5198/jtlu.2016.862}}.
+\newline\urlprefix\url{https://doi.org/10.5198/jtlu.2016.862}
+
+\bibitem{lovelace2023}
+R.~Lovelace, M.~Birkin, J.~Talbot, M.~Morgan, \href{https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f?page=1}{Cycle network policy, planning and investment transformed by the propensity to cycle tool}, Tech. rep. (2023).
+\newline\urlprefix\url{https://results2021.ref.ac.uk/impact/847d1191-7f25-46ba-a399-b481125edc8f?page=1}
+
+\bibitem{lovelace2016}
+R.~Lovelace, \href{http://eprints.whiterose.ac.uk/100080/}{Mapping out the future of cycling}, Get Britain Cycling 5 (2016) 22{\textendash}24.
+\newline\urlprefix\url{http://eprints.whiterose.ac.uk/100080/}
+
+\bibitem{cycling2017}
+\href{https://www.gov.uk/government/publications/cycling-and-walking-investment-strategy}{Cycling and walking investment strategy}, Tech. rep., London (2017).
+\newline\urlprefix\url{https://www.gov.uk/government/publications/cycling-and-walking-investment-strategy}
+
+\bibitem{woodcock2018}
+J.~Woodcock, A.~Abbas, A.~Ullrich, M.~Tainio, R.~Lovelace, T.~H. {Sá}, K.~Westgate, A.~Goodman, \href{http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002622}{Development of the impacts of cycling tool (ict): A modelling study and web tool for evaluating health and environmental impacts of cycling uptake}, PLOS Medicine 15~(7) (2018) e1002622, citation Key: woodcock{\_}development{\_}2018.
+\newblock \href {https://doi.org/10.1371/journal.pmed.1002622} {\path{doi:10.1371/journal.pmed.1002622}}.
+\newline\urlprefix\url{http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002622}
+
+\bibitem{goodman2019}
+A.~Goodman, I.~F. Rojas, J.~Woodcock, R.~Aldred, N.~Berkoff, M.~Morgan, A.~Abbas, R.~Lovelace, \href{http://www.sciencedirect.com/science/article/pii/S2214140518301257}{Scenarios of cycling to school in england, and associated health and carbon impacts: Application of the {\textquoteleft}propensity to cycle tool{\textquoteright}}, Journal of Transport and Health 12 (2019) 263--278, citation Key: goodman{\_}scenarios{\_}2019.
+\newblock \href {https://doi.org/10.1016/j.jth.2019.01.008} {\path{doi:10.1016/j.jth.2019.01.008}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S2214140518301257}
+
+\bibitem{woodcock2021}
+J.~Woodcock, R.~Aldred, R.~Lovelace, T.~Strain, A.~Goodman, \href{https://www.sciencedirect.com/science/article/pii/S2214140521000967}{Health, environmental and distributional impacts of cycling uptake: The model underlying the propensity to cycle tool for england and wales}, Journal of Transport and Health 22 (2021) 101066, citation Key: woodcock{\_}health{\_}2021a.
+\newblock \href {https://doi.org/10.1016/j.jth.2021.101066} {\path{doi:10.1016/j.jth.2021.101066}}.
+\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S2214140521000967}
+
+\bibitem{felix2023}
+R.~Félix, R.~Lovelace, F.~Moura, \href{https://biclar.tmlmobilidade.pt}{{biclaR - Ferramenta de apoio ao planeamento da rede ciclável na área metropolitana de Lisboa}} (2022).
+\newline\urlprefix\url{https://biclar.tmlmobilidade.pt}
+
+\bibitem{parkin2018}
+J.~Parkin, \href{https://www.icevirtuallibrary.com/isbn/9780727763495}{Designing for Cycle Traffic: International Principles and Practice}, ICE Publishing, 2018, citation Key: parkin{\_}designing{\_}2018.
+\newline\urlprefix\url{https://www.icevirtuallibrary.com/isbn/9780727763495}
+
+\bibitem{lovelace2022}
+R.~Lovelace, R.~{Félix}, D.~Carlino, \href{https://findingspress.org/article/33873-jittering-a-computationally-efficient-method-for-generating-realistic-route-networks-from-origin-destination-data}{Jittering: A computationally efficient method for generating realistic route networks from origin-destination data}, Findings (2022) 33873Publisher: Findings Press Citation Key: lovelace{\_}jittering{\_}2022b.
+\newblock \href {https://doi.org/10.32866/001c.33873} {\path{doi:10.32866/001c.33873}}.
+\newline\urlprefix\url{https://findingspress.org/article/33873-jittering-a-computationally-efficient-method-for-generating-realistic-route-networks-from-origin-destination-data}
+
+\bibitem{wickham2021}
+H.~Wickham, Mastering Shiny: Build Interactive Apps, Reports, and Dashboards Powered by R, O'Reilly Media, Sebastopol, CA, 2021.
+
+\bibitem{walking2021}
+Walking and cycling index 2021: Dublin metropolitan area (2021).
+
+\bibitem{caulfield2012}
+B.~Caulfield, E.~Brick, O.~McCarthy, \href{http://www.sciencedirect.com/science/article/pii/S1361920912000363}{Determining bicycle infrastructure preferences {\textendash} a case study of dublin}, Transportation Research Part D: Transport and Environment 17~(5) (2012) 413--417, zSCC: 0000137 Citation Key: caulfield{\_}determining{\_}2012.
+\newblock \href {https://doi.org/10.1016/j.trd.2012.04.001} {\path{doi:10.1016/j.trd.2012.04.001}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S1361920912000363}
+
+\bibitem{wild2017}
+K.~Wild, A.~Woodward, A.~Field, A.~Macmillan, \href{https://www.tandfonline.com/doi/full/10.1080/17450101.2017.1408950}{Beyond {\textquoteleft}bikelash{\textquoteright}: engaging with community opposition to cycle lanes}, Mobilities (2017) 1--15Citation Key: wild{\_}beyond{\_}2017.
+\newblock \href {https://doi.org/10.1080/17450101.2017.1408950} {\path{doi:10.1080/17450101.2017.1408950}}.
+\newline\urlprefix\url{https://www.tandfonline.com/doi/full/10.1080/17450101.2017.1408950}
+
+\bibitem{lovelace2021}
+R.~Lovelace, \href{https://doi.org/10.1007/s10109-020-00342-2}{Open source tools for geographic analysis in transport planning}, Journal of Geographical SystemsCitation Key: lovelace{\_}open{\_}2021 (01 2021).
+\newblock \href {https://doi.org/10.1007/s10109-020-00342-2} {\path{doi:10.1007/s10109-020-00342-2}}.
+\newline\urlprefix\url{https://doi.org/10.1007/s10109-020-00342-2}
+
+\bibitem{dhir2017}
+S.~Dhir, S.~Dhir, \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/jsc.2137}{Adoption of open-source software versus proprietary software: An exploratory study}, Strategic Change 26~(4) (2017) 363--371, citation Key: dhir{\_}adoption{\_}2017.
+\newblock \href {https://doi.org/10.1002/jsc.2137} {\path{doi:10.1002/jsc.2137}}.
+\newline\urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/jsc.2137}
+
+\bibitem{heinen2010}
+E.~Heinen, B.~van Wee, K.~Maat, \href{http://www.tandfonline.com/doi/abs/10.1080/01441640903187001}{Commuting by bicycle: An overview of the literature}, Transport Reviews 30~(1) (2010) 59{\textendash}96, citation Key: heinen{\_}commuting{\_}2010.
+\newblock \href {https://doi.org/10.1080/01441640903187001} {\path{doi:10.1080/01441640903187001}}.
+\newline\urlprefix\url{http://www.tandfonline.com/doi/abs/10.1080/01441640903187001}
+
+\bibitem{vybornova2022}
+A.~Vybornova, T.~Cunha, A.~{Gühnemann}, M.~Szell, \href{http://arxiv.org/abs/2201.03402}{Automated detection of missing links in developed bicycle networks}, arXiv:2201.03402 [physics]ArXiv: 2201.03402 Citation Key: vybornova{\_}automated{\_}2022 (01 2022).
+\newline\urlprefix\url{http://arxiv.org/abs/2201.03402}
+
+\bibitem{mahfouz}
+H.~Mahfouz, R.~Lovelace, E.~Arcaute, \href{https://arxiv.org/abs/2105.03712}{Road segment prioritization for bicycle infrastructure}, arXivCitation Key: mahfouz{\_}road{\_}underreview (00).
+\newline\urlprefix\url{https://arxiv.org/abs/2105.03712}
+
+\bibitem{hasova2022}
+L.~Hasova, E.~Tranos, L.~J. Wolf, \href{https://lenkahas.com/files/preprint.pdf}{Form and function in spatial interaction: A new approach to spatial structure} (2022).
+\newline\urlprefix\url{https://lenkahas.com/files/preprint.pdf}
+
+\bibitem{cooper2018}
+C.~H.~V. Cooper, \href{https://doi.org/10.1080/15568318.2018.1432730}{Predictive spatial network analysis for high-resolution transport modeling, applied to cyclist flows, mode choice, and targeting investment}, International Journal of Sustainable Transportation 0~(0) (2018) 1--11, tex.ids= cooper{\_}predictive{\_}2018a Citation Key: cooper{\_}predictive{\_}2018.
+\newblock \href {https://doi.org/10.1080/15568318.2018.1432730} {\path{doi:10.1080/15568318.2018.1432730}}.
+\newline\urlprefix\url{https://doi.org/10.1080/15568318.2018.1432730}
+
+\end{thebibliography}

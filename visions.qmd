@@ -1,0 +1,40 @@
+---
+format: pdf
+title: "Novelty statement"
+---
+
+<!-- Details of most impactful recent EC project
+Research must be based on transport and predominantly funded by the EC. Research with a
+mix of EC and other funding (e.g. national government) is acceptable but maybe given a
+lower weighting. For PROJECT TITLE give the EC acronym followed by full title. The TIME
+SPAN should include start and end dates while the PROJECT VALUES should include total
+values (in Euro) and the value to your company/institution, best guess is acceptable for now.
+Research impact statement
+Your impact statement forms one of the key sets of evidence that will be used to select the
+short list. Successful candidates will have to demonstrate excellence and proven impacts in
+their field of research. The statement must describe the impact of your recent EU funded
+research. It is important to describe and evidence 
+• how this research is/was supported by EU funding
+• your contribution to the research, this might be in a leadership role or as a
+practitioner
+• the impact of your research at national, EU and global levels, this can be a
+combination of scientific impact; economic impact; policy development and public
+outreach
+• plans for further development and how your research will contribute towards
+rethinking transport for clean and inclusive mobility.
+The statement should be no more than 500 words, may contain up to 2 pictures/graphs and
+should be uploaded as Word file. -->
+
+The Cycle Route Uptake and Scenario Estimation (CRUSE) Tool presented in the paper received funding from the EU via Transport Infrastructure Ireland (TII), with funding in the region of €200k.
+
+This is the first strategic cycle network planning tool of this level of sophistication to the best of our knowledge. The inclusion of multiple trip types, including travel to work and education from official sources, and simulated trips for other purposes, is a world first for a national tool.
+The tool required substantial methodological development, including the development of a new R package (`simodels`, for modelling origin-destination data with spatial interaction models).
+The tool is already having major impacts in Ireland and looks set to transform the practice of strategic cycle network planning in Ireland.
+
+I led the project from it's inception, in conversation with Dr Suzanne Meade, Head of Safety at TII, through to the development of the tool and deployment on a public facing website.
+The impact of the research is national for Ireland and, if the approach gains traction, global.
+
+I plan to take the methodology and tool to other countries, and would like to develop an European wide tool, with the support of the European Commission, e.g. as part of a Horizon funded project.
+
+
+
