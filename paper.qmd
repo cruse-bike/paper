@@ -13,18 +13,18 @@ knitr:
   opts_chunk:
     fig.path: images/
 format: 
-  # html: default
+  html: default
   # docx: default
-# # # Uncomment for formatted version
-  elsevier-pdf:
-    linestretch: 2
-    keep-tex: true
-    journal:
-      name: European Transport Research Review
-      formatting: preprint
-      model: 3p
-      cite-style: super
-# # #   # pdf: default
+# # # # Uncomment for formatted version
+#   elsevier-pdf:
+#     linestretch: 2
+#     keep-tex: true
+#     journal:
+#       name: European Transport Research Review
+#       formatting: preprint
+#       model: 3p
+#       cite-style: super
+# # # #   # pdf: default
 
 # # Uncomment the following line to produce the cover page
 author:
