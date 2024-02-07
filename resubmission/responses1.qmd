@@ -1,0 +1,128 @@
+---
+title: "Reviewer responses"
+format: gfm
+bibliography: references.bib
+---
+
+```{=html}
+<!-- ETRE-D-23-00321
+CRUSE to Safe Cycling in Ireland An Open Source Tool to Support Active Travel
+Robin Lovelace; Joey Talbot; Eugeni Vidal-Tortosa; Hussein Mahfouz; Elaine Brick; Peter Wright; Gary O’Tool; Dan Brennan; Suzanne Meade
+European Transport Research Review
+
+Dear Prof. Lovelace,
+
+Your manuscript 'CRUSE to Safe Cycling in Ireland An Open Source Tool to Support Active Travel' (ETRE-D-23-00321) has been assessed by our reviewers. Although it is of interest, we are unable to consider it for publication in its current form. The reviewers have raised a number of points which we believe would improve the manuscript and may allow a revised version to be published in European Transport Research Review.
+
+Their reports, together with any other comments, are below. Please also take a moment to check our website at https://www.editorialmanager.com/etre/ for any additional comments that were saved as attachments.
+
+If you are able to fully address these points, we would encourage you to submit a revised manuscript to European Transport Research Review.
+Once you have made the necessary corrections, please submit online at:
+
+https://www.editorialmanager.com/etre/
+
+If you have forgotten your username or password please use the 'Send Login Details' link to get your login information. For security reasons, your password will be reset.
+
+Please include a point-by-point response within the 'Response to Reviewers' box in the submission system and highlight (with 'tracked changes'/coloured/underlines/highlighted text) all changes made when revising the manuscript. Please ensure you describe additional experiments that were carried out and include a detailed rebuttal of any criticisms or requested revisions that you disagreed with. Please also ensure that your revised manuscript conforms to the journal style, which can be found in the Submission Guidelines on the journal homepage.
+
+The due date for submitting the revised version of your article is 02 Mar 2024.
+
+Please note, if your manuscript is accepted you will not be able to make any changes to the authors, or order of authors, of your manuscript once the editor has accepted your manuscript for publication. If you wish to make any changes to authorship before you resubmit your revisions, please reply to this email and ask for a 'Request for change in authorship' form which should be completed by all authors (including those to be removed) and returned to this email address. Please ensure that any changes in authorship fulfil the criteria for authorship as outlined in SpringerOpen's editorial policies (http://www.springeropen.com/get-published/editorial-policies#authorship).
+
+Once you have completed and returned the form, your request will be considered and you will be advised whether the requested changes will be allowed.
+By resubmitting your manuscript you confirm that all author details on the revised version are correct, that all authors have agreed to authorship and order of authorship for this manuscript and that all authors have the appropriate permissions and rights to the reported data.
+
+Please be aware that we may investigate, or ask your institute to investigate, any unauthorised attempts to change authorship or discrepancies in authorship between the submitted and revised versions of your manuscript.
+
+We look forward to receiving your revised manuscript soon.
+
+Best wishes,
+
+European Transport Research Review
+https://www.editorialmanager.com/etre 
+-->
+```
+# Response to the editor
+
+We thank the editor and reviewers for their constructive comments.
+We have revised the manuscript in response to the reviewers' comments and believe that the revised manuscript is much improved.
+We have made the following changes:
+
+[@lovelace2017]
+
+Reviewer reports:
+
+Reviewer #1: REVIEW: CRUSE to Safe Cycling in Ireland An Open Source Tool to Support Active Travel
+
+C1) General comments: Thank you for the opportunity to review this paper.
+This paper aims to describe the design, features, and potential uses of the Cycle Route Uptake and Scenario Estimation tool (CRUSE), an upgraded version of the PCT tool.
+This research paper is interesting, but I believe it fails to address one of the three main research goals, which refers to the potential use of the tool in practice.
+I recommend against publication.
+Although the authors have put considerable thought and effort into this research, portions of the research are not presented clearly, and it is difficult for me to determine how the cycling conditions are being analysed/calculated.
+In addition, the authors overstate their case when they claim a contribution is an upgraded version of the PTC tool.
+Similarly, while the contribution of variables that are analysed may be new, and the site may be new, the conceptual approach, as I understand it, is similar to other standard approaches that involve using GIS-based tools to measure environmental attributes and cycling potential based on OSM.
+
+C2) The theoretical framework needs to be improved.
+This paper misses a literature overview of cycling planning support systems (PSS) tools developed in the last decades.
+After the introduction, which gives an interesting overview of the Irish scenario on cycling levels and road safety measures, the authors directly present the methodology encompassing the CRUSE tool.
+I believe it would be necessary to provide a new section dedicated to the literature review on PSS tools and cycling planning, as well as the most applied metrics to measure cycling potential in practice, to provide a critical overview of missing links between this paper's added value and the current literature and empirical evidence.
+
+C3) The authors describe the comprehensive nature of the measures they incorporate as indicators, and these all seem appropriate, but it is unclear whether the municipal officials responsible for the local cycling strategy would prioritise the same measures.
+At the very least, the authors need to discuss strategies for engaging the tool users and those affected by the tool.
+Based on my experience, while elegant and comprehensive, many technical tools have proven to be of limited value in practice because they do not anticipate the constraints of practice.
+My point is that the real-world complexities of use need to be considered if the claim is a public process and meant to be used in real-world applications.
+What difficulties might be expected in the use of CRUSE in planning practice?
+
+C4) In line with the previous question, this paper primarily focuses on presenting the tool in methodological terms, lacking a critical theoretical discussion and a broad understanding of the potential usefulness for planning practice.
+Likewise, it would be desirable to explore this tool from a qualitative perspective based on the perception of planning practitioners and potential users regarding the tool's user-friendliness.
+In fact, this research has the potential to build a bridge between academia and practice, but it is limited to a superficial discussion of the tool in methodological terms only.
+
+C5) Compared to the original PCT tool, the authors argue that the CRUSE tool overcomes the issues of low data resolution, limited coverage of trip purposes, and a web interface that is considered user-friendly or intuitive.
+Yet, I could not fully grasp such attributes when accessing the provided CRUSE link.
+First, the data is organised into counties, which does not precisely bring a high resolution represented by the scale of the cyclist.
+Second, how could the authors claim that the tool is user-friendly without gathering feedback from practitioners or users who will have to use the tool in their professional tasks?
+
+C6) How exactly were adjustments made for topography?
+For e-bike users, topography has less impact on travel speed.
+Were adjustments also made for delays at traffic signals?
+In determining whether an opportunity is accessible, is any consideration given to whether it can be reached via the low-stress, traffic-free bicycle network?
+
+C7) Limitations of Research.
+I think the authors need to address the limitations of their research systematically.
+While I understand the purpose of the research is to illustrate the technical, analytic approach, I believe the authors need to discuss the limitations of the CRUSE tool and how these limitations can be addressed in practice.
+
+C8) Fix grammar and formatting inconsistencies throughout the whole manuscript.
+
+Reviewer #2: European Transport Research Review Manuscript Number: ETRE-D-23-00321 Manuscript type: Original Paper Title: CRUSE to Safe Cycling in Ireland An Open Source Tool to Support Active Travel This paper describes the design, features, and potential use of the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland to support cycle network planning, safety interventions, business cases, and project evaluation.
+
+Overall this is an important paper that contributes to the practical means for modeling networks at high levels of geographic resolution.
+While its contribution to the existing literature is in doubt.
+
+However, some issues require attention and revisions before I can recommend publication.
+
+Comments:
+
+The title: those who will read the title cannot understand the meaning of CRUSE.
+So my recommendation is to take out this word and replace it with an application or something else.
+
+The introduction is very general.
+While the paper attempted to examine a new application for modeling networks at high levels of geographic resolution, the introduction did not include any literature about the existence of similar applications and the limitations of such applications.
+
+The authors did not highlight the contribution of this paper to the existing literature.
+
+Results:
+
+Figure 6 is not clear and one cannot learn much based on it.
+I think that authors should try to present the results more clearly.
+
+Discussion: The discussion is insufficient it needs more work.
+The discussion includes findings about the infrastructure features that encourage the use of the bicycle so why nothing is mentioned in the introduction, this is an important issue.
+
+Here is some Python code to calculate the distance between Dublin and London:
+
+```{python}
+from geopy.distance import geodesic
+coords_1 = (53.349805, -6.26031)
+coords_2 = (51.5074, -0.1278)
+print(geodesic(coords_1, coords_2).km)
+```
