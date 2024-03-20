@@ -13,8 +13,8 @@ knitr:
   opts_chunk:
     fig.path: images/
 format: 
-  html: default
-  # docx: default
+  # html: default
+  docx: default
 # # # # Uncomment for formatted version
 #   elsevier-pdf:
 #     linestretch: 2
