@@ -10,7 +10,6 @@ website:
       - href: https://cruse.bike
         text: "CRUSE web application"
 
-
 format:
   html:
     theme: cosmo
