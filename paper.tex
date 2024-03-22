@@ -80,10 +80,6 @@
 \makeatother
 
 \makeatletter
-\makeatother
-\makeatletter
-\makeatother
-\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
 \ifdefined\contentsname
@@ -119,18 +115,10 @@
 \newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
 \makeatother
 \makeatletter
+\makeatother
+\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
-\makeatother
-\makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
-\makeatother
-\makeatletter
-\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
-\makeatother
-\makeatletter
-\makeatother
-\makeatletter
 \makeatother
 \journal{European Transport Research Review}
 \ifLuaTeX
@@ -138,11 +126,12 @@
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{elsarticle-num}
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
+
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={CRUSE to Safe Cycling in Ireland},
+  pdftitle={Cycle Route Uptake and Scenario Estimation (CRUSE): an open and nationally scalable approach for strategic cycle network planning tool development},
   pdfauthor={Robin Lovelace; Joey Talbot; Eugeni Vidal-Tortosa; Hussein Mahfouz; Elaine Brick; Peter Wright; Gary O'Tool; Dan Brennan; Suzanne Meade},
   pdfkeywords={Cycling, Open-source, Road Safety, Active Travel},
   colorlinks=true,
@@ -156,8 +145,9 @@
 \begin{document}
 
 \begin{frontmatter}
-\title{CRUSE to Safe Cycling in Ireland \\\large{An Open Source Tool to
-Support Active Travel} }
+\title{Cycle Route Uptake and Scenario Estimation (CRUSE): an open and
+nationally scalable approach for strategic cycle network planning tool
+development \\\large{A case study of Ireland} }
 \author[1]{Robin Lovelace%
 \corref{cor1}%
 }
@@ -219,46 +209,32 @@ Ireland},addressline={Parkgate Business Centre, Parkgate Street, Dublin
 
         
 \begin{abstract}
-Legislation mandates improved road safety and decarbonisation of
-predominantly road-based transport network in Ireland and other
-countries. Increasing cycling transport, making it safer and more
-attractive, is essential to this end. Cycling in Ireland represents only
-3\% of total modal share as of the latest Census (2016), but accounts
-for 20\% of serious injuries and 7\% of all fatalities. A planning tool
-based on high resolution datasets on baseline and potential cycling
-levels could greatly assist in achieving this goal.
-
-This paper describes the design, features and potential use of the Cycle
-Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland was
-commissioned to support cycle network planning, safety interventions,
-business cases and project evaluation. The resulting web application is
-available at \url{https://cruse.bike/}, enabling planners, engineers,
-and other stakeholders to make more evidence-based decisions. CRUSE goes
-beyond previous work in several important ways. It models networks at
-high levels of geographic resolution, simulates a wide range of trips
-including recreational, social, shopping and personal trips, in addition
-to trips to work and primary, secondary and tertiary education
-locations. The tool provides key `denominator' information to enable
-reporting of collision rates per billion km cycled.
-
-Another key feature of CRUSE is its use of frequently-updated
-OpenStreetMap data for route calculation and ``cycle friendliness''
-estimates of all links on the network. CRUSE provides three network
-types: the `Fastest' network highlights routes for directness;
-`Quietest' prioritises cycle friendliness, and `Balanced' represents a
-balance between speed and comfort. Trips are generated based on origin
-and destination data from the 2016 Census in combination with modeled
-demand data to estimate current and potential future cycling levels at
-area, route, and network levels for each county in Ireland.
-
-For investment in cycling to deliver on the huge potential benefits,
-cycling must become safer. With growth in the ebike market, CRUSE will
-help inform inter-urban and rural networks to support the transfer of
-trips to sustainable modes for longer journeys. Provision of open access
-data in a publicly available web tool will address the challenges faced
-by counties across Ireland in meeting their sustainability commitments.
-The experience of developing a deploying CRUSE are relevant to countries
-with sustainable transport policies worldwide.
+This paper describes an approach to the development of strategic cycle
+network planning tools. Based on our experience developing and deploying
+the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland,
+we outline the methods used to generate the evidence presented in the
+tool, including disaggregation of origin-destination data, additional
+trip purposes, routing, scenarios of cycling potential, and the user
+interface. The CRUSE Tool provides estimates of cycling currently and
+under four scenarios of cycling potential: Near Market, Climate Action
+Plan, Go Dutch, and Ebike. The tool was commissioned by Transport
+Infrastructure Ireland and is publicly available at
+\url{https://cruse.bike/}, enabling planners, engineers, and other
+stakeholders to make more evidence-based decisions. CRUSE goes beyond
+previous work by: modelling networks at high levels of geographic
+resolution; simulating multiple trip purposes (social, shopping and
+personal utility trips plus recreational and cycle touring trips), in
+addition to using official data on trips to work and education
+locations; provision of estimates of `quietness' (a proxy for
+cyclability) at the route segment level; and its provision of three
+network types: `Fastest', `Balanced' and `Quietest' to help plan both
+arterial and residential cycle networks. Workshops and unstructure
+interview is stakeholders show that the tool is already being used in
+practice, to inform urban, inter-urban and rural network development.
+The approach and methods for strategic cycle network development tools
+outlined in this paper can be applied and built-on in other places to
+support the generation of evidence needed to support ambitious cycling
+policies and interventions internationally.
 \end{abstract}
 
 
@@ -270,13 +246,11 @@ with sustainable transport policies worldwide.
     Active Travel
 \end{keyword}
 \end{frontmatter}
-    \ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, enhanced, sharp corners, frame hidden, interior hidden, borderline west={3pt}{0pt}{shadecolor}, breakable]}{\end{tcolorbox}}\fi
-
+    
 \setstretch{2}
 \newpage{}
 
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
+\section{Introduction}\label{introduction}
 
 High energy transport systems are a major contributor to climate change,
 a leading cause of premature death and injury due to road traffic
@@ -337,15 +311,18 @@ In Ireland, the Road Safety Authority (RSA) has set the target of
 halving the number of road traffic deaths and serious injuries by 2030
 \citep{national2021}. Doing so while simultaneously enabling rapid
 uptake of active modes will require key active travel routes to be
-identified and improved. A proactive approach to the development of
-cycling policy and infrastructure is taking place in Ireland. The main
-frameworks underpinning these efforts are the Climate Action Plan
-\citep{climate2022a}, the National Development Plan, and the National
-Roads 2040 strategy \citep{national2023}. These policy frameworks are
-backed-up by public support for active travel interventions: while only
-3\% of trips in Ireland are made by cycling according to the latest
-Census data from 2016 ``83\% of respondents supported enhanced walking
-and cycling facilities'' \citep{sustaina2019}.
+identified and improved. Cycling in Ireland represents only 3\% of total
+modal share as of the latest Census (2016), but accounts for 20\% of
+serious injuries and 7\% of all fatalities. A proactive approach to the
+development of cycling policy and infrastructure is taking place in
+Ireland. The main frameworks underpinning these efforts are the Climate
+Action Plan \citep{climate2022a}, the National Development Plan, and the
+National Roads 2040 strategy \citep{national2023}. These policy
+frameworks are backed-up by public support for active travel
+interventions: while only 3\% of trips in Ireland are made by cycling
+according to the latest Census data from 2016 ``83\% of respondents
+supported enhanced walking and cycling facilities''
+\citep{sustaina2019}.
 
 At the regional level, the recently published Greater Dublin Area
 Transport Strategy \citep{greater} reinforces these findings: ``nearly a
@@ -402,20 +379,19 @@ monitoring \citep{lovelace2020}.
 
 \begin{figure}
 
-{\centering 
+\centering{
 
-\includegraphics{images/paste-1.png}
-
-\includegraphics{images/paste-3.png}
+\includegraphics{images/paste-8.png}
+\includegraphics{images/paste-9.png}
 
 }
 
 \caption{\label{fig-dublin}Illustration of the density of route networks
 generated by the CRUSE Tool for Dublin City and surroundings (top) and
-rural County Mayo on the West coast of Ireland. Source: CRUSE Tool,
-available at \url{https://cruse.bike/}.}
+rural County Mayo on the West coast of Ireland (botton). Source: CRUSE
+Tool, available at \url{https://cruse.bike/}.}
 
-\end{figure}
+\end{figure}%
 
 This paper aims to describe the design, features and potential use of
 the CRUSE Tool. In Section~\ref{sec-methods}, we outline the methods
@@ -427,8 +403,7 @@ Section~\ref{sec-discussion}, we discuss the implications of the results
 for policy and practice. In Section~\ref{sec-conclusions}, we conclude
 the paper.
 
-\hypertarget{sec-methods}{%
-\section{Methods and data}\label{sec-methods}}
+\section{Methods and data}\label{sec-methods}
 
 The methods used to generate the evidence presented in the CRUSE Tool
 build on the Propensity to Cycle Tool (PCT), which was originally funded
@@ -484,9 +459,8 @@ limitations of the original PCT:
 Methods were developed to overcome each of these, as outlined in
 Section~\ref{sec-trip-purposes} to Section~\ref{sec-ui}.
 
-\hypertarget{sec-disaggregation}{%
 \subsection{Disaggregation of origin-destination
-data}\label{sec-disaggregation}}
+data}\label{sec-disaggregation}
 
 A feature of active travel interventions is that they require dense
 networks of routes to be effective \citep{parkin2018}. This means that
@@ -513,8 +487,7 @@ method works by first disaggregating the OD data based on a
 Figure~\ref{fig-dublin}, the resulting route networks are dense, even in
 rural areas.
 
-\hypertarget{sec-trip-purposes}{%
-\subsection{Additional trip purposes}\label{sec-trip-purposes}}
+\subsection{Additional trip purposes}\label{sec-trip-purposes}
 
 A limitation of the original PCT was that it only included travel to
 work data. This was partially addressed by the inclusion of travel to
@@ -539,7 +512,7 @@ presented in Figure~\ref{fig-trip-purposes}.
 
 \begin{figure}
 
-{\centering 
+\centering{
 
 \includegraphics{images/paste-4.png}
 
@@ -547,10 +520,9 @@ presented in Figure~\ref{fig-trip-purposes}.
 
 \caption{\label{fig-trip-purposes}Trip purposes used in the CRUSE Tool.}
 
-\end{figure}
+\end{figure}%
 
-\hypertarget{routing}{%
-\subsection{Routing}\label{routing}}
+\subsection{Routing}\label{routing}
 
 Routes in CRUSE are generated by CycleStreets, a not-for profit
 transport consultancy and web development company who provide
@@ -617,69 +589,24 @@ segments is even higher at 75\%.
 
 \begin{figure}
 
-\begin{minipage}[t]{0.50\linewidth}
-
-{\centering 
-
-\raisebox{-\height}{
-
-\includegraphics[width=2.60417in,height=\textheight]{images/naas_quietest_godutch.png}
-
-}
-
-}
-
-\end{minipage}%
+\begin{minipage}{0.50\linewidth}
+\includegraphics[width=2.60417in,height=\textheight]{images/naas_quietest_godutch.png}\end{minipage}%
 %
-\begin{minipage}[t]{0.50\linewidth}
-
-{\centering 
-
-\raisebox{-\height}{
-
-\includegraphics[width=2.60417in,height=\textheight]{images/naas_fastest_godutch.png}
-
-}
-
-}
-
-\end{minipage}%
+\begin{minipage}{0.50\linewidth}
+\includegraphics[width=2.60417in,height=\textheight]{images/naas_fastest_godutch.png}\end{minipage}%
 \newline
-\begin{minipage}[t]{0.50\linewidth}
-
-{\centering 
-
-\raisebox{-\height}{
-
-\includegraphics[width=2.60417in,height=\textheight]{images/newbridge_quietest_godutch.png}
-
-}
-
-}
-
-\end{minipage}%
+\begin{minipage}{0.50\linewidth}
+\includegraphics[width=2.60417in,height=\textheight]{images/newbridge_quietest_godutch.png}\end{minipage}%
 %
-\begin{minipage}[t]{0.50\linewidth}
-
-{\centering 
-
-\raisebox{-\height}{
-
-\includegraphics[width=2.60417in,height=\textheight]{images/newbridge_fastest_godutch.png}
-
-}
-
-}
-
-\end{minipage}%
+\begin{minipage}{0.50\linewidth}
+\includegraphics[width=2.60417in,height=\textheight]{images/newbridge_fastest_godutch.png}\end{minipage}%
 
 \caption{\label{fig-route-types}Illustration of the Quietest (left) and
 Fastest (right) route networks for Naas (top) and Newbridge (bottom).}
 
-\end{figure}
+\end{figure}%
 
-\hypertarget{sec-scenarios}{%
-\subsection{Scenarios of cycling potential}\label{sec-scenarios}}
+\subsection{Scenarios of cycling potential}\label{sec-scenarios}
 
 The datasets outlined above were used to generate estimates of cycling
 currently (the `Baseline' scenario) and under four scenarios of cycling
@@ -689,7 +616,7 @@ Figure~\ref{fig-scenarios}.
 
 \begin{figure}
 
-{\centering 
+\centering{
 
 \includegraphics{images/scenarios_kildare.png}
 
@@ -700,10 +627,9 @@ to communicate the different scenarios. Source: county level view for
 Kildare in the open access CRUSE Tool at
 \url{https://cruse.bike/kildare}.}
 
-\end{figure}
+\end{figure}%
 
-\hypertarget{baseline}{%
-\subsubsection{Baseline}\label{baseline}}
+\subsubsection{Baseline}\label{baseline}
 
 The Baseline scenario approximates current cycling levels. As outlined
 in Section~\ref{sec-trip-purposes}, the Baseline scenario includes
@@ -711,8 +637,7 @@ travel to work and school, and additional trip purposes. Cycling levels
 were taken from the POWSCAR data, which includes the number of people
 traveling by each mode between each OD pair.
 
-\hypertarget{near-market}{%
-\subsubsection{Near Market}\label{near-market}}
+\subsubsection{Near Market}\label{near-market}
 
 The Near Market scenario approximates the level of cycling that would be
 achieved if levels of cycling uptake observed in areas of Ireland with
@@ -733,8 +658,7 @@ levels. The scenario is implemented as follows:
   Add the current level of cycling to the Near Market model
 \end{itemize}
 
-\hypertarget{climate-action-plan}{%
-\subsubsection{Climate Action Plan}\label{climate-action-plan}}
+\subsubsection{Climate Action Plan}\label{climate-action-plan}
 
 The Climate Action Plan scenario is loosely based on the Irish
 Government's
@@ -754,8 +678,7 @@ line with the Go Dutch scenario. However, we only model shift from
 driving to cycling. There is no shift from other modes of transport to
 cycling.
 
-\hypertarget{go-dutch}{%
-\subsubsection{Go Dutch}\label{go-dutch}}
+\subsubsection{Go Dutch}\label{go-dutch}
 
 Under the Go Dutch scenario cycling reaches levels equivalent to those
 found in the Netherlands, taking account of the effects of route
@@ -763,8 +686,7 @@ hilliness (measured as mean gradient) and route distance. This scenario
 uses the same model that was used PCT, allowing trips to shift from any
 other mode to cycling \citep{lovelace2017}.
 
-\hypertarget{ebike}{%
-\subsubsection{Ebike}\label{ebike}}
+\subsubsection{Ebike}\label{ebike}
 
 Also based on the PCT scenario with the same name, the Ebike scenario in
 CRUSE takes Go Dutch cycling uptake, and adds onto this the impact of
@@ -773,8 +695,7 @@ travel to primary and secondary schools still uses Go Dutch uptake,
 since no ebike scenario has been developed for school journeys, and
 children may be less likely to own ebikes than adults.
 
-\hypertarget{sec-ui}{%
-\subsection{User interface}\label{sec-ui}}
+\subsection{User interface}\label{sec-ui}
 
 The CRUSE web application is statically hosted, meaning that it can be
 accessed without the need for a server running software such as the R
@@ -800,7 +721,7 @@ school), the tool aims to facilitate communication between these groups.
 
 \begin{figure}
 
-{\centering 
+\centering{
 
 \includegraphics{images/mermaid-figure-1.png}
 
@@ -810,10 +731,9 @@ school), the tool aims to facilitate communication between these groups.
 Tool illustrating that it can be used in different ways by different
 user groups.}
 
-\end{figure}
+\end{figure}%
 
-\hypertarget{sec-results}{%
-\section{Results}\label{sec-results}}
+\section{Results}\label{sec-results}
 
 The main result of the work presented in this paper is an open access
 web application and datasets on current and potential future cycling
@@ -840,7 +760,7 @@ a 3km radius circle centred on each of these cities.
 
 \begin{figure}
 
-{\centering 
+\centering{
 
 \includegraphics{images/rnet_types.png}
 
@@ -853,7 +773,7 @@ segments representing more cycle friendly segments. Widths vary in
 proportion to the potential level of cycling under the `Go Dutch'
 scenario.}
 
-\end{figure}
+\end{figure}%
 
 Aside from the widely varying sizes and route networks of each city,
 with Dublin having by far the densest network, it is clear from the
@@ -875,8 +795,7 @@ physically separated from traffic and pedestrians'' \citep{walking2021}.
 The results for the Dublin area could help prioritise investment in
 cycling infrastructure in the city.
 
-\hypertarget{sec-discussion}{%
-\section{Discussion}\label{sec-discussion}}
+\section{Discussion}\label{sec-discussion}
 
 The aim of the paper was to describe the design, features and potential
 use of the CRUSE Tool. As outlined in the previous section, the CRUSE
@@ -941,8 +860,7 @@ As the benefits of strategic planning for cycling become more apparent
 \citep{scappini2022} we expect the demand for tools such as CRUSE to
 grow.
 
-\hypertarget{sec-conclusions}{%
-\section{Conclusions}\label{sec-conclusions}}
+\section{Conclusions}\label{sec-conclusions}
 
 The CRUSE Tool is an open access web application for strategic cycle
 network planning and prioritization of road safety interventions across
@@ -1012,8 +930,7 @@ broader sustainable mobility measures and policies to reduce motor
 traffic speeds and volumes, tools such as CRUSE can support the fast and
 fair decarbonisation of transport systems worldwide.
 
-\hypertarget{list-of-abbreviations}{%
-\section{List of abbreviations}\label{list-of-abbreviations}}
+\section{List of abbreviations}\label{list-of-abbreviations}
 
 APIs: Application Programming Interfaces
 
@@ -1045,12 +962,10 @@ POWSCAR: Place of Work, School or College Census of Anonymized Records
 
 TII: Transport Infrastructure Ireland
 
-\hypertarget{declarations}{%
-\section{Declarations}\label{declarations}}
+\section{Declarations}\label{declarations}
 
-\hypertarget{availability-of-data-and-material}{%
 \subsection*{Availability of data and
-material}\label{availability-of-data-and-material}}
+material}\label{availability-of-data-and-material}
 \addcontentsline{toc}{subsection}{Availability of data and material}
 
 Data was obtained from the Central Statistics Office (CSO) and Transport
@@ -1058,14 +973,12 @@ Infrastructure Ireland (TII) under license and cannot be shared
 publicly. The code used to generate the results presented in this paper
 is fully reproducible and available at {[}to be added post review.{]}
 
-\hypertarget{funding}{%
-\subsection*{Funding}\label{funding}}
+\subsection*{Funding}\label{funding}
 \addcontentsline{toc}{subsection}{Funding}
 
 This work was funded by Transport Infrastructure Ireland (TII).
 
-\hypertarget{acknowledgements}{%
-\subsection*{Acknowledgements}\label{acknowledgements}}
+\subsection*{Acknowledgements}\label{acknowledgements}
 \addcontentsline{toc}{subsection}{Acknowledgements}
 
 {[}To be added post review.{]}
