@@ -91,6 +91,7 @@ system("pdftk _site/cv.pdf _site/visions.pdf cat output _site/cv_and_visions.pdf
 # latexdiffr::latexdiff("paper-v1.qmd", "paper.qmd")
 system("latexdiff paper-v1.tex paper.tex > paper-diff.tex")
 system("pdflatex paper-diff.tex")
+browseURL("paper-diff.pdf")
 ```
 
 # Introduction
