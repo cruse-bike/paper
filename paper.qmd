@@ -1,6 +1,6 @@
 ---
-title: "CRUSE to Safe Cycling in Ireland"
-subtitle: An Open Source Tool to Support Active Travel
+title: "Cycle Route Uptake and Scenario Estimation (CRUSE): an open and nationally scalable approach for strategic cycle network planning tool development"
+subtitle: A case study of Ireland
 bibliography: bibliography.bib
 csl: apa.csl
 editor:
@@ -13,8 +13,8 @@ knitr:
   opts_chunk:
     fig.path: images/
 format: 
-  # html: default
-  docx: default
+  html: default
+  # docx: default
 # # # # Uncomment for formatted version
 #   elsevier-pdf:
 #     linestretch: 2
@@ -67,9 +67,7 @@ author:
       - name: Transport Infrastructure Ireland
         address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
 abstract: |
-  Legislation mandates improved road safety and decarbonisation of predominantly road-based transport network in Ireland and other countries. Increasing cycling transport, making it safer and more attractive, is essential to this end. Cycling in Ireland represents only 3% of total modal share as of the latest Census (2016), but accounts for 20% of serious injuries and 7% of all fatalities. A planning tool based on high resolution datasets on baseline and potential cycling levels could greatly assist in achieving this goal.
-
-  This paper describes the design, features and potential use of the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland was commissioned to support cycle network planning, safety interventions, business cases and project evaluation. The resulting web application is available at <https://cruse.bike/>, enabling planners, engineers, and other stakeholders to make more evidence-based decisions.
+  This paper describes the design, features and potential use of the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland. The tool was commissioned to support cycle network planning, safety interventions, business cases and project evaluation. The resulting web application is available at <https://cruse.bike/>, enabling planners, engineers, and other stakeholders to make more evidence-based decisions.
   CRUSE goes beyond previous work in several important ways.
   It models networks at high levels of geographic resolution, simulates a wide range of trips including recreational, social, shopping and personal trips, in addition to trips to work and primary, secondary and tertiary education locations.
   The tool provides key 'denominator' information to enable reporting of collision rates per billion km cycled.
@@ -135,6 +133,7 @@ Better data to inform road safety policies and interventions is a motivation for
 
 In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030 [@national2021].
 Doing so while simultaneously enabling rapid uptake of active modes will require key active travel routes to be identified and improved.
+Cycling in Ireland represents only 3% of total modal share as of the latest Census (2016), but accounts for 20% of serious injuries and 7% of all fatalities.
 A proactive approach to the development of cycling policy and infrastructure is taking place in Ireland.
 The main frameworks underpinning these efforts are the Climate Action Plan [@climate2022a], the National Development Plan, and the National Roads 2040 strategy [@national2023].
 <!-- Strategic alignment is also outlined by the Phoenix Park Transport and Mobility Options Study, which highlights public support for active travel interventions: while only 3% of trips in Ireland are made by cycling according to the latest Census data from 2016,^[ --> These policy frameworks are backed-up by public support for active travel interventions: while only 3% of trips in Ireland are made by cycling according to the latest Census data from 2016 "83% of respondents supported enhanced walking and cycling facilities" [@sustaina2019].
