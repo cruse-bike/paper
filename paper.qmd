@@ -1,7 +1,10 @@
 ---
 title: "Cycle Route Uptake and Scenario Estimation (CRUSE): an open and nationally scalable approach for strategic cycle network planning tool development"
 subtitle: A case study of Ireland
-bibliography: bibliography.bib
+bibliography:
+  # cruse.bib
+  - bibliography.bib
+  - cruse.bib
 csl: apa.csl
 editor:
   markdown:
@@ -161,25 +164,44 @@ In @sec-conclusions, we conclude the paper.
 
 # Tools for estimating cycling potential
 
-The tools for estimating geographical distribution of cycling potential have advanced substantially in recent years. Developed by both researchers and professionals, they have evolved from simple area-based static models tailored to specific regions to more complex generalisable open-source online maps at several levels of analysis open to the public. Table 1 summarises the most relevant.
+Tools for estimating geographical distribution of cycling potential have advanced substantially in recent years.
+Developed by researchers and developers in academic, public and private sectors, they have evolved from simple area-based static models tailored to specific regions to more complex and (in some cases) more generalizable tools.
+Outputs include maps with results available at several levels of analysis with levels of availability ranging from being only available to researchers and in static maps to open access mapping systems available to the public.
+Some of the most relevant existing tools are summarised below and presented in Table 1.
 
-Parkin et al. (2007) presented a regression model to estimate the percentage of cycling trips to work in England and Wales based on socioeconomic, transportation, and physical factors at the small area (wards) level. They found that areas with a higher percentage of females, non-whites, car ownership, lower socioeconomic classes, income, distance to work, population density, poor highway conditions, hills, rainfall, and fewer off-road bicycle routes tended to have a lower proportion of cycling to work. 
+Area-based tools were developed first.
+Parkin and colleagues presented a regression model to estimate the percentage of cycling trips to work in England and Wales based on socioeconomic, transportation, and physical factors at the small area (wards) level in 2007 [@parkin_estimation_2007].
+They found that areas with a higher percentage of females, non-whites, car ownership, lower socioeconomic classes, income, distance to work, population density, poor highway conditions, hills, rainfall, and fewer off-road bicycle routes tended to have a lower proportion of cycling to work.
 
-Transport for London (2010) created the Analysis of Cycling Potential (ACP) tool to identify current trips that could be cycled instead of using mechanised modes. The tool is based on a mode choice model that assesses the likelihood of trips being cycled and uses data from the TfL London Travel Demand Survey as its primary input dataset. The tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London. This information has been used to guide local cycling initiatives, such as determining locations for new hire stations. The tool, however, it does not use origin-destination data, which makes it less useful for route-based interventions. An updated analysis was conducted in 2017 (Transport for London, 2016).
+Three years later, Transport for London created the Analysis of Cycling Potential (ACP) tool based on a mode choice model that assesses the likelihood of trips being cycled, with data from the TfL London Travel Demand Survey as its primary input.
+The tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London to guide local cycling initiatives, such as where new hire 'docking stations' should go.
+The tool does not use origin-destination data and cannot estimate cycling potential on specific routes [@transport_for_london_analysis_2010].
 
-Larsen et al. (2013) designed a tool to prioritize the placement of new cycling facilities in Montreal, Canada. The tool used survey, vehicle collision, and origin-destination data. To create the index, they first identified a set of relevant indicators for prioritising locations for infrastructure investment. Then, they imposed a grid and aggregated the indicators spatially, associating them with grid’s cells. Finally, they combined the aggregated grid cell indicators into the prioritization index. The tool generated heatmaps recommending cycling infrastructure upgrades in specific locations. 
+Other tools that generate areal data to prioritize investment include a study that generated a 'prioritization index' for Montreal, Canada [@larsen_build_2013], a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil, and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
+The CPT is composed of the base environmental module — based on eight weighted factors (population density, hilliness, physical barriers, access to services, existing cycling mode share, distance to work and school, and road speed) — and the quality of service module, which evaluates each area of interest based on eight factors (surface condition, adjacent cyclists, comfort factor, conflict, distance between junctions, slope, access to services, and origin/destination).
 
-Zhang et al. (2014) used a regression model to examine the effect of socioeconomic factors on willingness to cycle in Belo Horizonte City, Brazil, while considering individual heterogeneity. To develop the model, they employed a bicycle use survey conducted in Belo Horizonte. The results indicated a positive association between willingness to cycle and middle income, people renting apartments, and higher education, and a negatively association with distance to work and car use. Subsequently, using the calibrated model along with census and OD data, they estimated the willingness to commute cycling for the entire city.
+A more recent areal-based approach is the designed the Gross Potential for Cycling (GPC) tool to prioritize areas for cycling infrastructure and other cycling measures [@silva_gross_2021].
+The GPC uses two sets of indicators: population-based indicators (age, potential demand density, employment density and motorization rate) and area-based indicators (accessibility, education, public transport, connectivity, land use mix and relative performance).
+These indicators are calculated considering topography, road hierarchy, and average congestion and presented on a scale from 5 to 10.
+They are then combined into an overall score, weighted by their impact on cycling according to the literature.
+The ranking of areas by the GPC are [publicly available](https://boost.up.pt/en/ferramentas/gpc) and its practical value has been assessed through workshops [@silva_revealing_2022].
 
-Phillips and Range (2017) created the Cycling Potential Tool (CPT) for Scotland to provide evidence-based insights for decision-making regarding local cycling infrastructure in Scotland. The CPT is a GIS toolbox consisting of two main modules: the base environmental module and the quality of service module. The base environmental module is based on eight weighted factors (population density, hilliness, physical barriers, access to services, existing cycling mode share, distance to work and school, and road speed) and produces heatmaps for each factor as well as a combined score. The quality of service module evaluates the network within each area of interest based on eight factors (surface condition, adjacent cyclists, comfort factor, conflict, distance between junctions, slope, access to services, and origin/destination). 
+Route-based tools emerged with increasing availability of origin-destination data, routing engines that can assign trips to networks, and improvements in computer hardware and software needed to generate route networks.
+A prominent example is the the Propensity to Cycle Tool (PCT), first developed to estimate current and future levels of cycling at desire line, zone, route, and route network levels for case study cities [@lovelace_mapping_2016].
+The approach was scaled-up to estimate estimate the potential benefits of uptake at zone and desire line levels nationally, and launched as a publicly available web application in 2017 @lovelace2017.
+Extensions of the PCT approach have included estimation of benefits at the individual level [@woodcock2018], addition of travel to school network [@goodman2019], and improved modeling of impacts on health, environmental and distributional outcomes [@woodcock2021].
+Initially developed just for England, the PCT was extended to cover all of Wales (for commuter data only) in 2018.
 
-The Propensity to Cycle Tool (2017) was initially based on current and future potential uptake of cycling for single stage travel to work at desire line, zone, route, and route network levels (Lovelace et al. 2017). Extensions of the PCT approach have included estimation of benefits at the individual level (Woodcock et al., 2018), addition of travel to school network (Goodman et al., 2019), and improved modeling of impacts on health, environmental and distributional outcomes (Woodcock et al., 2021). Initially developed just for England, the PCT was extended to cover all of Wales (for commuter data only) in 2018. The PCT approach has been applied in other countries, including Ireland (the topic of this paper), Scotland, and Portugal. In Portugal the ‘biclaR’ project, based on methods underlying the PCT, has been developed and deployed for the Lisbon metro region. The resulting evidence is available in an interactive web application hosted at biclar.tmlmobilidade.pt (Félix et al., 2022). biclaR includes estimates of impacts, using the World Health Organisation (WHO) ‘HEAT for Cycling’ tool and an ‘intermodality’ scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data. An important feature of the PCT is that it is open source and publicly available (at www.pct.bike), allowing its use by all stakeholders in the transport planning process.
+The PCT approach has been applied in other countries, including Ireland (the topic of this paper), Scotland, and Portugal.
+In Portugal the 'biclaR' project, based on methods underlying the PCT, has been developed and deployed for the Lisbon metro region.
+The resulting evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
+biclaR includes estimates of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool and an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
 
-Silva et al. (2021)  designed the Gross Potential for Cycling (GPC) tool to identify key areas for the implementation of cycling infrastructure and other cycling measures. The GPC uses two sets of indicators: population-based indicators (age, potential demand density, employment density and motorization rate) and area-based indicators (accessibility, education, public transport, connectivity, land use mix and relative performance). These indicators are calculated considering topography, road hierarchy, and average congestion and presented on a scale from 5 to 10. They are then combined into an overall score, weighted by their impact on cycling according to the literature. The GPC is publicly available (at https://boost.up.pt/en/ferramentas/gpc) and is specially designed for local council-level practitioners. Its practical value has been assessed through a series of experiential workshops involving planning practitioners from various Portuguese contexts (Silva et al., 2022).
-
-The methods used to generate the evidence present in the CRUSE Tool, described in the next section, build on the PCT and seek to overcome three of the PCT methodological limitations: 1) low resolution of data, with routes starting and ending in administrative zone centroids, 2) limited coverage of trip purposes beyond travel to work and school, and 3) a web interface that was not user-friendly or intuitive.
+The approach presented in this paper seeks to overcome three limitations of previous tools to estimate cycling potential: 1) low resolution of data, with routes starting and ending in administrative zone centroids, 2) limited coverage of trip purposes beyond travel to work and school, and 3) a web interface that was not user-friendly or intuitive.
 
 # Methods and data {#sec-methods}
+
+```{=html}
 <!-- 
 The methods used to generate the evidence presented in the CRUSE Tool build on the Propensity to Cycle Tool (PCT), which was originally funded by the UK's Department for Transport and developed by a multi-university team.
 An important feature of the PCT is that it is open source and publicly available (at [www.pct.bike](https://www.pct.bike/)), allowing its use by all stakeholders in the transport planning process [@lovelace2017].
@@ -202,7 +224,7 @@ The CRUSE Tool seeks to overcome the following methodological limitations of the
 -   A web interface that was not user-friendly or intuitive
 
 Methods were developed to overcome each of these, as outlined in @sec-trip-purposes to @sec-ui. -->
-
+```
 <!-- Todo: add section on input datasets -->
 
 ## Disaggregation of origin-destination data {#sec-disaggregation}
