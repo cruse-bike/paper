@@ -9,6 +9,9 @@ csl: apa.csl
 editor:
   markdown:
     wrap: sentence
+execute: 
+  echo: false
+  message: false
 number-sections: true
 latex-clean: false
 pdf-engine: pdflatex
@@ -83,8 +86,12 @@ date: last-modified
 
 ```{r}
 #| include: false
-#| eval: false
 library(tidyverse)
+```
+
+```{r}
+#| include: false
+#| eval: false
 remotes::install_dev("tmap")
 library(tmap)
 # Save title page (1st page of paper.pdf):
@@ -168,6 +175,27 @@ Tools for estimating geographical distribution of cycling potential have advance
 Developed by researchers and developers in academic, public and private sectors, they have evolved from simple area-based static models tailored to specific regions to more complex and (in some cases) more generalizable tools.
 Outputs include maps with results available at several levels of analysis with levels of availability ranging from being only available to researchers and in static maps to open access mapping systems available to the public.
 Some of the most relevant existing tools are summarised below and presented in Table 1.
+
+```{r}
+#| include: false
+tools = read_csv("tools.csv")
+tools = tools |>
+  transmute(
+    `Approach` = paste0(Tool, ", ", Reference),
+    `Coverage and input data` = paste0(Coverage, ", ", `Input data`),
+    `Outputs and availability` = Output,
+    License = Licence
+  )
+```
+
+```{r}
+knitr::kable(tools, caption = "Summary of existing tools for estimating cycling potential.", booktabs = TRUE) |>
+  kableExtra::kable_styling(latex_options = "striped", full_width = FALSE) |>
+  kableExtra::column_spec(1, width = "13em") |>
+  kableExtra::column_spec(2, width = "15em") |>
+  kableExtra::column_spec(3, width = "12em") |>
+  kableExtra::column_spec(4, width = "5em")
+```
 
 Area-based tools were developed first.
 Parkin and colleagues presented a regression model to estimate the percentage of cycling trips to work in England and Wales based on socioeconomic, transportation, and physical factors at the small area (wards) level in 2007 [@parkin_estimation_2007].
