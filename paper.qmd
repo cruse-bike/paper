@@ -174,7 +174,7 @@ In @sec-conclusions, we conclude the paper.
 Tools for estimating geographical distribution of cycling potential have advanced substantially in recent years.
 Developed by researchers and developers in academic, public and private sectors, they have evolved from simple area-based static models tailored to specific regions to more complex and (in some cases) more generalizable tools.
 Outputs include maps with results available at several levels of analysis with levels of availability ranging from being only available to researchers and in static maps to open access mapping systems available to the public.
-Some of the most relevant existing tools are summarised below and presented in Table 1.
+Some of the most relevant existing tools are summarised below and presented in @tbl-tools.
 
 ```{r}
 #| include: false
@@ -189,6 +189,7 @@ tools = tools |>
 ```
 
 ```{r}
+#| label: tbl-tools
 knitr::kable(tools, caption = "Summary of existing tools for estimating cycling potential.", booktabs = TRUE) |>
   kableExtra::kable_styling(latex_options = "striped", full_width = FALSE) |>
   kableExtra::column_spec(1, width = "13em") |>
