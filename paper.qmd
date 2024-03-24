@@ -60,7 +60,7 @@ author:
     affiliations:
       - name: AECOM
         address: Winslade House, Winslade Park, Manor Drive, Clyst St Mary, Exeter, EX5 1FY, UK
-  - name: "Gary O'Tool"
+  - name: "Gary O'Toole"
     affiliations:
       - name: AECOM
         address: Unit 6, Galway Technology Park, Parkmore, Galway, Ireland
@@ -73,7 +73,7 @@ author:
       - name: Transport Infrastructure Ireland
         address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
 abstract: |
-  This paper describes an approach for developing strategic cycle network planning tools. Based on our experience developing and deploying the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland, we outline the methods used to generate the evidence presented in the tool, including disaggregation of origin-destination data, additional trip purposes, routing, scenarios of cycling potential, and the user interface. The CRUSE Tool provides estimates of cycling currently and under four scenarios of cycling potential: Near Market, Climate Action Plan, Go Dutch, and Ebike. The tool was commissioned by Transport Infrastructure Ireland and is publicly available at <https://cruse.bike/>, enabling planners, engineers, and other stakeholders to make more evidence-based decisions. CRUSE goes beyond previous work by: modelling networks at high levels of geographic resolution; simulating multiple trip purposes (social, shopping and personal utility trips plus recreational and cycle touring trips), in addition to using official data on trips to work and education locations; provision of estimates of 'quietness' (a proxy for cyclability) at the route segment level; and its provision of three network types: 'Fastest', 'Balanced' and 'Quietest' to help plan both arterial and residential cycle networks. Workshops and unstructure interview is stakeholders show that the tool is already being used in practice, to inform urban, inter-urban and rural network development. The approach and methods for strategic cycle network development tools outlined in this paper can be applied and built-on in other places to support the generation of evidence needed to support ambitious cycling policies and interventions internationally.
+  This paper describes an approach for developing strategic cycle network planning tools. Based on our experience developing and deploying the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland, we outline the methods used to generate the evidence presented in the tool, including disaggregation of origin-destination data, additional trip purposes, routing, scenarios of cycling potential, and the user interface. The CRUSE Tool provides estimates of cycling currently and under four scenarios of cycling potential: Near Market, Climate Action Plan, Go Dutch, and Ebike. The tool was commissioned by Transport Infrastructure Ireland and is publicly available at <https://cruse.bike/>, enabling planners, engineers, and other stakeholders to make more evidence-based decisions. CRUSE goes beyond previous work by: modelling networks at high levels of geographic resolution; simulating multiple trip purposes (social, shopping and personal utility trips plus recreational and cycle touring trips), in addition to using official data on trips to work and education locations; provision of estimates of 'quietness' (a proxy for cyclability) at the route segment level; and its provision of three network types: 'Fastest', 'Balanced' and 'Quietest' to help plan both arterial and residential cycle networks. Workshops and unstructured interviews of stakeholders show that the tool is already being used in practice, to inform urban, inter-urban and rural network development. The approach and methods for strategic cycle network development tools outlined in this paper can be applied and built-on in other places to support the generation of evidence needed to support ambitious cycling policies and interventions internationally.
 keywords: 
   - Cycling
   - Open-source
@@ -115,7 +115,7 @@ Nearly half of these emissions (around 10% of global emissions) are from passeng
 The transport system encourages, enables and in some cases enforces unsustainable lifestyles.
 Services that are only accessible by car lock-in car dependency [@gray2001; @shergold2012; @motte-baumvol2010].
 
-Growing evidence of the negative impacts of car-dependent transport systems has led governments in many countries to set targets and taken actions.
+Growing evidence of the negative impacts of car-dependent transport systems has led governments in many countries to set targets and take actions.
 In the context of climate, road safety and physicial inactivity crises, policies to improve transport systems can be classified according to the 'Avoid-Shift-Improve' (ASI) framework [@jaramillo2022].
 The ASI framework highlights the importance of demand reduction (*avoid*ing unnecessary trips), in addition to mode *shift* to sustainable modes and *improvement* of existing energy converters, in that order.
 
@@ -128,7 +128,7 @@ Climate change mitigation is a major motivation for cycle network plans [@scappi
 
 Another motivation for cycle network planning at the European level is the Road Infrastructure Safety Management (RISM) directive (2008/96/EC), which requires member states to implement a road safety management system (RSMS) for all public roads.
 Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out" [@directiv2008].
-Given that 'safety' in this context is usefully quantified as the number of people killed and seriously injured (KSI) per distance traveled, the directive requires estimation of distance traveled by mode, down to the road link level.
+Given that 'safety' in this context is usefully quantified as the number of people killed or seriously injured (KSI) per distance traveled, the directive requires estimation of distance traveled by mode, down to the road link level.
 For active modes, about which there is a paucity of data compared with motorized modes, this is a major challenge.
 Better data to inform road safety policies and interventions is a motivation for better estimates of 'baseline' levels of physical activity at high levels of geographic resolution [@tait2023].
 
