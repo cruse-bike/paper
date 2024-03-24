@@ -1,6 +1,6 @@
 ---
-title: "Cycle Route Uptake and Scenario Estimation (CRUSE): an open and nationally scalable approach for strategic cycle network planning tool development"
-subtitle: A case study of Ireland
+title: "Cycle Route Uptake and Scenario Estimation (CRUSE): an approach for developing strategic cycle network planning tools"
+# subtitle: A case study of Ireland
 bibliography:
   # cruse.bib
   - bibliography.bib
