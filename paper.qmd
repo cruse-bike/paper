@@ -157,7 +157,7 @@ The evidence base had to scale nationally to support strategic alignment with na
 Illustration of the landing page of the CRUSE Tool for Ireland.
 :::
 
-This describes describe the design, features and potential use of an approach to strategic cycle network planning that is open, scalable, and evidence-based.
+This paper describes an approach to strategic cycle network planning tool development that is open, scalable, and evidence-based.
 We label the approach Cycle Route Uptake and Scenario Estimation (CRUSE) and present a case study of its application in Ireland, the results of which are publicly available at [cruse.bike](https://cruse.bike/) in the CRUSE Tool for Ireland, the landing page of which is illustrated in @fig-landing.
 In @sec-methods, we outline the methods used to generate the evidence presented in the CRUSE Tool.
 In @sec-results, we present the results of the CRUSE Tool, including estimates of current cycling levels and future cycling potential at the national, regional and local levels.
