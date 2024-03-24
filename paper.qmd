@@ -400,7 +400,7 @@ The scenario is implemented as follows:
 
 ### Climate Action Plan
 
-The Climate Action Plan scenario is loosely based on the Irish Government's [Climate Action Plan 2021](https://www.gov.ie/en/publication/6223e-climate-action-plan-2021/), which contains policies for action to achieve a 51% reduction in overall GHG emissions by 2030, on a path towards net-zero by 2050.
+The Climate Action Plan scenario models the transport emissions reductions targeted in the Irish Government's [Climate Action Plan 2021](https://www.gov.ie/en/publication/6223e-climate-action-plan-2021/), which aims for a 51% cut in overall greenhouse gas emissions by 2030 as part of the pathway to net-zero emissions by 2050.
 For transport, this includes 500,000 extra walking, cycling and public transport trips per day by 2030.
 In terms of car travel, the target is to "Increas\[e\] the proportion of kilometers driven by passenger electric cars to between 40 and 45% by 2030, in addition to a reduction of 10% in kilometers driven by the remaining internal combustion engine cars." This equates to a 5.5 to 6% reduction in total car km driven.
 
