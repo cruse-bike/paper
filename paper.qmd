@@ -129,16 +129,17 @@ Another motivation for cycle network planning at the European level is the Road 
 Specifically, "Member States shall ensure that the ranking of high accident concentration sections and the network safety ranking are carried out" [@directiv2008].
 Given that 'safety' in this context is usefully quantified as the number of people killed or seriously injured (KSI) per distance traveled, the directive requires estimation of distance traveled by mode, down to the road link level.
 For active modes, about which there is a paucity of data compared with motorized modes, this is a major challenge.
-Better data to inform road safety policies and interventions is a motivation for better estimates of 'baseline' levels of physical activity at high levels of geographic resolution [@tait2023].
+Better data to inform road safety policies and interventions is a motivation for better estimates of 'baseline' levels of physical activity at high geographic resolutions [@tait2023].
 
 National governments are increasingly acting on the evidence.
 In Ireland, the Road Safety Authority (RSA) has set the target of halving the number of road traffic deaths and serious injuries by 2030 [@national2021].
-Doing so while simultaneously enabling rapid uptake of active modes will require key travel corridors to be identified 'cycle proofed'.
-Cycling in Ireland represents only 3% of total modal share as of the 2016 Census, but accounts for 20% of serious injuries and 7% of all fatalities, driving the development of cycling policy and infrastructure plans in Ireland.
+Doing so while simultaneously enabling rapid uptake of active modes will require key travel corridors to be identified and 'cycle proofed'.
+Cycling in Ireland represents only 3% of total modal share as of the 2016 Census, but accounts for 20% of serious injuries and 7% of all fatalities.
+Poor perception of safety has been found to represent the most important barrier to increased cycling in Ireland[@brick2018], and the need to improve road safety drives the development of national cycling policy and infrastructure plans.
 The main frameworks underpinning these efforts are the Climate Action Plan [@climate2022a], the National Development Plan, and the National Roads 2040 strategy [@national2023].
-<!-- Strategic alignment is also outlined by the Phoenix Park Transport and Mobility Options Study, which highlights public support for active travel interventions: while only 3% of trips in Ireland are made by cycling according to the latest Census data from 2016,^[ --> These policy frameworks are backed-up by public support for active travel interventions: while only 3% of trips in Ireland are made by cycling according to the latest Census data from 2016 "83% of respondents supported enhanced walking and cycling facilities" [@sustaina2019].
+<!-- Strategic alignment is also outlined by the Phoenix Park Transport and Mobility Options Study, which highlights public support for active travel interventions: while only 3% of trips in Ireland are made by cycling according to the latest Census data from 2016,^[ --> 
 
-At the regional level within Ireland, the recently published Greater Dublin Area Transport Strategy [@greater] reinforces these findings of high support for and capability for cycling: "nearly a quarter of adults cycle at least once a week in the Dublin Metropolitan Area" with cycling in the Dublin area taking up to 60,000 cars off the road today.
+At the regional level within Ireland, the recently published Greater Dublin Area Transport Strategy [@greater] reveals the high support for and capability for cycling: "nearly a quarter of adults cycle at least once a week in the Dublin Metropolitan Area" with cycling in the Dublin area taking up to 60,000 cars off the road today.
 Extrapolating this on a per population basis across Ireland, with around 40% of the population living in Dublin, suggests that around 150,000 cars could be removed nationwide just by achieving Dublin levels of cycling in all counties (notwithstanding existing cycling trips and differences in trip distances).
 7 in 10 trips in Ireland are by car [@national] .
 Cycling has the potential to replace a large proportion of these trips: "A high priority must also be given to cyclists, because trips by this mode have the potential to replace trips by private car, most specifically for short to medium distance trips, but increasingly for longer trips as ebikes extend the range of this mode" [@greater].
@@ -596,7 +597,7 @@ As highlighted in a paper on cycling infrastructure preferences based on a case 
 
 > Direct routes with short journey times were found to be the most important positive variable for existing cyclists and non-cyclists in determining route choice.
 > This is followed by infrastructure type, the number of junctions along the route, traffic speed and cyclist volumes.
-> In terms if infrastructure, regardless of the level of cycling confidence, routes which have 'no facilities' or 'bus/cycle lanes' are the least favoured cycle route types.
+> In terms of infrastructure, regardless of the level of cycling confidence, routes which have 'no facilities' or 'bus/cycle lanes' are the least favoured cycle route types.
 
 The CRUSE Tool can help both in terms of describing the current situation, and also prioritise investment in those direct routes with high cycling potential that lack adequate cycling infrastructure [@caulfield2012].
 It will also support reporting for the RISM Directive on road casualties as part of the road safety management system.
@@ -607,7 +608,7 @@ While the CRUSE Tool is not the first national and publicly available tool for c
 
 -   The results are *open access* meaning that any stakeholder in the planning system can access the evidence. This will help to democratize the transport planning process and make wider conversations about transport planning more evidence-based and less polarized [@lovelace2020], something that is particularly relevant given the potentially polarizing nature of pro-cycling interventions [@wild2017].
 -   The results are fully reproducible (code to be released pending sign-off by TII's IT team), preventing 'cloud lock in' to a potentially monopolistic consultancy, and encouraging input from the wider open source community [@lovelace2021; @dhir2017].
--   By covering a wide range of trip purposes --- not just travel to work [@lovelace2017; @heinen2010] and travel school [@goodman2019] as covered in previously published research on open access national cycle network planning tools --- the results capture a higher proportion of cycling potential including key rural trips which are often under-represented in models of active travel.
+-   By covering a wide range of trip purposes --- not just travel to work [@lovelace2017; @heinen2010] and travel to school [@goodman2019] as covered in previously published research on open access national cycle network planning tools --- the results capture a higher proportion of cycling potential including key rural trips which are often under-represented in models of active travel.
 
 As the benefits of strategic planning for cycling become more apparent [@scappini2022] we expect the demand for tools such as CRUSE to grow.
 However, the approach is not without limitations and does not meet all requirements in Ireland or indeed any country where the methods are applied.
