@@ -1,11 +1,7 @@
 ---
 title: "Cycle Route Uptake and Scenario Estimation (CRUSE): an approach for developing strategic cycle network planning tools"
 # subtitle: A case study of Ireland
-bibliography:
-  # cruse.bib
-  - bibliography.bib
-  - cruse.bib
-  - references.bib
+bibliography: references.bib
 csl: apa.csl
 editor:
   markdown:
@@ -224,7 +220,7 @@ The ranking of areas by the GPC are [publicly available](https://boost.up.pt/en/
 
 Route-based tools emerged with increasing availability of origin-destination data, routing engines that can assign trips to networks, and improvements in computer hardware and software needed to generate route networks.
 A prominent example is the the Propensity to Cycle Tool (PCT), first developed to estimate current and future levels of cycling at desire line, zone, route, and route network levels for case study cities [@lovelace_mapping_2016].
-The approach was scaled-up to estimate estimate the potential benefits of uptake at zone and desire line levels nationally, and launched as a publicly available web application in 2017 @lovelace2017.
+The approach was scaled-up to estimate estimate the potential benefits of uptake at zone and desire line levels nationally, and launched as a publicly available web application in 2017 [@lovelace2017].
 Extensions of the PCT approach have included estimation of benefits at the individual level [@woodcock2018], addition of travel to school network [@goodman2019], and improved modeling of impacts on health, environmental and distributional outcomes [@woodcock2021].
 Initially developed just for England, the PCT was extended to cover all of Wales (for commuter data only) in 2018.
 
@@ -292,7 +288,7 @@ This was partially addressed by the inclusion of travel to school based on data 
 An advantage of the POWSCAR OD data over OD datasets derived from census surveys in many countries is that it includes travel to school data.
 We commissioned a version of POWSCAR that included a breakdown of the total flows between OD pairs by purpose and mode, enabling a more realistic estimation of the 'Baseline' cycling network.
 
-However, travel to school and work only constitute around only 30% of all trips in Ireland. <!-- Reference needed -->
+However, travel to school and work only constitute 39% of all trips in Ireland, excluding 'returning home' trips, according to the 2022 National Household Travel Survey (NHTS) [@national2022].
 To overcome this issue, we developed a spatial interaction modeling methodology to estimate the number of trips between each OD pair for additional trip purposes.
 The classification of trip purposes used in the CRUSE Tool was guided mainly by the trip purpose classification found within the National Household Travel Survey (NHTS), but with the addition of categories based on the comprehensive POWSCAR data, and the need to include recreational trips and multi-stage trips. <!-- This is already implemented, right?--> 
 An overview of the trip purposes used in CRUSE is presented in @fig-trip-purposes. <!--This should be Table 2--->
@@ -619,8 +615,8 @@ The feedback from the workshop in Kildare highlighted the need for the tool for 
 
 > "It's a missing piece of evidence that will help new projects get built" (Senior Engineer, Sustainable Transport & Traffic Management, Kildare County Council)
 
-Practitioners in Kildare County Council that the evidence generated *was already valuable* the development of new cycle routes, especially when making the case during planning applications. They emphasized that cycle networks are often fragmented, and the tool allows them to demonstrate how individual local schemes can contribute to a larger, interconnected network. Council officers expressed a preference for visualizations that directly compare the fast and quiet routes, as they recognize the importance of both types of routes (users can switch between the on the 'Route types' page for each county although this functionality is not available in the landing page map due to other feedback requesting a simpler interface).
-
+Practitioners in Kildare County Council that the evidence generated *was already valuable* the development of new cycle routes, especially when making the case during planning applications. They emphasized that cycle networks are often fragmented, and the tool allows them to demonstrate how individual local schemes can contribute to a larger, interconnected network. An unexpected piece of feedback from the workshop was the preference for visualizations that directly compare the fast and quiet routes, as they recognize the importance of both types of routes.
+In response to this we provided the 'Route types' page for each county, although this functionality is not available in the landing page map due to other feedback requesting a simpler interface.
 In comparison with another tool (the National Transport Authority's cycling propensity tool), the CRUSE tool was seen by practitioners in Kildare as more user-friendly and intuitive, with the ability to generate evidence at the route level, which is crucial for planning new cycling infrastructure.
 Overall, the workshop participants concluded that the approach filled gap in evidence and will greatly assist in the development of new cycling projects.
 
@@ -630,8 +626,9 @@ Specific suggestions from the workshop included the suggestion to align scenario
 In a subsequent interview with a practitioner using the evidence generated by the CRUSE approach in their everyday work, we received the following feedback.
 The outputs were a "great tool for getting started with project outline documents" and "ideal for generating a strategic rationale for estimating demand and building the business case in the absence of cycle count data" (Declan Keenan, Senior Transport Planner working on active travel, personal communication).
 Declan also noted the alignment between local knowledge, cycle count data, and the outputs of the approach: "It's a good representation of what's going on" and the networks allign well in terms of network "shape" and the proportion of trips of trips on different parts of the network.
-There were two suggestions from Declan which have not yet been implemented: the provision of data showing only "gold standard" POWSCAR data, and the need for training on the tool to ensure that all staff can use it effectively.
-These, and other potential improvements, are discussed in the next section.
+
+Findings from the qualitative results also suggest changes which have not been implemented due to time constraints, including the provision of route netework data showing only "gold standard" POWSCAR data (we did make this data available in the data downloads page), the need for further validation of results (especially in rural areas where counter datasets are scarce) and the need for training on the tool to ensure that it is well-understood and used effectively.
+These and other potential areas for further research and development are discussed in the next section.
 
 # Discussion {#sec-discussion}
 
