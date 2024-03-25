@@ -8,3 +8,8 @@ _site/
 /.luarc.json
 _freeze/
 .Rproj.user
+*.log
+*.spl
+*.aux
+*.bbl
+*.blg
