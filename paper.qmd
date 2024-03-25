@@ -5,6 +5,7 @@ bibliography:
   # cruse.bib
   - bibliography.bib
   - cruse.bib
+  - references.bib
 csl: apa.csl
 editor:
   markdown:
@@ -167,7 +168,15 @@ In @sec-discussion, we discuss limitations and possible future improvements to t
 
 Tools for estimating geographical distribution of cycling potential have advanced substantially in recent years.
 Developed by researchers and developers in academic, public and private sectors, they have evolved from simple area-based static models tailored to specific regions to more complex and (in some cases) more generalizable tools.
+These tools can be considered as a specific application of the concept of planning support systems (PSS) , which are designed to help planners and decision-makers to make more informed decisions [@geertman2009].
 Outputs include maps with results available at several levels of analysis with levels of availability ranging from being only available to researchers and in static maps to open access mapping systems available to the public.
+
+Previous studies have applied the concept of PSS to specific modes, including walking [@bencekri2024], public transport [@barmentlo2012] and cycling [@bencekri2023].
+While such prior work provides insight into the potential for approaches to transport planning that are both data-driven and participatory, the focus of this paper is on tools that focus attention on the *geographic distribution* of cycling potential and which answer the question "where to build".
+Not all papers reviewed in this section classify themselves as, or even mention, PSS, but all of them can be considered as PSS.
+This paper is informed by the thinking underlying PSS, including the idea that the resulting tools are more effective if they are modular and can inter-link with other tools and processes in the planning process: PSS can be conceived as a "toolbox with separate instruments that can work and talk to each other effectively (as in the open systems concept) and that will be selectively applied in varying configurations to support a particular phase in the planning process" [@geertman2002].
+We share this conception of PSS, emphasizing the benefits of a focus on a particular mode (cycling) and a particular phase in the planning process (strategic network development).
+
 Some of the most relevant existing tools are summarised below and presented in @tbl-tools.
 
 ```{r}
@@ -192,9 +201,9 @@ knitr::kable(tools, caption = "Summary of existing tools for estimating cycling 
   kableExtra::column_spec(4, width = "5em")
 ```
 
-Area-based tools were developed first.
-Parkin and colleagues presented a regression model to estimate the percentage of cycling trips to work in England and Wales based on socioeconomic, transportation, and physical factors at the small area (wards) level in 2007 [@parkin_estimation_2007].
+Area-based approaches were developed before network-based tools, such as a 2007 regression-based model to estimate the percentage of cycling trips to work in England and Wales based on socioeconomic, transportation, and physical factors at the small area (wards) level in 2007 [@parkin_estimation_2007].
 They found that areas with a higher percentage of females, non-whites, car ownership, lower socioeconomic classes, income, distance to work, population density, poor highway conditions, hills, rainfall, and fewer off-road bicycle routes tended to have a lower proportion of cycling to work.
+The approach also generated "forecasts for potential levels of bicycle use" with with increases in off-road routes, improvements of highway and, conversely, increases in car ownership and distance to work leading to decreases in cycling to work.
 
 Three years later, Transport for London created the Analysis of Cycling Potential (ACP) tool based on a mode choice model that assesses the likelihood of trips being cycled, with data from the TfL London Travel Demand Survey as its primary input.
 The tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London to guide local cycling initiatives, such as where new hire 'docking stations' should go.
@@ -600,6 +609,15 @@ As highlighted in a paper on cycling infrastructure preferences based on a case 
 
 The CRUSE Tool can help both in terms of describing the current situation, and also prioritise investment in those direct routes with high cycling potential that lack adequate cycling infrastructure [@caulfield2012].
 It will also support reporting for the RISM Directive on road casualties as part of the road safety management system.
+
+CRUSE is a "great tool for getting started with project outline documents". It's an "ideal tool for generating a strategic rationale for estimating demand and building the business case in the absence of cycle count data" (Declan Keenan, Senior Transport Planner working on active travel, personal communication).
+"It's a good representation of what's going on"
+
+"I like to know that the data on the county maps is from POWSCAR data which is gold standard".
+
+
+
+
 
 ## Comparison with other tools and contribution to the field
 
