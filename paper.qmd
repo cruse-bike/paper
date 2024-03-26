@@ -686,8 +686,11 @@ During a conference in Sligo where we presented prelimary results, a stakeholder
 In response, manual edits were made to the OSM network, and the results currently on the website reflect these changes.
 However, there are many other potential errors in the OSM data that have not been corrected.
 Future work could mitigate this by integrating the approach more closely with OSM (for example by providing links to enable one-click edits of OSM when users click on a route segment) or by setting up a workshop to 'crowdsource' corrections to the OSM data.
+Furthermore, because there are multiple possible users of the tool with different starging points, workshops and training events could be valuable if not essential to ensure that the tool is used effectively.
+Such events could bring together stakeholders from advocacy groups, local authorities, and national governments.
+The siloed nature of transport planning means that such diverse stakeholders are rarely the same room, meaning that a 'wide boundary' outcome of the tool could be to bring these groups together (if workshops based on the tool are successful).
 
-A limitation of the approach is that the results are 'static', reducing its ability to support monitoring of growth in cycling, upgrades of existing cycling infrastructure and dynamic (year-by-year) exposure information to estimate crash rates.
+Another limitation of the approach is that the results are 'static', reducing its ability to support monitoring of growth in cycling, upgrades of existing cycling infrastructure and dynamic (year-by-year) exposure information to estimate crash rates.
 Exposure information is a key part of the the European RISM Directive, for reporting collision rates of vulnerable road users by 2024.
 These factors mean that the tool can be seen as an open access 'leverage point', providing key information for and supporting ambitious plans in many aspects the planning system, from network design to post-build monitoring [@lovelace2020].
 
