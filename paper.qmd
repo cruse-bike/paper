@@ -505,7 +505,7 @@ digraph {
          C2a [label = 'CRUSE\ncounty level results']
          C2 [label = 'CRUSE\nnational map']
          B2 [label = 'CRUSE\nlanding page']
-         A2 [label = 'Non professional\nuser'] 
+         A2 [label = 'Non-professional\nuser'] 
 }
 
    subgraph cluster_1 {
@@ -534,6 +534,7 @@ digraph {
   C -> D
   C2 -> C2a
   C2 -> C2b
+  C2a -> C2b
   C2b -> C2b1
   D -> Da 
   D -> Db 
