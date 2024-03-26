@@ -229,12 +229,13 @@ Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland, we
 outline the underlying methods, including disaggregation of
 origin-destination data, incorporation of additional trip purposes,
 routing, scenario generation, and development of an intuitive user
-interface. Commissioned and used by Transport Infrastructure Ireland,
-CRUSE provides estimates of current and potential future cycling levels
-under `snapshot' scenarios to inform investment decisions. The publicly
-available results at https://cruse.bike/ enable planners, engineers, and
-other stakeholders to make more evidence-based decisions. CRUSE goes
-beyond previous work by: modeling networks at high spatial resolution;
+interface that has been tested and used by practitioners. Commissioned
+and used by Transport Infrastructure Ireland, CRUSE provides estimates
+of current and potential future cycling levels under `snapshot'
+scenarios to inform investment decisions. The publicly available results
+at https://cruse.bike/ enable planners, engineers, and other
+stakeholders to make more evidence-based decisions. CRUSE goes beyond
+previous work by: modeling networks at high spatial resolution;
 simulating multiple trip purposes (social, shopping, personal utility,
 recreational, and cycle touring) in addition to using official
 origin-destination data; and providing estimates of `quietness' (a proxy
@@ -619,9 +620,18 @@ presented in Figure~\ref{fig-trip-purposes}.
 
 }
 
-\caption{\label{fig-trip-purposes}Trip purposes used in the CRUSE Tool.}
+\caption{\label{fig-trip-purposes}Everyday trip purposes used in the
+CRUSE Tool.}
 
 \end{figure}%
+
+Following feedback from stakeholders, we added another, `non-everyday'
+trip purpose in an extension phase: cycle tourism. As outlined in the
+CRUSE Extension report {[}reference and link to be added on
+publication{]}, this involved developing an inter-county spatial
+interaction model to estimate the number of trips between each county
+for cycle tourism, with trip attractors including campsites and major
+international transport hubs.
 
 \subsection{Routing}\label{routing}
 
@@ -798,11 +808,33 @@ children may be less likely to own ebikes than adults.
 
 \subsection{User interface}\label{sec-ui}
 
-The CRUSE web application is statically hosted, meaning that it can be
-accessed without the need for a server running software such as the R
-package `shiny' or Python packages such as `streamlit' or `flask' in the
-background \citep{wickham2021}. Its landing page is illustrated in
-Figure~\ref{fig-landing}).
+The CRUSE web application is statically hosted, meaning it does not
+require a server running software such as the R package `shiny' or
+Python packages such as `streamlit' or `flask' in the background
+\citep{wickham2021}. This reduces hosting costs and the maintenance
+burden of the tool compared with tools such as the PCT, and makes the
+map-based interface more responsive, using the recently developed
+`MapLibre' JavaScript package and `PMTiles' ``cloud native'' vector tile
+format \citep{gonçalves2023}. The default view in landing page is of a
+map of Ireland with county level results for the \% trips that could be
+made by cycling under the `Go Dutch' scenario, highlighting the intended
+use case for strategic cycle network planning and level of ambition. The
+key results, route network results, are available within an instant by
+zooming in on the map illustrated in Figure~\ref{fig-landing}: beyond a
+certain zoom level the network view appears. This differs from the user
+interface in tools such as the PCT and BiclaR which force users to click
+on a county before the key network results become visible: to get to the
+network view in the PCT takes around 10 seconds and multiple clicks,
+compared with simply zooming in on the landing page for CRUSE.
+
+Other improvements to the user interface in the national map on the
+landing page include a search bar in the top left and clearer legend for
+each network visualisation option (users can select any scenario or
+quietness or gradient depending on their needs). Following feedback from
+user testing, a `geolocate' and `full screen' button were added in the
+top right, enabling users to `zoom' to their current location and to
+focus on the detailed geographic results, as shown in
+Figure~\ref{fig-landing}.
 
 \begin{figure}
 
@@ -918,7 +950,7 @@ physically separated from traffic and pedestrians'' \citep{walking2021}.
 The results for the Dublin area could help prioritise investment in
 cycling infrastructure in the city.
 
-\subsection{Selected qualitative results}\label{sec-qualitative}
+\subsection{Stakeholder engagement and feedback}\label{sec-qualitative}
 
 Thoughout the project, we undertook a series of workshops and interviews
 with stakeholders in Ireland to gather feedback on the approach and
@@ -957,11 +989,10 @@ county, although this functionality is not available in the landing page
 map due to other feedback requesting a simpler interface. In comparison
 with another tool (the National Transport Authority's cycling propensity
 tool), the CRUSE tool was seen by practitioners in Kildare as more
-user-friendly and intuitive, with the ability to generate evidence at
-the route level, which is crucial for planning new cycling
-infrastructure. Overall, the workshop participants concluded that the
-approach filled gap in evidence and will greatly assist in the
-development of new cycling projects.
+user-friendly, with the ability to generate evidence at the route level,
+which is crucial for planning new cycling infrastructure. Overall, the
+workshop participants concluded that the approach filled gap in evidence
+and will greatly assist in the development of new cycling projects.
 
 During the workshop with practitioners in Limerick, the estimates of
 Baseline and Go Dutch potential at the network levels were found to
@@ -1073,16 +1104,59 @@ grow. However, the approach is not without limitations and does not meet
 all requirements in Ireland or indeed any country where the methods are
 applied.
 
-A limitation of the approach as implemented in the CRUSE Tool is that
-the results are `static', reducing its ability to support monitoring of
-growth in cycling, upgrades of existing cycling infrastructure and
-dynamic (year-by-year) exposure information to estimate crash rates.
-Exposure information is a key part of the the European RISM Directive,
-for reporting collision rates of vulnerable road users by 2024. These
-factors mean that the tool can be seen as an open access `leverage
-point', providing key information for and supporting ambitious plans in
-many aspects the planning system, from network design to post-build
-monitoring \citep{lovelace2020}.
+\subsection{Limitations and future
+research}\label{limitations-and-future-research}
+
+The approach has a number of limitations that should be understood by
+practitioners, researchers, advocates, policy makers using the tool. As
+highlighted in Section~\ref{sec-qualitative}, we were only able to
+compare the results with a small number of cycle counters and based on
+feedback from workshops. As outlined in the CRUSE extension report
+{[}reference to be added on publication{]}, we also undertook validation
+against Strava data. However, more data is needed to better understand
+the accuracy of the baseline results, especially for the `non-POWSCAR'
+purposes. We hope this becomes possible as Ireland's cycle counter
+network expands, allowing refinements to the approach (espcially the
+spatial interaction model and parameters) to be made. Changes that could
+help mitigate this limitation on the user interface side include
+providing results with confidence intervals or as categories of cycling
+potential, rather than as central estimates, and the visualistion of the
+`POWSCAR' network (which is based on Census data) in the web
+application.
+
+A limitation associated with the approach is its reliance on
+OpenStreetMap (OSM) data. The `cycle friendliness' of a route is based
+on the OSM tags and the routes themselves are generated by the
+CycleStreets routing engine, which is based on OSM data. During a
+conference in Sligo where we presented prelimary results, a stakeholder
+with local knowledge pointed out that a quiet route along the canal was
+not being followed. In response, manual edits were made to the OSM
+network, and the results currently on the website reflect these changes.
+However, there are many other potential errors in the OSM data that have
+not been corrected. Future work could mitigate this by integrating the
+approach more closely with OSM (for example by providing links to enable
+one-click edits of OSM when users click on a route segment) or by
+setting up a workshop to `crowdsource' corrections to the OSM data.
+Furthermore, because there are multiple possible users of the tool with
+different starging points, workshops and training events could be
+valuable if not essential to ensure that the tool is used effectively.
+Such events could bring together stakeholders from advocacy groups,
+local authorities, and national governments. The siloed nature of
+transport planning means that such diverse stakeholders are rarely the
+same room, meaning that a `wide boundary' outcome of the tool could be
+to bring these groups together (if workshops based on the tool are
+successful).
+
+Another limitation of the approach is that the results are `static',
+reducing its ability to support monitoring of growth in cycling,
+upgrades of existing cycling infrastructure and dynamic (year-by-year)
+exposure information to estimate crash rates. Exposure information is a
+key part of the the European RISM Directive, for reporting collision
+rates of vulnerable road users by 2024. These factors mean that the tool
+can be seen as an open access `leverage point', providing key
+information for and supporting ambitious plans in many aspects the
+planning system, from network design to post-build monitoring
+\citep{lovelace2020}.
 
 \section{Conclusions}\label{sec-conclusions}
 
