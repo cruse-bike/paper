@@ -1,0 +1,11 @@
+Trip purpose,Description,Primary source(s),Confidence
+Work (commute),Commuting to/from workplaces,Census 2016 POWSCAR Data,High confidence - data both origins and destinations for trip purposes
+Primary Education,Primary school trips,Census 2016 POWSCAR Data; Dept. of Education Schools database,High confidence - data both origins and destinations for trip purposes
+Secondary Education,Secondary school trips,Census 2016 POWSCAR Data; Dept. of Education Schools database,High confidence - data both origins and destinations for trip purposes
+Tertiary Education,Tertiary education trips,"Census 2016 POWSCAR Data
+; Geodirectory categories for 'Tertiary Education' and 'Other Education'",High confidence - data both origins and destinations for trip purposes
+Social,"NHTS classification, including trips to/from sports facilities, leisure, and cultural destinations (e.g. restaurants, cinemas, gyms etc.)",Trip rates from NHTS; Geodirectory businesses classified according to relevant NACE codes,"Medium Confidence - Method should identify clusters of activity for this trip purpose, although individual trips or destinations come with significant uncertainty"
+Shopping,"NHTS classification, including trips to/from supermarkets and shops",Trip rates from NHTS; Geodirectory businesses classified according to relevant NACE codes,"Medium Confidence - Method should identify clusters of activity for this trip purpose, although individual trips or destinations come with significant uncertainty"
+Personal/other,"Combination of two NHTS classifications, and includes trips to medical, personal services and others",Trip rates from NHTS; Geodirectory businesses classified according to relevant NACE codes,"Medium Confidence - Method should identify clusters of activity for this trip purpose, although individual trips or destinations come with significant uncertainty"
+Tourism/recreational,Trips by non-resident visitors to/from visitor attractions,Geodirectory listings for accommodation (origins) and destinations (destinations); F ilte Ireland accommodation database; F ilte Ireland attraction database,Low confidence - lack of data regarding tourist trip rates
+Public Transport,Trips to/from public transport,NTA Heavy Rail Census,

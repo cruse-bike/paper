@@ -1,7 +1,7 @@
 % Options for packages loaded elsewhere
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL paper-v1.tex   Fri Mar 22 15:52:20 2024
-%DIF ADD paper.tex      Sat Mar 23 13:07:02 2024
+%DIF DEL paper-v1.tex   Mon Mar 25 10:53:38 2024
+%DIF ADD paper.tex      Mon Mar 25 20:02:06 2024
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
@@ -150,12 +150,13 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-%DIF 134c148
+%DIF 134-135c148-149
 %DIF <   pdftitle={CRUSE to Safe Cycling in Ireland},
+%DIF <   pdfauthor={Robin Lovelace; Joey Talbot; Eugeni Vidal-Tortosa; Hussein Mahfouz; Elaine Brick; Peter Wright; Gary O'Tool; Dan Brennan; Suzanne Meade},
 %DIF -------
-  pdftitle={Cycle Route Uptake and Scenario Estimation (CRUSE): an open and nationally scalable approach for strategic cycle network planning tool development}, %DIF > 
+  pdftitle={Cycle Route Uptake and Scenario Estimation (CRUSE): an approach for developing strategic cycle network planning tools}, %DIF > 
+  pdfauthor={Robin Lovelace; Joey Talbot; Eugeni Vidal-Tortosa; Hussein Mahfouz; Elaine Brick; Peter Wright; Gary O'Toole; Dan Brennan; Suzanne Meade}, %DIF > 
 %DIF -------
-  pdfauthor={Robin Lovelace; Joey Talbot; Eugeni Vidal-Tortosa; Hussein Mahfouz; Elaine Brick; Peter Wright; Gary O'Tool; Dan Brennan; Suzanne Meade},
   pdfkeywords={Cycling, Open-source, Road Safety, Active Travel},
   colorlinks=true,
   linkcolor={blue},
@@ -226,16 +227,31 @@
 \DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
 \DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
 \DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF LISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
 %DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
 
 \begin{document}
 
 \begin{frontmatter}
-\title{\DIFaddbegin \DIFadd{Cycle Route Uptake and Scenario Estimation (}\DIFaddend CRUSE\DIFdelbegin \DIFdel{to Safe Cycling in Ireland }\DIFdelend \DIFaddbegin \DIFadd{): an open and
-nationally scalable approach for strategic cycle network planning tool
-development }\DIFaddend \\\DIFdelbegin %DIFDELCMD < \large{An Open Source Tool to
+\title{\DIFaddbegin \DIFadd{Cycle Route Uptake and Scenario Estimation (}\DIFaddend CRUSE\DIFdelbegin \DIFdel{to Safe Cycling in Ireland }%DIFDELCMD < \\\large{An Open Source Tool to
 %DIFDELCMD < Support Active Travel} %%%
-\DIFdelend \DIFaddbegin \large{A case study of Ireland} \DIFaddend }
+\DIFdelend \DIFaddbegin \DIFadd{): an approach
+for developing strategic cycle network planning tools}\DIFaddend }
 \author[1]{Robin Lovelace%
 \corref{cor1}%
 }
@@ -260,7 +276,7 @@ development }\DIFaddend \\\DIFdelbegin %DIFDELCMD < \large{An Open Source Tool t
 %
 }
 
-\author[2]{Gary O'Tool%
+\author[2]{Gary O'\DIFdelbegin \DIFdel{Tool}\DIFdelend \DIFaddbegin \DIFadd{Toole}\DIFaddend %
 %
 }
 
@@ -308,59 +324,58 @@ levels could greatly assist in achieving this goal.
 }%DIFDELCMD < 
 
 %DIFDELCMD < %%%
-\DIFdel{This paper describes the design, features and potential use of the }\DIFdelend \DIFaddbegin \DIFadd{This paper describes an approach to the development of strategic cycle
-network planning tools. Based on our experience developing and deploying
-the }\DIFaddend Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland\DIFdelbegin \DIFdel{was
-commissioned to support cycle network planning, safety interventions, business cases and project evaluation. The resulting web application is }\DIFdelend \DIFaddbegin \DIFadd{,
-we outline the methods used to generate the evidence presented in the
-tool, including disaggregation of origin-destination data, additional
-trip purposes, routing, scenarios of cycling potential, and the user
-interface. The CRUSE Tool provides estimates of cycling currently and
-under four scenarios of cycling potential: Near Market, Climate Action
-Plan, Go Dutch, and Ebike. The tool was commissioned by Transport
-Infrastructure Ireland and is publicly }\DIFaddend available at
-\url{https://cruse.bike/}, enabling planners, engineers, and other
-stakeholders to make more evidence-based decisions. CRUSE goes beyond
-previous work \DIFdelbegin \DIFdel{in several important ways. It models }\DIFdelend \DIFaddbegin \DIFadd{by: modelling }\DIFaddend networks at high levels of geographic
-resolution\DIFdelbegin \DIFdel{, simulates a wide range of trips
-including recreational, }\DIFdelend \DIFaddbegin \DIFadd{; simulating multiple trip purposes (}\DIFaddend social, shopping and
-personal \DIFdelbegin \DIFdel{trips}\DIFdelend \DIFaddbegin \DIFadd{utility trips plus recreational and cycle touring trips)}\DIFaddend , in
-addition to \DIFaddbegin \DIFadd{using official data on }\DIFaddend trips to work and \DIFdelbegin \DIFdel{primary, secondary and tertiary education
+\DIFdelend This paper describes \DIFdelbegin \DIFdel{the design, features and potential use of }\DIFdelend \DIFaddbegin \DIFadd{an approach for developing strategic cycle network
+planning tools. Based on our experience developing and deploying }\DIFaddend the
+Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland\DIFdelbegin \DIFdel{was
+commissioned to support cycle network planning, safety interventions, business cases and project evaluation. The resulting web application is
+available at }%DIFDELCMD < \url{https://cruse.bike/}%%%
+\DIFdel{, enabling }\DIFdelend \DIFaddbegin \DIFadd{, we
+outline the underlying methods, including disaggregation of
+origin-destination data, incorporation of additional trip purposes,
+routing, scenario generation, and development of an intuitive user
+interface. Commissioned and used by Transport Infrastructure Ireland,
+CRUSE provides estimates of current and potential future cycling levels
+under `snapshot' scenarios to inform investment decisions. The publicly
+available results at https://cruse.bike/ enable }\DIFaddend planners, engineers, and
+other stakeholders to make more evidence-based decisions. CRUSE goes
+beyond previous work \DIFdelbegin \DIFdel{in several important ways. It models }\DIFdelend \DIFaddbegin \DIFadd{by: modeling }\DIFaddend networks at high \DIFdelbegin \DIFdel{levels of geographic resolution, simulates a wide range of trips
+including recreational, }\DIFdelend \DIFaddbegin \DIFadd{spatial resolution;
+simulating multiple trip purposes (}\DIFaddend social, shopping\DIFdelbegin \DIFdel{and personal trips,
+}\DIFdelend \DIFaddbegin \DIFadd{, personal utility,
+recreational, and cycle touring) }\DIFaddend in addition to \DIFdelbegin \DIFdel{trips to work and primary, secondary and tertiary education
 locations. The tool provides key `denominator' information to enable
 reporting of collision rates per billion km cycled.
 }%DIFDELCMD < 
 
 %DIFDELCMD < %%%
 \DIFdel{Another key feature of CRUSE is its use of frequently-updated
-OpenStreetMap data for
-route calculation and ``cycle friendliness''
-estimates of all links on the network. CRUSE provides }\DIFdelend \DIFaddbegin \DIFadd{education
-locations; provision of estimates of `quietness' (a proxy for
-cyclability) at the route segment level; and its provision of }\DIFaddend three
-network types: \DIFdelbegin \DIFdel{the }\DIFdelend `Fastest'\DIFdelbegin \DIFdel{network highlights routes for directness;
-`Quietest' prioritises cycle friendliness, and `}\DIFdelend \DIFaddbegin \DIFadd{, `}\DIFaddend Balanced' \DIFdelbegin \DIFdel{represents a
+OpenStreetMap data for route calculation and ``cycle friendliness''
+estimates of all links on the network.
+CRUSE provides three network types : the }\DIFdelend \DIFaddbegin \DIFadd{using official
+origin-destination data; and providing estimates of `quietness' (a proxy
+for cyclist comfort and route preference) at the route segment level.
+Three network types --- }\DIFaddend `Fastest'\DIFdelbegin \DIFdel{network highlights routes for directness;
+`Quietest'prioritises cycle friendliness}\DIFdelend \DIFaddbegin \DIFadd{, `Balanced'}\DIFaddend , and `\DIFdelbegin \DIFdel{Balanced' represents a
 balance between speed and comfort. Trips are generated based on origin
-and destination data from the 2016 Census in
-combination with modeled
+and
+destination data from the 2016 Census in combination with modeled
 demand data to estimate current and potential future cycling levels at
-area, route, and network levels for each county in Ireland.
-}%DIFDELCMD < 
+area, route, and network levels for each county in Ireland. }%DIFDELCMD < 
 
 %DIFDELCMD < %%%
-\DIFdel{For investment in cycling to
-deliver on the huge potential benefits,
-cycling must become safer. With growth in the ebike market, CRUSE will
-help inform inter-urban and rural networks to support the transfer of trips to sustainable modes for longer journeys. Provision of open access
+\DIFdel{For investment in cycling to deliver on the huge potential benefits, cycling must become safer. With growth in the
+ebike market, CRUSE will
+help inform inter-urban and rural networks to support the transfer of
+trips to sustainable modes for longer journeys. Provision of open access
 data in a publicly available web tool will address the challenges faced
 by counties across Ireland in meeting their sustainability commitments.
 The experience of developing a deploying CRUSE are relevant to countries
-with sustainable transport policies worldwide}\DIFdelend \DIFaddbegin \DIFadd{and `Quietest' to help plan both
-arterial and residential cycle networks. Workshops and unstructure
-interview is stakeholders show that the tool is already being used in
-practice, to inform urban, inter-urban and rural network development.
-The approach and methods for strategic cycle network development tools
-outlined in this paper can be applied and built-on in other places to
-support the generation of evidence needed to support ambitious cycling
+with sustainable transport policies worldwide}\DIFdelend \DIFaddbegin \DIFadd{Quietest' --- help
+plan both arterial and residential cycle networks. Workshops and
+unstructured interviews with stakeholders show that the tool is already
+being used in practice to inform urban, inter-urban, and rural network
+planning. The approach is flexible and open-source, allowing the
+underlying ideas and code to be adapted, supporting effective cycling
 policies and interventions internationally}\DIFaddend .
 \end{abstract}
 
@@ -379,15 +394,15 @@ policies and interventions internationally}\DIFaddend .
 
 \section{Introduction}\label{introduction}
 
-\DIFdelbegin \DIFdel{High energy transport systems are a major contributor to climate change
-}\DIFdelend \DIFaddbegin \DIFadd{Transport systems dominated by heavy and powerful private cars are
-inefficient, dangerous, and unhealthy. Cars are a major and growing
+\DIFdelbegin \DIFdel{High energy transport systems }\DIFdelend \DIFaddbegin \DIFadd{Transport systems dominated by heavy and powerful private cars are
+inefficient, dangerous, and unhealthy. Cars }\DIFaddend are a major \DIFdelbegin \DIFdel{contributor to climate change
+}\DIFdelend \DIFaddbegin \DIFadd{and growing
 source of greenhouse gas emissions causing climate change
 \mbox{%DIFAUXCMD
-\citep{winkler2023}}\hskip0pt%DIFAUXCMD
+\citep{winkler2023}}\hspace{0pt}%DIFAUXCMD
 }\DIFaddend , a leading cause of premature death and injury due
 to road traffic collisions \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
-\citep{globals2018} }\hskip0pt%DIFAUXCMD
+\citep{globals2018} }\hspace{0pt}%DIFAUXCMD
 }\DIFaddend , and a cause of disease
 due to \DIFdelbegin \DIFdel{airborne and noise pollutants.
 Conversely, evidence-based and effective transport }\emph{\DIFdel{policies}} %DIFAUXCMD
@@ -399,25 +414,27 @@ save lives.
 %DIFDELCMD < %%%
 \DIFdelend \DIFaddbegin \DIFadd{physical inactivity and air, noise and (from tyres) microplastic
 pollution \mbox{%DIFAUXCMD
-\citep{mattsson2023} }\hskip0pt%DIFAUXCMD
+\citep{mattsson2023} }\hspace{0pt}%DIFAUXCMD
 \mbox{%DIFAUXCMD
-\citep{welch2023} }\hskip0pt%DIFAUXCMD
+\citep{welch2023} }\hspace{0pt}%DIFAUXCMD
 \mbox{%DIFAUXCMD
-\citep{cavallaro2024}}\hskip0pt%DIFAUXCMD
+\citep{cavallaro2024}}\hspace{0pt}%DIFAUXCMD
 .
 }\DIFaddend Transport is responsible for 23\% of global greenhouse gas (GHG)
-emissions, 70\% of which are from road transport. Nearly half of these
-emissions (around 10\% of global emissions) are from passenger cars
-\citep{jaramillo2022}. The transport system encourages, enables and in
-some cases enforces unsustainable lifestyles. Services that are only
-accessible by car lock-in car dependency
+emissions, 70\% of which are from road transport\DIFdelbegin \DIFdel{. Nearly half of these
+}\DIFdelend \DIFaddbegin \DIFadd{, with passenger cars
+accounting for nearly half of transport }\DIFaddend emissions (around 10\% of global
+emissions) \DIFdelbegin \DIFdel{are from passenger cars
+}\DIFdelend \citep{jaramillo2022}. The transport system encourages,
+enables and in some cases enforces unsustainable lifestyles. Services
+that are only accessible by car lock-in car dependency
 \citep{gray2001, shergold2012, motte-baumvol2010}.
 
 \DIFdelbegin \DIFdel{Recognizing the growing evidence of such impacts of poorly designed and
 performing transport
 systems , }\DIFdelend \DIFaddbegin \DIFadd{Growing evidence of the negative impacts of car-dependent transport
-systems has led }\DIFaddend governments in many countries \DIFdelbegin \DIFdel{have }\DIFdelend \DIFaddbegin \DIFadd{to }\DIFaddend set targets and taken
-actions. In the context of climate, road safety and physicial inactivity
+systems has led }\DIFaddend governments in many countries \DIFdelbegin \DIFdel{have }\DIFdelend \DIFaddbegin \DIFadd{to }\DIFaddend set targets and \DIFdelbegin \DIFdel{taken }\DIFdelend \DIFaddbegin \DIFadd{take
+}\DIFaddend actions. In the context of climate, road safety and physicial inactivity
 crises, policies to improve transport systems can be classified
 according to the `Avoid-Shift-Improve' (ASI) framework
 \citep{jaramillo2022}. The ASI framework highlights the importance of
@@ -448,15 +465,16 @@ system (RSMS) for all public roads. Specifically, ``Member States shall
 ensure that the ranking of high accident concentration sections and the
 network safety ranking are carried out'' \citep{directiv2008}. Given
 that `safety' in this context is usefully quantified as the number of
-people killed and seriously injured (KSI) per distance traveled, the
+people killed \DIFdelbegin \DIFdel{and
+}\DIFdelend \DIFaddbegin \DIFadd{or }\DIFaddend seriously injured (KSI) per distance traveled, the
 directive requires estimation of distance traveled by mode, down to the
 road link level. For active modes, about which there is a paucity of
 data compared with motorized modes, this is a major challenge. Better
 data to inform road safety policies and interventions is a motivation
 for \DIFdelbegin \DIFdel{the CRUSE Tool
 outlined in this paper, and modeling active travel more broadly}\DIFdelend \DIFaddbegin \DIFadd{better estimates of `baseline' levels of physical activity at high
-levels of geographic resolution \mbox{%DIFAUXCMD
-\citep{tait2023}}\hskip0pt%DIFAUXCMD
+geographic resolutions \mbox{%DIFAUXCMD
+\citep{tait2023}}\hspace{0pt}%DIFAUXCMD
 }\DIFaddend .
 
 \DIFaddbegin \DIFadd{National governments are increasingly acting on the evidence. }\DIFaddend In
@@ -464,34 +482,41 @@ Ireland, the Road Safety Authority (RSA) has set the target of halving
 the number of road traffic deaths and serious injuries by 2030
 \citep{national2021}. Doing so while simultaneously enabling rapid
 uptake of active modes will require key \DIFdelbegin \DIFdel{active travel routes }\DIFdelend \DIFaddbegin \DIFadd{travel corridors }\DIFaddend to be
-identified \DIFdelbegin \DIFdel{and improved. A proactive approach to the }\DIFdelend \DIFaddbegin \DIFadd{`cycle proofed'. Cycling in Ireland represents only 3\% of
-total modal share as of the 2016 Census, but accounts for 20\% of
-serious injuries and 7\% of all fatalities, driving the }\DIFaddend development of
-cycling policy and infrastructure \DIFdelbegin \DIFdel{is taking place }\DIFdelend \DIFaddbegin \DIFadd{plans }\DIFaddend in Ireland. The main frameworks
-underpinning these efforts are the Climate Action Plan
-\citep{climate2022a}, the National Development Plan, and the National
-Roads 2040 strategy \citep{national2023}. These policy frameworks are
+identified and \DIFdelbegin \DIFdel{improved. A proactive approach to }\DIFdelend \DIFaddbegin \DIFadd{`cycle proofed'. Cycling in Ireland represents only 3\%
+of total modal share as of the 2016 Census, but accounts for 20\% of
+serious injuries and 7\% of all fatalities. Poor perception of safety
+has been found to represent the most important barrier to increased
+cycling in Ireland\mbox{%DIFAUXCMD
+\citep{brick2018}}\hspace{0pt}%DIFAUXCMD
+, and the need to improve road safety
+drives }\DIFaddend the development of \DIFaddbegin \DIFadd{national }\DIFaddend cycling policy and infrastructure
+\DIFdelbegin \DIFdel{is taking place in Ireland}\DIFdelend \DIFaddbegin \DIFadd{plans}\DIFaddend . The main frameworks underpinning these efforts are the Climate
+Action Plan \citep{climate2022a}, the National Development Plan, and the
+National Roads 2040 strategy \citep{national2023}.
+\DIFdelbegin \DIFdel{These policy frameworks are
 backed-up by public support for active travel interventions: while only
 3\% of trips in Ireland are made by cycling according to the latest
 Census data from 2016 ``83\% of respondents supported enhanced walking
-and cycling facilities'' \citep{sustaina2019}.
+and cycling facilities'' \mbox{%DIFAUXCMD
+\citep{sustaina2019}}\hspace{0pt}%DIFAUXCMD
+.
+}\DIFdelend 
 
 At the regional level \DIFaddbegin \DIFadd{within Ireland}\DIFaddend , the recently published Greater
-Dublin Area Transport Strategy \citep{greater} reinforces these findings
-\DIFaddbegin \DIFadd{of high support for and capability for cycling}\DIFaddend : ``nearly a quarter of
-adults cycle at least once a week in the Dublin Metropolitan Area'' with
-cycling in the Dublin area taking up to 60,000 cars off the road today.
-Extrapolating this on a per population basis across Ireland, with around
-40\% of the population living in Dublin, suggests that around 150,000
-cars could be removed nationwide just by achieving Dublin levels of
-cycling in all counties (notwithstanding existing cycling trips and
-differences in trip distances). 7 in 10 trips in Ireland are by car
-\citep{national} . Cycling has the potential to replace a large
-proportion of these trips: ``A high priority must also be given to
-cyclists, because trips by this mode have the potential to replace trips
-by private car, most specifically for short to medium distance trips,
-but increasingly for longer trips as ebikes extend the range of this
-mode'' \citep{greater}.
+Dublin Area Transport Strategy \citep{greater} \DIFdelbegin \DIFdel{reinforces these findings}\DIFdelend \DIFaddbegin \DIFadd{reveals the high support
+for and capability for cycling}\DIFaddend : ``nearly a quarter of adults cycle at
+least once a week in the Dublin Metropolitan Area'' with cycling in the
+Dublin area taking up to 60,000 cars off the road today. Extrapolating
+this on a per population basis across Ireland, with around 40\% of the
+population living in Dublin, suggests that around 150,000 cars could be
+removed nationwide just by achieving Dublin levels of cycling in all
+counties (notwithstanding existing cycling trips and differences in trip
+distances). 7 in 10 trips in Ireland are by car \citep{national} .
+Cycling has the potential to replace a large proportion of these trips:
+``A high priority must also be given to cyclists, because trips by this
+mode have the potential to replace trips by private car, most
+specifically for short to medium distance trips, but increasingly for
+longer trips as ebikes extend the range of this mode'' \citep{greater}.
 
 Further evidence of the importance of cycling in Ireland \DIFdelbegin \emph{\DIFdel{already}}
 %DIFAUXCMD
@@ -537,7 +562,7 @@ factors mean that the tool can be seen as an open access `leverage
 point', providing key information for and supporting ambitious plans in
 many aspects the planning system, from network design to post-build
 monitoring \mbox{%DIFAUXCMD
-\citep{lovelace2020}}\hskip0pt%DIFAUXCMD
+\citep{lovelace2020}}\hspace{0pt}%DIFAUXCMD
 }\DIFdelend \DIFaddbegin \DIFadd{, but also be useful for local network planning}\DIFaddend .
 
 \begin{figure}
@@ -570,21 +595,21 @@ available at }%DIFDELCMD < \url{https://cruse.bike/}%%%
 
 \end{figure}%
 
-This \DIFdelbegin \DIFdel{paper aims to }\DIFdelend \DIFaddbegin \DIFadd{describes }\DIFaddend describe the design, features and potential use of \DIFdelbegin \DIFdel{the CRUSE Tool}\DIFdelend \DIFaddbegin \DIFadd{an
-approach to strategic cycle network planning that is open, scalable, and
-evidence-based. We label the approach Cycle Route Uptake and Scenario
-Estimation (CRUSE) and present a case study of its application in
-Ireland, the results of which are publicly available at
-}\href{https://cruse.bike/}{\DIFadd{cruse.bike}} \DIFadd{in the CRUSE Tool for Ireland,
-the landing page of which is illustrated in Figure~\ref{fig-landing}}\DIFaddend . In
-Section~\ref{sec-methods}, we outline the methods used to generate the
-evidence presented in the CRUSE Tool. In Section~\ref{sec-results}, we
-present the results of the CRUSE Tool, including estimates of current
-cycling levels and future cycling potential at the national, regional
-and local levels. In Section~\ref{sec-discussion}, we discuss
-\DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{limitations and possible future improvements to the approach, and the
-}\DIFaddend implications of the results for \DIFdelbegin \DIFdel{policy and practice. In }\DIFdelend \DIFaddbegin \DIFadd{Ireland before making concluding remarks
-in }\DIFaddend Section~\ref{sec-conclusions}\DIFdelbegin \DIFdel{, we conclude
+This paper \DIFdelbegin \DIFdel{aims to describe the design, features and potential use of }\DIFdelend \DIFaddbegin \DIFadd{describes an approach to strategic cycle network planning
+tool development that is open, scalable, and evidence-based. We label
+the approach Cycle Route Uptake and Scenario Estimation (CRUSE) and
+present a case study of its application in Ireland, the results of which
+are publicly available at }\href{https://cruse.bike/}{\DIFadd{cruse.bike}} \DIFadd{in }\DIFaddend the
+CRUSE Tool \DIFaddbegin \DIFadd{for Ireland, the landing page of which is illustrated in
+Figure~\ref{fig-landing}}\DIFaddend . In Section~\ref{sec-methods}, we outline the
+methods used to generate the evidence presented in the CRUSE Tool. In
+Section~\ref{sec-results}, we present the results of the CRUSE Tool,
+including estimates of current cycling levels and future cycling
+potential at the national, regional and local levels. In
+Section~\ref{sec-discussion}, we discuss \DIFaddbegin \DIFadd{limitations and possible future
+improvements to the approach, and }\DIFaddend the implications of the results for
+\DIFdelbegin \DIFdel{policy and practice. In }\DIFdelend \DIFaddbegin \DIFadd{Ireland before making concluding remarks in
+}\DIFaddend Section~\ref{sec-conclusions}\DIFdelbegin \DIFdel{, we conclude
 the paper}\DIFdelend .
 
 \section{\DIFdelbegin \DIFdel{Methods and data}\DIFdelend \DIFaddbegin \DIFadd{Tools for estimating cycling
@@ -594,16 +619,57 @@ potential}\DIFaddend }\DIFdelbegin %DIFDELCMD < \label{sec-methods}
 \DIFaddend 
 
 \DIFdelbegin \DIFdel{The methods used to generate the evidence presented in the CRUSE Tool
-build on the }\DIFdelend \DIFaddbegin \DIFadd{Tools for estimating geographical distribution of cycling potential have
+build on the Propensity to Cycle Tool (PCT) , which was originally funded
+by the UK's Department for Transport and developed by a multi-university
+team.
+An important feature of the PCT is that it is open source and publicly available (at }\href{https://www.pct.bike/}{\DIFdel{www.pct.bike}}%DIFAUXCMD
+\DIFdel{) }\DIFdelend \DIFaddbegin \DIFadd{Tools for estimating geographical distribution of cycling potential have
 advanced substantially in recent years. Developed by researchers and
 developers in academic, public and private sectors, they have evolved
 from simple area-based static models tailored to specific regions to
-more complex and (in some cases) more generalizable tools. Outputs
-include maps with results available at several levels of analysis with
-levels of availability ranging from being only available to researchers
-and in static maps to open access mapping systems available to the
-public. Some of the most relevant existing tools are summarised below
-and presented in Table~\ref{tbl-tools}.
+more complex and (in some cases) more generalizable tools. These tools
+can be considered as a specific application of the concept of planning
+support systems (PSS) , which are designed to help planners and
+decision-makers to make more informed decisions \mbox{%DIFAUXCMD
+\citep{geertman2009}}\hspace{0pt}%DIFAUXCMD
+.
+Outputs include maps with results available at several levels of
+analysis with levels of availability ranging from being only available
+to researchers and in static maps to open access mapping systems
+available to the public.
+}
+
+\DIFadd{Previous studies have applied the concept of PSS to specific modes,
+including walking \mbox{%DIFAUXCMD
+\citep{bencekri2024}}\hspace{0pt}%DIFAUXCMD
+, public transport
+\mbox{%DIFAUXCMD
+\citep{barmentlo2012} }\hspace{0pt}%DIFAUXCMD
+and cycling \mbox{%DIFAUXCMD
+\citep{bencekri2023}}\hspace{0pt}%DIFAUXCMD
+. While such prior
+work provides insight into the potential for approaches to transport
+planning that are both data-driven and participatory, the focus of this
+paper is on tools that focus attention on the }\emph{\DIFadd{geographic
+distribution}} \DIFadd{of cycling potential and which answer the question ``where
+to build''. Not all papers reviewed in this section classify themselves
+as, or even mention, PSS, but all of them can be considered as PSS. This
+paper is informed by the thinking underlying PSS, including the idea
+that the resulting tools are more effective if they are modular and can
+inter-link with other tools and processes in the planning process: PSS
+can be conceived as a ``toolbox with separate instruments that can work
+and talk to each other effectively (as in the open systems concept) and
+that will be selectively applied in varying configurations to support a
+particular phase in the planning process'' \mbox{%DIFAUXCMD
+\citep{geertman2002}}\hspace{0pt}%DIFAUXCMD
+. We
+share this conception of PSS, emphasizing the benefits of a focus on a
+particular mode (cycling) and a particular phase in the planning process
+(strategic network development).
+}
+
+\DIFadd{Some of the most relevant existing tools are summarised below and
+presented in Table~\ref{tbl-tools}.
 }
 
 \begin{longtable}[t]{>{\raggedright\arraybackslash}p{13em}>{\raggedright\arraybackslash}p{15em}>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{5em}}
@@ -618,38 +684,39 @@ cycling potential.}}
 \DIFadd{Approach }& \DIFadd{Coverage and input data }& \DIFadd{Outputs and availability }& \DIFadd{License}\\
 \midrule
 \cellcolor{gray!10}{Bicycle share model, Parkin et al. (2007)} & \cellcolor{gray!10}{England and Wales, Journeys to work OD census data, at the small-area (wards) level} & \cellcolor{gray!10}{Static tables in academic paper} & \cellcolor{gray!10}{Proprietary}\\
-\DIFadd{Analysis of  Cycling Potential (ACP), Transport for London (2010, 2016) }& \DIFadd{London, London Travel Demand Survey }& \DIFadd{Static tables, graphs, and heatmaps, not publicly available }& \DIFadd{Proprietary}\\
+\DIFadd{Analysis of  Cycling Potential (ACP), Transport for London (2010}\DIFaddend , \DIFdelbegin \DIFdel{allowing its use by all stakeholders in the transport planning process
+\mbox{%DIFAUXCMD
+\citep{lovelace2017}}\hspace{0pt}%DIFAUXCMD
+. The PCT approach has had major policy impacts, as
+outlined in
+Research Excellence Framework (REF) impact case studies,
+which demonstrate that the tool ``revolutionized strategic cycle
+planning in England and Wales'' by overcoming the barriers }\DIFdelend \DIFaddbegin \DIFadd{2016) }& \DIFadd{London, London Travel Demand Survey }& \DIFadd{Static tables, graphs, and heatmaps, not publicly available }& \DIFadd{Proprietary}\\
 \cellcolor{gray!10}{Prioritization index, Larsen et al. (2013)} & \cellcolor{gray!10}{Montreal, Survey, Road safety, and OD data} & \cellcolor{gray!10}{Map-based heatmap, not publicly available} & \cellcolor{gray!10}{Proprietary}\\
 \DIFadd{Usage intensity index, Zhang et al. (2014) }& \DIFadd{Belo Horizonte, Survey, census, and OD data }& \DIFadd{Static tables and maps, not publicly available }& \DIFadd{Proprietary}\\
 \cellcolor{gray!10}{The Cycling Potential Tool (CPT), Phillips and Range (2017)} & \cellcolor{gray!10}{Scotland, Environmental and socioeconomic data, at the small area (output areas) level} & \cellcolor{gray!10}{Maps showing cycling potential in each area} & \cellcolor{gray!10}{Proprietary}\\
 \addlinespace
-\DIFaddend Propensity to Cycle Tool (PCT), \DIFdelbegin \DIFdel{which was originally funded
-by the UK's Department for Transport and developed by a multi-university
-team. An important feature of the PCT is that it is open source and publicly available (at }\href{https://www.pct.bike/}{\DIFdel{www.pct.bike}}%DIFAUXCMD
-\DIFdel{) ,
-allowing its use by all stakeholders in the transport planning process
-\mbox{%DIFAUXCMD
-\citep{lovelace2017}}\hskip0pt%DIFAUXCMD
-. The PCT approach has had major policy impacts, as
-outlined in Research Excellence Framework (REF) impact case studies,
-which demonstrate that the tool ``revolutionized strategic cycle
-planning in }\DIFdelend \DIFaddbegin \DIFadd{Lovelace et al. (2017) }& \DIFaddend England and \DIFdelbegin \DIFdel{Wales'' by overcoming the barriers }\DIFdelend \DIFaddbegin \DIFadd{Wales, Journeys to work and school OD census data, at the small area (LSOA) level }& \DIFadd{Online maps, graphs, tables, publicly available at www.pct.bike }& \DIFadd{Open source}\\
+\DIFadd{Propensity to Cycle Tool (PCT), Lovelace et al. (2017) }& \DIFadd{England and Wales, Journeys to work and school OD census data, at the small area (LSOA) level }& \DIFadd{Online maps, graphs, tables, publicly available at www.pct.bike }& \DIFadd{Open source}\\
 \cellcolor{gray!10}{The    Gross Potential for Cycling tool (CPC), Silva et al. (2021 and 2022)} & \cellcolor{gray!10}{21 Portuguese cities, Land use and socio-demographic data, at the small area (census tract) level} & \cellcolor{gray!10}{Static maps showing cycling potential in different areas} & \cellcolor{gray!10}{NA}\\
 \bottomrule
 
 \end{longtable}
 
-\DIFadd{Area-based tools were developed first. Parkin and colleagues presented a
-regression model to estimate the percentage of cycling trips to work in
-England and Wales based on socioeconomic, transportation, and physical
-factors at the small area (wards) level in 2007
-\mbox{%DIFAUXCMD
-\citep{parkin_estimation_2007}}\hskip0pt%DIFAUXCMD
+\DIFadd{Area-based approaches were developed before network-based tools, such as
+a 2007 regression-based model to estimate the percentage of cycling
+trips to work in England and Wales based on socioeconomic,
+transportation, and physical factors at the small area (wards) level in
+2007 \mbox{%DIFAUXCMD
+\citep{parkin_estimation_2007}}\hspace{0pt}%DIFAUXCMD
 . They found that areas with a higher
 percentage of females, non-whites, car ownership, lower socioeconomic
 classes, income, distance to work, population density, poor highway
 conditions, hills, rainfall, and fewer off-road bicycle routes tended to
-have a lower proportion of cycling to work.
+have a lower proportion of cycling to work. The approach also generated
+``forecasts for potential levels of bicycle use'' with with increases in
+off-road routes, improvements of highway and, conversely, increases in
+car ownership and distance to work leading to decreases in cycling to
+work.
 }
 
 \DIFadd{Three years later, Transport for London created the Analysis of Cycling
@@ -661,18 +728,18 @@ purposes in London to guide local cycling initiatives, such as where new
 hire `docking stations' should go. The tool does not use
 origin-destination data and cannot estimate cycling potential on
 specific routes \mbox{%DIFAUXCMD
-\citep{transport_for_london_analysis_2010}}\hskip0pt%DIFAUXCMD
+\citep{transport_for_london_analysis_2010}}\hspace{0pt}%DIFAUXCMD
 .
 }
 
 \DIFadd{Other tools that generate areal data to prioritize investment include a
 study that generated a `prioritization index' for Montreal, Canada
 \mbox{%DIFAUXCMD
-\citep{larsen_build_2013}}\hskip0pt%DIFAUXCMD
+\citep{larsen_build_2013}}\hspace{0pt}%DIFAUXCMD
 , a `usage intensity index' based on stated
 preferences in Belo Horizonte, Brazil, and a Cycling Potential Tool
 (CPT) for Scotland \mbox{%DIFAUXCMD
-\citep{phillips_development_2017}}\hskip0pt%DIFAUXCMD
+\citep{phillips_development_2017}}\hspace{0pt}%DIFAUXCMD
 . The CPT is
 composed of the base environmental module --- based on eight weighted
 factors (population density, hilliness, physical barriers, access to
@@ -686,7 +753,7 @@ access to services, and origin/destination).
 \DIFadd{A more recent areal-based approach is the designed the Gross Potential
 for Cycling (GPC) tool to prioritize areas for cycling infrastructure
 and other cycling measures \mbox{%DIFAUXCMD
-\citep{silva_gross_2021}}\hskip0pt%DIFAUXCMD
+\citep{silva_gross_2021}}\hspace{0pt}%DIFAUXCMD
 . The GPC uses two
 sets of indicators: population-based indicators (age, potential demand
 density, employment density and motorization rate) and area-based
@@ -696,17 +763,18 @@ considering topography, road hierarchy, and average congestion and
 presented on a scale from 5 }\DIFaddend to \DIFdelbegin \DIFdel{cycling
 investment imposed by lack of evidence on cycling
 potential\mbox{%DIFAUXCMD
-\citep{lovelace2023}}\hskip0pt%DIFAUXCMD
+\citep{lovelace2023}}\hspace{0pt}%DIFAUXCMD
 . }%DIFDELCMD < 
 
 %DIFDELCMD < %%%
-\DIFdel{The first version of the PCT was based on }\DIFdelend \DIFaddbegin \DIFadd{10. They are then combined into an
+\DIFdel{The first version of
+the PCT was based on }\DIFdelend \DIFaddbegin \DIFadd{10. They are then combined into an
 overall score, weighted by their impact on cycling according to the
 literature. The ranking of areas by the GPC are
 }\href{https://boost.up.pt/en/ferramentas/gpc}{\DIFadd{publicly available}} \DIFadd{and
 its practical value has been assessed through workshops
 \mbox{%DIFAUXCMD
-\citep{silva_revealing_2022}}\hskip0pt%DIFAUXCMD
+\citep{silva_revealing_2022}}\hspace{0pt}%DIFAUXCMD
 .
 }
 
@@ -718,20 +786,20 @@ Cycle Tool (PCT), first developed to estimate }\DIFaddend current and future \DI
 uptake of cycling for single stage }\emph{\DIFdel{travel to work}} %DIFAUXCMD
 \DIFdelend \DIFaddbegin \DIFadd{levels
 of cycling }\DIFaddend at desire line, zone, route, and route network levels \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
-\citep{lovelace2016}}\hskip0pt%DIFAUXCMD
+\citep{lovelace2016}}\hspace{0pt}%DIFAUXCMD
 . It was
 launched in April }\DIFdelend \DIFaddbegin \DIFadd{for
 case study cities \mbox{%DIFAUXCMD
-\citep{lovelace_mapping_2016}}\hskip0pt%DIFAUXCMD
+\citep{lovelace_mapping_2016}}\hspace{0pt}%DIFAUXCMD
 . The approach was
 scaled-up to estimate estimate the potential benefits of uptake at zone
 and desire line levels nationally, and launched as a publicly available
 web application in }\DIFaddend 2017 \DIFdelbegin \DIFdel{as the government-endorsed tool for strategic
 cycle network planning and part of the Cycling and Walking Investment
 Strategy \mbox{%DIFAUXCMD
-\citep{cycling2017}}\hskip0pt%DIFAUXCMD
+\citep{cycling2017}}\hspace{0pt}%DIFAUXCMD
 }\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
-\citet{lovelace2017}}\hskip0pt%DIFAUXCMD
+\citet{lovelace2017}}\hspace{0pt}%DIFAUXCMD
 }\DIFaddend . Extensions of the PCT
 approach have included estimation of benefits at the individual level
 \citep{woodcock2018}, addition of travel to school network
@@ -866,8 +934,8 @@ internationally, including in Ireland. The CycleStreets routing engine
 is based on OpenStreetMap (OSM) data, which is continuously updated by a
 global community of volunteers.
 
-CycleStreets' services can be used by anyone for free, but we
-commissioned a bespoke routing service for CRUSE, to enable:
+\DIFdelbegin \DIFdel{CycleStreets' services can be used by anyone for free , but }\DIFdelend \DIFaddbegin \DIFadd{While CycleStreets offers a free routing API, }\DIFaddend we commissioned a \DIFdelbegin \DIFdel{bespoke routing service for CRUSE, }\DIFdelend \DIFaddbegin \DIFadd{custom
+routing service }\DIFaddend to enable:
 
 \begin{itemize}
 \tightlist
@@ -993,18 +1061,17 @@ levels. The scenario is implemented as follows:
 
 \subsubsection{Climate Action Plan}\label{climate-action-plan}
 
-The Climate Action Plan scenario is loosely based on the Irish
-Government's
+The Climate Action Plan scenario \DIFdelbegin \DIFdel{is loosely based on }\DIFdelend \DIFaddbegin \DIFadd{models the transport emissions
+reductions targeted in }\DIFaddend the Irish Government's
 \href{https://www.gov.ie/en/publication/6223e-climate-action-plan-2021/}{Climate
-Action Plan 2021}, which contains policies for action to achieve a 51\%
-reduction in overall GHG emissions by 2030, on a path towards net-zero
-by 2050. For transport, this includes 500,000 extra walking, cycling and
-public transport trips per day by 2030. In terms of car travel, the
-target is to ``Increas{[}e{]} the proportion of kilometers driven by
-passenger electric cars to between 40 and 45\% by 2030, in addition to a
-reduction of 10\% in kilometers driven by the remaining internal
-combustion engine cars.'' This equates to a 5.5 to 6\% reduction in
-total car km driven.
+Action Plan 2021}, which \DIFdelbegin \DIFdel{contains policies for action to achieve }\DIFdelend \DIFaddbegin \DIFadd{aims for }\DIFaddend a 51\% \DIFdelbegin \DIFdel{reduction in overall GHG }\DIFdelend \DIFaddbegin \DIFadd{cut in overall greenhouse gas
+}\DIFaddend emissions by 2030 \DIFdelbegin \DIFdel{, on a path towards }\DIFdelend \DIFaddbegin \DIFadd{as part of the pathway to }\DIFaddend net-zero \DIFaddbegin \DIFadd{emissions }\DIFaddend by 2050.
+For transport, this includes 500,000 extra walking, cycling and public
+transport trips per day by 2030. In terms of car travel, the target is
+to ``Increas{[}e{]} the proportion of kilometers driven by passenger
+electric cars to between 40 and 45\% by 2030, in addition to a reduction
+of 10\% in kilometers driven by the remaining internal combustion engine
+cars.'' This equates to a 5.5 to 6\% reduction in total car km driven.
 
 To model this decrease in car driver km, cycling uptake increases in
 line with the Go Dutch scenario. However, we only model shift from
@@ -1071,21 +1138,31 @@ user groups.}
 The main result of the work presented in this paper is an open access
 web application and datasets on current and potential future cycling
 levels in Ireland, with evidence provided at county and route segment
-levels. Like the PCT on which CRUSE builds, a key feature of the results
-is that they are systematic and available for all counties, and most
-routes on which cycling is permitted, in Ireland. The full set of
-results are therefore too extensive to present in their entirety in this
-paper. Through the interactive web application, users can explore the
-data to generate the results that are most relevant to their needs,
-whether that is finding the cycling potential on a particular road or
-finding `weak links' or barriers in the cycle network associated with a
-particular school, work place or other destination.
+levels. Like \DIFdelbegin \DIFdel{the PCT on which CRUSE builds}\DIFdelend \DIFaddbegin \DIFadd{other national tools presented in Table~\ref{tbl-tools}}\DIFaddend , a
+key feature of the results is that \DIFdelbegin \DIFdel{they are systematic and
+available for all counties, and most
+routes on which cycling is permitted, in Ireland.
+The full set of results }\DIFdelend \DIFaddbegin \DIFadd{it provides a consistent and
+objective baseline for comparing cycling potentials in different areas.
+}
+
+\DIFadd{The approach generates estimates of cycling potential on every road in
+the country and }\DIFaddend are therefore too extensive to present in their entirety
+in this paper. Through the interactive web application, users can
+explore the data to generate the results that are most relevant to their
+needs, whether that is finding the cycling potential on a particular
+road or finding `weak links' or barriers in the cycle network associated
+with a particular school, work place or other destination.
 
 Instead of trying to show such use cases, of which there are many
 hundreds, we present a selection of results to illustrate the main
-features of the CRUSE Tool.
+features of the \DIFdelbegin \DIFdel{CRUSE Tool}\DIFdelend \DIFaddbegin \DIFadd{resulting evidence, in Section~\ref{sec-quantiative}. We
+also present some qualitative results based on workshops and interviews
+with stakeholders in Ireland, in Section~\ref{sec-qualitative}}\DIFaddend .
 
-To illustrate the results in urban areas, we took the top 4 cities in
+\DIFaddbegin \subsection{\DIFadd{Selected quantitative results}}\label{sec-quantiative}
+
+\DIFaddend To illustrate the results in urban areas, we took the top 4 cities in
 Ireland by population: Dublin City, Cork, Limerick and Galway (with city
 populations of 0.6, 0.2, 0.1 and 0.1 million respectively). In
 Figure~\ref{fig-city-results} we present the cycle route networks within
@@ -1128,7 +1205,90 @@ physically separated from traffic and pedestrians'' \citep{walking2021}.
 The results for the Dublin area could help prioritise investment in
 cycling infrastructure in the city.
 
-\section{Discussion}\label{sec-discussion}
+\DIFaddbegin \subsection{\DIFadd{Selected qualitative results}}\label{sec-qualitative}
+
+\DIFadd{Thoughout the project, we undertook a series of workshops and interviews
+with stakeholders in Ireland to gather feedback on the approach and
+resulting tool. The feedback was generally positive, with stakeholders
+commenting on the need for the tool, lack of data on cycling potential
+proving a barrier to decision-making and investment, and the potential
+for the tool. At an end of project workshop in December 2023,
+stakeholders were asked to provide feedback on the tool and its
+potential use in practice. Quotes and suggestions from these workshops,
+and a subsequent interview with a Senior Transport Planning using the
+evidence in their everyday work in Transport Infrastructure Ireland, and
+presented in this section (with quotes being attributed to named
+individuals where permission has been granted).
+}
+
+\DIFadd{Early in the project, we presented the approach to practitioners in
+Kildare and Limmerick. The feedback from the workshop in Kildare
+highlighted the need for the tool for practitioners at the county level,
+as highlighted in the following quote:
+}
+
+\begin{quote}
+\DIFadd{``It's a missing piece of evidence that will help new projects get
+built'' (Senior Engineer, Sustainable Transport \& Traffic Management,
+Kildare County Council)
+}\end{quote}
+
+\DIFadd{Practitioners in Kildare County Council that the evidence generated
+}\emph{\DIFadd{was already valuable}} \DIFadd{the development of new cycle routes,
+especially when making the case during planning applications. They
+emphasized that cycle networks are often fragmented, and the tool allows
+them to demonstrate how individual local schemes can contribute to a
+larger, interconnected network. Council officers expressed a preference
+for visualizations that directly compare the fast and quiet routes, as
+they recognize the importance of both types of routes (users can switch
+between the on the `Route types' page for each county although this
+functionality is not available in the landing page map due to other
+feedback requesting a simpler interface).
+}
+
+\DIFadd{In comparison with another tool (the National Transport Authority's
+cycling propensity tool), the CRUSE tool was seen by practitioners in
+Kildare as more user-friendly and intuitive, with the ability to
+generate evidence at the route level, which is crucial for planning new
+cycling infrastructure. Overall, the workshop participants concluded
+that the approach filled gap in evidence and will greatly assist in the
+development of new cycling projects.
+}
+
+\DIFadd{During the workshop with practitioners in Limerick, the estimates of
+Baseline and Go Dutch potential at the network levels were found to
+match well with local knowledge. The tool effectively highlighted the
+same sections on the transport network that experienced planners
+identified as priorities for investment in cycling, such as the South
+Circular Road. Limerick County Council expressed their interest in
+utilizing each network layer, particularly the quiet network, to support
+new cyclists who lack confidence to share space with motor traffic.
+Specific suggestions from the workshop included the suggestion to align
+scenarios with national strategy (resulting in the Climate Action Plan
+scenario) and to provide data downloads provided as `Shapefiles' for
+further analysis (now implemented although the download format is
+GeoPackage, an open standard for spatial data).
+}
+
+\DIFadd{In a subsequent interview with a practitioner using the evidence
+generated by the CRUSE approach in their everyday work, we received the
+following feedback. The outputs were a ``great tool for getting started
+with project outline documents'' and ``ideal for generating a strategic
+rationale for estimating demand and building the business case in the
+absence of cycle count data'' (Declan Keenan, Senior Transport Planner
+working on active travel, personal communication). Declan also noted the
+alignment between local knowledge, cycle count data, and the outputs of
+the approach: ``It's a good representation of what's going on'' and the
+networks allign well in terms of network ``shape'' and the proportion of
+trips of trips on different parts of the network. There were two
+suggestions from Declan which have not yet been implemented: the
+provision of data showing only ``gold standard'' POWSCAR data, and the
+need for training on the tool to ensure that all staff can use it
+effectively. These, and other potential improvements, are discussed in
+the next section.
+}
+
+\DIFaddend \section{Discussion}\label{sec-discussion}
 
 The aim of the paper was to describe the design, features and potential
 use of the \DIFdelbegin \DIFdel{CRUSE Tool}\DIFdelend \DIFaddbegin \DIFadd{`CRUSE' approach and resulting tool}\DIFaddend . As outlined in the
@@ -1152,7 +1312,7 @@ Direct routes with short journey times were found to be the most
 important positive variable for existing cyclists and non-cyclists in
 determining route choice. This is followed by infrastructure type, the
 number of junctions along the route, traffic speed and cyclist volumes.
-In terms if infrastructure, regardless of the level of cycling
+In terms \DIFdelbegin \DIFdel{if }\DIFdelend \DIFaddbegin \DIFadd{of }\DIFaddend infrastructure, regardless of the level of cycling
 confidence, routes which have `no facilities' or `bus/cycle lanes' are
 the least favoured cycle route types.
 \end{quote}
@@ -1189,11 +1349,11 @@ making their transport systems safe and sustainable:
   wider open source community \citep{lovelace2021, dhir2017}.
 \item
   By covering a wide range of trip purposes --- not just travel to work
-  \citep{lovelace2017, heinen2010} and travel school \citep{goodman2019}
-  as covered in previously published research on open access national
-  cycle network planning tools --- the results capture a higher
-  proportion of cycling potential including key rural trips which are
-  often under-represented in models of active travel.
+  \citep{lovelace2017, heinen2010} and travel \DIFaddbegin \DIFadd{to }\DIFaddend school
+  \citep{goodman2019} as covered in previously published research on
+  open access national cycle network planning tools --- the results
+  capture a higher proportion of cycling potential including key rural
+  trips which are often under-represented in models of active travel.
 \end{itemize}
 
 As the benefits of strategic planning for cycling become more apparent
@@ -1201,9 +1361,9 @@ As the benefits of strategic planning for cycling become more apparent
 grow. \DIFaddbegin \DIFadd{However, the approach is not without limitations and does not meet
 all requirements in Ireland or indeed any country where the methods are
 applied.
-}\DIFaddend 
+}
 
-\DIFaddbegin \DIFadd{A limitation of the approach as implemented in the CRUSE tool is that
+\DIFadd{A limitation of the approach as implemented in the CRUSE tool is that
 the results are `static', reducing its ability to support monitoring of
 growth in cycling, upgrades of existing cycling infrastructure and
 dynamic (year-by-year) exposure information to estimate crash rates.
@@ -1213,11 +1373,11 @@ factors mean that the tool can be seen as an open access `leverage
 point', providing key information for and supporting ambitious plans in
 many aspects the planning system, from network design to post-build
 monitoring \mbox{%DIFAUXCMD
-\citep{lovelace2020}}\hskip0pt%DIFAUXCMD
+\citep{lovelace2020}}\hspace{0pt}%DIFAUXCMD
 .
-}
+}\DIFaddend 
 
-\DIFaddend \section{Conclusions}\label{sec-conclusions}
+\section{Conclusions}\label{sec-conclusions}
 
 The CRUSE Tool is an open access web application for strategic cycle
 network planning and prioritization of road safety interventions across
@@ -1343,7 +1503,7 @@ This work was funded by Transport Infrastructure Ireland (TII).
 
   \DIFdelbegin %DIFDELCMD < \bibliography{bibliography.bib}
 %DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \bibliography{bibliography.bib,cruse.bib}
+\DIFdelend \DIFaddbegin \bibliography{bibliography.bib,cruse.bib,references.bib}
 \DIFaddend 
 
 

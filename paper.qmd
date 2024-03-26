@@ -295,14 +295,27 @@ However, travel to school and work account for less than half (39%) of all trips
 This represents a substantial decline in the proportion of trips covered by POWSCAR data compared with pre-COVID survey results, with 51% of non-return trips being for work or education according to the 2017 release of the same report [@national2017].
 To tackle this issue, we developed a spatial interaction modeling methodology to estimate the number of trips between each OD pair for additional trip purposes.
 The classification of trip purposes used in the CRUSE Tool was guided mainly by the trip purpose classification found within the National Household Travel Survey (NHTS), but with the addition of categories based on the comprehensive POWSCAR data, and the need to include recreational trips and multi-stage trips.
-<!-- This is already implemented, right?--> An overview of the trip purposes used in CRUSE is presented in @fig-trip-purposes.
-<!--This should be Table 2--->
+An overview of the trip purposes used in CRUSE is presented in @tbl-trip_purposes.
 
-::: {#fig-trip-purposes}
-![](images/paste-4.png)
 
-Everyday trip purposes used in the CRUSE Tool.
-:::
+```{r}
+#| include: false
+trip_purposes = read_csv("trip_purposes.csv") %>% 
+  mutate_if(is.character, utf8::utf8_encode)
+```
+
+```{r}
+#| label: tbl-trip_purposes
+# For PDF:
+knitr::kable(trip_purposes, caption = "Trip purposes used in the CRUSE Tool.", booktabs = TRUE) |>
+  kableExtra::kable_styling(latex_options = "striped", full_width = FALSE) |>
+  kableExtra::column_spec(1, width = "13em") |>
+  kableExtra::column_spec(2, width = "15em") |>
+  kableExtra::column_spec(3, width = "12em") |>
+  kableExtra::column_spec(4, width = "5em")
+# For HTML:
+# knitr::kable(trip_purposes, caption = "Trip purposes used in the CRUSE Tool.")
+```
 
 ```{=html}
 <!-- 
@@ -486,8 +499,78 @@ graph LR
     E --> COMS{Communication}
 ```
 
+```{r alternative}
+# https://www.sesync.org/resources/creating-visualizations-diagrammer
+schematic = DiagrammeR::grViz("
+digraph {
+  # graph statement
+  #################
+  graph [rankdir = LR
+         color = white
+         fontsize = 36]
+  
+  # nodes (rectangles)
+  #################
+   node [shape = rectangle            
+       margin = 0.4
+       fontsize = 36
+       fixedsize = false
+       width = 1]
+
+   subgraph cluster_2 {
+     graph[shape = rectangle]
+         C2b [label = 'Exploration']
+         C2a [label = 'CRUSE\ncounty level results']
+         C2 [label = 'CRUSE\nnational map']
+         B2 [label = 'CRUSE\nlanding page']
+         A2 [label = 'Non-professional\nuser'] 
+}
+
+   subgraph cluster_1 {
+   graph[shape = rectangle]
+         Dd [label = 'Data dowloads']
+         Dc [label = 'Quiet and fast route\nnetworks']
+         Db [label = 'County statistics']
+         Da [label = 'Full county map']
+         D [label = 'CRUSE\ncounty map']
+         C [label = 'CRUSE\nnational map']
+         B [label = 'CRUSE\nlanding page']
+         A [label = 'Professional user'] 
+}
+
+  # node (triangle)
+  #################
+  node [shape = diamond]
+         Dd1 [label = 'External\ntools']
+         C2b1 [label = 'Communication']
+  # edges 
+  #######
+  A2 -> B2
+  A -> B
+  B -> C
+  B2 -> C2
+  C -> D
+  C2 -> C2a
+  C2 -> C2b
+  C2a -> C2b
+  C2b -> C2b1
+  D -> Da 
+  D -> Db 
+  D -> Dc 
+  D -> Dd 
+  Dd -> Dd1
+  
+}
+")
+# schematic
+# htmlwidgets::saveWidget(schematic, "images/fig5.html")
+# browseURL("images/fig5.html")
+# webshot2::webshot(url = "images/fig5.html", file = "images/fig5.png")
+knitr::include_graphics("images/fig5.png")
+```
+
 ::: {#fig-user-stories}
-![](images/mermaid-figure-1.png)
+![](images/fig5.png)
 
 Hypothetical user stories for the CRUSE Tool illustrating that it can be used in different ways by different user groups.
 :::
@@ -622,15 +705,15 @@ The results for the Dublin area could help prioritise investment in cycling infr
 
 ## Stakeholder engagement and feedback {#sec-qualitative}
 
-Thoughout the project, we undertook a series of workshops and interviews with stakeholders in Ireland to gather feedback on the approach and resulting tool.
+Throughout the project, we undertook a series of workshops and interviews with stakeholders in Ireland to gather feedback on the approach and resulting tool.
 The feedback was generally positive, with stakeholders commenting on the need for the tool, lack of data on cycling potential proving a barrier to decision-making and investment, and the potential for the tool.
 At an end of project workshop in December 2023, stakeholders were asked to provide feedback on the tool and its potential use in practice.
 Quotes and suggestions from these workshops, and a subsequent interview with a Senior Transport Planning using the evidence in their everyday work in Transport Infrastructure Ireland, and presented in this section (with quotes being attributed to named individuals where permission has been granted).
 
-Early in the project, we presented the approach to practitioners in Kildare and Limmerick.
+Early in the project, we presented the approach to practitioners in Kildare and Limerick.
 The feedback from the workshop in Kildare highlighted the need for the tool for practitioners at the county level, as highlighted in the following quote:
 
-> "It's a missing piece of evidence that will help new projects get built" (Senior Engineer, Sustainable Transport & Traffic Management, Kildare County Council)
+> "It's a missing piece of evidence that will help new projects get built" (Dónal Hodgins, Senior Engineer, Sustainable Transport & Traffic Management, Kildare County Council)
 
 Practitioners in Kildare County Council that the evidence generated *was already valuable* the development of new cycle routes, especially when making the case during planning applications.
 They emphasized that cycle networks are often fragmented, and the tool allows them to demonstrate how individual local schemes can contribute to a larger, interconnected network.
