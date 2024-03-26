@@ -174,9 +174,9 @@ Previous studies have applied the concept of PSS to specific modes, including wa
 While such prior work provides insight into the potential for approaches to transport planning that are both data-driven and participatory, the focus of this paper is on tools that focus attention on the *geographic distribution* of cycling potential and which answer the question "where to build".
 Not all papers reviewed in this section classify themselves as, or even mention, PSS, but all of them can be considered as PSS.
 This paper is informed by the thinking underlying PSS, including the idea that the resulting tools are more effective if they are modular and can inter-link with other tools and processes in the planning process: PSS can be conceived as a "toolbox with separate instruments that can work and talk to each other effectively (as in the open systems concept) and that will be selectively applied in varying configurations to support a particular phase in the planning process" [@geertman2002].
-We share this conception of PSS, emphasizing the benefits of a focus on a particular mode (cycling) and a particular phase in the planning process (strategic network development).
+We share this conception of PSS, emphasizing the benefits of a focus on a particular mode (cycling) and a particular phase in the planning process (strategic network development). A selection of existing tools are summarised below and presented in @tbl-tools.
 
-Some of the most relevant existing tools are summarised below and presented in @tbl-tools.
+\newpage
 
 ```{r}
 #| include: false
@@ -305,8 +305,9 @@ trip_purposes = read_csv("trip_purposes.csv") %>%
 
 ```{r}
 #| label: tbl-trip-purposes
+#| tbl-cap: "Trip purposes used in the CRUSE Tool."
 # For PDF:
-knitr::kable(trip_purposes, caption = "Trip purposes used in the CRUSE Tool.", booktabs = TRUE) |>
+knitr::kable(trip_purposes, booktabs = TRUE) |>
   kableExtra::kable_styling(latex_options = "striped", full_width = FALSE, font_size = 8) |>
   kableExtra::column_spec(1, width = "5em") |>
   kableExtra::column_spec(2, width = "12em") |>
