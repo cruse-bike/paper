@@ -686,27 +686,27 @@ The results for the Dublin area could help prioritise investment in cycling infr
 <!-- The results for the other -->
 ## Selected qualitative results {#sec-qualitative}
 
-Thoughout the project, we undertook a series of workshops and interviews with stakeholders in Ireland to gather feedback on the approach and resulting tool.
+Throughout the project, we undertook a series of workshops and interviews with stakeholders in Ireland to gather feedback on the approach and resulting tool.
 The feedback was generally positive, with stakeholders commenting on the need for the tool, lack of data on cycling potential proving a barrier to decision-making and investment, and the potential for the tool.
 At an end of project workshop in December 2023, stakeholders were asked to provide feedback on the tool and its potential use in practice.
 Quotes and suggestions from these workshops, and a subsequent interview with a Senior Transport Planning using the evidence in their everyday work in Transport Infrastructure Ireland, and presented in this section (with quotes being attributed to named individuals where permission has been granted).
 
-Early in the project, we presented the approach to practitioners in Kildare and Limmerick.
+Early in the project, we presented the approach to practitioners in Kildare and Limerick.
 The feedback from the workshop in Kildare highlighted the need for the tool for practitioners at the county level, as highlighted in the following quote:
 
-> "It's a missing piece of evidence that will help new projects get built" (Senior Engineer, Sustainable Transport & Traffic Management, Kildare County Council)
+> "It's a missing piece of evidence that will help new projects get built" (Dónal Hodgins, Senior Engineer, Sustainable Transport & Traffic Management, Kildare County Council)
 
-Practitioners in Kildare County Council that the evidence generated *was already valuable* the development of new cycle routes, especially when making the case during planning applications. They emphasized that cycle networks are often fragmented, and the tool allows them to demonstrate how individual local schemes can contribute to a larger, interconnected network. Council officers expressed a preference for visualizations that directly compare the fast and quiet routes, as they recognize the importance of both types of routes (users can switch between the on the 'Route types' page for each county although this functionality is not available in the landing page map due to other feedback requesting a simpler interface).
+Practitioners in Kildare County Council found that the evidence generated *was already valuable* the development of new cycle routes, especially when making the case during planning applications. They emphasized that cycle networks are often fragmented, and the tool allows them to demonstrate how individual local schemes can contribute to a larger, interconnected network. Council officers expressed a preference for visualizations that directly compare the fast and quiet routes, as they recognize the importance of both types of routes (users can switch between the on the 'Route types' page for each county although this functionality is not available in the landing page map due to other feedback requesting a simpler interface).
 
-In comparison with another tool (the National Transport Authority's cycling propensity tool), the CRUSE tool was seen by practitioners in Kildare as more user-friendly and intuitive, with the ability to generate evidence at the route level, which is crucial for planning new cycling infrastructure.
-Overall, the workshop participants concluded that the approach filled gap in evidence and will greatly assist in the development of new cycling projects.
+In comparison with another cycling propensity tool, the CRUSE Tool was seen by practitioners in Kildare as more user-friendly and intuitive, with the ability to generate evidence at the route level, which is crucial for planning new cycling infrastructure.
+Overall, the workshop participants concluded that the approach filled a gap in evidence and will greatly assist in the development of new cycling projects.
 
 During the workshop with practitioners in Limerick, the estimates of Baseline and Go Dutch potential at the network levels were found to match well with local knowledge. The tool effectively highlighted the same sections on the transport network that experienced planners identified as priorities for investment in cycling, such as the South Circular Road. Limerick County Council expressed their interest in utilizing each network layer, particularly the quiet network, to support new cyclists who lack confidence to share space with motor traffic.
 Specific suggestions from the workshop included the suggestion to align scenarios with national strategy (resulting in the Climate Action Plan scenario) and to provide data downloads provided as 'Shapefiles' for further analysis (now implemented although the download format is GeoPackage, an open standard for spatial data).
 
 In a subsequent interview with a practitioner using the evidence generated by the CRUSE approach in their everyday work, we received the following feedback.
 The outputs were a "great tool for getting started with project outline documents" and "ideal for generating a strategic rationale for estimating demand and building the business case in the absence of cycle count data" (Declan Keenan, Senior Transport Planner working on active travel, personal communication).
-Declan also noted the alignment between local knowledge, cycle count data, and the outputs of the approach: "It's a good representation of what's going on" and the networks allign well in terms of network "shape" and the proportion of trips of trips on different parts of the network.
+Declan also noted the alignment between local knowledge, cycle count data, and the outputs of the approach: "It's a good representation of what's going on" and the networks align well in terms of network "shape" and the proportion of trips of trips on different parts of the network.
 There were two suggestions from Declan which have not yet been implemented: the provision of data showing only "gold standard" POWSCAR data, and the need for training on the tool to ensure that all staff can use it effectively.
 These, and other potential improvements, are discussed in the next section.
 
