@@ -3,7 +3,7 @@ Work (commute),Commuting to / from workplaces,Census 2016 POWSCAR Data,High conf
 Primary Education,Primary school trips,"Census 2016 POWSCAR Data, Schools database",High confidence - data both origins and destinations for trip purposes
 Secondary Education,Secondary school trips,"Census 2016 POWSCAR Data, Schools database",High confidence - data both origins and destinations for trip purposes
 Tertiary Education,Tertiary education trips,"Census 2016 POWSCAR Data - Geodirectory categories",High confidence - data both origins and destinations for trip purposes
-Social,"NHTS classification (e.g. restaurants, cinemas, gyms etc.)","Trip rates from NHTS, Geodirectory businesses classified according to relevant NACE codes","Medium Confidence"
-Shopping,"NHTS classificationfrom supermarkets and shops","Trip rates from NHTS, Geodirectory businesses classified according to relevant NACE codes","Medium Confidence"
-Personal / other,"Combination of two NHTS classifications, and includes trips to medical, personal services and others","Trip rates from NHTS, Geodirectory businesses classified according to relevant NACE codes","Medium Confidence"
-Tourism / recreational,Trips by non-resident visitors to / from visitor attractions,Geodirectory listings for accommodation (origins) and destinations (destinations),"Failte Ireland accommodation database, Failte Ireland attraction database",Low confidence - lack of data regarding tourist trip rates
+Social,"NHTS classification (e.g. restaurants, cinemas, gyms etc.)","Trip rates from NHTS, Geodirectory businesses classified according to relevant NACE codes","Medium confidence"
+Shopping,"NHTS classificationfrom supermarkets and shops","Trip rates from NHTS, Geodirectory businesses classified according to relevant NACE codes","Medium confidence"
+Personal / other,"Combination of two NHTS classifications, and includes trips to medical, personal services and others","Trip rates from NHTS, Geodirectory businesses classified according to relevant NACE codes","Medium confidence"
+Tourism / recreational,Trips by non-resident visitors to / from visitor attractions,"Geodirectory listings for accommodation (origins) and destinations (destinations), Failte Ireland accommodation database, Failte Ireland attraction database",Low confidence - lack of data regarding tourist trip rates
