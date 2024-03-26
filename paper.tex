@@ -610,20 +610,31 @@ by the trip purpose classification found within the National Household
 Travel Survey (NHTS), but with the addition of categories based on the
 comprehensive POWSCAR data, and the need to include recreational trips
 and multi-stage trips. An overview of the trip purposes used in CRUSE is
-presented in Figure~\ref{fig-trip-purposes}.
+presented in Table~\ref{tbl-trip-purposes}.
 
-\begin{figure}
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{13em}>{\raggedright\arraybackslash}p{15em}>{\raggedright\arraybackslash}p{12em}>{\raggedright\arraybackslash}p{5em}}
 
-\centering{
+\caption{\label{tbl-trip-purposes}Trip purposes used in the CRUSE Tool.}
 
-\includegraphics{images/paste-4.png}
+\tabularnewline
 
-}
+\\
+\toprule
+Trip purpose & Description & Primary source(s) & Confidence\\
+\midrule
+\cellcolor{gray!10}{Work (commute)} & \cellcolor{gray!10}{Commuting to/from workplaces} & \cellcolor{gray!10}{Census 2016 POWSCAR Data} & \cellcolor{gray!10}{High confidence - data both origins and destinations for trip purposes}\\
+Primary Education & Primary school trips & Census 2016 POWSCAR Data & Dept. of Education Schools database,High confidence - data both origins and destinations for trip purposes\\
+\cellcolor{gray!10}{Secondary Education} & \cellcolor{gray!10}{Secondary school trips} & \cellcolor{gray!10}{Census 2016 POWSCAR Data} & \cellcolor{gray!10}{Dept. of Education Schools database,High confidence - data both origins and destinations for trip purposes}\\
+Tertiary Education & Tertiary education trips & Census 2016 POWSCAR Data - Geodirectory categories for 'Tertiary Education' and 'Other Education' & High confidence - data both origins and destinations for trip purposes\\
+\cellcolor{gray!10}{Social} & \cellcolor{gray!10}{NHTS classification, including trips to/from sports facilities, leisure, and cultural destinations (e.g. restaurants, cinemas, gyms etc.)} & \cellcolor{gray!10}{Trip rates from NHTS} & \cellcolor{gray!10}{Geodirectory businesses classified according to relevant NACE codes,"Medium Confidence - Method should identify clusters of activity for this trip purpose, although individual trips or destinations come with significant uncertainty"}\\
+\addlinespace
+Shopping & NHTS classification, including trips to/from supermarkets and shops & Trip rates from NHTS & Geodirectory businesses classified according to relevant NACE codes,"Medium Confidence - Method should identify clusters of activity for this trip purpose, although individual trips or destinations come with significant uncertainty"\\
+\cellcolor{gray!10}{Personal/other} & \cellcolor{gray!10}{Combination of two NHTS classifications, and includes trips to medical, personal services and others} & \cellcolor{gray!10}{Trip rates from NHTS} & \cellcolor{gray!10}{Geodirectory businesses classified according to relevant NACE codes,"Medium Confidence - Method should identify clusters of activity for this trip purpose, although individual trips or destinations come with significant uncertainty"}\\
+Tourism/recreational & Trips by non-resident visitors to/from visitor attractions & Geodirectory listings for accommodation (origins) and destinations (destinations) & Failte Ireland accommodation database, Failte Ireland attraction database,Low confidence - lack of data regarding tourist trip rates\\
+\cellcolor{gray!10}{Public Transport} & \cellcolor{gray!10}{Trips to/from public transport} & \cellcolor{gray!10}{NTA Heavy Rail Census} & \cellcolor{gray!10}{NA}\\
+\bottomrule
 
-\caption{\label{fig-trip-purposes}Everyday trip purposes used in the
-CRUSE Tool.}
-
-\end{figure}%
+\end{longtable}
 
 Following feedback from stakeholders, we added another, `non-everyday'
 trip purpose in an extension phase: cycle tourism. As outlined in the
@@ -877,11 +888,13 @@ landing page that is suitable for both professional and non-professional
 users (such as an advocate or parent interested in safe routes to
 school), the tool aims to facilitate communication between these groups.
 
+\includegraphics[width=3.31in,height=\textheight]{images/fig5.png}
+
 \begin{figure}
 
 \centering{
 
-\includegraphics{images/mermaid-figure-1.png}
+\includegraphics{images/fig5.png}
 
 }
 
@@ -961,47 +974,47 @@ cycling infrastructure in the city.
 
 \subsection{Stakeholder engagement and feedback}\label{sec-qualitative}
 
-Thoughout the project, we undertook a series of workshops and interviews
-with stakeholders in Ireland to gather feedback on the approach and
-resulting tool. The feedback was generally positive, with stakeholders
-commenting on the need for the tool, lack of data on cycling potential
-proving a barrier to decision-making and investment, and the potential
-for the tool. At an end of project workshop in December 2023,
-stakeholders were asked to provide feedback on the tool and its
-potential use in practice. Quotes and suggestions from these workshops,
-and a subsequent interview with a Senior Transport Planning using the
-evidence in their everyday work in Transport Infrastructure Ireland, and
-presented in this section (with quotes being attributed to named
-individuals where permission has been granted).
+Throughout the project, we undertook a series of workshops and
+interviews with stakeholders in Ireland to gather feedback on the
+approach and resulting tool. The feedback was generally positive, with
+stakeholders commenting on the need for the tool, lack of data on
+cycling potential proving a barrier to decision-making and investment,
+and the potential for the tool. At an end of project workshop in
+December 2023, stakeholders were asked to provide feedback on the tool
+and its potential use in practice. Quotes and suggestions from these
+workshops, and a subsequent interview with a Senior Transport Planning
+using the evidence in their everyday work in Transport Infrastructure
+Ireland, and presented in this section (with quotes being attributed to
+named individuals where permission has been granted).
 
 Early in the project, we presented the approach to practitioners in
-Kildare and Limmerick. The feedback from the workshop in Kildare
+Kildare and Limerick. The feedback from the workshop in Kildare
 highlighted the need for the tool for practitioners at the county level,
 as highlighted in the following quote:
 
 \begin{quote}
 ``It's a missing piece of evidence that will help new projects get
-built'' (Senior Engineer, Sustainable Transport \& Traffic Management,
-Kildare County Council)
+built'' (Dónal Hodgins, Senior Engineer, Sustainable Transport \&
+Traffic Management, Kildare County Council)
 \end{quote}
 
-Practitioners in Kildare County Council that the evidence generated
-\emph{was already valuable} the development of new cycle routes,
-especially when making the case during planning applications. They
-emphasized that cycle networks are often fragmented, and the tool allows
-them to demonstrate how individual local schemes can contribute to a
-larger, interconnected network. An unexpected piece of feedback from the
-workshop was the preference for visualizations that directly compare the
-fast and quiet routes, as they recognize the importance of both types of
-routes. In response to this we provided the `Route types' page for each
-county, although this functionality is not available in the landing page
-map due to other feedback requesting a simpler interface. In comparison
-with another tool (the National Transport Authority's cycling propensity
-tool), the CRUSE tool was seen by practitioners in Kildare as more
-user-friendly, with the ability to generate evidence at the route level,
-which is crucial for planning new cycling infrastructure. Overall, the
-workshop participants concluded that the approach filled gap in evidence
-and will greatly assist in the development of new cycling projects.
+Practitioners in Kildare County Council found that the evidence
+generated \emph{was already valuable} for the development of new cycle
+routes, especially when making the case during planning applications.
+They emphasized that cycle networks are often fragmented, and the tool
+allows them to demonstrate how individual local schemes can contribute
+to a larger, interconnected network. An unexpected piece of feedback
+from the workshop was the preference for visualizations that directly
+compare the fast and quiet routes, as they recognize the importance of
+both types of routes. In response to this we provided the `Route types'
+page for each county, although this functionality is not available in
+the landing page map due to other feedback requesting a simpler
+interface. In comparison with another tool for transport planning, CRUSE
+was seen by practitioners in Kildare as more user-friendly. They found
+the evidence at the route level (unavailable in other tools) crucial for
+planning new cycling infrastructure. Overall, the workshop participants
+concluded that the approach filled gap in evidence and will greatly
+assist in the development of new cycling projects.
 
 During the workshop with practitioners in Limerick, the estimates of
 Baseline and Go Dutch potential at the network levels were found to
@@ -1019,25 +1032,31 @@ GeoPackage, an open standard for spatial data).
 
 In a subsequent interview with a practitioner using the evidence
 generated by the CRUSE approach in their everyday work, we received the
-following feedback. The outputs were a ``great tool for getting started
-with project outline documents'' and ``ideal for generating a strategic
-rationale for estimating demand and building the business case in the
-absence of cycle count data'' (Declan Keenan, Senior Transport Planner
-working on active travel, personal communication). Declan also noted the
-alignment between local knowledge, cycle count data, and the outputs of
-the approach: ``It's a good representation of what's going on'' and the
-networks allign well in terms of network ``shape'' and the proportion of
-trips of trips on different parts of the network.
+following feedback. The outputs were found to be a ``useful tool for
+getting schemes started; and provides good detail to supplement the
+strategic rationale for intervention within Project Outline Documents,
+via the cycle friendliness maps and the baseline / near market cyclist
+estimates''. As a result, the CRUSE tool ``is ideal for generating a
+strategic rationale for estimating demand and building the business case
+in the absence of cycle count data; it is also very useful at the
+detailed design stage and the CRUSE estimates can (and have been used)
+to supplement the economic appraisal of cycling schemes'' (Declan
+Keenan, Senior Transport Planner TII working on active travel, personal
+communication). Declan also noted a strong alignment in the South Dublin
+area between cycle count data, and the outputs of the approach: ``It's
+forms a strong representation of what's going on in the areas where TII
+have collated some cycling count data, e.g.~in the vicinity of the M50
+in the areas of Ballinteer and Sandyford. Some additional network
+checking against count data would also be useful, to ensure good
+representation across other settlements.'' Where cycling data is
+available, the networks align well in terms of network ``shape'' and the
+proportion of trips on different parts of the network.
 
-Findings from the qualitative results also suggest changes which have
-not been implemented due to time constraints, including the provision of
-route netework data showing only ``gold standard'' POWSCAR data (we did
-make this data available in the data downloads page), the need for
-further validation of results (especially in rural areas where counter
-datasets are scarce) and the need for training on the tool to ensure
-that it is well-understood and used effectively. These and other
-potential areas for further research and development are discussed in
-the next section.
+There were two suggestions from Declan which have not yet been
+implemented: the provision of data showing POWSCAR and recreational
+estimates/data separately, and the need for training on the tool to
+ensure that all staff can use it effectively. These, and other potential
+improvements, are discussed in the next section.
 
 \section{Discussion}\label{sec-discussion}
 

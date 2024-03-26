@@ -295,7 +295,7 @@ However, travel to school and work account for less than half (39%) of all trips
 This represents a substantial decline in the proportion of trips covered by POWSCAR data compared with pre-COVID survey results, with 51% of non-return trips being for work or education according to the 2017 release of the same report [@national2017].
 To tackle this issue, we developed a spatial interaction modeling methodology to estimate the number of trips between each OD pair for additional trip purposes.
 The classification of trip purposes used in the CRUSE Tool was guided mainly by the trip purpose classification found within the National Household Travel Survey (NHTS), but with the addition of categories based on the comprehensive POWSCAR data, and the need to include recreational trips and multi-stage trips.
-An overview of the trip purposes used in CRUSE is presented in @tbl-trip_purposes.
+An overview of the trip purposes used in CRUSE is presented in @tbl-trip-purposes.
 
 
 ```{r}
@@ -305,7 +305,7 @@ trip_purposes = read_csv("trip_purposes.csv") %>%
 ```
 
 ```{r}
-#| label: tbl-trip_purposes
+#| label: tbl-trip-purposes
 # For PDF:
 knitr::kable(trip_purposes, caption = "Trip purposes used in the CRUSE Tool.", booktabs = TRUE) |>
   kableExtra::kable_styling(latex_options = "striped", full_width = FALSE) |>
