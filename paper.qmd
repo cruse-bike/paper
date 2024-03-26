@@ -719,7 +719,8 @@ Practitioners in Kildare County Council found that the evidence generated *was a
 They emphasized that cycle networks are often fragmented, and the tool allows them to demonstrate how individual local schemes can contribute to a larger, interconnected network.
 An unexpected piece of feedback from the workshop was the preference for visualizations that directly compare the fast and quiet routes, as they recognize the importance of both types of routes.
 In response to this we provided the 'Route types' page for each county, although this functionality is not available in the landing page map due to other feedback requesting a simpler interface.
-In comparison with another cycling propensity tool, the CRUSE tool was seen by practitioners in Kildare as more user-friendly, with the ability to generate evidence at the route level, which is crucial for planning new cycling infrastructure.
+In comparison with another tool for transport planning, CRUSE was seen by practitioners in Kildare as more user-friendly.
+They found the evidence at the route level (unavailable in other tools) crucial for planning new cycling infrastructure.
 Overall, the workshop participants concluded that the approach filled gap in evidence and will greatly assist in the development of new cycling projects.
 
 During the workshop with practitioners in Limerick, the estimates of Baseline and Go Dutch potential at the network levels were found to match well with local knowledge.
