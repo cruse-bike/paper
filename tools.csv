@@ -1,0 +1,8 @@
+Tool,Reference,Coverage,Input data,Output,Licence,Public access
+Bicycle share model,Parkin et al. (2007),England and Wales,"Journeys to work OD census data, at the small-area (wards) level",Static tables in academic paper,Proprietary,Not available
+Analysis of  Cycling Potential (ACP),"Transport for London (2010, 2016)",London,London Travel Demand Survey,"Static tables, graphs, and heatmaps, not publicly available",Proprietary,Not available
+Prioritization index,Larsen et al. (2013),Montreal," Survey, Road safety, and OD data","Map-based heatmap, not publicly available",Proprietary,Not available
+Usage intensity index,Zhang et al. (2014),Belo Horizonte," Survey, census, and OD data","Static tables and maps, not publicly available",Proprietary,Not available
+The Cycling Potential Tool (CPT), Phillips and Range (2017),Scotland,"Environmental and socioeconomic data, at the small area (output areas) level",Maps showing cycling potential in each area,Proprietary,Not available
+Propensity to Cycle Tool (PCT),Lovelace et al. (2017),England and Wales,"Journeys to work and school OD census data, at the small area (LSOA) level","Online maps, graphs, tables, publicly available at www.pct.bike",Open source,Yes
+The    Gross Potential for Cycling tool (CPC), Silva et al. (2021 and 2022),21 Portuguese cities,"Land use and socio-demographic data, at the small area (census tract) level","Static maps showing cycling potential in different areas",NA,Static online maps and tables
