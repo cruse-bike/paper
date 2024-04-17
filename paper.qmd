@@ -91,6 +91,7 @@ Lovelace, Robin, Joey Talbot, Eugeni Vidal-Tortosa, Hussein Mahfouz, Elaine Bric
 
 ```{r}
 #| include: false
+install.packages("tidyverse")
 library(tidyverse)
 ```
 
