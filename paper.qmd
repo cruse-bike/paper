@@ -97,7 +97,8 @@ This is an open and reproducible paper. See [github.com/cruse-bike](https://gith
 
 ```{r}
 #| include: false
-library(tidyverse)
+library(readr)
+library(dplyr)
 ```
 
 ```{r}
@@ -522,73 +523,72 @@ graph LR
 ```{r alternative}
 #| fig-cap: Hypothetical user stories for the CRUSE Tool illustrating that it can be used in different ways by different user groups.
 #| label: fig-user-stories
-schematic = DiagrammeR::grViz("
-digraph {
-  # graph statement
-  #################
-  graph [rankdir = LR
-         color = white
-         fontsize = 36]
+# schematic = DiagrammeR::grViz("
+# digraph {
+#   # graph statement
+#   #################
+#   graph [rankdir = LR
+#          color = white
+#          fontsize = 36]
   
-  # nodes (rectangles)
-  #################
-   node [shape = rectangle            
-       margin = 0.4
-       fontsize = 36
-       fixedsize = false
-       width = 1]
+#   # nodes (rectangles)
+#   #################
+#    node [shape = rectangle            
+#        margin = 0.4
+#        fontsize = 36
+#        fixedsize = false
+#        width = 1]
 
-   subgraph cluster_2 {
-     graph[shape = rectangle]
-         C2b [label = 'Exploration']
-         C2a [label = 'CRUSE\ncounty level results']
-         C2 [label = 'CRUSE\nnational map']
-         B2 [label = 'CRUSE\nlanding page']
-         A2 [label = 'Non-professional\nuser'] 
-}
+#    subgraph cluster_2 {
+#      graph[shape = rectangle]
+#          C2b [label = 'Exploration']
+#          C2a [label = 'CRUSE\ncounty level results']
+#          C2 [label = 'CRUSE\nnational map']
+#          B2 [label = 'CRUSE\nlanding page']
+#          A2 [label = 'Non-professional\nuser'] 
+# }
 
-   subgraph cluster_1 {
-   graph[shape = rectangle]
-         Dd [label = 'Data dowloads']
-         Dc [label = 'Quiet and fast route\nnetworks']
-         Db [label = 'County statistics']
-         Da [label = 'Full county map']
-         D [label = 'CRUSE\ncounty map']
-         C [label = 'CRUSE\nnational map']
-         B [label = 'CRUSE\nlanding page']
-         A [label = 'Professional user'] 
-}
+#    subgraph cluster_1 {
+#    graph[shape = rectangle]
+#          Dd [label = 'Data dowloads']
+#          Dc [label = 'Quiet and fast route\nnetworks']
+#          Db [label = 'County statistics']
+#          Da [label = 'Full county map']
+#          D [label = 'CRUSE\ncounty map']
+#          C [label = 'CRUSE\nnational map']
+#          B [label = 'CRUSE\nlanding page']
+#          A [label = 'Professional user'] 
+# }
 
-  # node (triangle)
-  #################
-  node [shape = diamond]
-         Dd1 [label = 'External\ntools']
-         C2b1 [label = 'Communication']
-  # edges 
-  #######
-  A2 -> B2
-  A -> B
-  B -> C
-  B2 -> C2
-  C -> D
-  C2 -> C2a
-  C2 -> C2b
-  C2a -> C2b
-  C2b -> C2b1
-  D -> Da 
-  D -> Db 
-  D -> Dc 
-  D -> Dd 
-  Dd -> Dd1
+#   # node (triangle)
+#   #################
+#   node [shape = diamond]
+#          Dd1 [label = 'External\ntools']
+#          C2b1 [label = 'Communication']
+#   # edges 
+#   #######
+#   A2 -> B2
+#   A -> B
+#   B -> C
+#   B2 -> C2
+#   C -> D
+#   C2 -> C2a
+#   C2 -> C2b
+#   C2a -> C2b
+#   C2b -> C2b1
+#   D -> Da 
+#   D -> Db 
+#   D -> Dc 
+#   D -> Dd 
+#   Dd -> Dd1
   
-}
-")
+# }
+# ")
 # schematic
 # htmlwidgets::saveWidget(schematic, "images/fig5.html")
 # browseURL("images/fig5.html")
 # webshot2::webshot(url = "images/fig5.html", file = "images/fig5.png")
-# knitr::include_graphics("images/fig5.png")
-schematic
+knitr::include_graphics("images/fig5.png")
 ```
 
 ```{=html}
