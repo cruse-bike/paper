@@ -81,6 +81,11 @@ keywords:
 date: last-modified
 ---
 
+Note: preprint now available here: https://osf.io/preprints/osf/a72yh
+
+Please cite as
+
+Lovelace, Robin, Joey Talbot, Eugeni Vidal-Tortosa, Hussein Mahfouz, Elaine Brick, Peter Wright, Gary O'Toole, et al. 2024. “Cycle Route Uptake and Scenario Estimation (CRUSE): An Approach for Developing Strategic Cycle Network Planning Tools.” OSF Preprints. March 29. doi:10.31219/osf.io/a72yh.
 
 {{< pagebreak >}}
 
@@ -194,15 +199,15 @@ tools = tools |>
 
 ```{r}
 #| label: tbl-tools
-# For PDF:
-knitr::kable(tools, caption = "Summary of existing tools for estimating cycling potential.", booktabs = TRUE) |>
-  kableExtra::kable_styling(latex_options = "striped", full_width = FALSE) |>
-  kableExtra::column_spec(1, width = "13em") |>
-  kableExtra::column_spec(2, width = "15em") |>
-  kableExtra::column_spec(3, width = "12em") |>
-  kableExtra::column_spec(4, width = "5em")
+# # For PDF:
+# knitr::kable(tools, caption = "Summary of existing tools for estimating cycling potential.", booktabs = TRUE) |>
+#   kableExtra::kable_styling(latex_options = "striped", full_width = FALSE) |>
+#   kableExtra::column_spec(1, width = "13em") |>
+#   kableExtra::column_spec(2, width = "15em") |>
+#   kableExtra::column_spec(3, width = "12em") |>
+#   kableExtra::column_spec(4, width = "5em")
 # For HTML:
-# knitr::kable(tools, caption = "Summary of existing tools for estimating cycling potential.")
+knitr::kable(tools, caption = "Summary of existing tools for estimating cycling potential.")
 ```
 
 Area-based approaches were developed before network-based tools, such as a 2007 regression-based model to estimate the percentage of cycling trips to work in England and Wales based on socioeconomic, transportation, and physical factors at the small area (wards) level in 2007 [@parkin_estimation_2007].
@@ -311,14 +316,14 @@ trip_purposes = read_csv("trip_purposes.csv") %>%
 #| label: tbl-trip-purposes
 #| tbl-cap: "Trip purposes used in the CRUSE Tool."
 # For PDF:
-knitr::kable(trip_purposes, booktabs = TRUE) |>
-  kableExtra::kable_styling(latex_options = "striped", full_width = FALSE, font_size = 8) |>
-  kableExtra::column_spec(1, width = "5em") |>
-  kableExtra::column_spec(2, width = "12em") |>
-  kableExtra::column_spec(3, width = "15em") |>
-  kableExtra::column_spec(4, width = "15em")
+# knitr::kable(trip_purposes, booktabs = TRUE) |>
+#   kableExtra::kable_styling(latex_options = "striped", full_width = FALSE, font_size = 8) |>
+#   kableExtra::column_spec(1, width = "5em") |>
+#   kableExtra::column_spec(2, width = "12em") |>
+#   kableExtra::column_spec(3, width = "15em") |>
+#   kableExtra::column_spec(4, width = "15em")
 # For HTML:
-# knitr::kable(trip_purposes, caption = "Trip purposes used in the CRUSE Tool.")
+knitr::kable(trip_purposes, caption = "Trip purposes used in the CRUSE Tool.")
 ```
 
 ```{=html}

@@ -1,5 +1,6 @@
 project:
-  type: website
+  render:
+    - paper.qmd
 
 website:
   title: "CRUSE"
