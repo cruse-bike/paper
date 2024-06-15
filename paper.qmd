@@ -180,7 +180,7 @@ In @sec-discussion, we discuss limitations and possible future improvements to t
 
 Tools for estimating geographical distribution of cycling potential have advanced substantially in recent years.
 Developed by researchers and developers in academic, public and private sectors, they have evolved from simple area-based static models tailored to specific regions to more complex and (in some cases) more generalizable tools.
-These tools can be considered as a specific application of the concept of planning support systems (PSS) , which are designed to help planners and decision-makers to make more informed decisions [@geertman2009].
+These tools can be considered as a specific application of the concept of planning support systems (PSS), which are designed to help planners and decision-makers to make more informed decisions [@geertman2009].
 Outputs include maps with results available at several levels of analysis with levels of availability ranging from being only available to researchers and in static maps to open access mapping systems available to the public.
 
 Previous studies have applied the concept of PSS to specific modes, including walking [@bencekri2024], public transport [@barmentlo2012] and cycling [@bencekri2023].
@@ -206,6 +206,7 @@ tools = tools |>
 
 ```{r}
 #| label: tbl-tools
+#| tbl-cap: "Summary of existing tools for estimating cycling potential."
 # # For PDF:
 # knitr::kable(tools, caption = "Summary of existing tools for estimating cycling potential.", booktabs = TRUE) |>
 #   kableExtra::kable_styling(latex_options = "striped", full_width = FALSE) |>
@@ -214,7 +215,7 @@ tools = tools |>
 #   kableExtra::column_spec(3, width = "12em") |>
 #   kableExtra::column_spec(4, width = "5em")
 # For HTML:
-knitr::kable(tools, caption = "Summary of existing tools for estimating cycling potential.")
+knitr::kable(tools)
 ```
 
 Area-based approaches were developed before network-based tools, such as a 2007 regression-based model to estimate the percentage of cycling trips to work in England and Wales based on socioeconomic, transportation, and physical factors at the small area (wards) level in 2007 [@parkin_estimation_2007].
@@ -225,17 +226,20 @@ Three years later, Transport for London created the Analysis of Cycling Potentia
 The tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London to guide local cycling initiatives, such as where new hire 'docking stations' should go.
 The tool does not use origin-destination data and cannot estimate cycling potential on specific routes [@transport_for_london_analysis_2010].
 
-Other tools that generate areal data to prioritize investment include a study that generated a 'prioritization index' for Montreal, Canada [@larsen_build_2013], a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil, and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
+Other tools that generate areal data to prioritize investment include a study that generated a<span style="color: blue;"> 'bikeability index' for the Metro Vancouver region [@winters_mapping_2013] and later called Bike Score and available for over 160 US and Canadian cities [@winters_bike_2016] -- its methodology is [publicly available](https://www.walkscore.com/bike-score-methodology.shtml); a </span>'prioritization index' for Montreal, Canada [@larsen_build_2013]; a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil [@zhang_prioritizing_2014]; and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
 The CPT is composed of the base environmental module — based on eight weighted factors (population density, hilliness, physical barriers, access to services, existing cycling mode share, distance to work and school, and road speed) — and the quality of service module, which evaluates each area of interest based on eight factors (surface condition, adjacent cyclists, comfort factor, conflict, distance between junctions, slope, access to services, and origin/destination).
 
-A more recent areal-based approach is the designed the Gross Potential for Cycling (GPC) tool to prioritize areas for cycling infrastructure and other cycling measures [@silva_gross_2021].
+A more recent areal-based approach is the designed Gross Potential for Cycling (GPC) tool to prioritize areas for cycling infrastructure and other cycling measures  [@silva_gross_2021].
 The GPC uses two sets of indicators: population-based indicators (age, potential demand density, employment density and motorization rate) and area-based indicators (accessibility, education, public transport, connectivity, land use mix and relative performance).
 These indicators are calculated considering topography, road hierarchy, and average congestion and presented on a scale from 5 to 10.
 They are then combined into an overall score, weighted by their impact on cycling according to the literature.
 The ranking of areas by the GPC are [publicly available](https://boost.up.pt/en/ferramentas/gpc) and its practical value has been assessed through workshops [@silva_revealing_2022].
+<span style="color: blue;">The GPC tool has also been used to investigate the combination of factors contributing to high levels cycling potential [@lopes_impact_2021]. 
+Another recent areal-based approach is the Relative Equity Impact of Bicycle Planning (TIRE) [@cunha_assessing_2023]. 
+The TIRE assesses the impact of cycling network allocation on the accessibility levels of different socioeconomic groups.</span>
 
 Route-based tools emerged with increasing availability of origin-destination data, routing engines that can assign trips to networks, and improvements in computer hardware and software needed to generate route networks.
-A prominent example is the the Propensity to Cycle Tool (PCT), first developed to estimate current and future levels of cycling at desire line, zone, route, and route network levels for case study cities [@lovelace_mapping_2016].
+A prominent example is the the Propensity to Cycle Tool (PCT), first developed to estimate current and future levels of cycling at desire line, zone, route, and route network levels for case study cities [@lovelace2016].
 The approach was scaled-up to estimate estimate the potential benefits of uptake at zone and desire line levels nationally, and launched as a publicly available web application in 2017 [@lovelace2017].
 Extensions of the PCT approach have included estimation of benefits at the individual level [@woodcock2018], addition of travel to school network [@goodman2019], and improved modeling of impacts on health, environmental and distributional outcomes [@woodcock2021].
 Initially developed just for England, the PCT was extended to cover all of Wales (for commuter data only) in 2018.
@@ -244,6 +248,9 @@ The PCT approach has been applied in other countries, including Ireland (the top
 In Portugal the 'biclaR' project, based on methods underlying the PCT, has been developed and deployed for the Lisbon metro region.
 The resulting evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
 biclaR includes estimates of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool and an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
+
+<span style="color: blue;">Another route-based tool is The Cycling Routing Algorithm for Network Connectivity (CRANC) [@gehrke_cycling-focused_2020]. 
+The CRANC tool evaluates the benefits of new bicycle facilities for the accessibility of various populations and neighbourhoods. </span>
 
 The approach presented in this paper seeks to overcome three limitations of previous tools to estimate cycling potential: 1) low resolution of data, with routes starting and ending in administrative zone centroids, 2) limited coverage of trip purposes beyond travel to work and school, and 3) a web interface that was not user-friendly or intuitive.
 
@@ -330,7 +337,7 @@ trip_purposes = read_csv("trip_purposes.csv") %>%
 #   kableExtra::column_spec(3, width = "15em") |>
 #   kableExtra::column_spec(4, width = "15em")
 # For HTML:
-knitr::kable(trip_purposes, caption = "Trip purposes used in the CRUSE Tool.")
+knitr::kable(trip_purposes)
 ```
 
 ```{=html}
