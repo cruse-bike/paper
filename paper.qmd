@@ -642,6 +642,7 @@ remaining simple) -->
 
 Due to time and skill constraints in the team developing the CRUSE tool (we lacked researchers with a background in qualitative methods), we opted for the well-tested and cost-effective approach of holding workshops with stakeholders in case study area, an approach that is documented with reference to participatory development of digital tools for supporting energy transitions [@hewitt2020].
 We held a total of three workshops over the course of the project and one open-ended live demo during a 2-day event in Sligo in which we collected feedback from dozens of people.
+Other than the live demo, all of the workshops took place online.
 The first two workshops took place in May 2022, in which key staff involved in cycle network planning in Kildare and Limerick counties were presented the tool.
 The county-specific approach allowed the workshop to focus on specific areas and key corridors.
 The local transport planners were asked to provide feedback in a semi-structured interview approach, with questions on the evidence they currently have access, how they may be able to use the tool, and requests for new features.
