@@ -86,9 +86,13 @@ Note: preprint now available here: https://osf.io/preprints/osf/a72yh
 
 Please cite as
 
-Lovelace, Robin, Joey Talbot, Eugeni Vidal-Tortosa, Hussein Mahfouz, Elaine Brick, Peter Wright, Gary O'Toole, et al. 2024. “Cycle Route Uptake and Scenario Estimation (CRUSE): An Approach for Developing Strategic Cycle Network Planning Tools.” OSF Preprints. March 29. doi:10.31219/osf.io/a72yh.
+Lovelace, Robin, Joey Talbot, Eugeni Vidal-Tortosa, Hussein Mahfouz, Elaine Brick, Peter Wright, Gary O'Toole, et al. 2024.
+“Cycle Route Uptake and Scenario Estimation (CRUSE): An Approach for Developing Strategic Cycle Network Planning Tools.” OSF Preprints.
+March 29.
+doi:10.31219/osf.io/a72yh.
 
-This is an open and reproducible paper. See [github.com/cruse-bike](https://github.com/cruse-bike) for the code and data used to generate the results presented here, and the code underlying the web app hosted at [cruse.bike](https://cruse.bike/).
+This is an open and reproducible paper.
+See [github.com/cruse-bike](https://github.com/cruse-bike) for the code and data used to generate the results presented here, and the code underlying the web app hosted at [cruse.bike](https://cruse.bike/).
 
 </details>
 
@@ -225,17 +229,15 @@ Three years later, Transport for London created the Analysis of Cycling Potentia
 The tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London to guide local cycling initiatives, such as where new hire 'docking stations' should go.
 The tool does not use origin-destination data and cannot estimate cycling potential on specific routes [@transport_for_london_analysis_2010].
 
-Other tools that generate areal data to prioritize investment include a study that generated a<span style="color: blue;"> 'bikeability index' for the Metro Vancouver region [@winters_mapping_2013] and later called Bike Score and available for over 160 US and Canadian cities [@winters_bike_2016] -- its methodology is [publicly available](https://www.walkscore.com/bike-score-methodology.shtml); a </span>'prioritization index' for Montreal, Canada [@larsen_build_2013]; a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil [@zhang_prioritizing_2014]; and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
+Other tools that generate areal data to prioritize investment include a study that generated a[ 'bikeability index' for the Metro Vancouver region [@winters_mapping_2013] and later called Bike Score and available for over 160 US and Canadian cities [@winters_bike_2016] -- its methodology is [publicly available](https://www.walkscore.com/bike-score-methodology.shtml); a ]{style="color: blue;"}'prioritization index' for Montreal, Canada [@larsen_build_2013]; a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil [@zhang_prioritizing_2014]; and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
 The CPT is composed of the base environmental module — based on eight weighted factors (population density, hilliness, physical barriers, access to services, existing cycling mode share, distance to work and school, and road speed) — and the quality of service module, which evaluates each area of interest based on eight factors (surface condition, adjacent cyclists, comfort factor, conflict, distance between junctions, slope, access to services, and origin/destination).
 
-A more recent areal-based approach is the Gross Potential for Cycling (GPC) tool to prioritize areas for cycling infrastructure and other cycling measures  [@silva_gross_2021].
+A more recent areal-based approach is the Gross Potential for Cycling (GPC) tool to prioritize areas for cycling infrastructure and other cycling measures [@silva_gross_2021].
 The GPC uses two sets of indicators: population-based indicators (age, potential demand density, employment density and motorization rate) and area-based indicators (accessibility, education, public transport, connectivity, land use mix and relative performance).
 These indicators are calculated considering topography, road hierarchy, and average congestion and presented on a scale from 5 to 10.
 They are then combined into an overall score, weighted by their impact on cycling according to the literature.
 The ranking of areas by the GPC are [publicly available](https://boost.up.pt/en/ferramentas/gpc) and its practical value has been assessed through workshops [@silva_revealing_2022].
-<span style="color: blue;">The GPC tool has also been used to investigate the combination of factors contributing to high levels cycling potential [@lopes_impact_2021]. 
-Another recent areal-based approach is the Relative Equity Impact of Bicycle Planning (TIRE) [@cunha_assessing_2023]. 
-The TIRE assesses the impact of cycling network allocation on the accessibility levels of different socioeconomic groups.</span>
+[The GPC tool has also been used to investigate the combination of factors contributing to high levels cycling potential [@lopes_impact_2021]. Another recent areal-based approach is the Relative Equity Impact of Bicycle Planning (TIRE) [@cunha_assessing_2023]. The TIRE assesses the impact of cycling network allocation on the accessibility levels of different socioeconomic groups.]{style="color: blue;"}
 
 Route-based tools emerged with increasing availability of origin-destination data, routing engines that can assign trips to networks, and improvements in computer hardware and software needed to generate route networks.
 A prominent example is the the Propensity to Cycle Tool (PCT), first developed to estimate current and future levels of cycling at desire line, zone, route, and route network levels for case study cities [@lovelace2016].
@@ -248,8 +250,7 @@ In Portugal the 'biclaR' project, based on methods underlying the PCT, has been 
 The resulting evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
 biclaR includes estimates of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool and an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
 
-<span style="color: blue;">Another route-based tool is The Cycling Routing Algorithm for Network Connectivity (CRANC) [@gehrke_cycling-focused_2020]. 
-The CRANC tool evaluates the benefits of new bicycle facilities for the accessibility of various populations and neighbourhoods. </span>
+[Another route-based tool is The Cycling Routing Algorithm for Network Connectivity (CRANC) [@gehrke_cycling-focused_2020]. The CRANC tool evaluates the benefits of new bicycle facilities for the accessibility of various populations and neighbourhoods. ]{style="color: blue;"}
 
 The approach presented in this paper seeks to overcome three limitations of previous tools to estimate cycling potential: 1) low resolution of data, with routes starting and ending in administrative zone centroids, 2) limited coverage of trip purposes beyond travel to work and school, and 3) a web interface that was not user-friendly or intuitive.
 
