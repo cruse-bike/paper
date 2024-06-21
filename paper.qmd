@@ -28,7 +28,6 @@ format:
   #     model: 3p
   #     cite-style: super
 # # # #   # pdf: default
-
 # # Uncomment the following line to produce the cover page
 author:
   - name: Robin Lovelace
