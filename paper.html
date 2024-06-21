@@ -15,7 +15,7 @@
 <meta name="author" content="Gary O’Toole">
 <meta name="author" content="Dan Brennan">
 <meta name="author" content="Suzanne Meade">
-<meta name="dcterms.date" content="2024-06-20">
+<meta name="dcterms.date" content="2024-06-21">
 <meta name="keywords" content="Cycling, Open-source, Road Safety, Active Travel, Transport Planning, Collaborative Planning">
 
 <title>Cycle Route Uptake and Scenario Estimation (CRUSE): an approach for developing strategic cycle network planning tools</title>
@@ -211,7 +211,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 20, 2024</p>
+      <p class="date">June 21, 2024</p>
     </div>
   </div>
   
@@ -264,7 +264,7 @@ div.csl-indent {
 </section>
 <section id="sec-tools" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Tools for estimating cycling potential</h1>
-<p>Tools for estimating geographical distribution of cycling potential have advanced substantially in recent years. Developed by researchers and developers in academic, public and private sectors, they have evolved from simple area-based static models tailored to specific regions to more complex and (in some cases) more generalizable tools. These tools can be considered as a specific application of the concept of planning support systems (PSS), which are designed to help planners and decision-makers to make more informed decisions <span class="citation" data-cites="geertman2009">(<a href="#ref-geertman2009" role="doc-biblioref">Geertman &amp; Stillwell, 2009</a>)</span>. Outputs include maps with results available at several levels of analysis with levels of availability ranging from being only available to researchers and in static maps to open access mapping systems available to the public.</p>
+<p>Tools for estimating geographical distribution of cycling potential have advanced substantially in recent years. Developed by researchers and developers in academic, public and private sectors, they have evolved from simple area-based static models tailored to specific regions to more complex and (in some cases) more generalizable tools. These tools can be considered as a specific application of the concept of planning support systems (PSS) , which are designed to help planners and decision-makers to make more informed decisions <span class="citation" data-cites="geertman2009">(<a href="#ref-geertman2009" role="doc-biblioref">Geertman &amp; Stillwell, 2009</a>)</span>. Outputs include maps with results available at several levels of analysis with levels of availability ranging from being only available to researchers and in static maps to open access mapping systems available to the public.</p>
 <p>Previous studies have applied the concept of PSS to specific modes, including walking <span class="citation" data-cites="bencekri2024">(<a href="#ref-bencekri2024" role="doc-biblioref">Bencekri et al., 2024</a>)</span>, public transport <span class="citation" data-cites="barmentlo2012">(<a href="#ref-barmentlo2012" role="doc-biblioref">Barmentlo, 2012</a>)</span> and cycling <span class="citation" data-cites="bencekri2023">(<a href="#ref-bencekri2023" role="doc-biblioref">Bencekri et al., 2023</a>)</span>. While such prior work provides insight into the potential for approaches to transport planning that are both data-driven and participatory, the focus of this paper is on tools that focus attention on the <em>geographic distribution</em> of cycling potential and which answer the question “where to build”. Not all papers reviewed in this section classify themselves as, or even mention, PSS, but all of them can be considered as PSS. This paper is informed by the thinking underlying PSS, including the idea that the resulting tools are more effective if they are modular and can inter-link with other tools and processes in the planning process: PSS can be conceived as a “toolbox with separate instruments that can work and talk to each other effectively (as in the open systems concept) and that will be selectively applied in varying configurations to support a particular phase in the planning process” <span class="citation" data-cites="geertman2002">(<a href="#ref-geertman2002" role="doc-biblioref">Geertman, 2002</a>)</span>. We share this conception of PSS, emphasizing the benefits of a focus on a particular mode (cycling) and a particular phase in the planning process (strategic network development). A selection of existing tools are summarised below and presented in <a href="#tbl-tools" class="quarto-xref">Table&nbsp;1</a>.</p>
 <div style="page-break-after: always;"></div>
 <div class="cell">
@@ -277,10 +277,10 @@ Table&nbsp;1: Summary of existing tools for estimating cycling potential.
 <div class="cell-output-display">
 <table class="do-not-create-environment cell caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 41%">
-<col style="width: 21%">
-<col style="width: 3%">
+<col style="width: 30%">
+<col style="width: 39%">
+<col style="width: 25%">
+<col style="width: 4%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -292,63 +292,45 @@ Table&nbsp;1: Summary of existing tools for estimating cycling potential.
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Bicycle share model, Parkin, J. et al.&nbsp;(2007)</td>
+<td style="text-align: left;">Bicycle share model, Parkin et al.&nbsp;(2007)</td>
 <td style="text-align: left;">England and Wales, Journeys to work OD census data, at the small-area (wards) level</td>
 <td style="text-align: left;">Static tables in academic paper</td>
 <td style="text-align: left;">Proprietary</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Analysis of Cycling Potential (ACP), Transport for London (2010 and 2016)</td>
+<td style="text-align: left;">Analysis of Cycling Potential (ACP), Transport for London (2010, 2016)</td>
 <td style="text-align: left;">London, London Travel Demand Survey</td>
 <td style="text-align: left;">Static tables, graphs, and heatmaps, not publicly available</td>
 <td style="text-align: left;">Proprietary</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Bikeability index/Bike Score, Winters, M. et al.&nbsp;(2013 and 2016)</td>
-<td style="text-align: left;">Metro Vancouver region/160 US and Canadian cities, Cycling infrastructure, topography, destinations and road connectivity data</td>
-<td style="text-align: left;">Map-based heatmap, not publicly available</td>
-<td style="text-align: left;">Proprietary</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Prioritization index, Larsen, J. et al.&nbsp;(2013)</td>
+<td style="text-align: left;">Prioritization index, Larsen et al.&nbsp;(2013)</td>
 <td style="text-align: left;">Montreal, Survey, Road safety, and OD data</td>
 <td style="text-align: left;">Map-based heatmap, not publicly available</td>
 <td style="text-align: left;">Proprietary</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Usage intensity index, Zhang, D. et al.&nbsp;(2014)</td>
+<tr class="even">
+<td style="text-align: left;">Usage intensity index, Zhang et al.&nbsp;(2014)</td>
 <td style="text-align: left;">Belo Horizonte, Survey, census, and OD data</td>
 <td style="text-align: left;">Static tables and maps, not publicly available</td>
 <td style="text-align: left;">Proprietary</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">The Cycling Potential Tool (CPT), Phillips, L., &amp; Range, A. (2017)</td>
+<tr class="odd">
+<td style="text-align: left;">The Cycling Potential Tool (CPT), Phillips and Range (2017)</td>
 <td style="text-align: left;">Scotland, Environmental and socioeconomic data, at the small area (output areas) level</td>
 <td style="text-align: left;">Maps showing cycling potential in each area</td>
 <td style="text-align: left;">Proprietary</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Propensity to Cycle Tool (PCT), Lovelace, R. et al.&nbsp;(2017)</td>
+<tr class="even">
+<td style="text-align: left;">Propensity to Cycle Tool (PCT), Lovelace et al.&nbsp;(2017)</td>
 <td style="text-align: left;">England and Wales, Journeys to work and school OD census data, at the small area (LSOA) level</td>
 <td style="text-align: left;">Online maps, graphs, tables, publicly available at www.pct.bike</td>
 <td style="text-align: left;">Open source</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Cyclist Routing Algorithm for Network Connectivity (CRANC), Gehrke, S. R. et al.&nbsp;(2020)</td>
-<td style="text-align: left;">Boston region, Road segment characteristics, elevation, and destination acessibility data, at the census blocks level</td>
-<td style="text-align: left;">Graphs and heatmaps, not publicly available</td>
-<td style="text-align: left;">NA</td>
-</tr>
 <tr class="odd">
-<td style="text-align: left;">The Gross Potential for Cycling tool (CPC), Silva, C. et al.&nbsp;(2021 and 2022) and Lopez et al.&nbsp;(2021)</td>
+<td style="text-align: left;">The Gross Potential for Cycling tool (CPC), Silva et al.&nbsp;(2021 and 2022)</td>
 <td style="text-align: left;">21 Portuguese cities, Land use and socio-demographic data, at the small area (census tract) level</td>
 <td style="text-align: left;">Static maps showing cycling potential in different areas</td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">The relative equity impact of bicycle planning (TIRE), Cunha, I., &amp; Silva, C. (2023)</td>
-<td style="text-align: left;">Lisbon, Cycling infrastructure, topog­raphy, and location of points of interest data, at the hexagon cells level</td>
-<td style="text-align: left;">Graphs and heatmaps, not publicly available</td>
 <td style="text-align: left;">NA</td>
 </tr>
 </tbody>
@@ -360,11 +342,10 @@ Table&nbsp;1: Summary of existing tools for estimating cycling potential.
 </div>
 <p>Area-based approaches were developed before network-based tools, such as a 2007 regression-based model to estimate the percentage of cycling trips to work in England and Wales based on socioeconomic, transportation, and physical factors at the small area (wards) level in 2007 <span class="citation" data-cites="parkin_estimation_2007">(<a href="#ref-parkin_estimation_2007" role="doc-biblioref">Parkin et al., 2007</a>)</span>. They found that areas with a higher percentage of females, non-whites, car ownership, lower socioeconomic classes, income, distance to work, population density, poor highway conditions, hills, rainfall, and fewer off-road bicycle routes tended to have a lower proportion of cycling to work. The approach also generated “forecasts for potential levels of bicycle use” with with increases in off-road routes, improvements of highway and, conversely, increases in car ownership and distance to work leading to decreases in cycling to work.</p>
 <p>Three years later, Transport for London created the Analysis of Cycling Potential (ACP) tool based on a mode choice model that assesses the likelihood of trips being cycled, with data from the TfL London Travel Demand Survey as its primary input. The tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London to guide local cycling initiatives, such as where new hire ‘docking stations’ should go. The tool does not use origin-destination data and cannot estimate cycling potential on specific routes <span class="citation" data-cites="transport_for_london_analysis_2010">(<a href="#ref-transport_for_london_analysis_2010" role="doc-biblioref">Transport for London, 2010</a>)</span>.</p>
-<p>Other tools that generate areal data to prioritize investment include a study that generated a<span style="color: blue;"> ‘bikeability index’ for the Metro Vancouver region <span class="citation" data-cites="winters_mapping_2013">(<a href="#ref-winters_mapping_2013" role="doc-biblioref">Winters et al., 2013</a>)</span> and later called Bike Score and available for over 160 US and Canadian cities <span class="citation" data-cites="winters_bike_2016">(<a href="#ref-winters_bike_2016" role="doc-biblioref">Winters et al., 2016</a>)</span> – its methodology is <a href="https://www.walkscore.com/bike-score-methodology.shtml">publicly available</a>; a </span>‘prioritization index’ for Montreal, Canada <span class="citation" data-cites="larsen_build_2013">(<a href="#ref-larsen_build_2013" role="doc-biblioref">Larsen et al., 2013</a>)</span>; a ‘usage intensity index’ based on stated preferences in Belo Horizonte, Brazil <span class="citation" data-cites="zhang_prioritizing_2014">(<a href="#ref-zhang_prioritizing_2014" role="doc-biblioref">Zhang et al., 2014</a>)</span>; and a Cycling Potential Tool (CPT) for Scotland <span class="citation" data-cites="phillips_development_2017">(<a href="#ref-phillips_development_2017" role="doc-biblioref">Phillips &amp; Range, 2017</a>)</span>. The CPT is composed of the base environmental module — based on eight weighted factors (population density, hilliness, physical barriers, access to services, existing cycling mode share, distance to work and school, and road speed) — and the quality of service module, which evaluates each area of interest based on eight factors (surface condition, adjacent cyclists, comfort factor, conflict, distance between junctions, slope, access to services, and origin/destination).</p>
-<p>A more recent areal-based approach is the designed Gross Potential for Cycling (GPC) tool to prioritize areas for cycling infrastructure and other cycling measures <span class="citation" data-cites="silva_gross_2021">(<a href="#ref-silva_gross_2021" role="doc-biblioref">Silva et al., 2021</a>)</span>. The GPC uses two sets of indicators: population-based indicators (age, potential demand density, employment density and motorization rate) and area-based indicators (accessibility, education, public transport, connectivity, land use mix and relative performance). These indicators are calculated considering topography, road hierarchy, and average congestion and presented on a scale from 5 to 10. They are then combined into an overall score, weighted by their impact on cycling according to the literature. The ranking of areas by the GPC are <a href="https://boost.up.pt/en/ferramentas/gpc">publicly available</a> and its practical value has been assessed through workshops <span class="citation" data-cites="silva_revealing_2022">(<a href="#ref-silva_revealing_2022" role="doc-biblioref">Silva et al., 2022</a>)</span>. <span style="color: blue;">The GPC tool has also been used to investigate the combination of factors contributing to high levels cycling potential <span class="citation" data-cites="lopes_impact_2021">(<a href="#ref-lopes_impact_2021" role="doc-biblioref">Lopes et al., 2021</a>)</span>. Another recent areal-based approach is the Relative Equity Impact of Bicycle Planning (TIRE) <span class="citation" data-cites="cunha_assessing_2023">(<a href="#ref-cunha_assessing_2023" role="doc-biblioref">Cunha &amp; Silva, 2023</a>)</span>. The TIRE assesses the impact of cycling network allocation on the accessibility levels of different socioeconomic groups.</span></p>
-<p>Route-based tools emerged with increasing availability of origin-destination data, routing engines that can assign trips to networks, and improvements in computer hardware and software needed to generate route networks. A prominent example is the the Propensity to Cycle Tool (PCT), first developed to estimate current and future levels of cycling at desire line, zone, route, and route network levels for case study cities <span class="citation" data-cites="lovelace2016">(<a href="#ref-lovelace2016" role="doc-biblioref">Lovelace, 2016</a>)</span>. The approach was scaled-up to estimate estimate the potential benefits of uptake at zone and desire line levels nationally, and launched as a publicly available web application in 2017 <span class="citation" data-cites="lovelace2017">(<a href="#ref-lovelace2017" role="doc-biblioref">Lovelace et al., 2017</a>)</span>. Extensions of the PCT approach have included estimation of benefits at the individual level <span class="citation" data-cites="woodcock2018">(<a href="#ref-woodcock2018" role="doc-biblioref">Woodcock et al., 2018</a>)</span>, addition of travel to school network <span class="citation" data-cites="goodman2019">(<a href="#ref-goodman2019" role="doc-biblioref">Goodman et al., 2019</a>)</span>, and improved modeling of impacts on health, environmental and distributional outcomes <span class="citation" data-cites="woodcock2021">(<a href="#ref-woodcock2021" role="doc-biblioref">Woodcock et al., 2021</a>)</span>. Initially developed just for England, the PCT was extended to cover all of Wales (for commuter data only) in 2018.</p>
+<p>Other tools that generate areal data to prioritize investment include a study that generated a ‘prioritization index’ for Montreal, Canada <span class="citation" data-cites="larsen_build_2013">(<a href="#ref-larsen_build_2013" role="doc-biblioref">Larsen et al., 2013</a>)</span>, a ‘usage intensity index’ based on stated preferences in Belo Horizonte, Brazil, and a Cycling Potential Tool (CPT) for Scotland <span class="citation" data-cites="phillips_development_2017">(<a href="#ref-phillips_development_2017" role="doc-biblioref">Phillips &amp; Range, 2017</a>)</span>. The CPT is composed of the base environmental module — based on eight weighted factors (population density, hilliness, physical barriers, access to services, existing cycling mode share, distance to work and school, and road speed) — and the quality of service module, which evaluates each area of interest based on eight factors (surface condition, adjacent cyclists, comfort factor, conflict, distance between junctions, slope, access to services, and origin/destination).</p>
+<p>A more recent areal-based approach is the designed the Gross Potential for Cycling (GPC) tool to prioritize areas for cycling infrastructure and other cycling measures <span class="citation" data-cites="silva_gross_2021">(<a href="#ref-silva_gross_2021" role="doc-biblioref">Silva et al., 2021</a>)</span>. The GPC uses two sets of indicators: population-based indicators (age, potential demand density, employment density and motorization rate) and area-based indicators (accessibility, education, public transport, connectivity, land use mix and relative performance). These indicators are calculated considering topography, road hierarchy, and average congestion and presented on a scale from 5 to 10. They are then combined into an overall score, weighted by their impact on cycling according to the literature. The ranking of areas by the GPC are <a href="https://boost.up.pt/en/ferramentas/gpc">publicly available</a> and its practical value has been assessed through workshops <span class="citation" data-cites="silva_revealing_2022">(<a href="#ref-silva_revealing_2022" role="doc-biblioref">Silva et al., 2022</a>)</span>.</p>
+<p>Route-based tools emerged with increasing availability of origin-destination data, routing engines that can assign trips to networks, and improvements in computer hardware and software needed to generate route networks. A prominent example is the the Propensity to Cycle Tool (PCT), first developed to estimate current and future levels of cycling at desire line, zone, route, and route network levels for case study cities <span class="citation" data-cites="lovelace_mapping_2016">(<a href="#ref-lovelace_mapping_2016" role="doc-biblioref"><strong>lovelace_mapping_2016?</strong></a>)</span>. The approach was scaled-up to estimate estimate the potential benefits of uptake at zone and desire line levels nationally, and launched as a publicly available web application in 2017 <span class="citation" data-cites="lovelace2017">(<a href="#ref-lovelace2017" role="doc-biblioref">Lovelace et al., 2017</a>)</span>. Extensions of the PCT approach have included estimation of benefits at the individual level <span class="citation" data-cites="woodcock2018">(<a href="#ref-woodcock2018" role="doc-biblioref">Woodcock et al., 2018</a>)</span>, addition of travel to school network <span class="citation" data-cites="goodman2019">(<a href="#ref-goodman2019" role="doc-biblioref">Goodman et al., 2019</a>)</span>, and improved modeling of impacts on health, environmental and distributional outcomes <span class="citation" data-cites="woodcock2021">(<a href="#ref-woodcock2021" role="doc-biblioref">Woodcock et al., 2021</a>)</span>. Initially developed just for England, the PCT was extended to cover all of Wales (for commuter data only) in 2018.</p>
 <p>The PCT approach has been applied in other countries, including Ireland (the topic of this paper), Scotland, and Portugal. In Portugal the ‘biclaR’ project, based on methods underlying the PCT, has been developed and deployed for the Lisbon metro region. The resulting evidence is available in an interactive web application hosted at <a href="https://biclar.tmlmobilidade.pt">biclar.tmlmobilidade.pt</a> <span class="citation" data-cites="felix2023">(<a href="#ref-felix2023" role="doc-biblioref">Félix et al., 2022</a>)</span>. biclaR includes estimates of impacts, using the World Health Organisation (WHO) ‘HEAT for Cycling’ tool and an ‘intermodality’ scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.</p>
-<p><span style="color: blue;">Another route-based tool is The Cycling Routing Algorithm for Network Connectivity (CRANC) <span class="citation" data-cites="gehrke_cycling-focused_2020">(<a href="#ref-gehrke_cycling-focused_2020" role="doc-biblioref">Gehrke et al., 2020</a>)</span>. The CRANC tool evaluates the benefits of new bicycle facilities for the accessibility of various populations and neighbourhoods. </span></p>
 <p>The approach presented in this paper seeks to overcome three limitations of previous tools to estimate cycling potential: 1) low resolution of data, with routes starting and ending in administrative zone centroids, 2) limited coverage of trip purposes beyond travel to work and school, and 3) a web interface that was not user-friendly or intuitive.</p>
 </section>
 <section id="sec-methods" class="level1" data-number="3">
@@ -421,6 +402,7 @@ Table&nbsp;2: Trip purposes used in the CRUSE Tool.
 <div aria-describedby="tbl-trip-purposes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
 <table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<caption>Trip purposes used in the CRUSE Tool.</caption>
 <colgroup>
 <col style="width: 6%">
 <col style="width: 28%">
@@ -792,9 +774,6 @@ Cavallaro, F., &amp; Nocera, S. (2024). COVID-19 effects on transport-related ai
 <div id="ref-cooper2018" class="csl-entry" role="listitem">
 Cooper, C. H. V. (2018). Predictive spatial network analysis for high-resolution transport modeling, applied to cyclist flows, mode choice, and targeting investment. <em>International Journal of Sustainable Transportation</em>, <em>0</em>(0), 1–11. <a href="https://doi.org/10.1080/15568318.2018.1432730">https://doi.org/10.1080/15568318.2018.1432730</a>
 </div>
-<div id="ref-cunha_assessing_2023" class="csl-entry" role="listitem">
-Cunha, I., &amp; Silva, C. (2023). Assessing the equity impact of cycling infrastructure allocation: <span>Implications</span> for planning practice. <em>Transport Policy</em>, <em>133</em>, 15–26. <a href="https://doi.org/10.1016/j.tranpol.2022.12.021">https://doi.org/10.1016/j.tranpol.2022.12.021</a>
-</div>
 <div id="ref-desjardins2022" class="csl-entry" role="listitem">
 Desjardins, E., Higgins, C. D., Scott, D. M., Apatu, E., &amp; Páez, A. (2022). Correlates of bicycling trip&nbsp;flows in Hamilton, Ontario: fastest, quietest, or balanced routes? <em>Transportation</em>. <a href="https://doi.org/10.1007/s11116-021-10197-1">https://doi.org/10.1007/s11116-021-10197-1</a>
 </div>
@@ -812,9 +791,6 @@ Geertman, S. (2002). Participatory Planning and GIS: A PSS to Bridge the Gap. <e
 </div>
 <div id="ref-geertman2009" class="csl-entry" role="listitem">
 Geertman, S., &amp; Stillwell, J. (2009). <em>Planning support systems: Content, issues and trends</em> (S. Geertman &amp; J. Stillwell, Eds.; Vol. 95, p. 126). Springer Netherlands. <a href="http://dx.doi.org/10.1007/978-1-4020-8952-7_1">http://dx.doi.org/10.1007/978-1-4020-8952-7_1</a>
-</div>
-<div id="ref-gehrke_cycling-focused_2020" class="csl-entry" role="listitem">
-Gehrke, S. R., Akhavan, A., Furth, P. G., Wang, Q., &amp; Reardon, T. G. (2020). A cycling-focused accessibility tool to support regional bike network connectivity. <em>Transportation Research Part D: Transport and Environment</em>, <em>85</em>, 102388. <a href="https://doi.org/10.1016/j.trd.2020.102388">https://doi.org/10.1016/j.trd.2020.102388</a>
 </div>
 <div id="ref-globals2018" class="csl-entry" role="listitem">
 <em>Global Status Report On Road Safety 2018</em>. (2018). <a href="https://www.who.int/publications/i/item/9789241565684">https://www.who.int/publications/i/item/9789241565684</a>
@@ -839,12 +815,6 @@ Jaramillo, P., Kahn Ribeiro, S., Newman, P., Dhar, S., Diemuodeke, O. E., Kajino
 </div>
 <div id="ref-larsen_build_2013" class="csl-entry" role="listitem">
 Larsen, J., Patterson, Z., &amp; El-Geneidy, A. (2013). Build <span>It</span>. <span>But</span> <span>Where</span>? <span>The</span> <span>Use</span> of <span>Geographic</span> <span>Information</span> <span>Systems</span> in <span>Identifying</span> <span>Locations</span> for <span>New</span> <span>Cycling</span> <span>Infrastructure</span>. <em>International Journal of Sustainable Transportation</em>, <em>7</em>(4), 299–317. <a href="https://doi.org/10.1080/15568318.2011.631098">https://doi.org/10.1080/15568318.2011.631098</a>
-</div>
-<div id="ref-lopes_impact_2021" class="csl-entry" role="listitem">
-Lopes, M., Mélice Dias, A., &amp; Silva, C. (2021). The impact of urban features in cycling potential – <span>A</span> tale of <span>Portuguese</span> cities. <em>Journal of Transport Geography</em>, <em>95</em>, 103149. <a href="https://doi.org/10.1016/j.jtrangeo.2021.103149">https://doi.org/10.1016/j.jtrangeo.2021.103149</a>
-</div>
-<div id="ref-lovelace2016" class="csl-entry" role="listitem">
-Lovelace, R. (2016). Mapping out the future of cycling. <em>Get Britain Cycling</em>, <em>5</em>, 2224. <a href="http://eprints.whiterose.ac.uk/100080/">http://eprints.whiterose.ac.uk/100080/</a>
 </div>
 <div id="ref-lovelace2021" class="csl-entry" role="listitem">
 Lovelace, R. (2021). Open source tools for geographic analysis in transport planning. <em>Journal of Geographical Systems</em>. <a href="https://doi.org/10.1007/s10109-020-00342-2">https://doi.org/10.1007/s10109-020-00342-2</a>
@@ -930,20 +900,11 @@ Wild, K., Woodward, A., Field, A., &amp; Macmillan, A. (2017). Beyond <span>‘<
 <div id="ref-winkler2023" class="csl-entry" role="listitem">
 Winkler, L., Pearce, D., Nelson, J., &amp; Babacan, O. (2023). The effect of sustainable mobility transition policies on cumulative urban transport emissions and energy demand. <em>Nature Communications</em>, <em>14</em>(1), 2357. <a href="https://doi.org/10.1038/s41467-023-37728-x">https://doi.org/10.1038/s41467-023-37728-x</a>
 </div>
-<div id="ref-winters_mapping_2013" class="csl-entry" role="listitem">
-Winters, M., Brauer, M., Setton, E. M., &amp; Teschke, K. (2013). Mapping bikeability: A spatial tool to support sustainable travel. <em>Environment and Planning B: Planning and Design</em>, <em>40</em>(5), 865–883. <a href="https://doi.org/10.1068/b38185">https://doi.org/10.1068/b38185</a>
-</div>
-<div id="ref-winters_bike_2016" class="csl-entry" role="listitem">
-Winters, M., Teschke, K., Brauer, M., &amp; Fuller, D. (2016). Bike <span>Score</span>®: <span>Associations</span> between urban bikeability and cycling behavior in 24 cities. <em>International Journal of Behavioral Nutrition and Physical Activity</em>, <em>13</em>(1), 18. <a href="https://doi.org/10.1186/s12966-016-0339-0">https://doi.org/10.1186/s12966-016-0339-0</a>
-</div>
 <div id="ref-woodcock2018" class="csl-entry" role="listitem">
 Woodcock, J., Abbas, A., Ullrich, A., Tainio, M., Lovelace, R., Sá, T. H., Westgate, K., &amp; Goodman, A. (2018). Development of the Impacts of Cycling Tool (ICT): A modelling study and web tool for evaluating health and environmental impacts of cycling uptake. <em>PLOS Medicine</em>, <em>15</em>(7), e1002622. <a href="https://doi.org/10.1371/journal.pmed.1002622">https://doi.org/10.1371/journal.pmed.1002622</a>
 </div>
 <div id="ref-woodcock2021" class="csl-entry" role="listitem">
 Woodcock, J., Aldred, R., Lovelace, R., Strain, T., &amp; Goodman, A. (2021). Health, environmental and distributional impacts of cycling uptake: The model underlying the Propensity to Cycle tool for England and Wales. <em>Journal of Transport and Health</em>, <em>22</em>, 101066. <a href="https://doi.org/10.1016/j.jth.2021.101066">https://doi.org/10.1016/j.jth.2021.101066</a>
-</div>
-<div id="ref-zhang_prioritizing_2014" class="csl-entry" role="listitem">
-Zhang, D., Magalhães, D. J. A. V., &amp; Wang, X. (Cara). (2014). Prioritizing bicycle paths in <span>Belo</span> <span>Horizonte</span> <span>City</span>, <span>Brazil</span>: <span>Analysis</span> based on user preferences and willingness considering individual heterogeneity. <em>Transportation Research Part A: Policy and Practice</em>, <em>67</em>, 268–278. <a href="https://doi.org/10.1016/j.tra.2014.07.010">https://doi.org/10.1016/j.tra.2014.07.010</a>
 </div>
 </div></section></div></main>
 <!-- /main column -->
