@@ -229,7 +229,7 @@ Three years later, Transport for London created the Analysis of Cycling Potentia
 The tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London to guide local cycling initiatives, such as where new hire 'docking stations' should go.
 The tool does not use origin-destination data and cannot estimate cycling potential on specific routes [@transport_for_london_analysis_2010].
 
-Other tools that generate areal data to prioritize investment include a study that generated a[ 'bikeability index' for the Metro Vancouver region [@winters_mapping_2013] and later called Bike Score and available for over 160 US and Canadian cities [@winters_bike_2016] -- its methodology is [publicly available](https://www.walkscore.com/bike-score-methodology.shtml); a ]{style="color: blue;"}'prioritization index' for Montreal, Canada [@larsen_build_2013]; a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil [@zhang_prioritizing_2014]; and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
+Other tools that generate areal data to prioritize investment include a study that generated a['bikeability index' for the Metro Vancouver region [@winters_mapping_2013] and later called Bike Score and available for over 160 US and Canadian cities [@winters_bike_2016] -- its methodology is [publicly available](https://www.walkscore.com/bike-score-methodology.shtml); a]{style="color: blue;"}'prioritization index' for Montreal, Canada [@larsen_build_2013]; a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil [@zhang_prioritizing_2014]; and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
 The CPT is composed of the base environmental module — based on eight weighted factors (population density, hilliness, physical barriers, access to services, existing cycling mode share, distance to work and school, and road speed) — and the quality of service module, which evaluates each area of interest based on eight factors (surface condition, adjacent cyclists, comfort factor, conflict, distance between junctions, slope, access to services, and origin/destination).
 
 A more recent areal-based approach is the Gross Potential for Cycling (GPC) tool to prioritize areas for cycling infrastructure and other cycling measures [@silva_gross_2021].
@@ -250,7 +250,7 @@ In Portugal the 'biclaR' project, based on methods underlying the PCT, has been 
 The resulting evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
 biclaR includes estimates of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool and an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
 
-[Another route-based tool is The Cycling Routing Algorithm for Network Connectivity (CRANC) [@gehrke_cycling-focused_2020]. The CRANC tool evaluates the benefits of new bicycle facilities for the accessibility of various populations and neighbourhoods. ]{style="color: blue;"}
+[Another route-based tool is The Cycling Routing Algorithm for Network Connectivity (CRANC) [@gehrke_cycling-focused_2020]. The CRANC tool evaluates the benefits of new bicycle facilities for the accessibility of various populations and neighbourhoods.]{style="color: blue;"}
 
 The approach presented in this paper seeks to overcome three limitations of previous tools to estimate cycling potential: 1) low resolution of data, with routes starting and ending in administrative zone centroids, 2) limited coverage of trip purposes beyond travel to work and school, and 3) a web interface that was not user-friendly or intuitive.
 
@@ -604,6 +604,52 @@ knitr::include_graphics("images/fig5.png")
 
 ::: -->
 ```
+## Stakeholder engagement {#sec-stakeholder-engagement}
+
+The CRUSE Tool was developed for, and in close collaboration with, practitioners in Ireland.
+Although the overall approach of the project was quantitative, stakeholder feedback and qualitative data was deemed essential to ensure the tool was fit for purpose, mitigating against the risk that the project would be 'technocentric' and a 'problem looking for a solution'.
+From the outset of the project, we aimed to follow @coppola2022's advocacy for a "human-centric approach in which personalization, purpose, ethics and inclusivity are key", rather than an 'off-the-shelf' product that failed to understand, let alone meet, local needs.
+As outlined in the overview of papers in the collection Inclusive and Collaborative Transport cited above, the 'digital transformation' taking place in transport planning (and many other sectors) has the potential to increase existing inequalities [@coppola2022].
+A wide range of methods and measure can be taken to ensure that digital tools are inclusive \[...\].
+
+<!-- Details from final workshop:
+
+Can you please join me and my colleagues from TII and ITS Leeds for 1 hour on Thursday the 7th December at 12:00 – 13:00 for a workshop and demonstration of the open source CRUSE tool) which is used primarily to highlight the cycle friendliness of roads in Ireland, avail of cycle scenario/trip data and highlight areas to target for active travel investment. This tool is free to use for transport planners or member of the general public and can be found here: CRUSE . We have now added recreational cycling trips to the CRUSE tool and would welcome the chance to present this work and ask for feedback.
+
+Please see below a draft agenda for the workshop till 1pm:
+
+-   Introduction (5 min)
+-   Changes to CRUSE: extension work (15 min)
+-   Testing new website (10 min)
+-   Feedback, Q&A + discussion (30 min)
+    - General feedback on new site
+    - Feedback on the recreational outputs
+    - Feedback on the tourism network -->
+
+
+<!-- – What are main issues you face in
+understanding infrastructure?, e.g.
+– What is happening at the moment?
+– Where to invest in the future?
+– What will change?
+– How will planning vary depending on trip purpose?
+– What sort of scenarios interested in testing?
+– How useful is having different networks for
+planning infrastructure and/or more detail,
+e.g. there could be an option for variation in
+access for professionals and public (the latter
+remaining simple) -->
+
+Due to time and skill constraints in the team developing the CRUSE tool (we lacked researchers with a background in qualitative methods), we opted for the well-tested and cost-effective approach of holding workshops with stakeholders in case study area, an approach that is documented with reference to participatory development of digital tools for supporting energy transitions [@hewitt2020].
+We held a total of three workshops over the course of the project and one open-ended live demo during a 2-day event in Sligo in which we collected feedback from dozens of people.
+The first two workshops took place in May 2022, in which key staff involved in cycle network planning in Kildare and Limerick counties were presented the tool.
+The county-specific approach allowed the workshop to focus on specific areas and key corridors.
+The local transport planners were asked to provide feedback in a semi-structured interview approach, with questions on the evidence they currently have access, how they may be able to use the tool, and requests for new features.
+
+The third and final workshop took place on the 7^th^ December 2023 and included descriptions of recent changes to the tool, with an aim being to get feedback on the new recreational and cycle touring evidence, with representatives from county-level transport planning bodies, Sport Ireland, and Waterways Ireland.
+The open-ended live demo was undertaken at a stall at TII’s National Roads and Greenways Conference in Sligo in September 2022, where much of the feedback was verbal and not collected.
+Much of this feedback from the workshops and live demo outlined above was in the form of ad-hoc comments and suggestions and not all of the qualitative data received was recorded in a structured way, a limitation that we refer back to in @sec-discussion.
+
 # Results {#sec-results}
 
 The main result of the work presented in this paper is an open access web application and datasets on current and potential future cycling levels in Ireland, with evidence provided at county and route segment levels.
@@ -740,7 +786,7 @@ Assuming that these findings apply in other cities, the results can help priorit
 However, a feature of the approach is that it is not prescriptive and it does not tell planners what to build where; as highlighted below practitioners can use the results in a variety of ways.
 <!-- The results for the other -->
 
-## Stakeholder engagement and feedback {#sec-qualitative}
+## Stakeholder feedback {#sec-qualitative}
 
 Throughout the project, we undertook a series of workshops and interviews with stakeholders in Ireland to gather feedback on the approach and resulting tool.
 The feedback was generally positive, with stakeholders commenting on the need for the tool, lack of data on cycling potential proving a barrier to decision-making and investment, and the potential for the tool.
@@ -827,6 +873,11 @@ More broadly, the tool's outputs are limited to just one mode of active travel (
 Sustainable transport policies should plan for walking, wheeling and cycling, and there are many co-benefits of broadly defined active travel interventions that benefit all active modes, such as measures to reduce heavy motor traffic speeds and volumes in areas and along corridors with high active travel potential.
 This raises the question of whether other active modes should be incorporated into the results using the OD-based approach outlined in this paper, or whether different modeling approaches are needed to properly capture the shorter distance trips typically made by walking [@cooper2018].
 Furthermore, the estimates of cycling presented in the CRUSE Tool omit multi-modal trips including public transport, and omit trip chaining, due to the need to capture a large portion of cycling potential within the resource constraints of the project.
+
+A final limitation of the approach relates to *how* it was developed.
+As described in @sec-stakeholder-engagement, the development of the tool was participatory, but only insofar as people who attended our workshops could provide feedback.
+The people who did provide feedback were deliberately chosen as the target audience.
+In future work we would like to collect feedback from a wider range of people, including campaigners, service providers (e.g. staff involved in travel planning for schools and new developments), and people who not involved in the planning process.
 
 # Conclusions {#sec-conclusions}
 
