@@ -79,7 +79,7 @@ keywords:
 date: last-modified
 ---
 
-Note: preprint now available here: https://osf.io/preprints/osf/a72yh
+<!-- Note: preprint now available here: https://osf.io/preprints/osf/a72yh
 
 <details>
 
@@ -93,7 +93,7 @@ doi:10.31219/osf.io/a72yh.
 This is an open and reproducible paper.
 See [github.com/cruse-bike](https://github.com/cruse-bike) for the code and data used to generate the results presented here, and the code underlying the web app hosted at [cruse.bike](https://cruse.bike/).
 
-</details>
+</details> -->
 
 {{< pagebreak >}}
 
@@ -529,6 +529,7 @@ graph LR
 ```{r alternative}
 #| fig-cap: Hypothetical user stories for the CRUSE Tool illustrating that it can be used in different ways by different user groups.
 #| label: fig-user-stories
+#| out-width: 100%
 # schematic = DiagrammeR::grViz("
 # digraph {
 #   # graph statement
@@ -610,8 +611,8 @@ knitr::include_graphics("images/fig5.png")
 
 The CRUSE Tool was developed for, and in close collaboration with, practitioners in the Republic of Ireland.
 Although the overall approach of the project was quantitative, stakeholder feedback and qualitative data was deemed essential to ensure the tool was fit for purpose, mitigating against the risk that the project would be 'technocentric' and a 'problem looking for a solution'.
-From the outset of the project, we aimed to follow @coppola2022's advocacy for a "human-centric approach in which personalization, purpose, ethics and inclusivity are key", rather than an 'off-the-shelf' product that failed to understand, let alone meet, local needs.
-As outlined by @coppola2022, the 'digital transformation' taking place in transport planning (and many other sectors) has the potential to increase existing inequalities [@coppola2022].
+From the outset of the project, we aimed to follow a "human-centric approach in which personalization, purpose, ethics and inclusivity are key", rather than an 'off-the-shelf' product that failed to understand, let alone meet, local needs.
+The 'digital transformation' taking place in transport planning (and many other sectors) has the potential to increase existing inequalities [@coppola2022].
 A wide range of methods and measure can be taken to ensure that digital tools are accessible.
 
 <!-- Details from final workshop:
