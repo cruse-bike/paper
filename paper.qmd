@@ -229,7 +229,7 @@ Three years later, Transport for London created the Analysis of Cycling Potentia
 The tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London to guide local cycling initiatives, such as where new hire 'docking stations' should go.
 The tool does not use origin-destination data and cannot estimate cycling potential on specific routes [@transport_for_london_analysis_2010].
 
-Other tools that generate areal data to prioritize investment include a study that generated a['bikeability index' for the Metro Vancouver region [@winters_mapping_2013] and later called Bike Score and available for over 160 US and Canadian cities [@winters_bike_2016] -- its methodology is [publicly available](https://www.walkscore.com/bike-score-methodology.shtml); a]{style="color: blue;"}'prioritization index' for Montreal, Canada [@larsen_build_2013]; a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil [@zhang_prioritizing_2014]; and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
+Other tools that generate areal data to prioritize investment include a study that generated a ['bikeability index' for the Metro Vancouver region [@winters_mapping_2013], later renamed Bike Score and available for over 160 US and Canadian cities [@winters_bike_2016] -- its methodology is [openly accessible](https://www.walkscore.com/bike-score-methodology.shtml); a]{style="color: blue;"} 'prioritization index' for Montreal, Canada [@larsen_build_2013]; a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil [@zhang_prioritizing_2014]; and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
 The CPT is composed of the base environmental module — based on eight weighted factors (population density, hilliness, physical barriers, access to services, existing cycling mode share, distance to work and school, and road speed) — and the quality of service module, which evaluates each area of interest based on eight factors (surface condition, adjacent cyclists, comfort factor, conflict, distance between junctions, slope, access to services, and origin/destination).
 
 A more recent areal-based approach is the Gross Potential for Cycling (GPC) tool to prioritize areas for cycling infrastructure and other cycling measures [@silva_gross_2021].
@@ -237,7 +237,7 @@ The GPC uses two sets of indicators: population-based indicators (age, potential
 These indicators are calculated considering topography, road hierarchy, and average congestion and presented on a scale from 5 to 10.
 They are then combined into an overall score, weighted by their impact on cycling according to the literature.
 The ranking of areas by the GPC are [publicly available](https://boost.up.pt/en/ferramentas/gpc) and its practical value has been assessed through workshops [@silva_revealing_2022].
-[The GPC tool has also been used to investigate the combination of factors contributing to high levels cycling potential [@lopes_impact_2021]. Another recent areal-based approach is the Relative Equity Impact of Bicycle Planning (TIRE) [@cunha_assessing_2023]. The TIRE assesses the impact of cycling network allocation on the accessibility levels of different socioeconomic groups.]{style="color: blue;"}
+[The GPC tool has also been used to investigate the combination of factors contributing to high levels cycling potential [@lopes_impact_2021]. Another recent areal-based approach is the Relative Equity Impact of Bicycle Planning (TIRE) [@cunha_assessing_2023] tool. The TIRE tool assesses the impact of cycling network allocation on the accessibility levels of different socioeconomic groups.]{style="color: blue;"}
 
 Route-based tools emerged with increasing availability of origin-destination data, routing engines that can assign trips to networks, and improvements in computer hardware and software needed to generate route networks.
 A prominent example is the the Propensity to Cycle Tool (PCT), first developed to estimate current and future levels of cycling at desire line, zone, route, and route network levels for case study cities [@lovelace2016].
@@ -604,13 +604,17 @@ knitr::include_graphics("images/fig5.png")
 
 ::: -->
 ```
-## Stakeholder engagement {#sec-stakeholder-engagement}
 
-The CRUSE Tool was developed for, and in close collaboration with, practitioners in Ireland.
+
+
+## [Stakeholder engagement]{style="color: blue;"} {#sec-stakeholder-engagement}
+
+[The CRUSE Tool was developed for, and in close collaboration with, practitioners in Ireland.
 Although the overall approach of the project was quantitative, stakeholder feedback and qualitative data was deemed essential to ensure the tool was fit for purpose, mitigating against the risk that the project would be 'technocentric' and a 'problem looking for a solution'.
 From the outset of the project, we aimed to follow @coppola2022's advocacy for a "human-centric approach in which personalization, purpose, ethics and inclusivity are key", rather than an 'off-the-shelf' product that failed to understand, let alone meet, local needs.
-As outlined in the overview of papers in the collection Inclusive and Collaborative Transport cited above, the 'digital transformation' taking place in transport planning (and many other sectors) has the potential to increase existing inequalities [@coppola2022].
-A wide range of methods and measure can be taken to ensure that digital tools are inclusive \[...\].
+As outlined by @coppola2022, the 'digital transformation' taking place in transport planning (and many other sectors) has the potential to increase existing inequalities [@coppola2022].
+A wide range of methods and measure can be taken to ensure that digital tools are accessible to their recipients.]{style="color: blue;"}
+
 
 <!-- Details from final workshop:
 
@@ -640,16 +644,17 @@ e.g. there could be an option for variation in
 access for professionals and public (the latter
 remaining simple) -->
 
-Due to time and skill constraints in the team developing the CRUSE tool (we lacked researchers with a background in qualitative methods), we opted for the well-tested and cost-effective approach of holding workshops with stakeholders in case study area, an approach that is documented with reference to participatory development of digital tools for supporting energy transitions [@hewitt2020].
+[The stakeholder engagement was carried out through workshops with stakeholders in case study area, an approach that is documented with reference to participatory development of digital tools for supporting energy transitions [@hewitt2020].
 We held a total of three workshops over the course of the project and one open-ended live demo during a 2-day event in Sligo in which we collected feedback from dozens of people.
-Other than the live demo, all of the workshops took place online.
-The first two workshops took place in May 2022, in which key staff involved in cycle network planning in Kildare and Limerick counties were presented the tool.
+Other than the live demo, all of the workshops took place online.]{style="color: blue;"}
+
+[The first two workshops took place in May 2022, during which the tool was introduced to key staff involved in cycle network planning in Kildare and Limerick counties.
 The county-specific approach allowed the workshop to focus on specific areas and key corridors.
 The local transport planners were asked to provide feedback in a semi-structured interview approach, with questions on the evidence they currently have access, how they may be able to use the tool, and requests for new features.
+The third and final workshop took place on the 7^th^ December 2023 and included descriptions of recent changes to the tool, with an aim being to get feedback on the new recreational and cycle touring evidence, with representatives from county-level transport planning bodies, Sport Ireland, and Waterways Ireland.]{style="color: blue;"}
 
-The third and final workshop took place on the 7^th^ December 2023 and included descriptions of recent changes to the tool, with an aim being to get feedback on the new recreational and cycle touring evidence, with representatives from county-level transport planning bodies, Sport Ireland, and Waterways Ireland.
-The open-ended live demo was undertaken at a stall at TII’s National Roads and Greenways Conference in Sligo in September 2022, where much of the feedback was verbal and not collected.
-Much of this feedback from the workshops and live demo outlined above was in the form of ad-hoc comments and suggestions and not all of the qualitative data received was recorded in a structured way, a limitation that we refer back to in @sec-discussion.
+[The open-ended live demo was undertaken at a stall at TII’s National Roads and Greenways Conference in Sligo in September 2022, where much of the feedback was verbal and not collected.
+Much of this feedback from the workshops and live demo outlined above was in the form of ad-hoc comments and suggestions and not all of the qualitative data received was recorded in a structured way, a limitation that we refer back to in @sec-discussion.]{style="color: blue;"}
 
 # Results {#sec-results}
 
@@ -875,10 +880,10 @@ Sustainable transport policies should plan for walking, wheeling and cycling, an
 This raises the question of whether other active modes should be incorporated into the results using the OD-based approach outlined in this paper, or whether different modeling approaches are needed to properly capture the shorter distance trips typically made by walking [@cooper2018].
 Furthermore, the estimates of cycling presented in the CRUSE Tool omit multi-modal trips including public transport, and omit trip chaining, due to the need to capture a large portion of cycling potential within the resource constraints of the project.
 
-A final limitation of the approach relates to *how* it was developed.
+[A final limitation of the approach relates to *how* it was developed.
 As described in @sec-stakeholder-engagement, the development of the tool was participatory, but only insofar as people who attended our workshops could provide feedback.
 The people who did provide feedback were deliberately chosen as the target audience.
-In future work we would like to collect feedback from a wider range of people, including campaigners, service providers (e.g. staff involved in travel planning for schools and new developments), and people who not involved in the planning process.
+In future work we would like to collect feedback from a wider range of people, including campaigners, service providers (e.g. staff involved in travel planning for schools and new developments), and people who not involved in the planning process.]{style="color: blue;"}
 
 # Conclusions {#sec-conclusions}
 
