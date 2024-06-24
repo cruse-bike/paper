@@ -105,13 +105,21 @@ library(dplyr)
 #| eval: false
 remotes::install_dev("tmap")
 library(tmap)
-# Save title page (1st page of paper.pdf):
-system("pdftk _site/paper.pdf cat 1 output _site/title_page.pdf")
+# # Save title page (1st page of paper.pdf):
+# system("pdftk _site/paper.pdf cat 1 output _site/title_page.pdf")
 # Combine cv.pdf with visions.pdf:
-system("pdftk _site/cv.pdf _site/visions.pdf cat output _site/cv_and_visions.pdf")
+# system("pdftk _site/cv.pdf _site/visions.pdf cat output _site/cv_and_visions.pdf")
 # latexdiffr::latexdiff("paper-v1.qmd", "paper.qmd")
 system("latexdiff paper-r1.tex paper.tex > tracked-changes-r2.tex")
 system("pdflatex tracked-changes-r2.tex")
+# To debug this search for: 
+# https://www.google.com/search?client=ubuntu-sn&channel=fs&q=latexdiff+references+question+marks
+# From that: https://tex.stackexchange.com/questions/63852/question-mark-or-bold-citation-key-instead-of-citation-number
+# Bibliography:
+system("bibtex tracked-changes-r2.aux")
+system("pdflatex tracked-changes-r2.tex")
+system("pdflatex tracked-changes-r2.tex")
+
 browseURL("tracked-changes-r2.pdf")
 ```
 
