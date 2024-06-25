@@ -187,7 +187,7 @@ In @sec-discussion, we discuss limitations and possible future improvements to t
 
 Tools for estimating geographical distribution of cycling potential have advanced substantially in recent years.
 Developed by researchers and developers in academic, public and private sectors, they have evolved from simple area-based static models tailored to specific regions to more complex and (in some cases) more generalizable tools.
-These tools can be considered as a specific application of the concept of planning support systems (PSS), which are designed to help planners and decision-makers to make more informed decisions [@geertman2009].
+These tools can be considered as a specific application of the concept of planning support systems (PSS), which are designed to help planners and decision-makers in making better-informed decisions [@geertman2009].
 Outputs include maps with results available at several levels of analysis with levels of availability ranging from being only available to researchers and in static maps to open access mapping systems available to the public.
 
 Previous studies have applied the concept of PSS to specific modes, including walking [@bencekri2024], public transport [@barmentlo2012] and cycling [@bencekri2023].
@@ -227,13 +227,13 @@ knitr::kable(tools, caption = "Summary of existing tools for estimating cycling 
 
 Area-based approaches were developed before network-based tools, such as a 2007 regression-based model to estimate the percentage of cycling trips to work in England and Wales based on socioeconomic, transportation, and physical factors at the small area (wards) level in 2007 [@parkin_estimation_2007].
 They found that areas with a higher percentage of females, non-whites, car ownership, lower socioeconomic classes, income, distance to work, population density, poor highway conditions, hills, rainfall, and fewer off-road bicycle routes tended to have a lower proportion of cycling to work.
-The approach also generated "forecasts for potential levels of bicycle use" with with increases in off-road routes, improvements of highway and, conversely, increases in car ownership and distance to work leading to decreases in cycling to work.
+The approach also generated "forecasts for potential levels of bicycle use" with increases in off-road routes, improvements of highway and, conversely, increases in car ownership and distance to work leading to decreases in cycling to work.
 
 Three years later, Transport for London created the Analysis of Cycling Potential (ACP) tool based on a mode choice model that assesses the likelihood of trips being cycled, with data from the TfL London Travel Demand Survey as its primary input.
-The tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London to guide local cycling initiatives, such as where new hire 'docking stations' should go.
-The tool does not use origin-destination data and cannot estimate cycling potential on specific routes [@transport_for_london_analysis_2010].
+The ACP tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London to guide local cycling initiatives, such as where new hire 'docking stations' should go.
+However, it does not use origin-destination data and cannot estimate cycling potential on specific routes [@transport_for_london_analysis_2010].
 
-Other tools that generate areal data to prioritize investment include a study that generated a ['bikeability index' for the Metro Vancouver region [@winters_mapping_2013], later renamed Bike Score and available for over 160 US and Canadian cities [@winters_bike_2016] -- its methodology is [openly accessible](https://www.walkscore.com/bike-score-methodology.shtml); a]{style="color: blue;"} 'prioritization index' for Montreal, Canada [@larsen_build_2013]; a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil [@zhang_prioritizing_2014]; and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
+Other tools that generate areal data to prioritize investment include a study that generated a ['bikeability index' for the Metro Vancouver region [@winters_mapping_2013], later renamed Bike Score and available for over 160 US and Canadian cities [@winters_bike_2016]; a]{style="color: blue;"} 'prioritization index' for Montreal, Canada [@larsen_build_2013]; a 'usage intensity index' based on stated preferences in Belo Horizonte, Brazil [@zhang_prioritizing_2014]; and a Cycling Potential Tool (CPT) for Scotland [@phillips_development_2017].
 The CPT is composed of the base environmental module — based on eight weighted factors (population density, hilliness, physical barriers, access to services, existing cycling mode share, distance to work and school, and road speed) — and the quality of service module, which evaluates each area of interest based on eight factors (surface condition, adjacent cyclists, comfort factor, conflict, distance between junctions, slope, access to services, and origin/destination).
 
 A more recent areal-based approach is the Gross Potential for Cycling (GPC) tool to prioritize areas for cycling infrastructure and other cycling measures [@silva_gross_2021].
@@ -245,7 +245,7 @@ The ranking of areas by the GPC are [publicly available](https://boost.up.pt/en/
 
 Route-based tools emerged with increasing availability of origin-destination data, routing engines that can assign trips to networks, and improvements in computer hardware and software needed to generate route networks.
 A prominent example is the the Propensity to Cycle Tool (PCT), first developed to estimate current and future levels of cycling at desire line, zone, route, and route network levels for case study cities [@lovelace2016].
-The approach was scaled-up to estimate estimate the potential benefits of uptake at zone and desire line levels nationally, and launched as a publicly available web application in 2017 [@lovelace2017].
+The approach was scaled-up to estimate the potential benefits of uptake at zone and desire line levels nationally, and launched as a publicly available web application in 2017 [@lovelace2017].
 Extensions of the PCT approach have included estimation of benefits at the individual level [@woodcock2018], addition of travel to school network [@goodman2019], and improved modeling of impacts on health, environmental and distributional outcomes [@woodcock2021].
 Initially developed just for England, the PCT was extended to cover all of Wales (for commuter data only) in 2018.
 
@@ -254,7 +254,7 @@ In Portugal the 'biclaR' project, based on methods underlying the PCT, has been 
 The resulting evidence is available in an interactive web application hosted at [biclar.tmlmobilidade.pt](https://biclar.tmlmobilidade.pt) [@felix2023].
 biclaR includes estimates of impacts, using the World Health Organisation (WHO) 'HEAT for Cycling' tool and an 'intermodality' scenario that combines cycling with currently available public transit options based on General Transit Feed Specification (GTFS) data.
 
-[Another route-based tool is The Cycling Routing Algorithm for Network Connectivity (CRANC) [@gehrke_cycling-focused_2020]. The CRANC tool evaluates the benefits of new bicycle facilities for the accessibility of various populations and neighbourhoods.]{style="color: blue;"}
+[Another route-based tool is The Cycling Routing Algorithm for Network Connectivity (CRANC) [@gehrke_cycling-focused_2020], which evaluates the benefits of new bicycle facilities for the accessibility of various populations and neighbourhoods.]{style="color: blue;"}
 
 The approach presented in this paper seeks to overcome three limitations of previous tools to estimate cycling potential: 1) low resolution of data, with routes starting and ending in administrative zone centroids, 2) limited coverage of trip purposes beyond travel to work and school, and 3) a web interface that was not user-friendly or intuitive.
 
@@ -364,7 +364,7 @@ And the recreational trips were classified as follows:
 - Sport cycling 
 -->
 ```
-Following feedback from stakeholders, we added another, 'non-everyday' trip purpose in an extension phase: cycle tourism.
+Following feedback from stakeholders, we added another 'non-everyday' trip purpose in an extension phase: cycle tourism.
 As outlined in the CRUSE Extension report \[reference and link to be added on publication\], this involved developing an inter-county spatial interaction model to estimate the number of trips between each county for cycle tourism, with trip attractors including campsites and major international transport hubs.
 
 ## Routing
@@ -426,7 +426,7 @@ Illustration of the quietest (left) and fastest (right) route networks for Naas 
 ## Scenarios of cycling potential {#sec-scenarios}
 
 The datasets outlined above were used to generate estimates of cycling currently (the 'Baseline' scenario) and under four scenarios of cycling potential: Near Market, Climate Action Plan, Go Dutch, and Ebike.
-Each of these scenarios is described below, as illustrated in @fig-scenarios.
+Each of these scenarios is described below. @fig-scenarios displays a graph showing the proportion of bicycle trips by distance for Kildare in each scenario.
 <!-- TODO: add table. -->
 
 ::: {#fig-scenarios}
@@ -797,8 +797,7 @@ However, a feature of the approach is that it is not prescriptive and it does no
 
 ## Stakeholder feedback {#sec-qualitative}
 
-Throughout the project, we undertook a series of workshops and interviews with stakeholders in Ireland to gather feedback on the approach and resulting tool.
-The feedback was generally positive, with stakeholders commenting on the need for the tool, lack of data on cycling potential proving a barrier to decision-making and investment, and the potential for the tool.
+The feedback from the workshops and interviews was generally positive, with stakeholders commenting on the need for the tool, lack of data on cycling potential proving a barrier to decision-making and investment, and the potential for the tool.
 At an end of project workshop in December 2023, stakeholders were asked to provide feedback on the tool and its potential use in practice.
 Quotes and suggestions from these workshops, and a subsequent interview with a Senior Transport Planning using the evidence in their everyday work in Transport Infrastructure Ireland, and presented in this section (with quotes being attributed to named individuals where permission has been granted).
 
