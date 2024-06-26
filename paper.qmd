@@ -228,7 +228,7 @@ knitr::kable(tools, caption = "Summary of existing tools for estimating cycling 
 
 Area-based approaches were developed before network-based tools, such as a 2007 regression-based model to estimate the percentage of cycling trips to work in England and Wales based on socioeconomic, transportation, and physical factors at the small area (wards) level in 2007 [@parkin_estimation_2007].
 They found that areas with a higher percentage of females, non-whites, car ownership, lower socioeconomic classes, income, distance to work, population density, poor highway conditions, hills, rainfall, and fewer off-road bicycle routes tended to have a lower proportion of cycling to work.
-The approach also generated "forecasts for potential levels of bicycle use" with increases in off-road routes, improvements of highway and, conversely, increases in car ownership and distance to work leading to decreases in cycling to work.
+The approach also generated "forecasts for potential levels of bicycle use" associated with increasing in off-road routes and, conversely, increasing car ownership levels and distances travelled to work leading to decreases in cycling.
 
 Three years later, Transport for London created the Analysis of Cycling Potential (ACP) tool based on a mode choice model that assesses the likelihood of trips being cycled, with data from the TfL London Travel Demand Survey as its primary input.
 The ACP tool generates tables, graphs, and heatmaps showing the potential for cycling for different trips purposes in London to guide local cycling initiatives, such as where new hire 'docking stations' should go.
