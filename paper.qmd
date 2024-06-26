@@ -435,7 +435,7 @@ Each of these scenarios is described below. @fig-scenarios displays a graph show
 ::: {#fig-scenarios}
 <!-- ![](paste-7.png) -->
 
-![](scenarios_kildare.png)
+![](scenarios_kildare.png){width="60%"}
 
 Distance-mode share graph for Kildare used to communicate the different scenarios.
 Source: county level view for Kildare in the open access CRUSE Tool at <https://cruse.bike/kildare>.
