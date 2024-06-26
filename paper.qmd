@@ -106,7 +106,8 @@ library(dplyr)
 remotes::install_dev("tmap")
 library(tmap)
 # # Save title page (1st page of paper.pdf):
-# system("pdftk _site/paper.pdf cat 1 output _site/title_page.pdf")
+system("pdftk title_page.pdf cat 1 output title_page1.pdf")
+browseURL("title_page1.pdf")
 # Combine cv.pdf with visions.pdf:
 # system("pdftk _site/cv.pdf _site/visions.pdf cat output _site/cv_and_visions.pdf")
 # latexdiffr::latexdiff("paper-v1.qmd", "paper.qmd")
