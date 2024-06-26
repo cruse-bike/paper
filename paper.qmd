@@ -65,7 +65,7 @@ format:
 #       - name: Transport Infrastructure Ireland
 #         address: Parkgate Business Centre, Parkgate Street, Dublin 8, D08 DK10, Ireland
 abstract: |
-  This paper describes an approach for developing strategic cycle network planning tools. Based on our experience developing and deploying the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland, we outline the underlying methods, including disaggregation of origin-destination data with the open source 'odjitter' software, incorporation of additional trip purposes, routing, scenario generation, and development of an intuitive user interface that is tested and used by practitioners. Commissioned by the national infrastructure agency Transport Infrastructure Ireland, CRUSE provides estimates of current and potential future cycling levels under 'snapshot' scenarios to inform investment decisions. The publicly available results at https://cruse.bike/ enable planners, engineers, and other stakeholders to make more evidence-based decisions. CRUSE goes beyond previous work by: modeling networks at high spatial resolution; simulating multiple trip purposes (social, shopping, personal utility, recreational, and cycle touring), supplementing official origin-destination datasets on travel for work and education; and providing estimates of 'quietness' (a proxy for cyclist comfort and route preference) at the route segment level. Three network types --- 'Fastest', 'Balanced', and 'Quietest' --- help plan both arterial and residential cycle networks. Workshops and unstructured interviews with stakeholders were used to inform the development of the tool. Feedback shows that the tool has a wide range of uses and is already being used in practice to inform urban, inter-urban, and rural cycle network designs. The approach is flexible and open-source, allowing the underlying ideas and code to be adapted, supporting more evidence-based and effective cycling policies and interventions internationally.
+  This paper describes an approach for developing strategic cycle network planning tools. Based on our experience developing and deploying the Cycle Route Uptake and Scenario Estimation (CRUSE) Tool for Ireland, we outline the underlying methods, including disaggregation of origin-destination data with the open source 'odjitter' software, incorporation of additional trip purposes, routing, scenario generation, and development of an intuitive user interface that is tested and used by practitioners. Commissioned by the national infrastructure agency Transport Infrastructure Ireland, CRUSE provides estimates of current and potential future cycling levels under 'snapshot' scenarios to inform investment decisions. The publicly available results at https://cruse.bike/ enable planners, engineers, and other stakeholders to make more evidence-based decisions. CRUSE goes beyond previous work by: modeling networks at high spatial resolution; simulating multiple trip purposes (social, shopping, personal utility, recreational, and cycle touring), supplementing official origin-destination datasets on travel for work and education; and providing estimates of 'quietness' (a proxy for cyclist comfort and route preference) at the route segment level. Three network types --- 'Fastest', 'Balanced', and 'Quietest' --- help plan both arterial and residential cycle networks. Workshops with stakeholders were used to inform the development of the tool. Feedback shows that the tool has a wide range of uses and is already being used in practice to inform urban, inter-urban, and rural cycle network designs. The approach is flexible and open-source, allowing the underlying ideas and code to be adapted, supporting more evidence-based and effective cycling policies and interventions internationally.
 keywords: 
   - Cycling
   - Open-source
@@ -656,7 +656,7 @@ Other than the live demo, all of the workshops took place online.
 
 The first two workshops took place in May 2022, during which the tool was introduced to key staff involved in cycle network planning in Kildare and Limerick counties.
 The county-specific approach allowed the workshop to focus on specific areas and key corridors.
-The local transport planners were asked to provide feedback in a semi-structured interview approach, with questions on the evidence they currently have access to, how they may be able to use the tool, and requests for new features.
+During the workshops, after the tool was introduced and presented, participants were asked questions in a semi-structured interview format, with questions on the evidence they currently have access to, how they may be able to use the tool, and requests for new features.
 The third and final workshop took place on the 7^th^ December 2023 and included descriptions of recent changes to the tool, with an aim being to get feedback on the new recreational and cycle touring evidence, with representatives from county-level transport planning bodies, Sport Ireland, and Waterways Ireland.
 
 [The open-ended live demo was undertaken at a stall at TII’s National Roads and Greenways Conference in Sligo in September 2022, where much of the feedback was verbal and not collected.
@@ -671,7 +671,7 @@ The approach generates estimates of cycling potential on every road in the count
 Through the interactive web application, users can explore the data to generate the results that are most relevant to their needs, whether that is finding the cycling potential on a particular road or finding 'weak links' or barriers in the cycle network associated with a particular school, work place or other destination.
 
 Instead of trying to show such use cases, of which there are many hundreds, we present a selection of results to illustrate the main features of the resulting evidence, in @sec-quantiative.
-We also present some qualitative results based on workshops and interviews with stakeholders in Ireland, in @sec-qualitative.
+We also present some qualitative results based on workshops with stakeholders in Ireland, in @sec-qualitative.
 
 ```{=html}
 <!-- ## National results {#sec-national-results}
@@ -801,9 +801,9 @@ However, a feature of the approach is that it is not prescriptive and it does no
 
 ## Stakeholder feedback {#sec-qualitative}
 
-The feedback from the workshops and interviews was generally positive, with stakeholders commenting on the need for the tool, lack of data on cycling potential proving a barrier to decision-making and investment, and the potential for the tool.
+The feedback from the workshops was generally positive, with stakeholders commenting on the need for the tool, lack of data on cycling potential proving a barrier to decision-making and investment, and the potential for the tool.
 At an end of project workshop in December 2023, stakeholders were asked to provide feedback on the tool and its potential use in practice.
-Quotes and suggestions from these workshops, and a subsequent interview with a Senior Transport Planning using the evidence in their everyday work in Transport Infrastructure Ireland, and presented in this section (with quotes being attributed to named individuals where permission has been granted).
+Quotes and suggestions from these workshops, and a subsequent interview with a transport planner using the evidence in their everyday work in Transport Infrastructure Ireland, are presented in this section (with quotes being attributed to named individuals where permission has been granted).
 
 Early in the project, we presented the approach to practitioners in Kildare and Limerick.
 The feedback from the workshop in Kildare highlighted the need for the tool for practitioners at the county level, as highlighted in the following quote:
@@ -886,10 +886,10 @@ Sustainable transport policies should plan for walking, wheeling and cycling, an
 This raises the question of whether other active modes should be incorporated into the results using the OD-based approach outlined in this paper, or whether different modeling approaches are needed to properly capture the shorter distance trips typically made by walking [@cooper2018].
 Furthermore, the estimates of cycling presented in the CRUSE Tool omit multi-modal trips including public transport, and omit trip chaining, due to the need to capture a large portion of cycling potential within the resource constraints of the project.
 
-[A final limitation of the approach relates to *how* it was developed.
+A final limitation of the approach relates to *how* it was developed.
 As described in @sec-stakeholder-engagement, the development of the tool was participatory, but only insofar as people who attended our workshops could provide feedback.
 The people who did provide feedback were deliberately chosen as the target audience.
-In future work we would like to collect feedback from a wider range of people, including campaigners, service providers (e.g. staff involved in travel planning for schools and new developments), and people who not involved in the planning process.]{style="color: blue;"}
+In future work we would like to collect feedback from a wider range of people, including campaigners, service providers (e.g. staff involved in travel planning for schools and new developments), and groups who are under-represented in transport planning processes.
 
 # Conclusions {#sec-conclusions}
 
