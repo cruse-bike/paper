@@ -775,7 +775,8 @@ browseURL("./rnet_types.png")
 ```
 
 ::: {#fig-city-results}
-![](rnet_types.png)
+
+![](rnet_types.png){width="90%"}
 
 Fastest (left) and quietest (right) cycle networks in 6 km squares centered on central Dublin (top panels) Cork (middle) and Limerick (bottom).
 The networks are coloured by cycle friendliness, with greener segments representing more cycle friendly segments.
