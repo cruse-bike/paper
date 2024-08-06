@@ -10,6 +10,19 @@ execute:
   echo: false
   message: false
 number-sections: true
+latex-clean: false
+pdf-engine: pdflatex
+format: 
+  # html: default
+  # Uncomment for formatted version
+  elsevier-pdf:
+    linestretch: 2
+    keep-tex: true
+    journal:
+      name: European Transport Research Review
+      formatting: preprint
+      model: 3p
+      cite-style: super
 # # # #   # pdf: default
 # # Uncomment the following line to produce the cover page
 author:
@@ -66,19 +79,6 @@ date: last-modified
 ```{r}
 #| include: false
 #| eval: false
-latex-clean: false
-pdf-engine: pdflatex
-format: 
-  # html: default
-  # Uncomment for formatted version
-  elsevier-pdf:
-    linestretch: 2
-    keep-tex: true
-    journal:
-      name: European Transport Research Review
-      formatting: preprint
-      model: 3p
-      cite-style: super
 ```
 
 Note: this paper has been accepted for publication in the European Transport Research Review.
