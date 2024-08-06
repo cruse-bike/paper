@@ -953,4 +953,7 @@ This work was funded by Transport Infrastructure Ireland (TII).
 
 ## Acknowledgements {.unnumbered}
 
-\[To be added post review.\]
+Thanks to Catherine Swift and Ciaran Maguire for their support in the development of the CRUSE Tool during the early stages.
+Thanks to everyone who attended the workshops and provided feedback on the tool, especially Dónal Hodgins, Kieran Cullinane, and Declan Keenan.
+Thanks to Yael Arbell for comments on an earlier version of the manuscript that informed discussion of stakeholder engagement.
+Finally, thanks and to the European Transport Research Review staff and to the anonymous reviewers for their constructive feedback.
