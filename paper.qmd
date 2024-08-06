@@ -947,7 +947,7 @@ TII: Transport Infrastructure Ireland
 ## Availability of data and material {.unnumbered}
 
 Data was obtained from the Central Statistics Office (CSO) and Transport Infrastructure Ireland (TII) under license and cannot be shared publicly.
-The code used to generate the results presented in this paper is fully reproducible and available at \[to be added post review.\]
+The code used to generate the results presented in this paper is reproducible and available at https://github.com/cruse-bike/
 
 ## Funding {.unnumbered}
 
