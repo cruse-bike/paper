@@ -44,14 +44,28 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
+\makeatletter
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
-  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
 \fi
 \ifx\subparagraph\undefined\else
   \let\oldsubparagraph\subparagraph
-  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
+\makeatother
 
 
 \providecommand{\tightlist}{%
@@ -135,6 +149,7 @@
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
 \journal{European Transport Research Review}
+
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -146,6 +161,7 @@
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={Cycle Route Uptake and Scenario Estimation (CRUSE): an approach for developing strategic cycle network planning tools},
+  pdfauthor={Robin Lovelace; Joey Talbot; Eugeni Vidal-Tortosa; Hussein Mahfouz; Elaine Brick; Peter Wright; Gary O'Toole; Dan Brennan; Suzanne Meade},
   pdfkeywords={Cycling, Open-source, Road Safety, Active
 Travel, Transport Planning, Collaborative Planning},
   colorlinks=true,
@@ -155,12 +171,72 @@ Travel, Transport Planning, Collaborative Planning},
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
+
 \setlength{\parindent}{6pt}
 \begin{document}
 
 \begin{frontmatter}
 \title{Cycle Route Uptake and Scenario Estimation (CRUSE): an approach
 for developing strategic cycle network planning tools}
+\author[1]{Robin Lovelace%
+\corref{cor1}%
+}
+ \ead{r.lovelace@leeds.ac.uk} 
+\author[1]{Joey Talbot%
+%
+}
+
+\author[1]{Eugeni Vidal-Tortosa%
+%
+}
+
+\author[1]{Hussein Mahfouz%
+%
+}
+
+\author[2]{Elaine Brick%
+%
+}
+
+\author[3]{Peter Wright%
+%
+}
+
+\author[2]{Gary O'Toole%
+%
+}
+
+\author[4]{Dan Brennan%
+%
+}
+
+\author[4]{Suzanne Meade%
+%
+}
+
+
+\affiliation[1]{organization={University of
+Leeds},addressline={Institute for Transport Studies, Leeds, LS2 9JT,
+United Kingdom},postcodesep={}}
+\affiliation[2]{organization={AECOM},addressline={Unit 6, Galway
+Technology Park, Parkmore, Galway, Ireland},postcodesep={}}
+\affiliation[3]{organization={AECOM},addressline={Winslade House,
+Winslade Park, Manor Drive, Clyst St Mary, Exeter, EX5 1FY,
+UK},postcodesep={}}
+\affiliation[4]{organization={Transport Infrastructure
+Ireland},addressline={Parkgate Business Centre, Parkgate Street, Dublin
+8, D08 DK10, Ireland},postcodesep={}}
+
+\cortext[cor1]{Corresponding author}
+
+
+
+
+
+
+
+
+
         
 \begin{abstract}
 This paper describes an approach for developing strategic cycle network
@@ -203,6 +279,7 @@ Travel \sep Transport Planning \sep
 \end{keyword}
 \end{frontmatter}
     
+
 \setstretch{2}
 \newpage{}
 
@@ -1340,6 +1417,7 @@ This work was funded by Transport Infrastructure Ireland (TII).
 
 
   \bibliography{references.bib}
+
 
 
 \end{document}
