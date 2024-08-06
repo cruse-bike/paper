@@ -81,7 +81,8 @@ format:
       cite-style: super
 ```
 
-<!-- Note: preprint now available here: https://osf.io/preprints/osf/a72yh
+Note: this paper has been accepted for publication in the European Transport Research Review.
+Preprint now available here: https://osf.io/preprints/osf/a72yh
 
 <details>
 
@@ -89,13 +90,11 @@ Please cite as
 
 Lovelace, Robin, Joey Talbot, Eugeni Vidal-Tortosa, Hussein Mahfouz, Elaine Brick, Peter Wright, Gary O'Toole, et al. 2024.
 “Cycle Route Uptake and Scenario Estimation (CRUSE): An Approach for Developing Strategic Cycle Network Planning Tools.” OSF Preprints.
-March 29.
-doi:10.31219/osf.io/a72yh.
 
 This is an open and reproducible paper.
 See [github.com/cruse-bike](https://github.com/cruse-bike) for the code and data used to generate the results presented here, and the code underlying the web app hosted at [cruse.bike](https://cruse.bike/).
 
-</details> -->
+</details>
 
 {{< pagebreak >}}
 
