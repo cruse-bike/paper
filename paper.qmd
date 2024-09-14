@@ -956,3 +956,27 @@ Thanks to Catherine Swift and Ciaran Maguire for their support in the developmen
 Thanks to everyone who attended the workshops and provided feedback on the tool, especially Dónal Hodgins, Kieran Cullinane, and Declan Keenan.
 Thanks to Yael Arbell for comments on an earlier version of the manuscript that informed discussion of stakeholder engagement.
 Finally, thanks and to the European Transport Research Review staff and to the anonymous reviewers for their constructive feedback.
+
+## Author contributions {.unnumbered}
+
+<!-- Conceptualization
+Data curation
+Formal analysis
+Funding acquisition
+Investigation
+Methodology
+Project administration
+Software
+Resources
+Supervision
+Validation
+Visualization
+Writing – original draft
+Writing – review & editing -->
+
+RL, JT, EVT, HM: Conceptualization, Methodology, Formal analysis, Validation, Writing – original draft, Writing – review & editing
+
+EB, PW, GOT: Project administration, Validation
+
+DB, SM: Resources, Validation, Project administration, Funding acquisition
+
